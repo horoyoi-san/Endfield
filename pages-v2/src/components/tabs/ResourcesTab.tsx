@@ -224,7 +224,7 @@ const PlatformAccordion = ({
   const itemId = `res-${region}-${channel}-${platformData.platform}`;
 
   return (
-    <div className='accordion-item'>
+    <div className='accordion-item glass-card'>
       <h2 className='accordion-header' id={`heading-${itemId}`}>
         <button
           className='accordion-button collapsed glass-accordion-btn'
@@ -279,7 +279,7 @@ export default function ResourcesTab() {
       {data.map((regionData) => (
         <div key={`${regionData.region}-${regionData.channel}`} className='mb-5'>
           <h3 className='mb-3 neon-title'>{TARGETS.find((t) => t.region === regionData.region)?.label || regionData.region}</h3>
-          <div className='accordion' id={`accordion-res-${regionData.region}-${regionData.channel}`}>
+          <div className='accordion glass-accordion' id={`accordion-res-${regionData.region}-${regionData.channel}`}>
             {regionData.platforms.map((plat) => (
               <PlatformAccordion
                 key={plat.platform}

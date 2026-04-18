@@ -112,7 +112,7 @@ export default function LauncherTab({ mirrorFileDb }: Props) {
           </h3>
           <div className='accordion' id={`accordion-launcher-${item.regionId}-${item.app}`}>
             {item.zips.length > 0 && (
-              <div className='accordion-item'>
+              <div className='accordion-item glass-card'>
                 <h2 className='accordion-header' id={`heading-zip-${item.regionId}-${item.app}`}>
                   <button
                     className='accordion-button collapsed glass-accordion-btn'
@@ -170,7 +170,7 @@ export default function LauncherTab({ mirrorFileDb }: Props) {
             )}
 
             {item.exes.length > 0 && (
-              <div className='accordion-item'>
+              <div className='accordion-item glass-card'>
                 <h2 className='accordion-header' id={`heading-exe-${item.regionId}-${item.app}`}>
                   <button
                     className='accordion-button collapsed glass-accordion-btn'

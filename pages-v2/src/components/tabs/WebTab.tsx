@@ -25,13 +25,13 @@ export default function WebTab() {
   }, [targetIdx, target.region, langs]);
 
   return (
-    <div>
+      <div className="overview-container">
       {/* <div className='card'>
         <div className='card-body'> */}
-      <div className='row g-3 mb-3'>
+      <div className='row g-3 mb-3 glass-card p-3'>
         <div className='col-md-6'>
           <label className='form-label fw-bold'>Target</label>
-          <select className='form-select' value={targetIdx} onChange={(e) => setTargetIdx(parseInt(e.target.value))}>
+          <select className='form-select glass-select' value={targetIdx} onChange={(e) => setTargetIdx(parseInt(e.target.value))}>
             {gameTargets.map((t, idx) => (
               <option key={idx} value={idx}>
                 {t.region === 'cn' ? 'China' : 'Global'} - {t.name}
@@ -42,7 +42,7 @@ export default function WebTab() {
         {langs.length > 1 && (
           <div className='col-md-6'>
             <label className='form-label fw-bold'>Language</label>
-            <select className='form-select' value={lang} onChange={(e) => setLang(e.target.value)}>
+            <select className='form-select glass-select' value={lang} onChange={(e) => setLang(e.target.value)}>
               {langs.map((l) => (
                 <option key={l} value={l}>
                   {l}
