@@ -38,16 +38,16 @@ body {
 ========================= */
 .glass-card {
   position: relative;
-  background: rgba(255,255,255,0.06) !important;
-  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.035) !important;
+  backdrop-filter: blur(10px) saturate(120%);
   -webkit-backdrop-filter: blur(12px);
 
   border-radius: 16px;
   border: 1px solid rgba(255,255,255,0.08);
 
   box-shadow:
-    0 6px 20px rgba(0,0,0,0.25),
-    inset 0 0 6px rgba(255,255,255,0.03);
+    0 4px 12px rgba(0,0,0,0.2),
+    inset 0 0 4px rgba(255,255,255,0.02);
 
   transition: all 0.25s ease;
   overflow: hidden;
@@ -60,7 +60,7 @@ body {
   inset: 0;
   border-radius: 16px;
   padding: 1px;
-  background: linear-gradient(120deg, rgba(100,150,255,0.4), transparent, rgba(140,100,255,0.3));
+  background: linear-gradient(120deg, rgba(100,150,255,0.15), transparent, rgba(140,100,255,0.1));
   -webkit-mask:
     linear-gradient(#000 0 0) content-box,
     linear-gradient(#000 0 0);
@@ -82,13 +82,13 @@ body {
 .card-title {
   color: #ffffff;
   letter-spacing: 0.5px;
-  text-shadow: 0 0 6px rgba(120,160,255,0.3);
+  text-shadow: 0 0 4px rgba(120,160,255,0.2);
 }
 
 .fs-1 {
   font-weight: 700;
   color: #ffffff;
-  text-shadow: 0 0 6px rgba(120,160,255,0.4);
+  text-shadow: 0 0 4px rgba(120,160,255,0.25);
 }
 
 /* =========================
@@ -100,19 +100,19 @@ body {
 }
 
 .glass-table th {
-  background: rgba(255,255,255,0.04);
+  background: rgba(255,255,255,0.025);
   border-color: rgba(255,255,255,0.08);
   color: #9ecbff;
 }
 
 .glass-table td {
-  background: rgba(255,255,255,0.02);
+  background: rgba(255,255,255,0.012);
   border-color: rgba(255,255,255,0.05);
 }
 
 /* hover */
 .glass-table tbody tr:hover {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255,255,255,0.035);
 }
 
 /* =========================
@@ -166,7 +166,7 @@ hr {
 }
 
 .glass-accordion-btn {
-  background: rgba(255,255,255,0.04) !important;
+  background: rgba(255,255,255,0.025) !important;
   color: #fff !important;
   backdrop-filter: blur(8px);
 
@@ -178,17 +178,17 @@ hr {
 
 /* hover */
 .glass-accordion-btn:hover {
-  background: rgba(255,255,255,0.08) !important;
+  background: rgba(255,255,255,0.05) !important;
 }
 
 /* active */
 .glass-accordion-btn:not(.collapsed) {
-  background: rgba(255,255,255,0.1) !important;
+  background: rgba(255,255,255,0.07) !important;
 }
 
 /* body */
 .glass-body {
-  background: rgba(255,255,255,0.03);
+  background: rgba(255,255,255,0.02);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   margin-top: 5px;
@@ -207,7 +207,7 @@ hr {
 ========================= */
 code {
   color: #9ecbff;
-  background: rgba(120,160,255,0.1);
+  background: rgba(120,160,255,0.06);
   padding: 2px 6px;
   border-radius: 6px;
 }
@@ -228,7 +228,7 @@ a:hover {
    FORM
 ========================= */
 .glass-select {
-  background: rgba(255,255,255,0.05) !important;
+  background: rgba(255,255,255,0.035) !important;
   color: #fff !important;
   border: 1px solid rgba(255,255,255,0.1);
   backdrop-filter: blur(8px);
@@ -248,4 +248,13 @@ a:hover {
 
 .form-label {
   color: #9ecbff;
+}
+
+.glass-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.04);
+  pointer-events: none;
 }
