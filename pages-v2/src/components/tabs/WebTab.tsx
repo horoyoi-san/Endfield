@@ -26,7 +26,7 @@ export default function WebTab() {
 
   return (
     <div>
-      {/* <div className='card glass-card'>
+      {/* <div className='card'>
         <div className='card-body'> */}
       <div className='row g-3 mb-3'>
         <div className='col-md-6'>

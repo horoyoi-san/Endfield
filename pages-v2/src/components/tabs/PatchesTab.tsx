@@ -123,20 +123,20 @@ export default function PatchesTab({ mirrorFileDb }: Props) {
   }
 
   return (
-    <div>
+      <div className="overview-container">
       {patchesData.map((pkg) => (
         <div key={pkg.dirName} className='mb-5'>
-          <h3 className='mb-3'>
+          <h3 className='mb-3 neon-title'>
             {pkg.region === 'cn' ? 'China' : 'Global'}, {pkg.targetName}
           </h3>
           <div className='accordion' id={`accordion-patch-${pkg.dirName}`}>
             {pkg.patches.map((ver, idx) => {
               const itemId = `patch-${pkg.dirName}-${idx}`;
               return (
-                <div className='accordion-item' key={itemId}>
+                <div className='accordion-item glass-card' key={itemId}>
                   <h2 className='accordion-header' id={`heading-${itemId}`}>
                     <button
-                      className='accordion-button collapsed'
+                      className='accordion-button collapsed glass-accordion-btn'
                       type='button'
                       data-bs-toggle='collapse'
                       data-bs-target={`#collapse-${itemId}`}
@@ -157,7 +157,7 @@ export default function PatchesTab({ mirrorFileDb }: Props) {
                     aria-labelledby={`heading-${itemId}`}
                     data-bs-parent={`#accordion-patch-${pkg.dirName}`}
                   >
-                    <div className='accordion-body'>
+                    <div className='accordion-body glass-body'>
                       <table className='table table-sm table-borderless w-auto mb-2'>
                         <tbody>
                           <tr>

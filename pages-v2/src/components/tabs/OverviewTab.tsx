@@ -294,7 +294,7 @@ export default function OverviewTab({ mirrorFileDb }: Props) {
         </div>
       </div>
 
-      <div className='card glass-card'>
+      <div className='card'>
         <div className='card-body'>
           <h3 className='card-title'>Mirror Statistics</h3>
           <p className='card-text text-center lh-1'>

@@ -227,7 +227,7 @@ const PlatformAccordion = ({
     <div className='accordion-item'>
       <h2 className='accordion-header' id={`heading-${itemId}`}>
         <button
-          className='accordion-button collapsed'
+          className='accordion-button collapsed glass-accordion-btn'
           type='button'
           data-bs-toggle='collapse'
           data-bs-target={`#collapse-${itemId}`}
@@ -243,7 +243,7 @@ const PlatformAccordion = ({
         aria-labelledby={`heading-${itemId}`}
         data-bs-parent={`#accordion-res-${region}-${channel}`}
       >
-        <div className='accordion-body'>
+        <div className='accordion-body glass-body'>
           <ResourceTable groups={platformData.groups} />
         </div>
       </div>
@@ -275,10 +275,10 @@ export default function ResourcesTab() {
   }
 
   return (
-    <div>
+      <div className="overview-container">
       {data.map((regionData) => (
         <div key={`${regionData.region}-${regionData.channel}`} className='mb-5'>
-          <h3 className='mb-3'>{TARGETS.find((t) => t.region === regionData.region)?.label || regionData.region}</h3>
+          <h3 className='mb-3 neon-title'>{TARGETS.find((t) => t.region === regionData.region)?.label || regionData.region}</h3>
           <div className='accordion' id={`accordion-res-${regionData.region}-${regionData.channel}`}>
             {regionData.platforms.map((plat) => (
               <PlatformAccordion

@@ -104,10 +104,10 @@ export default function LauncherTab({ mirrorFileDb }: Props) {
   }
 
   return (
-    <div>
+      <div className="overview-container">
       {data.map((item) => (
         <div key={`${item.regionId}-${item.app}`} className='mb-5'>
-          <h3 className='mb-3'>
+          <h3 className='mb-3 neon-title'>
             {item.regionId.toUpperCase()} {item.app}
           </h3>
           <div className='accordion' id={`accordion-launcher-${item.regionId}-${item.app}`}>
@@ -115,7 +115,7 @@ export default function LauncherTab({ mirrorFileDb }: Props) {
               <div className='accordion-item'>
                 <h2 className='accordion-header' id={`heading-zip-${item.regionId}-${item.app}`}>
                   <button
-                    className='accordion-button collapsed'
+                    className='accordion-button collapsed glass-accordion-btn'
                     type='button'
                     data-bs-toggle='collapse'
                     data-bs-target={`#collapse-zip-${item.regionId}-${item.app}`}
@@ -130,7 +130,7 @@ export default function LauncherTab({ mirrorFileDb }: Props) {
                   className='accordion-collapse collapse'
                   data-bs-parent={`#accordion-launcher-${item.regionId}-${item.app}`}
                 >
-                  <div className='accordion-body'>
+                  <div className='accordion-body glass-body'>
                     <div className='table-responsive'>
                       <table className='table table-striped table-bordered table-sm align-middle text-nowrap glass-table'>
                         <thead>
@@ -173,7 +173,7 @@ export default function LauncherTab({ mirrorFileDb }: Props) {
               <div className='accordion-item'>
                 <h2 className='accordion-header' id={`heading-exe-${item.regionId}-${item.app}`}>
                   <button
-                    className='accordion-button collapsed'
+                    className='accordion-button collapsed glass-accordion-btn'
                     type='button'
                     data-bs-toggle='collapse'
                     data-bs-target={`#collapse-exe-${item.regionId}-${item.app}`}
@@ -188,7 +188,7 @@ export default function LauncherTab({ mirrorFileDb }: Props) {
                   className='accordion-collapse collapse'
                   data-bs-parent={`#accordion-launcher-${item.regionId}-${item.app}`}
                 >
-                  <div className='accordion-body'>
+                  <div className='accordion-body glass-body'>
                     <div className='table-responsive'>
                       <table className='table table-striped table-bordered table-sm align-middle text-nowrap glass-table'>
                         <thead>

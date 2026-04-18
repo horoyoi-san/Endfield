@@ -184,3 +184,104 @@ hr {
 .fs-1:hover {
   animation: glowPulse 2s infinite;
 }
+
+/* =========================
+   ACCORDION GLASS
+========================= */
+
+/* ตัวหลัก */
+.glass-accordion {
+  border: none;
+}
+
+/* item */
+.glass-accordion .accordion-item {
+  background: transparent;
+  border: none;
+  margin-bottom: 10px;
+}
+
+/* ปุ่ม */
+.glass-accordion-btn {
+  background: rgba(255,255,255,0.05) !important;
+  color: #fff !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px !important;
+
+  box-shadow: inset 0 0 10px rgba(0,200,255,0.1);
+  transition: all 0.25s ease;
+}
+
+/* hover */
+.glass-accordion-btn:hover {
+  background: rgba(0,200,255,0.15) !important;
+  box-shadow: 0 0 15px rgba(0,200,255,0.3);
+}
+
+/* ตอนเปิด */
+.glass-accordion-btn:not(.collapsed) {
+  background: rgba(0,200,255,0.2) !important;
+  box-shadow:
+    0 0 20px rgba(0,200,255,0.4),
+    inset 0 0 10px rgba(255,255,255,0.1);
+}
+
+/* body */
+.glass-body {
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 12px;
+  margin-top: 5px;
+}
+
+/* =========================
+   ACCORDION ANIMATION
+========================= */
+
+/* smooth open */
+.accordion-collapse {
+  transition: all 0.3s ease;
+}
+
+/* =========================
+   NEON TITLE
+========================= */
+.neon-title {
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow:
+    0 0 10px #00c8ff,
+    0 0 20px #00c8ff,
+    0 0 40px #8a2be2;
+}
+
+/* =========================
+   CODE (MD5)
+========================= */
+code {
+  color: #00c8ff;
+  background: rgba(0,200,255,0.1);
+  padding: 2px 6px;
+  border-radius: 6px;
+  text-shadow: 0 0 6px rgba(0,200,255,0.6);
+}
+
+/* =========================
+   DOWNLOAD BUTTON (ถ้ามี link)
+========================= */
+a {
+  color: #00c8ff;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: #8a2be2;
+  text-shadow: 0 0 10px #8a2be2;
+}
+
