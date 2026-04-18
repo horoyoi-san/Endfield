@@ -24,12 +24,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-      - name: Create config auth
-        env:
-          CONFIG_AUTH_YAML_CTX: ${{ secrets.CONFIG_AUTH_YAML }}
-        run: |
-          mkdir -p config
-          echo "$CONFIG_AUTH_YAML_CTX" > config/config_auth.yaml
       - name: Run archive script
         uses: nick-fields/retry@v3
         with:
@@ -57,8 +51,6 @@ jobs:
           git add output/akEndfield/** output/raw/** output/mirror_file_list_pending.json output/mirror_file_res_list_pending.json output/mirror_file_res_patch_list_pending.json
           git commit -m "[Auto] API update" || echo "No changes to commit"
           git push
-      - name: Run GitHub mirror upload
-        run: bun run src/main.ts ghMirrorUpload
         continue-on-error: true
       - name: Format output folder
         run: bun x oxfmt output
