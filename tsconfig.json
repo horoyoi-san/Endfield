@@ -1,0 +1,15 @@
+{
+  "extends": [
+    // "@tsconfig/bun",
+    "@tsconfig/recommended",
+    "@tsconfig/node24",
+    "@tsconfig/strictest"
+  ],
+  "compilerOptions": {
+    "sourceMap": false,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["bun"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

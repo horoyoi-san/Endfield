@@ -1,0 +1,186 @@
+/* =========================
+   GLOBAL THEME
+========================= */
+body {
+  background: radial-gradient(circle at 20% 20%, #1a1a2e, #0b0b13 80%);
+  color: #eaeaff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Scrollbar เท่ ๆ */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#00c8ff, #8a2be2);
+  border-radius: 10px;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.overview-container {
+  padding: 20px;
+  position: relative;
+}
+
+/* แสง background */
+.overview-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 80% 10%, rgba(0,200,255,0.15), transparent 60%);
+  pointer-events: none;
+}
+
+/* =========================
+   GLASS CARD
+========================= */
+.glass-card {
+  position: relative;
+  background: rgba(25, 25, 45, 0.45) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 0 25px rgba(0,150,255,0.15),
+    inset 0 0 15px rgba(255,255,255,0.04);
+
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+/* Glow Border */
+.glass-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  padding: 1px;
+  background: linear-gradient(120deg, #00c8ff, transparent, #8a2be2);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+}
+
+/* Hover Effect */
+.glass-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow:
+    0 0 40px rgba(0,150,255,0.35),
+    0 0 80px rgba(138,43,226,0.2);
+}
+
+/* =========================
+   TEXT / TITLE
+========================= */
+.card-title {
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 0 0 12px rgba(0,200,255,0.7);
+}
+
+/* ตัวเลขใหญ่ */
+.fs-1 {
+  font-weight: 700;
+  color: #fff;
+  text-shadow:
+    0 0 10px rgba(0,200,255,0.8),
+    0 0 20px rgba(0,200,255,0.5);
+}
+
+/* =========================
+   TABLE
+========================= */
+.glass-table {
+  background: transparent !important;
+  color: #eaeaff;
+}
+
+/* Header */
+.glass-table th {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(255,255,255,0.08);
+  color: #00c8ff;
+  text-shadow: 0 0 6px rgba(0,200,255,0.6);
+}
+
+/* Cell */
+.glass-table td {
+  background: rgba(255,255,255,0.02);
+  border-color: rgba(255,255,255,0.05);
+}
+
+/* Row Hover */
+.glass-table tbody tr {
+  transition: all 0.25s ease;
+}
+
+.glass-table tbody tr:hover {
+  background: rgba(0,200,255,0.08);
+  box-shadow: inset 0 0 10px rgba(0,200,255,0.2);
+}
+
+/* =========================
+   RESOURCE GRID
+========================= */
+.glass-card .col-lg-3 {
+  transition: transform 0.25s ease;
+}
+
+.glass-card .col-lg-3:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   MIRROR STATS GLOW
+========================= */
+.card-text .fs-1 {
+  background: linear-gradient(90deg, #00c8ff, #8a2be2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 0 20px rgba(0,200,255,0.7),
+    0 0 40px rgba(138,43,226,0.5);
+}
+
+/* =========================
+   LOADING
+========================= */
+.spinner-border {
+  color: #00c8ff;
+  filter: drop-shadow(0 0 10px #00c8ff);
+}
+
+/* =========================
+   SMALL DETAIL FX
+========================= */
+
+/* เส้นแบ่ง */
+hr {
+  border-color: rgba(255,255,255,0.08);
+}
+
+/* opacity text */
+.opacity-75 {
+  color: rgba(255,255,255,0.65) !important;
+}
+
+/* =========================
+   ANIMATION (optional)
+========================= */
+@keyframes glowPulse {
+  0% { text-shadow: 0 0 10px #00c8ff; }
+  50% { text-shadow: 0 0 20px #8a2be2; }
+  100% { text-shadow: 0 0 10px #00c8ff; }
+}
+
+.fs-1:hover {
+  animation: glowPulse 2s infinite;
+}
