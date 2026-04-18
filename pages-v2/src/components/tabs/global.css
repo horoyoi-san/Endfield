@@ -176,9 +176,9 @@ hr {
    ANIMATION (optional)
 ========================= */
 @keyframes glowPulse {
-  0% { text-shadow: 0 0 10px #00c8ff; }
-  50% { text-shadow: 0 0 20px #8a2be2; }
-  100% { text-shadow: 0 0 10px #00c8ff; }
+  0% { text-shadow: 0 0 10px #00c8ff55; }
+  50% { text-shadow: 0 0 20px #892be257; }
+  100% { text-shadow: 0 0 10px #00c8ff54; }
 }
 
 .fs-1:hover {
