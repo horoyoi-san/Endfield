@@ -117,7 +117,7 @@ body::before {
   );
   opacity: 0.35; /* 👈 คุมตรงนี้แทน */
   background-size: 400% 400%;
-  animation: borderFlow 10s linear infinite;
+  animation: borderFlow 25s linear infinite;
 
   -webkit-mask:
     linear-gradient(#000 0 0) content-box,
