@@ -129,7 +129,7 @@ export default function PatchesTab({ mirrorFileDb }: Props) {
           <h3 className='mb-3 neon-title'>
             {pkg.region === 'cn' ? 'China' : 'Global'}, {pkg.targetName}
           </h3>
-          <div className='accordion' id={`accordion-patch-${pkg.dirName}`}>
+          <div className='accordion glass-accordion' id={`accordion-patch-${pkg.dirName}`}>
             {pkg.patches.map((ver, idx) => {
               const itemId = `patch-${pkg.dirName}-${idx}`;
               return (

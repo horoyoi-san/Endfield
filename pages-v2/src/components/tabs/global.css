@@ -1,18 +1,60 @@
 /* =========================
-   GLOBAL THEME (SOFT DARK)
+   GLOBAL THEME (SOFT DARK + COLOR LOOP)
 ========================= */
+
+/* 🌈 COLOR SYSTEM */
+:root {
+  --c1: #ff7a7a;
+  --c2: #ffd86b;
+  --c3: #8aff8a;
+  --c4: #6beaff;
+  --c5: #7a8cff;
+  --c6: #d67aff;
+}
+
+/* 🎯 COLOR ANIMATION */
+@keyframes colorShift {
+  0% {
+    --c1: #ff7a7a;
+    --c2: #ffd86b;
+    --c3: #8aff8a;
+    --c4: #6beaff;
+    --c5: #7a8cff;
+    --c6: #d67aff;
+  }
+  50% {
+    --c1: #ffd86b;
+    --c2: #8aff8a;
+    --c3: #6beaff;
+    --c4: #7a8cff;
+    --c5: #d67aff;
+    --c6: #ff7a7a;
+  }
+  100% {
+    --c1: #ff7a7a;
+    --c2: #ffd86b;
+    --c3: #8aff8a;
+    --c4: #6beaff;
+    --c5: #7a8cff;
+    --c6: #d67aff;
+  }
+}
+
 body {
+  animation: colorShift 14s linear infinite;
   background: radial-gradient(circle at 20% 20%, #1f2233, #12121a 80%);
   color: #e6e8f0;
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Scrollbar */
+/* =========================
+   SCROLLBAR
+========================= */
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(#4cc9f0, #7b6cf6);
+  background: linear-gradient(var(--c1), var(--c5));
   border-radius: 10px;
 }
 
@@ -24,23 +66,23 @@ body {
   position: relative;
 }
 
-/* subtle glow */
 .overview-container::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 80% 10%, rgba(100,150,255,0.12), transparent 60%);
+  background: radial-gradient(circle at 80% 10%, rgba(150,180,255,0.1), transparent 60%);
   pointer-events: none;
 }
 
 /* =========================
-   GLASS CARD (SOFT)
+   GLASS CARD
 ========================= */
 .glass-card {
   position: relative;
+  z-index: 1;
+
   background: rgba(255,255,255,0.035) !important;
-  backdrop-filter: blur(10px) saturate(120%);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px) saturate(130%);
 
   border-radius: 16px;
   border: 1px solid rgba(255,255,255,0.08);
@@ -50,30 +92,61 @@ body {
     inset 0 0 4px rgba(255,255,255,0.02);
 
   transition: all 0.25s ease;
-  overflow: hidden;
+
+  /* 🔥 สำคัญ: ต้องเป็น visible */
+  overflow: visible;
 }
 
-/* subtle border glow */
+/* 🌈 animated border */
 .glass-card::before {
   content: '';
   position: absolute;
   inset: 0;
   border-radius: 16px;
   padding: 1px;
-  background: linear-gradient(120deg, rgba(100,150,255,0.15), transparent, rgba(140,100,255,0.1));
+
+  background: linear-gradient(
+    120deg,
+    var(--c1),
+    var(--c2),
+    var(--c3),
+    var(--c4),
+    var(--c5),
+    var(--c6)
+  );
+
+  background-size: 300% 300%;
+  animation: gradientMove 6s linear infinite;
+
   -webkit-mask:
     linear-gradient(#000 0 0) content-box,
     linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
+
+  opacity: 0.5;
+
+  pointer-events: none; /* 🔥 กันบังคลิก */
+}
+
+/* overlay */
+.glass-card::after {
+  content: '';
   pointer-events: none;
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.04);
 }
 
 /* hover */
 .glass-card:hover {
   transform: translateY(-4px);
-  box-shadow:
-    0 10px 30px rgba(0,0,0,0.35),
-    0 0 20px rgba(100,150,255,0.15);
+}
+
+/* gradient move */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 
 /* =========================
@@ -81,99 +154,40 @@ body {
 ========================= */
 .card-title {
   color: #ffffff;
-  letter-spacing: 0.5px;
-  text-shadow: 0 0 4px rgba(120,160,255,0.2);
 }
 
 .fs-1 {
-  font-weight: 700;
   color: #ffffff;
-  text-shadow: 0 0 4px rgba(120,160,255,0.25);
+}
+
+/* gradient number */
+.card-text .fs-1 {
+  background: linear-gradient(90deg, var(--c1), var(--c3), var(--c5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* =========================
    TABLE
 ========================= */
-.glass-table {
-  background: transparent !important;
-  color: #e6e8f0;
-}
-
 .glass-table th {
-  background: rgba(255,255,255,0.025);
-  border-color: rgba(255,255,255,0.08);
-  color: #9ecbff;
-}
-
-.glass-table td {
-  background: rgba(255,255,255,0.012);
-  border-color: rgba(255,255,255,0.05);
-}
-
-/* hover */
-.glass-table tbody tr:hover {
-  background: rgba(255,255,255,0.035);
+  color: var(--c1);
 }
 
 /* =========================
-   RESOURCE GRID
+   ACCORDION (🔥 FIX สำคัญ)
 ========================= */
-.glass-card .col-lg-3 {
-  transition: transform 0.2s ease;
+
+/* ทำให้ accordion อยู่เหนือ layer */
+.accordion-item {
+  position: relative;
+  z-index: 2;
 }
 
-.glass-card .col-lg-3:hover {
-  transform: scale(1.03);
-}
-
-/* =========================
-   MIRROR STATS
-========================= */
-.card-text .fs-1 {
-  background: linear-gradient(90deg, #6ecbff, #a58bff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  text-shadow: 0 0 10px rgba(120,160,255,0.4);
-}
-
-/* =========================
-   LOADING
-========================= */
-.spinner-border {
-  color: #6ecbff;
-  filter: drop-shadow(0 0 6px rgba(120,160,255,0.5));
-}
-
-/* =========================
-   SMALL DETAIL
-========================= */
-hr {
-  border-color: rgba(255,255,255,0.08);
-}
-
-.opacity-75 {
-  color: rgba(255,255,255,0.6) !important;
-}
-
-/* =========================
-   ACCORDION
-========================= */
-.glass-accordion .accordion-item {
-  background: transparent;
-  border: none;
-  margin-bottom: 10px;
-}
-
+/* ปุ่ม */
 .glass-accordion-btn {
   background: rgba(255,255,255,0.025) !important;
-  color: #fff !important;
-  backdrop-filter: blur(8px);
-
   border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 10px !important;
-
-  transition: 0.2s;
 }
 
 /* hover */
@@ -186,6 +200,19 @@ hr {
   background: rgba(255,255,255,0.07) !important;
 }
 
+/* 🔥 ตัวนี้คือหัวใจ */
+.accordion-collapse {
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+/* 🔥 บังคับให้มันแสดง */
+.accordion-collapse.show {
+  display: block !important;
+  height: auto !important;
+  visibility: visible !important;
+}
+
 /* body */
 .glass-body {
   background: rgba(255,255,255,0.02);
@@ -195,66 +222,16 @@ hr {
 }
 
 /* =========================
-   TITLE
-========================= */
-.neon-title {
-  color: #ffffff;
-  text-shadow: 0 0 8px rgba(120,160,255,0.4);
-}
-
-/* =========================
-   CODE
-========================= */
-code {
-  color: #9ecbff;
-  background: rgba(120,160,255,0.06);
-  padding: 2px 6px;
-  border-radius: 6px;
-}
-
-/* =========================
-   LINKS
+   LINKS / FORM
 ========================= */
 a {
-  color: #8ecaff;
-  text-decoration: none;
+  color: var(--c1);
 }
 
 a:hover {
-  color: #a58bff;
-}
-
-/* =========================
-   FORM
-========================= */
-.glass-select {
-  background: rgba(255,255,255,0.035) !important;
-  color: #fff !important;
-  border: 1px solid rgba(255,255,255,0.1);
-  backdrop-filter: blur(8px);
-
-  border-radius: 10px;
-}
-
-.glass-select option {
-  background: #12121a;
-  color: #fff;
-}
-
-.glass-select:focus {
-  border-color: #8ecaff;
-  box-shadow: 0 0 6px rgba(120,160,255,0.4);
+  color: var(--c3);
 }
 
 .form-label {
-  color: #9ecbff;
-}
-
-.glass-card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 16px;
-  background: rgba(255,255,255,0.04);
-  pointer-events: none;
+  color: var(--c1);
 }
