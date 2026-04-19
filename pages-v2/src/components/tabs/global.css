@@ -1,50 +1,54 @@
 /* =========================
-   GLOBAL THEME (SOFT DARK + COLOR LOOP)
+   🌈 GLOBAL THEME (GLASS PRO MAX)
 ========================= */
 
-/* 🌈 COLOR SYSTEM */
 :root {
-  --c1: #ff7a7a;
-  --c2: #ffd86b;
-  --c3: #8aff8a;
-  --c4: #6beaff;
-  --c5: #7a8cff;
-  --c6: #d67aff;
+  --glass-bg: rgba(255,255,255,0.02);        /* ใสขึ้น */
+  --glass-border: rgba(255,255,255,0.12);    /* ขอบชัดขึ้นนิด */
+  --text-main: #e6e8f0;
 }
 
-/* 🎯 COLOR ANIMATION */
-@keyframes colorShift {
-  0% {
-    --c1: #ff7a7a;
-    --c2: #ffd86b;
-    --c3: #8aff8a;
-    --c4: #6beaff;
-    --c5: #7a8cff;
-    --c6: #d67aff;
-  }
-  50% {
-    --c1: #ffd86b;
-    --c2: #8aff8a;
-    --c3: #6beaff;
-    --c4: #7a8cff;
-    --c5: #d67aff;
-    --c6: #ff7a7a;
-  }
-  100% {
-    --c1: #ff7a7a;
-    --c2: #ffd86b;
-    --c3: #8aff8a;
-    --c4: #6beaff;
-    --c5: #7a8cff;
-    --c6: #d67aff;
-  }
-}
-
+/* =========================
+   🌌 BODY
+========================= */
 body {
-  animation: colorShift 14s linear infinite;
-  background: radial-gradient(circle at 20% 20%, #1f2233, #12121a 80%);
-  color: #e6e8f0;
+  background:
+    radial-gradient(circle at 20% 20%, #1f2233, #12121a 80%);
+  color: var(--text-main);
   font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+/* =========================
+   🌈 GLOBAL LIGHT GLOW BG
+========================= */
+body::before {
+  content: '';
+  position: fixed;
+  inset: -50%;
+  background: linear-gradient(
+    120deg,
+    #ff7a7a5a,
+    #ffd86b58,
+    #8aff8a58,
+    #6be9ff58,
+    #7a8cff58,
+    #d77aff58,
+    #ff7a7a5a
+  );
+  background-size: 400% 400%;
+  animation: bgFlow 25s linear infinite;
+  opacity: 0.08;   /* จาก 0.15 → ใสขึ้น */
+  filter: blur(90px); /* จาก 120 → คมขึ้นนิด */
+  z-index: -1;
+}
+
+/* =========================
+   🎞️ ANIMATION
+========================= */
+@keyframes bgFlow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 
 /* =========================
@@ -54,7 +58,12 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(var(--c1), var(--c5));
+  background: linear-gradient(
+    120deg,
+    #ff7a7a5a,
+    #6be9ff58,
+    #d77aff58,
+  );
   border-radius: 10px;
 }
 
@@ -66,85 +75,79 @@ body {
   position: relative;
 }
 
-.overview-container::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 80% 10%, rgba(150,180,255,0.1), transparent 60%);
-  pointer-events: none;
-}
-
 /* =========================
-   GLASS CARD
+   💎 GLASS CARD
 ========================= */
 .glass-card {
   position: relative;
   z-index: 1;
 
-  background: rgba(255,255,255,0.035) !important;
-  backdrop-filter: blur(12px) saturate(130%);
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px);
 
-  border-radius: 16px;
-  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  border: 1px solid var(--glass-border);
 
   box-shadow:
-    0 4px 12px rgba(0,0,0,0.2),
-    inset 0 0 4px rgba(255,255,255,0.02);
+    0 8px 25px rgba(0,0,0,0.25),
+    inset 0 0 8px rgba(255,255,255,0.03);
 
-  transition: all 0.25s ease;
-
-  /* 🔥 สำคัญ: ต้องเป็น visible */
+  transition: all 0.3s ease;
   overflow: visible;
 }
 
-/* 🌈 animated border */
+/* 🌈 animated rainbow border */
 .glass-card::before {
   content: '';
   position: absolute;
   inset: 0;
-  border-radius: 16px;
+  border-radius: 18px;
   padding: 1px;
 
   background: linear-gradient(
     120deg,
-    var(--c1),
-    var(--c2),
-    var(--c3),
-    var(--c4),
-    var(--c5),
-    var(--c6)
+    #ff7a7a,
+    #ffd86b,
+    #8aff8a,
+    #6beaff,
+    #7a8cff,
+    #d67aff,
+    #ff7a7a
   );
-
-  background-size: 300% 300%;
-  animation: gradientMove 6s linear infinite;
+  opacity: 0.35; /* 👈 คุมตรงนี้แทน */
+  background-size: 400% 400%;
+  animation: borderFlow 10s linear infinite;
 
   -webkit-mask:
     linear-gradient(#000 0 0) content-box,
     linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
 
-  opacity: 0.5;
-
-  pointer-events: none; /* 🔥 กันบังคลิก */
+  opacity: 0.6;
+  pointer-events: none;
 }
 
-/* overlay */
+/* ✨ glass overlay */
 .glass-card::after {
   content: '';
-  pointer-events: none;
   position: absolute;
   inset: 0;
-  border-radius: 16px;
-  background: rgba(255,255,255,0.04);
+  border-radius: 18px;
+  background: rgba(255,255,255,0.025); /* จาก 0.04 → ใสขึ้น */
+  pointer-events: none;
 }
 
 /* hover */
 .glass-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px) scale(1.01);
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.4),
+    0 0 30px rgba(120,160,255,0.15);
 }
 
-/* gradient move */
-@keyframes gradientMove {
+/* border animation */
+@keyframes borderFlow {
   0% { background-position: 0% 50%; }
   100% { background-position: 100% 50%; }
 }
@@ -153,16 +156,23 @@ body {
    TEXT
 ========================= */
 .card-title {
-  color: #ffffff;
+  color: #fff;
+  text-shadow: 0 0 6px rgba(150,180,255,0.25);
 }
 
 .fs-1 {
-  color: #ffffff;
+  color: #fff;
+  font-weight: 700;
 }
 
-/* gradient number */
+/* 🌈 gradient number */
 .card-text .fs-1 {
-  background: linear-gradient(90deg, var(--c1), var(--c3), var(--c5));
+  background: linear-gradient(
+    90deg,
+    #ff7a7a,
+    #6beaff,
+    #d67aff
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -171,42 +181,41 @@ body {
    TABLE
 ========================= */
 .glass-table th {
-  color: var(--c1);
+  color: #9ecbff58;
+}
+
+.glass-table tbody tr:hover {
+  background: rgba(255,255,255,0.04);
 }
 
 /* =========================
-   ACCORDION (🔥 FIX สำคัญ)
+   ACCORDION (FIX CLICK BUG)
 ========================= */
-
-/* ทำให้ accordion อยู่เหนือ layer */
 .accordion-item {
   position: relative;
-  z-index: 2;
+  z-index: 5;
 }
 
-/* ปุ่ม */
 .glass-accordion-btn {
-  background: rgba(255,255,255,0.025) !important;
+  background: rgba(255,255,255,0.03) !important;
   border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
 }
 
-/* hover */
 .glass-accordion-btn:hover {
-  background: rgba(255,255,255,0.05) !important;
+  background: rgba(255,255,255,0.06) !important;
 }
 
-/* active */
 .glass-accordion-btn:not(.collapsed) {
-  background: rgba(255,255,255,0.07) !important;
+  background: rgba(255,255,255,0.08) !important;
 }
 
-/* 🔥 ตัวนี้คือหัวใจ */
+/* 🔥 สำคัญ: fix collapse */
 .accordion-collapse {
   overflow: hidden;
-  transition: height 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-/* 🔥 บังคับให้มันแสดง */
 .accordion-collapse.show {
   display: block !important;
   height: auto !important;
@@ -215,23 +224,23 @@ body {
 
 /* body */
 .glass-body {
-  background: rgba(255,255,255,0.02);
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  margin-top: 5px;
+  background: rgba(255,255,255,0.025);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  margin-top: 6px;
 }
 
 /* =========================
    LINKS / FORM
 ========================= */
 a {
-  color: var(--c1);
+  color: #8ecaff;
 }
 
 a:hover {
-  color: var(--c3);
+  color: #d77aff;
 }
 
 .form-label {
-  color: var(--c1);
+  color: #9ecbff;
 }
