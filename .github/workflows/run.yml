@@ -6,8 +6,8 @@ permissions:
 on:
   # Scheduled trigger is disabled by default (use cron-job)
   # Uncommenting the following two lines will enable it
-  # schedule:
-  #   - cron: '0 16 * * *'
+  schedule:
+    - cron: '0 22 * * *'
   workflow_dispatch:
   repository_dispatch:
 jobs:
