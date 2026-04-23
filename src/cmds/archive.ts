@@ -11,6 +11,8 @@ import appConfig from '../utils/config.js';
 import logger from '../utils/logger.js';
 import mathUtils from '../utils/math.js';
 import stringUtils from '../utils/string.js';
+import { fetchOperator } from '../utils/api/akEndfield/operator.js';
+
 
 // Types
 type LatestGameResponse = Awaited<ReturnType<typeof apiUtils.akEndfield.launcher.latestGame>>;
@@ -612,6 +614,25 @@ async function fetchAndSaveLatestWebApis(gameTargets: GameTarget[]) {
   for (const target of gameTargets) {
     for (const lang of target.region === 'cn' ? langsCN : langs) {
       for (const api of apis) {
+
+        // ✅ ADD: characters
+        networkQueue.add(async () => {
+          const rsp = await fetchOperator();
+
+          const prettyRsp = {
+            req: {
+              type: 'characters',
+            },
+            rsp,
+          };
+
+          await saveResultWithHistory(
+            ['akEndfield', 'launcher', 'web', String(target.subChannel), 'characters', lang],
+            null,
+            prettyRsp,
+          );
+        });
+
         networkQueue.add(async () => {
           const rsp = await api.method(target.appCode, target.channel, target.subChannel, lang, target.region);
           if (!rsp) return;
