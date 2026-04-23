@@ -46,7 +46,7 @@ jobs:
       # 🚀 Run scraper
       # ======================
       - name: Run scraper
-        run: bun run src/operator.ts archive --dry
+        run: bun run operator.ts archive --dry
 
       # ======================
       # 🧪 Debug หลัง run

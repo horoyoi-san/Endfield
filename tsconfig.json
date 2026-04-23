@@ -10,6 +10,6 @@
     "forceConsistentCasingInFileNames": true,
     "types": ["bun"]
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "operator.ts"],
   "exclude": ["node_modules"]
 }
