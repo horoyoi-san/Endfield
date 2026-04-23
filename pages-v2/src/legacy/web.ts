@@ -3,7 +3,7 @@ import { fetchJson } from '../api.js';
 import type { StoredData } from '../types.js';
 import { BASE_URL, gameTargets, launcherWebApiLang } from '../utils/constants.js';
 
-const apiTypes = ['announcement', 'banner', 'main_bg_image', 'sidebar', 'single_ent, ', 'characters'];
+const apiTypes = ['announcement', 'banner', 'main_bg_image', 'sidebar', 'single_ent', 'operator'];
 
 export async function renderWeb(container: HTMLElement) {
   for (const target of gameTargets) {

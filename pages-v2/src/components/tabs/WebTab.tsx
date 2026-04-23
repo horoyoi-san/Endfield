@@ -6,6 +6,7 @@ import BannerSection from './web/BannerSection';
 import MainBgImageSection from './web/MainBgImageSection';
 import SidebarSection from './web/SidebarSection';
 import SingleEntSection from './web/SingleEntSection';
+import OperatorSection from './web/OperatorSection';
 import './global.css';
 
 export default function WebTab() {
@@ -60,6 +61,7 @@ export default function WebTab() {
       <MainBgImageSection target={target} lang={lang} />
       <SingleEntSection target={target} lang={lang} />
       <SidebarSection target={target} lang={lang} />
+      <OperatorSection target={target} lang={lang} />
     </div>
   );
 }

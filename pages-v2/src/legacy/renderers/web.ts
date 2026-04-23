@@ -3,7 +3,7 @@ import { fetchJson } from '../api.js';
 import type { StoredData } from '../types.js';
 import { BASE_URL, gameTargets, launcherWebApiLang } from '../utils/constants.js';
 
-const apiTypes = ['announcement', 'banner', 'main_bg_image', 'sidebar', 'single_ent', 'characters'];
+const apiTypes = ['announcement', 'banner', 'main_bg_image', 'sidebar', 'single_ent', 'operator'];
 
 export async function renderWeb(container: HTMLElement) {
   for (const target of gameTargets) {
@@ -48,10 +48,7 @@ export async function renderWeb(container: HTMLElement) {
 
       const results = await Promise.all(
         apiTypes.map(async (apiType) => {
-          const url =
-          apiType === 'characters'
-            ? `/output/characters.json`
-            : `${BASE_URL}/akEndfield/launcher/web/${target.dirName}/${apiType}/${lang}/all.json`;
+          const url = `${BASE_URL}/akEndfield/launcher/web/${target.dirName}/${apiType}/${lang}/all.json`;
           try {
             const data = await fetchJson<StoredData<any>[]>(url);
             if (!data || data.length === 0) return null;
@@ -126,21 +123,7 @@ export async function renderWeb(container: HTMLElement) {
         const updateContent = (index: number) => {
           const entry = list[index];
           if (entry) {
-            if (apiType === 'characters') {
-            contentArea.innerHTML = '';
-
-            Object.entries(entry.rsp).forEach(([name, url]) => {
-              const img = document.createElement('img');
-              img.src = url as string;
-              img.style.width = '100px';
-              img.style.margin = '5px';
-
-              contentArea.appendChild(img);
-            });
-
-            return;
-          }
-
+            contentArea.textContent = JSON.stringify(entry.rsp, null, 2);
           }
         };
 
