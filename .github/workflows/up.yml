@@ -38,7 +38,7 @@ jobs:
       # 🚀 Run ONLY scraper (lightweight mode)
       # ======================
       - name: Run minimal scrape check
-        run: bun run src/operator.js archive --dry
+        run: bun run src/operator.ts archive --dry
 
       # ======================
       # 🔍 Check diff against last commit
