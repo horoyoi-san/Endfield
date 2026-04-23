@@ -95,7 +95,7 @@ export async function renderOperator(container: HTMLElement) {
       return;
     }
 
-    const url = `${BASE_URL}/akEndfield/launcher/web/${target.dirName}/characters/${lang}/all.json`;
+    const url = `https://raw.githubusercontent.com/horoyoi-san/Endfield/refs/heads/main/output/characters.json`;
 
     content.innerHTML = '<div class="text-muted">Loading...</div>';
 

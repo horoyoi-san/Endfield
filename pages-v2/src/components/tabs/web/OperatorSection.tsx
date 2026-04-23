@@ -31,7 +31,7 @@ export default function Operator() {
     const load = async () => {
       setLoading(true);
 
-      const url = `https://raw.githubusercontent.com/horoyoi-san/Endfield/refs/heads/main/output/${u.hostname}${u.pathname}`;
+      const url = `https://raw.githubusercontent.com/horoyoi-san/Endfield/refs/heads/main/output/characters.json`;
 
       try {
         const res = await fetchJson<StoredData<any>[]>(url);
