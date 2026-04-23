@@ -31,7 +31,7 @@ export default function Operator() {
     const load = async () => {
       setLoading(true);
 
-      const url = `${BASE_URL}/akEndfield/launcher/web/${target.dirName}/characters/${lang}/all.json`;
+      const url = `https://raw.githubusercontent.com/horoyoi-san/Endfield/refs/heads/main/output/${u.hostname}${u.pathname}`;
 
       try {
         const res = await fetchJson<StoredData<any>[]>(url);
