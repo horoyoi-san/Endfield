@@ -1,26 +1,23 @@
-name: Auto API Diff Check
-
-permissions:
-  contents: write
-  actions: write
+name: Auto API update check
 
 on:
   schedule:
-    - cron: '0 21 * * *'
+    - cron: "0 21 * * *"
   workflow_dispatch:
 
 jobs:
-  check:
+  run:
     runs-on: ubuntu-latest
 
     steps:
       # ======================
-      # 📦 Checkout (ต้องมี fetch-depth 0)
+      # 📦 Checkout
       # ======================
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       # ======================
       # 🧠 Setup Bun
@@ -35,60 +32,38 @@ jobs:
         run: bun install --frozen-lockfile
 
       # ======================
-      # 🧪 Debug (สำคัญมาก)
+      # 📁 Ensure output folder
       # ======================
-      - name: Debug output folder
+      - name: Prepare output
+        run: mkdir -p output
+
+      # ======================
+      # 🚀 Run scraper (operator)
+      # ======================
+      - name: Run operator scraper
+        run: bun run operator.ts archive
+
+      # ======================
+      # 🧪 Debug
+      # ======================
+      - name: Check output
+        run: ls -R output
+
+      # ======================
+      # 💾 Commit and Push
+      # ======================
+      - name: Commit and Push
+        env:
+          PAT: ${{ secrets.PAT }}
         run: |
-          echo "=== OUTPUT BEFORE ==="
-          ls -R output || echo "no output folder"
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
 
-      # ======================
-      # 🚀 Run scraper
-      # ======================
-      - name: Run scraper
-        run: bun run operator.ts archive --dry
+          git add output
 
-      # ======================
-      # 🧪 Debug หลัง run
-      # ======================
-      - name: Check output after run
-        run: |
-          echo "=== OUTPUT AFTER ==="
-          ls -R output || echo "no output folder"
-
-      # ======================
-      # 📦 Stage files
-      # ======================
-      - name: Stage output
-        run: git add output || true
-
-      # ======================
-      # 🔍 Detect changes
-      # ======================
-      - name: Detect changes
-        id: diff
-        run: |
-          if git diff --cached --quiet; then
-            echo "changed=false" >> $GITHUB_OUTPUT
+          if ! git diff --cached --quiet; then
+            git commit -m "Update characters [auto]"
+            git push https://x-access-token:${PAT}@github.com/${{ github.repository }} HEAD:main
           else
-            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "No changes to commit"
           fi
-
-      # ======================
-      # 💾 COMMIT + PUSH (FIX สำคัญที่สุด)
-      # ======================
-      - name: Commit and push changes
-        if: steps.diff.outputs.changed == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git commit -m "[Auto] update output"
-          git push
-
-      # ======================
-      # 🧠 fallback log (ถ้าไม่มี change)
-      # ======================
-      - name: No changes
-        if: steps.diff.outputs.changed == 'false'
-        run: echo "No changes detected"
