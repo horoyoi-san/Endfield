@@ -61,7 +61,7 @@ export default function WebTab() {
       <MainBgImageSection target={target} lang={lang} />
       <SingleEntSection target={target} lang={lang} />
       <SidebarSection target={target} lang={lang} />
-      <OperatorSection target={target} lang={lang} />
+      <OperatorSection />
     </div>
   );
 }

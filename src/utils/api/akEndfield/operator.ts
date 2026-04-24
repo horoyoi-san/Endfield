@@ -31,7 +31,7 @@ export async function fetchOperator(): Promise<Record<string, string>> {
 
   return Object.fromEntries([...images].map(url => {
     const file = url.split("/").pop()!;
-    const name = file.split(".")[0];
+    const name = file.replace(/\.[a-f0-9]+\.(png|webp|mp4)$/i, "");
     return [name, url];
   }));
 }

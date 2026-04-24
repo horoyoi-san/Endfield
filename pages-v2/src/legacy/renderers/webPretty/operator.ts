@@ -1,5 +1,5 @@
 import { fetchJson } from '../../api.js';
-import type { StoredData } from '../../types.js';
+import type { StoredData } from '../../types';
 import { BASE_URL, gameTargets, launcherWebApiLang } from '../../utils/constants.js';
 
 export async function renderOperator(container: HTMLElement) {
