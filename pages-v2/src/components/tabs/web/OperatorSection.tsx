@@ -29,33 +29,66 @@ export default function OperatorSection() {
 
   const latest = data?.length ? data[data.length - 1] : null;
 
-  // ✅ กันทุก format (string / object)
+  // =========================
+  // 🖼 extract image safely
+  // =========================
   const getImg = (v: any) => {
     if (typeof v === 'string') return v;
     if (v?.url) return v.url;
     if (v?.src) return v.src;
+    if (Array.isArray(v?.versions)) return v.versions[0];
     return '';
   };
 
-  // ❌ filter เฉพาะ operator
-  const isOperator = (key: string) => {
-    const banned = new Set([
-      'appStore',
-      'googlePlay',
-      'ps5',
-      'windows',
-      'title',
-      'star',
-      'timeline',
-      'ring',
-      'operator',
-      'epic',
-      'gpg'
-    ]);
+  // =========================
+  // 🎯 operator filter
+  // =========================
+  const isOperator = (key: string, url: string) => {
+    const file = url.split('/').pop()?.toLowerCase() || '';
 
+    // ❌ numeric keys
     if (/^\d+$/.test(key)) return false;
 
-    return !banned.has(key);
+    // ❌ UI assets
+    const uiKeywords = [
+      'appstore',
+      'googleplay',
+      'ps5',
+      'windows',
+      'epic',
+      'gpg',
+      'button',
+      'theme',
+      'star',
+      'ring',
+      'timeline',
+      'title',
+      'logo',
+      'copyright',
+      'switcher',
+    ];
+
+    if (uiKeywords.some(k => file.includes(k))) return false;
+
+    // ❌ background assets
+    const bgKeywords = [
+      'bg',
+      'wave',
+      'texture',
+      'deco',
+      'block',
+      'kv_',
+      'points',
+      'color-bar',
+    ];
+
+    if (bgKeywords.some(k => file.includes(k))) return false;
+
+    // ❌ videos
+    if (file.endsWith('.mp4')) return false;
+
+    // ✅ only images
+    return /\.(png|jpg|jpeg|webp)$/i.test(file);
   };
 
   return (
@@ -76,8 +109,10 @@ export default function OperatorSection() {
           <div className="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-2">
 
             {Object.entries(latest.rsp || {})
-              .filter(([key]) => isOperator(key))
-              .map(([name, imgUrl]) => {
+              .filter(([key, value]: any) =>
+                isOperator(key, getImg(value))
+              )
+              .map(([name, imgUrl]: any) => {
                 const img = getImg(imgUrl);
 
                 return (
@@ -92,10 +127,9 @@ export default function OperatorSection() {
                         style={{
                           objectFit: 'cover',
                           width: '100%',
-                          height: '120px'
+                          height: '120px',
                         }}
                         onError={(e) => {
-                          console.log('Image failed:', name, imgUrl);
                           (e.target as HTMLImageElement).style.opacity = '0.2';
                         }}
                       />
@@ -111,6 +145,7 @@ export default function OperatorSection() {
                   </div>
                 );
               })}
+
           </div>
         )}
 
