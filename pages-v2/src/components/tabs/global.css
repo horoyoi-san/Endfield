@@ -244,3 +244,22 @@ a:hover {
 .form-label {
   color: #9ecbff;
 }
+
+/* =========================
+   🧩 OPERATOR CARD EFFECT
+========================= */
+
+.operator-card:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+
+.operator-card:hover .operator-img {
+  transform: scale(1.08);
+}
+
+/* glow ตอน hover */
+.operator-card:hover {
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.4),
+    0 0 25px rgba(120,160,255,0.25);
+}

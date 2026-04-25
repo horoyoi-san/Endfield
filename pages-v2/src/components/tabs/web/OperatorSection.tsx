@@ -6,6 +6,9 @@ export default function OperatorSection() {
   const [data, setData] = useState<StoredData<any>[] | null>(null);
   const [loading, setLoading] = useState(false);
 
+  // 🔥 NEW: modal state
+  const [preview, setPreview] = useState<string | null>(null);
+
   useEffect(() => {
     const load = async () => {
       setLoading(true);
@@ -27,11 +30,17 @@ export default function OperatorSection() {
     load();
   }, []);
 
+  // 🔥 NEW: close modal with ESC
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setPreview(null);
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, []);
+
   const latest = data?.length ? data[data.length - 1] : null;
 
-  // =========================
-  // 🖼 extract image safely
-  // =========================
   const getImg = (v: any) => {
     if (typeof v === 'string') return v;
     if (v?.url) return v.url;
@@ -40,61 +49,36 @@ export default function OperatorSection() {
     return '';
   };
 
-  // =========================
-  // 🎯 operator filter
-  // =========================
   const isOperator = (key: string, url: string) => {
     const file = url.split('/').pop()?.toLowerCase() || '';
 
-    // ❌ numeric keys
     if (/^\d+$/.test(key)) return false;
 
-    // ❌ UI assets
     const uiKeywords = [
-      'appstore',
-      'googleplay',
-      'ps5',
-      'windows',
-      'epic',
-      'gpg',
-      'button',
-      'theme',
-      'star',
-      'ring',
-      'timeline',
-      'title',
-      'logo',
-      'copyright',
-      'switcher',
+      'appstore','googleplay','ps5','windows','epic','gpg',
+      'button','theme','star','ring','timeline','title',
+      'logo','copyright','switcher',
     ];
 
     if (uiKeywords.some(k => file.includes(k))) return false;
 
-    // ❌ background assets
     const bgKeywords = [
-      'bg',
-      'wave',
-      'texture',
-      'deco',
-      'block',
-      'kv_',
-      'points',
-      'color-bar',
+      'bg','wave','texture','deco','block','kv_',
+      'points','color-bar',
     ];
 
     if (bgKeywords.some(k => file.includes(k))) return false;
 
-    // ❌ videos
     if (file.endsWith('.mp4')) return false;
 
-    // ✅ only images
     return /\.(png|jpg|jpeg|webp)$/i.test(file);
   };
 
-  return (
-    <div className="card mb-3">
-      <div className="card-header d-flex justify-content-between align-items-center">
-        <h3 className="h4 mb-0">Operator</h3>
+return (
+  <>
+    <div className="glass-card mb-3">
+      <div className="card-header d-flex justify-content-between align-items-center border-0">
+        <h3 className="h4 mb-0 card-title">Operator</h3>
       </div>
 
       <div className="card-body">
@@ -106,7 +90,7 @@ export default function OperatorSection() {
         )}
 
         {latest && (
-          <div className="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-2">
+          <div className="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3">
 
             {Object.entries(latest.rsp || {})
               .filter(([key, value]: any) =>
@@ -117,31 +101,52 @@ export default function OperatorSection() {
 
                 return (
                   <div key={name} className="col">
-                    <div className="card border-0 shadow-sm h-100">
-
-                      <img
-                        src={img}
-                        referrerPolicy="no-referrer"
-                        loading="lazy"
-                        className="card-img-top"
-                        style={{
-                          objectFit: 'cover',
-                          width: '100%',
-                          height: '120px',
-                        }}
-                        onError={(e) => {
-                          (e.target as HTMLImageElement).style.opacity = '0.2';
-                        }}
-                      />
-
+                    
+                    {/* 🔥 IMAGE CARD */}
+                    <div
+                      className="glass-card h-100 p-1 operator-card"
+                      style={{
+                        cursor: 'pointer',
+                        transition: 'all 0.25s ease',
+                      }}
+                      onClick={() => setPreview(img)}
+                    >
                       <div
-                        className="card-body p-1 text-center"
-                        style={{ fontSize: '0.7rem' }}
+                        style={{
+                          overflow: 'hidden',
+                          borderRadius: '14px',
+                        }}
+                      >
+                        <img
+                          src={img}
+                          referrerPolicy="no-referrer"
+                          loading="lazy"
+                          style={{
+                            width: '100%',
+                            height: '140px',
+                            objectFit: 'cover',
+                            transition: 'transform 0.3s ease',
+                          }}
+                          className="operator-img"
+                          onError={(e) => {
+                            (e.target as HTMLImageElement).style.opacity = '0.2';
+                          }}
+                        />
+                      </div>
+
+                      {/* 🔥 NAME */}
+                      <div
+                        className="text-center mt-2"
+                        style={{
+                          fontSize: '0.75rem',
+                          color: '#dfe6ff',
+                          textShadow: '0 0 6px rgba(120,160,255,0.25)',
+                        }}
                       >
                         {name}
                       </div>
-
                     </div>
+
                   </div>
                 );
               })}
@@ -151,5 +156,35 @@ export default function OperatorSection() {
 
       </div>
     </div>
-  );
+
+    {/* 🔥 MODAL */}
+    {preview && (
+      <div
+        onClick={() => setPreview(null)}
+        style={{
+          position: 'fixed',
+          inset: 0,
+          background: 'rgba(0,0,0,0.85)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 9999,
+          backdropFilter: 'blur(10px)',
+        }}
+      >
+        <img
+          src={preview}
+          style={{
+            maxWidth: '90%',
+            maxHeight: '90%',
+            borderRadius: '16px',
+            boxShadow: '0 20px 60px rgba(0,0,0,0.6)',
+          }}
+          onClick={(e) => e.stopPropagation()}
+        />
+      </div>
+    )}
+  </>
+);
+
 }
