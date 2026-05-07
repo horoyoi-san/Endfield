@@ -26,6 +26,59 @@ function App() {
   const [bgImage, setBgImage] = useState<string | null>(null);
   const [bgVisible, setBgVisible] = useState(false);
 
+
+  useEffect(() => {
+
+  const colors = [
+    ['#ff7a7a55', '#6be9ff55', '#d77aff55'],
+    ['#8aff8a55', '#7a8cff55', '#ffd86b55'],
+    ['#ff9ad555', '#8aefff55', '#b68cff55'],
+    ['#ffb36b55', '#ff6bd655', '#6bffb055'],
+    ['#9d7aff55', '#6bffea55', '#ff6b8f55']
+  ];
+
+  const neonColors = [
+  '#ff0000',
+  '#ff8800',
+  '#ffd000',
+  '#66ff00',
+  '#00ffaa',
+  '#00a6ff',
+  '#0040ff',
+  '#b700ff',
+  '#ff0099'
+];
+
+  function randomizeTheme() {
+
+    const set =
+      colors[Math.floor(Math.random() * colors.length)];
+
+    document.documentElement.style
+      .setProperty('--accent1', set[0]);
+
+    document.documentElement.style
+      .setProperty('--accent2', set[1]);
+
+    document.documentElement.style
+      .setProperty('--accent3', set[2]);
+
+    const neon =
+      neonColors[Math.floor(Math.random() * neonColors.length)];
+
+    document.documentElement.style
+      .setProperty('--neon-color', neon);
+  }
+
+  randomizeTheme();
+
+  const interval =
+    setInterval(randomizeTheme, 8000);
+
+  return () => clearInterval(interval);
+
+}, []);
+
   useEffect(() => {
     const getPreferredTheme = () => {
       return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';

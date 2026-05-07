@@ -1,25 +1,22 @@
+:root {
+  --accent1: #ff7a7a55;
+  --accent2: #6be9ff55;
+  --accent3: #d77aff55;
+
+  --neon-color: #ff0000;
+}
+
 .neon-title {
   font-size: 2.5rem;
   font-weight: 800;
 
-  color: #ff0000;
+  color: var(--neon-color);
 
-  animation: neonColor 6s linear infinite;
+  text-shadow:
+    0 0 12px var(--neon-color),
+    0 0 24px var(--neon-color);
 
-  text-shadow: 0 0 12px currentColor; /* 👈 ชั้นเดียว + sync */
-}
-
-/* 👇 เปลี่ยนสีพร้อมกัน */
-@keyframes neonColor {
-  0%   { color: #ff0000; }
-  10%  { color: #ff5100; }
-  20%  { color: #ffa600; }
-  30%  { color: #ffd500; }
-  40%  { color: #e5ff00; }
-  50%  { color: #33ff00; }
-  60%  { color: #00ffaa; }
-  70%  { color: #00a6ff; }
-  80%  { color: #0015ff; }
-  90%  { color: #b700ff; }
-  100% { color: #ff0000; }
+  transition:
+    color 1.5s ease,
+    text-shadow 1.5s ease;
 }

@@ -1,75 +1,82 @@
 /* =========================
-   🌈 GLOBAL THEME (GLASS PRO MAX)
+   🌈 RANDOM COLOR SYSTEM
 ========================= */
 
 :root {
-  --glass-bg: rgba(255,255,255,0.02);        /* ใสขึ้น */
-  --glass-border: rgba(255,255,255,0.12);    /* ขอบชัดขึ้นนิด */
+  --accent1: #ff7a7a55;
+  --accent2: #6be9ff55;
+  --accent3: #d77aff55;
+
+  --glass-bg: rgba(255,255,255,0.02);
+  --glass-border: rgba(255,255,255,0.10);
+
   --text-main: #e6e8f0;
 }
 
 /* =========================
    🌌 BODY
 ========================= */
+
 body {
   background:
     radial-gradient(circle at 20% 20%, #1f2233, #12121a 80%);
+
   color: var(--text-main);
+
   font-family: 'Segoe UI', sans-serif;
+
   overflow-x: hidden;
 }
 
 /* =========================
-   🌈 GLOBAL LIGHT GLOW BG
+   🌌 BODY GLOW
 ========================= */
+
 body::before {
   content: '';
+
   position: fixed;
   inset: -50%;
-  background: linear-gradient(
-    120deg,
-    #ff7a7a5a,
-    #ffd86b58,
-    #8aff8a58,
-    #6be9ff58,
-    #7a8cff58,
-    #d77aff58,
-    #ff7a7a5a
-  );
-  background-size: 400% 400%;
-  animation: bgFlow 25s linear infinite;
-  opacity: 0.08;   /* จาก 0.15 → ใสขึ้น */
-  filter: blur(90px); /* จาก 120 → คมขึ้นนิด */
-  z-index: -1;
-}
 
-/* =========================
-   🎞️ ANIMATION
-========================= */
-@keyframes bgFlow {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
+  background:
+    radial-gradient(circle at 20% 20%, var(--accent1), transparent 40%),
+    radial-gradient(circle at 80% 30%, var(--accent2), transparent 40%),
+    radial-gradient(circle at 50% 80%, var(--accent3), transparent 40%);
+
+  opacity: 0.10;
+
+  filter: blur(55px);
+
+  z-index: -1;
+
+  transition:
+    background 2s ease,
+    opacity 2s ease;
 }
 
 /* =========================
    SCROLLBAR
 ========================= */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(
     120deg,
-    #ff7a7a,
-    #6beaff,
-    #d67aff
+    var(--accent1),
+    var(--accent2),
+    var(--accent3)
   );
+
   border-radius: 10px;
 }
 
 /* =========================
    CONTAINER
 ========================= */
+
 .overview-container {
   padding: 20px;
   position: relative;
@@ -78,101 +85,114 @@ body::before {
 /* =========================
    💎 GLASS CARD
 ========================= */
+
 .glass-card {
   position: relative;
   z-index: 1;
 
   background: var(--glass-bg) !important;
-  backdrop-filter: blur(14px) saturate(140%);
-  -webkit-backdrop-filter: blur(14px);
+
+  backdrop-filter: blur(10px) saturate(130%);
+  -webkit-backdrop-filter: blur(10px);
 
   border-radius: 18px;
+
   border: 1px solid var(--glass-border);
 
   box-shadow:
-    0 8px 25px rgba(0,0,0,0.25),
-    inset 0 0 8px rgba(255,255,255,0.03);
+    0 8px 25px rgba(0,0,0,0.22),
+    inset 0 0 8px rgba(255,255,255,0.02);
 
-  transition: all 0.3s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
   overflow: visible;
 }
 
-/* 🌈 animated rainbow border */
+/* 🌈 border */
+
 .glass-card::before {
   content: '';
+
   position: absolute;
   inset: 0;
+
   border-radius: 18px;
   padding: 1px;
 
   background: linear-gradient(
-    120deg,
-    #ff7a7a5a,
-    #ffd86b58,
-    #8aff8a58,
-    #6be9ff58,
-    #7a8cff58,
-    #d77aff58,
-    #ff7a7a5a
+    135deg,
+    var(--accent1),
+    var(--accent2),
+    var(--accent3)
   );
-  opacity: 0.35; /* 👈 คุมตรงนี้แทน */
-  background-size: 400% 400%;
-  animation: borderFlow 25s linear infinite;
+
+  opacity: 0.45;
 
   -webkit-mask:
     linear-gradient(#000 0 0) content-box,
     linear-gradient(#000 0 0);
+
   -webkit-mask-composite: xor;
 
-  opacity: 0.6;
   pointer-events: none;
+
+  transition: background 1.5s ease;
 }
 
-/* ✨ glass overlay */
+/* ✨ overlay */
+
 .glass-card::after {
   content: '';
+
   position: absolute;
   inset: 0;
+
   border-radius: 18px;
-  background: rgba(255,255,255,0.025); /* จาก 0.04 → ใสขึ้น */
+
+  background: rgba(255,255,255,0.02);
+
   pointer-events: none;
 }
 
 /* hover */
-.glass-card:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow:
-    0 20px 40px rgba(0,0,0,0.4),
-    0 0 30px rgba(120,160,255,0.15);
-}
 
-/* border animation */
-@keyframes borderFlow {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
+.glass-card:hover {
+  transform: translateY(-4px) scale(1.01);
+
+  box-shadow:
+    0 16px 30px rgba(0,0,0,0.32),
+    0 0 18px rgba(120,160,255,0.12);
 }
 
 /* =========================
    TEXT
 ========================= */
+
 .card-title {
   color: #fff;
-  text-shadow: 0 0 6px rgba(150,180,255,0.25);
+
+  text-shadow:
+    0 0 6px rgba(150,180,255,0.25);
 }
 
 .fs-1 {
   color: #fff;
+
   font-weight: 700;
 }
 
 /* 🌈 gradient number */
+
 .card-text .fs-1 {
   background: linear-gradient(
     90deg,
-    #ff7a7a,
-    #6beaff,
-    #d67aff
+    var(--accent1),
+    var(--accent2),
+    var(--accent3)
   );
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -180,6 +200,7 @@ body::before {
 /* =========================
    TABLE
 ========================= */
+
 .glass-table th {
   color: #9ecbff58;
 }
@@ -189,8 +210,9 @@ body::before {
 }
 
 /* =========================
-   ACCORDION (FIX CLICK BUG)
+   ACCORDION
 ========================= */
+
 .accordion-item {
   position: relative;
   z-index: 5;
@@ -198,8 +220,10 @@ body::before {
 
 .glass-accordion-btn {
   background: rgba(255,255,255,0.03) !important;
+
   border: 1px solid rgba(255,255,255,0.08);
-  backdrop-filter: blur(10px);
+
+  backdrop-filter: blur(8px);
 }
 
 .glass-accordion-btn:hover {
@@ -210,29 +234,39 @@ body::before {
   background: rgba(255,255,255,0.08) !important;
 }
 
-/* 🔥 สำคัญ: fix collapse */
+/* collapse */
+
 .accordion-collapse {
   overflow: hidden;
-  transition: all 0.3s ease;
+
+  transition:
+    height 0.3s ease;
 }
 
 .accordion-collapse.show {
   display: block !important;
+
   height: auto !important;
+
   visibility: visible !important;
 }
 
 /* body */
+
 .glass-body {
   background: rgba(255,255,255,0.025);
-  backdrop-filter: blur(12px);
+
+  backdrop-filter: blur(8px);
+
   border-radius: 12px;
+
   margin-top: 6px;
 }
 
 /* =========================
    LINKS / FORM
 ========================= */
+
 a {
   color: #8ecaff;
 }
@@ -246,20 +280,20 @@ a:hover {
 }
 
 /* =========================
-   🧩 OPERATOR CARD EFFECT
+   🧩 OPERATOR CARD
 ========================= */
 
 .operator-card:hover {
-  transform: translateY(-6px) scale(1.03);
+  transform: translateY(-4px) scale(1.02);
+
+  box-shadow:
+    0 16px 30px rgba(0,0,0,0.32),
+    0 0 18px rgba(120,160,255,0.14);
 }
 
 .operator-card:hover .operator-img {
-  transform: scale(1.08);
-}
+  transform: scale(1.05);
 
-/* glow ตอน hover */
-.operator-card:hover {
-  box-shadow:
-    0 20px 40px rgba(0,0,0,0.4),
-    0 0 25px rgba(120,160,255,0.25);
+  transition:
+    transform 0.25s ease;
 }
