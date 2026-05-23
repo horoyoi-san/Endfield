@@ -1,7 +1,7 @@
 import puppeteer from "puppeteer";
 import fs from "fs/promises";
 
-const OUTPUT_PATH = "./output/characters.json";
+const OUTPUT_PATH = "./output/operator.json";
 
 function getBaseName(file: string) {
   return file
