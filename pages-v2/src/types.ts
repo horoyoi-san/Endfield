@@ -70,3 +70,62 @@ export interface LauncherWebSidebar {
     need_token: boolean;
   }[];
 }
+
+export interface InformationCover {
+  url: string;
+  size: number;
+  width: number;
+  height: number;
+}
+
+export interface InformationPreview extends InformationCover {
+  duration: number;
+}
+
+export interface InformationVideoContent {
+  cate: string;
+  cover: InformationCover;
+  title: string;
+  video: string;
+  preview: InformationPreview;
+  displayTime: string;
+}
+
+export interface InformationVideoItem {
+  cid: string;
+  name: string;
+  content: InformationVideoContent;
+  sticky: boolean;
+  status: number;
+}
+
+export interface InformationBulletinItem {
+  cid: string;
+  tab: string;
+  sticky: boolean;
+  title: string;
+  author: string;
+  displayTime: number;
+  cover: string;
+  extraCover: string;
+  brief: string;
+}
+
+export interface InformationPageData {
+  page: string;
+  updatedAt: string;
+  total: number;
+  bulletins: InformationBulletinItem[];
+  videos: InformationVideoItem[];
+}
+
+export interface OperatorAssetEntry {
+  type: 'character' | 'background' | 'ui';
+  versions: string[];
+}
+
+export interface OperatorArchive {
+  updatedAt: string;
+  totalGroups: number;
+  assets: Record<string, OperatorAssetEntry>;
+}

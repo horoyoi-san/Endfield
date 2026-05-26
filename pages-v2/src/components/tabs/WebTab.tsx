@@ -3,6 +3,7 @@ import { gameTargets, launcherWebApiLang } from '../../utils/constants';
 
 import AnnouncementSection from './web/AnnouncementSection';
 import BannerSection from './web/BannerSection';
+import InformationSection from './web/InformationSection';
 import MainBgImageSection from './web/MainBgImageSection';
 import SidebarSection from './web/SidebarSection';
 import SingleEntSection from './web/SingleEntSection';
@@ -52,16 +53,43 @@ export default function WebTab() {
             </select>
           </div>
         )}
-        {/* </div>
-        </div> */}
       </div>
 
-      <AnnouncementSection target={target} lang={lang} />
-      <BannerSection target={target} lang={lang} />
-      <MainBgImageSection target={target} lang={lang} />
-      <SingleEntSection target={target} lang={lang} />
-      <SidebarSection target={target} lang={lang} />
-      <OperatorSection />
+      <div
+        className='d-flex flex-wrap gap-2 mb-3'
+        style={{ position: 'sticky', top: '1rem', zIndex: 5 }}
+      >
+        <span className='fw-bold align-self-center'>Jump to:</span>
+        <a href='#announcement' className='btn btn-sm btn-outline-primary'>Announcement</a>
+        <a href='#banner' className='btn btn-sm btn-outline-primary'>Banner</a>
+        <a href='#main-bg-image' className='btn btn-sm btn-outline-primary'>Main Background</a>
+        <a href='#single-ent' className='btn btn-sm btn-outline-primary'>Single Ent.</a>
+        <a href='#sidebar' className='btn btn-sm btn-outline-primary'>Sidebar</a>
+        <a href='#information' className='btn btn-sm btn-outline-primary'>Information</a>
+        <a href='#operator' className='btn btn-sm btn-outline-primary'>Operator</a>
+      </div>
+
+      <div id='announcement' style={{ scrollMarginTop: '5.5rem' }}>
+        <AnnouncementSection target={target} lang={lang} />
+      </div>
+      <div id='banner' style={{ scrollMarginTop: '5.5rem' }}>
+        <BannerSection target={target} lang={lang} />
+      </div>
+      <div id='main-bg-image' style={{ scrollMarginTop: '5.5rem' }}>
+        <MainBgImageSection target={target} lang={lang} />
+      </div>
+      <div id='single-ent' style={{ scrollMarginTop: '5.5rem' }}>
+        <SingleEntSection target={target} lang={lang} />
+      </div>
+      <div id='sidebar' style={{ scrollMarginTop: '5.5rem' }}>
+        <SidebarSection target={target} lang={lang} />
+      </div>
+      <div id='information' style={{ scrollMarginTop: '5.5rem' }}>
+        <InformationSection />
+      </div>
+      <div id='operator' style={{ scrollMarginTop: '5.5rem' }}>
+        <OperatorSection />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,187 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build pages-v2",
+			"type": "shell",
+			"command": "cd pages-v2 && npm run build",
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$eslint-stylish"
+			]
+		},
+		{
+			"label": "Build pages-v2",
+			"type": "shell",
+			"command": "cd pages-v2; npm run build",
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$eslint-stylish"
+			]
+		},
+		{
+			"label": "build pages-v2",
+			"type": "shell",
+			"command": "cd pages-v2 && npm run build",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$vite"
+			]
+		},
+		{
+			"label": "build pages-v2",
+			"type": "shell",
+			"command": "cd pages-v2 ; npm run build",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$vite"
+			]
+		},
+		{
+			"label": "verify pages-v2 build",
+			"type": "shell",
+			"command": "Set-Location pages-v2; npm run build",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$vite"
+			]
+		},
+		{
+			"label": "verify pages-v2 build",
+			"type": "shell",
+			"command": "cmd /c \"cd pages-v2 && npm run build\"",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$vite"
+			]
+		},
+		{
+			"label": "check bun",
+			"type": "shell",
+			"command": "bun --version",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "verify prebuild and pages build",
+			"type": "shell",
+			"command": "bun src/main.ts operator --output-dir output; Set-Location pages-v2; bun x tsc -b; bun x vite build",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$vite"
+			]
+		},
+		{
+			"label": "verify prebuild and pages build (retry)",
+			"type": "shell",
+			"command": "bun src/main.ts operator --output-dir output; Set-Location pages-v2; bun x tsc -b; bun x vite build",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$vite"
+			]
+		},
+		{
+			"label": "run prebuild + build (DOM-only)",
+			"type": "shell",
+			"command": "bun src/main.ts operator --output-dir output; Set-Location pages-v2; bun x tsc -b; bun x vite build",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$vite"
+			]
+		},
+		{
+			"label": "regen operator + build",
+			"type": "shell",
+			"command": "bun src/main.ts operator --output-dir output; Set-Location pages-v2; bun x tsc -b; bun x vite build",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$vite"
+			]
+		},
+		{
+			"label": "regen operator + build",
+			"type": "shell",
+			"command": "bun src/main.ts operator --output-dir output; Set-Location pages-v2; bun x tsc -b; bun x vite build",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$vite"
+			]
+		},
+		{
+			"label": "regen operator + build",
+			"type": "shell",
+			"command": "bun src/main.ts operator --output-dir output; Set-Location pages-v2; bun x tsc -b; bun x vite build",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$vite"
+			]
+		},
+		{
+			"label": "regen operator + build",
+			"type": "shell",
+			"command": "bun src/main.ts operator --output-dir output; Set-Location pages-v2; bun x tsc -b; bun x vite build",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$vite"
+			]
+		},
+		{
+			"label": "regen operator + build",
+			"type": "shell",
+			"command": "bun src/main.ts operator --output-dir output; Set-Location pages-v2; bun x tsc -b; bun x vite build",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$vite"
+			]
+		},
+		{
+			"label": "regen operator + build",
+			"type": "shell",
+			"command": "bun src/main.ts operator --output-dir output; Set-Location pages-v2; bun x tsc -b; bun x vite build",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$vite"
+			]
+		},
+		{
+			"label": "regen operator + build",
+			"type": "shell",
+			"command": "bun src/main.ts operator --output-dir output; Set-Location pages-v2; bun x tsc -b; bun x vite build",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$vite"
+			]
+		}
+	]
+}
