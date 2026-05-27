@@ -109,6 +109,7 @@ export interface InformationBulletinItem {
   cover: string;
   extraCover: string;
   brief: string;
+  url?: string;
 }
 
 export interface InformationPageData {

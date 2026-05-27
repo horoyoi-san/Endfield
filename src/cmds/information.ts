@@ -30,7 +30,7 @@ interface InformationVideoItem {
   status: number;
 }
 
-interface InformationBulletinItem {
+export interface InformationBulletinItem {
   cid: string;
   tab: string;
   sticky: boolean;
@@ -40,6 +40,7 @@ interface InformationBulletinItem {
   cover: string;
   extraCover: string;
   brief: string;
+  url?: string;
 }
 
 interface InformationPageData {

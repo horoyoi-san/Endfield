@@ -9,6 +9,7 @@ interface PreviewState {
   title: string;
   externalUrl?: string;
   externalLabel?: string;
+  isMp4?: boolean;
 }
 
 function normalizeVideoUrl(video: string) {
@@ -108,7 +109,9 @@ export default function InformationSection() {
                   ) : (
                     <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
                       {videos.map((video: InformationVideoItem) => {
-                        const previewTargets = getPreviewTargets(video.content.video);
+                        const previewTargets = getPreviewTargets(
+                        video.content.preview?.url || video.content.video 
+                      );
 
                         return (
                           <div key={video.cid} className="col">
@@ -120,7 +123,8 @@ export default function InformationSection() {
                                   setPreview({
                                     type: 'video',
                                     mode: 'embed',
-                                    url: previewTargets.embedUrl,
+                                    url: video.content.preview?.url || previewTargets.embedUrl,
+                                    isMp4: !!video.content.preview?.url,
                                     title: video.content.title,
                                     externalUrl: previewTargets.externalUrl,
                                     externalLabel: previewTargets.externalLabel,
@@ -180,7 +184,16 @@ export default function InformationSection() {
                             <button
                               type="button"
                               className="btn p-0 border-0 bg-transparent text-start"
-                              onClick={() => setPreview({ type: 'image', mode: 'embed', url: bulletin.cover, title: bulletin.title })}
+                              onClick={() =>
+                                  setPreview({
+                                    type: 'image',
+                                    mode: bulletin.url ? 'external' : 'embed',
+                                    url: bulletin.cover,
+                                    title: bulletin.title,
+                                    externalUrl: bulletin.url,
+                                    externalLabel: 'เปิดข่าวต้นทาง',
+                                  })
+                                }
                               style={{ cursor: 'pointer' }}
                             >
                               <img
@@ -237,18 +250,38 @@ export default function InformationSection() {
           }}
         >
           {preview.type === 'image' ? (
-            <img
-              src={preview.url}
-              alt={preview.title}
-              style={{
-                maxWidth: '92vw',
-                maxHeight: '92vh',
-                borderRadius: '18px',
-                objectFit: 'contain',
-                boxShadow: '0 24px 80px rgba(0, 0, 0, 0.5)',
-              }}
+            <div
               onClick={(event) => event.stopPropagation()}
-            />
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '1rem',
+                alignItems: 'center',
+              }}
+            >
+              <img
+                src={preview.url}
+                alt={preview.title}
+                style={{
+                  maxWidth: '92vw',
+                  maxHeight: '82vh',
+                  borderRadius: '18px',
+                  objectFit: 'contain',
+                  boxShadow: '0 24px 80px rgba(0, 0, 0, 0.5)',
+                }}
+              />
+
+              {preview.externalUrl && (
+                <a
+                  href={preview.externalUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn-light"
+                >
+                  {preview.externalLabel}
+                </a>
+              )}
+            </div>
           ) : preview.mode === 'external' ? (
             <div
               onClick={(event) => event.stopPropagation()}
@@ -329,13 +362,31 @@ export default function InformationSection() {
                   background: '#000',
                 }}
               >
-                <iframe
-                  src={preview.url}
-                  title={preview.title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  style={{ width: '100%', height: '100%', border: 0 }}
-                />
+                {preview.isMp4 ? (
+                  <video
+                    src={preview.url}
+                    controls
+                    autoPlay
+                    playsInline
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      background: '#000',
+                    }}
+                  />
+                ) : (
+                  <iframe
+                    src={preview.url}
+                    title={preview.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      border: 0,
+                    }}
+                  />
+                )}
               </div>
             </div>
           )}
