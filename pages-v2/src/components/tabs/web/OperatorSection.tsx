@@ -74,14 +74,14 @@ export default function OperatorSection() {
     return /\.(png|jpg|jpeg|webp)$/i.test(file);
   };
 
-return (
-  <>
-    <div className="glass-card mb-3">
+  return (
+    <>
+      <div className="glass-card mb-3">
       <div className="card-header d-flex justify-content-between align-items-center border-0">
-        <h3 className="h4 mb-0 card-title">Operator</h3>
-      </div>
+            <h3 className="h4 mb-0 card-title">Operator</h3>
+        </div>
 
-      <div className="card-body">
+          <div className="card-body">
 
         {loading && <div className="text-muted">Loading...</div>}
 
@@ -90,7 +90,7 @@ return (
         )}
 
         {latest && (
-          <div className="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3">
+              <div className="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3">
 
             {Object.entries(latest.rsp || {})
               .filter(([key, value]: any) =>
@@ -154,37 +154,37 @@ return (
           </div>
         )}
 
+        </div>
       </div>
-    </div>
 
     {/* 🔥 MODAL */}
-    {preview && (
-      <div
-        onClick={() => setPreview(null)}
-        style={{
-          position: 'fixed',
-          inset: 0,
-          background: 'rgba(0,0,0,0.85)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          zIndex: 9999,
-          backdropFilter: 'blur(10px)',
-        }}
-      >
-        <img
-          src={preview}
+      {preview && (
+        <div
+          onClick={() => setPreview(null)}
           style={{
-            maxWidth: '90%',
-            maxHeight: '90%',
-            borderRadius: '16px',
-            boxShadow: '0 20px 60px rgba(0,0,0,0.6)',
+            position: 'fixed',
+            inset: 0,
+            background: 'rgba(0,0,0,0.85)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 9999,
+            backdropFilter: 'blur(10px)',
           }}
-          onClick={(e) => e.stopPropagation()}
-        />
-      </div>
-    )}
-  </>
-);
+        >
+          <img
+            src={preview}
+            style={{
+              maxWidth: '90%',
+              maxHeight: '90%',
+              borderRadius: '16px',
+              boxShadow: '0 20px 60px rgba(0,0,0,0.6)',
+            }}
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
+    </>
+  );
 
 }
