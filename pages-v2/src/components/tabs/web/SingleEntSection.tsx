@@ -101,6 +101,13 @@ export default function SingleEntSection({ target, lang }: Props) {
                         <a href={getMirrorUrl(ent.version_url)} target='_blank' rel='noreferrer'>
                           <img
                             src={getMirrorUrl(ent.version_url)}
+                            data-original={ent.version_url}
+                            onError={(e) => {
+                              const target = e.currentTarget;
+                              if (target.src !== ent.version_url) {
+                                target.src = ent.version_url;
+                              }
+                            }}
                             className='img-fluid rounded border'
                             alt='Version'
                             loading='lazy'
@@ -120,6 +127,13 @@ export default function SingleEntSection({ target, lang }: Props) {
                             <div className='flex-grow-1 text-center'>
                               <img
                                 src={getMirrorUrl(ent.button_url)}
+                                data-original={ent.button_url}
+                                onError={(e) => {
+                                  const target = e.currentTarget;
+                                  if (target.src !== ent.button_url) {
+                                    target.src = ent.button_url;
+                                  }
+                                }}
                                 className='img-fluid rounded border bg-light'
                                 alt='Button'
                                 style={{ maxHeight: '60px' }}
@@ -131,6 +145,13 @@ export default function SingleEntSection({ target, lang }: Props) {
                               <div className='flex-grow-1 text-center'>
                                 <img
                                   src={getMirrorUrl(ent.button_hover_url)}
+                                  data-original={ent.button_hover_url}
+                                  onError={(e) => {
+                                    const target = e.currentTarget;
+                                    if (target.src !== ent.button_hover_url) {
+                                      target.src = ent.button_hover_url;
+                                    }
+                                  }}
                                   className='img-fluid rounded border bg-light'
                                   alt='Button Hover'
                                   style={{ maxHeight: '60px' }}

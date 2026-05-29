@@ -504,7 +504,14 @@ async function fetchAndSaveAllGameResRawData(gameTargets: GameTarget[]) {
     { dir: 'banner', getUrls: (rsp: any) => rsp.banners?.map((b: any) => b.url) },
     { dir: 'main_bg_image', getUrls: (rsp: any) => [rsp.main_bg_image?.url, rsp.main_bg_image?.video_url] },
     { dir: 'sidebar', getUrls: (rsp: any) => rsp.sidebars?.map((s: any) => s.pic?.url) },
-    { dir: 'single_ent', getUrls: (rsp: any) => [rsp.single_ent?.version_url] },
+    {
+      dir: 'single_ent',
+      getUrls: (rsp: any) => [
+        rsp.single_ent?.version_url,
+        rsp.single_ent?.button_url,
+        rsp.single_ent?.button_hover_url,
+      ],
+    },
   ];
 
   for (const target of gameTargets) {
