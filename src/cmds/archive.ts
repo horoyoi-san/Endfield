@@ -207,6 +207,16 @@ async function fetchAndSaveLatestGames(gameTargets: GameTarget[]) {
       null,
       target.region,
     );
+    // If API util attached raw proxy wrapper, save it as proxy all history
+    if ((rsp as any)?.__proxy_raw) {
+      const proxyPretty = { req: { proxy: true }, rsp: (rsp as any).__proxy_raw };
+      await saveResultWithHistory(
+        ['akEndfield', 'launcher', 'game', target.dirName, 'proxy'],
+        null,
+        proxyPretty,
+        { allFileName: 'all_proxy.json', saveLatest: false },
+      );
+    }
     logger.info(
       `Fetched latestGame: ${target.region.toUpperCase()}, ${target.name}, v${rsp.version}, ${formatBytes(
         parseInt(rsp.pkg.total_size) - mathUtils.arrayTotal(rsp.pkg.packs.map((e) => parseInt(e.package_size))),
@@ -228,6 +238,18 @@ async function fetchAndSaveLatestGames(gameTargets: GameTarget[]) {
     if ([subChns.cnWinRel, subChns.cnWinRelBilibili, subChns.osWinRel].includes(target.subChannel)) {
       if (rsp.pkg.url) queueAssetForMirroring(rsp.pkg.url);
       rsp.pkg.packs.forEach((e) => queueAssetForMirroring(e.url));
+      // Handle pre_patch if present: queue and download patch files
+      if (rsp.pre_patch && Array.isArray(rsp.pre_patch.patches)) {
+        rsp.pre_patch.patches.forEach((p: any) => {
+          try {
+            const name = new URL(p.url).pathname.split('/').filter(Boolean).slice(-6).join('_');
+            queueAssetForMirroring(p.url, name);
+            logger.debug('Queued pre_patch for mirroring:', p.url);
+          } catch (err) {
+            logger.debug('Invalid pre_patch url:', p.url, err);
+          }
+        });
+      }
     }
 
     await saveResultWithHistory(['akEndfield', 'launcher', 'game', target.dirName], rsp.version, prettyRsp, {
@@ -408,6 +430,15 @@ async function fetchAndSaveLatestGameResources(gameTargets: GameTarget[]) {
             saveLatest: !isLatestWrote,
           },
         );
+        // save raw proxy wrapper if present
+        if ((rsp as any)?.__proxy_raw) {
+          await saveResultWithHistory(
+            ['akEndfield', 'launcher', 'game_resources', String(target.channel), platform, 'proxy'],
+            vInfo.version,
+            { req: prettyRsp.req, rsp: (rsp as any).__proxy_raw },
+            { allFileName: 'all_proxy.json', saveLatest: false },
+          );
+        }
         isLatestWrote = true;
       }
     }
@@ -599,6 +630,23 @@ async function fetchAndSaveLatestLauncher(launcherTargets: LauncherTarget[]) {
         },
         { ignoreRules: diffIgnoreRules },
       );
+      // Save raw proxy wrappers if present
+      if ((rsp as any)?.__proxy_raw) {
+        await saveResultWithHistory(
+          ['akEndfield', 'launcher', 'launcher', app, channelStr, 'proxy'],
+          null,
+          { req: { appCode: code, channel, subChannel: channel, targetApp: app }, rsp: (rsp as any).__proxy_raw },
+          { allFileName: 'all_proxy.json', saveLatest: false },
+        );
+      }
+      if ((rspExe as any)?.__proxy_raw) {
+        await saveResultWithHistory(
+          ['akEndfield', 'launcher', 'launcherExe', app, channelStr, 'proxy'],
+          null,
+          { req: { appCode: code, channel, subChannel: channel, ta: app.toLowerCase() }, rsp: (rspExe as any).__proxy_raw },
+          { allFileName: 'all_proxy.json', saveLatest: false },
+        );
+      }
     }
   }
 }
@@ -639,6 +687,15 @@ async function fetchAndSaveLatestWebApis(gameTargets: GameTarget[]) {
             prettyRsp,
             { ignoreRules: diffIgnoreRules },
           );
+          // save raw proxy wrapper if present
+          if ((rsp as any)?.__proxy_raw) {
+            await saveResultWithHistory(
+              ['akEndfield', 'launcher', 'web', String(target.subChannel), api.dir, lang, 'proxy'],
+              null,
+              { req: prettyRsp.req, rsp: (rsp as any).__proxy_raw },
+              { allFileName: 'all_proxy.json', saveLatest: false },
+            );
+          }
         });
       }
     }
@@ -684,6 +741,15 @@ async function fetchAndSaveLauncherProtocol(gameTargets: GameTarget[]) {
           prettyRsp,
           { ignoreRules: diffIgnoreRules },
         );
+            // save raw proxy wrapper if present
+            if ((rsp as any)?.__proxy_raw) {
+              await saveResultWithHistory(
+                ['akEndfield', 'launcher', 'protocol', String(target.subChannel), lang, 'proxy'],
+                null,
+                { req: prettyRsp.req, rsp: (rsp as any).__proxy_raw },
+                { allFileName: 'all_proxy.json', saveLatest: false },
+              );
+            }
       });
     }
   }

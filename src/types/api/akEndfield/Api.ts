@@ -40,6 +40,17 @@ type LauncherLatestGame = {
   } | null;
   state: number;
   launcher_action: number;
+  pre_patch?: {
+    package_size: string;
+    total_size: string;
+    patches: {
+      url: string;
+      md5: string;
+      package_size: string;
+    }[];
+    version: string;
+  } | null;
+  client_version?: string;
 };
 
 type LauncherLatestGameResources = {
@@ -71,6 +82,58 @@ type LauncherLatestLauncherExe = {
   request_version: string; // x.y.z or blank
   exe_url: string;
   exe_size: string;
+};
+
+type LauncherBatchLatestGame = {
+  latest_games: Record<
+    string,
+    {
+      action: number;
+      version: string;
+      request_version: string;
+      pkg: {
+        packs: {
+          url: string;
+          md5: string;
+          package_size: string;
+        }[];
+        total_size: string;
+        file_path: string;
+        url: string;
+        md5: string;
+        package_size: string;
+        file_id: string;
+        sub_channel: string;
+        game_files_md5: string;
+      };
+      patch: {
+        url: string;
+        md5: string;
+        package_size: string;
+        total_size: string;
+        file_id: string;
+        patches: {
+          url: string;
+          md5: string;
+          package_size: string;
+        }[];
+        v2_patch_info_url: string;
+        v2_patch_info_size: string;
+        v2_patch_info_md5: string;
+      } | null;
+      state: number;
+      launcher_action: number;
+    }
+  >;
+};
+
+type LauncherBatchLauncherAction = {
+  games: Record<
+    string,
+    {
+      launcher_action: number;
+    }
+  >;
 };
 
 type LauncherWebSidebar = {
@@ -571,6 +634,8 @@ export type {
   BindApiAccBindV1U8TokenByUid,
   BindApiGeneralV1AuthAppList,
   GameHubGiftCodeRedeem,
+  LauncherBatchLatestGame,
+  LauncherBatchLauncherAction,
   LauncherLatestGame,
   LauncherLatestGameResources,
   LauncherLatestLauncher,
