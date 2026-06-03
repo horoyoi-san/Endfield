@@ -1,4 +1,4 @@
-name: Auto API update check 1 Hr
+name: Auto API update check 30m
 
 permissions:
   actions: write
@@ -7,7 +7,7 @@ permissions:
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch:
   repository_dispatch:
 
