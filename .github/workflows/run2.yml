@@ -116,7 +116,7 @@ jobs:
       # 🔄 Pull latest before commit
       # ======================
       - name: Git pull
-        run: git pull --rebase
+        run: git pull --rebase --autostash
 
       # ======================
       # 💾 Commit stage 2
