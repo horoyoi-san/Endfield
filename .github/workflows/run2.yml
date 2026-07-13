@@ -128,8 +128,6 @@ jobs:
         with:
           message: "[Auto] API update"
           files: |
-            output/operator.json
-            output/operator-2.json
             output/mirror_file_list.json
             output/mirror_file_list_pending.json
             output/mirror_file_res_list.json.zst
