@@ -62,18 +62,6 @@
             "pic_url": ""
           },
           {
-            "content": "地图工具",
-            "jump_url": "https://game.skport.com/map/endfield?header=0&hg_media=launcher&hg_link_campaign=icon",
-            "need_token": false,
-            "pic_url": ""
-          },
-          {
-            "content": "养成建议",
-            "jump_url": "https://game.skport.com/tools/endfield/list?header=0&ctr_orientation=landscape&routeId=1&hg_media=launcher&hg_link_campaign=icon",
-            "need_token": false,
-            "pic_url": ""
-          },
-          {
             "content": "前往SKPORT",
             "jump_url": "https://www.skport.com/?hg_source=official&hg_media=launcher",
             "need_token": false,
@@ -105,6 +93,52 @@
         "grid_info": null,
         "jump_url": "",
         "need_token": false
+      },
+      {
+        "display_type": "DisplayType_GRID",
+        "media": "SklandTool",
+        "pic": null,
+        "sidebar_labels": [
+          {
+            "content": "每日签到",
+            "jump_url": "https://game.skport.com/endfield/sign-in?header=0&hg_media=launcher&hg_link_campaign=ninesquare&hg_link_name=signin",
+            "need_token": true,
+            "pic_url": "https://gl-utils-public.hg-cdn.com/hg-utils/prod/eppcsuwqpaueijqk/YDUTE5gscDZ229CW/36/de/36de343e2e73b9ff117664bf687f605d.png"
+          },
+          {
+            "content": "协议终端",
+            "jump_url": "https://game.skport.com/endfield/game-data?header=0&hg_media=launcher&hg_link_campaign=ninesquare&hg_link_name=ProtocolTerminal",
+            "need_token": true,
+            "pic_url": "https://gl-utils-public.hg-cdn.com/hg-utils/prod/eppcsuwqpaueijqk/YDUTE5gscDZ229CW/70/db/70db32e12d842da5c5cbb156f1a5412f.png"
+          },
+          {
+            "content": "养成建议",
+            "jump_url": "https://game.skport.com/tools/endfield/list?header=0&ctr_orientation=landscape&routeId=1&hg_media=launcher&hg_link_campaign=ninesquare&hg_link_name=buildguide",
+            "need_token": true,
+            "pic_url": "https://gl-utils-public.hg-cdn.com/hg-utils/prod/eppcsuwqpaueijqk/YDUTE5gscDZ229CW/47/c5/47c588f6c73fa8d27313d0ce2fd4438d.png"
+          },
+          {
+            "content": "配队推荐",
+            "jump_url": "https://game.skport.com/tools/endfield/list?header=0&ctr_orientation=landscape&routeId=0&hg_media=launcher&hg_link_campaign=ninesquare&hg_link_name=teampick",
+            "need_token": true,
+            "pic_url": "https://gl-utils-public.hg-cdn.com/hg-utils/prod/eppcsuwqpaueijqk/YDUTE5gscDZ229CW/37/21/37214575a40a8130bf755b4b43b1ee36.png"
+          },
+          {
+            "content": "地图工具",
+            "jump_url": "https://game.skport.com/map/endfield?header=0&ctr_orientation=landscape&hg_media=launcher&hg_link_campaign=ninesquare&hg_link_name=maptool",
+            "need_token": true,
+            "pic_url": "https://gl-utils-public.hg-cdn.com/hg-utils/prod/eppcsuwqpaueijqk/YDUTE5gscDZ229CW/c1/b8/c1b8f91b3f49dbcaf3c59572663c027e.png"
+          },
+          {
+            "content": "WIKI",
+            "jump_url": "https://wiki.skport.com/endfield?/hg_media=launcher&hg_link_campaign=ninesquare&hg_link_name=wiki",
+            "need_token": false,
+            "pic_url": "https://gl-utils-public.hg-cdn.com/hg-utils/prod/eppcsuwqpaueijqk/YDUTE5gscDZ229CW/99/36/99369f7458c91cc4f36b79cb0494bf8b.png"
+          }
+        ],
+        "grid_info": null,
+        "jump_url": "",
+        "need_token": true
       }
     ]
   }
