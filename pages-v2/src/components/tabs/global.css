@@ -1,299 +1,275 @@
-/* =========================
-   🌈 RANDOM COLOR SYSTEM
-========================= */
+/* ==========================================================================
+   🌌 GLOBAL & VARIABLE SETTINGS
+   ========================================================================== */
 
 :root {
-  --accent1: #ff7a7a55;
-  --accent2: #6be9ff55;
-  --accent3: #d77aff55;
-
-  --glass-bg: rgba(255,255,255,0.02);
-  --glass-border: rgba(255,255,255,0.10);
-
-  --text-main: #e6e8f0;
+  /* Clean glassmorphism variables with high transparency */
+  --glass-bg: rgba(18, 18, 24, 0.45);
+  --glass-border: rgba(255, 255, 255, 0.07);
+  --glass-border-glow: rgba(255, 255, 255, 0.15);
+  
+  /* Muted neutral text and elements */
+  --text-main: #f1f5f9;      /* slate-100 */
+  --text-muted: #94a3b8;     /* slate-400 */
+  --text-label: #cbd5e1;     /* slate-300 */
+  --link-color: #60a5fa;     /* blue-400 */
+  --link-hover: #93c5fd;     /* blue-300 */
+  
+  /* Balanced accent glow (extremely subtle white/silver) */
+  --accent-glow: rgba(255, 255, 255, 0.015);
 }
 
-/* =========================
-   🌌 BODY
-========================= */
+/* ==========================================================================
+   🌌 BODY & BACKDROP
+   ========================================================================== */
 
 body {
-  background:
-    radial-gradient(circle at 20% 20%, #1f2233, #12121a 80%);
-
+  background-color: #0b0b0e;
   color: var(--text-main);
-
-  font-family: 'Segoe UI', sans-serif;
-
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
 
-/* =========================
-   🌌 BODY GLOW
-========================= */
-
+/* Subtle, neutral background glow */
 body::before {
   content: '';
-
   position: fixed;
   inset: -50%;
-
-  background:
-    radial-gradient(circle at 20% 20%, var(--accent1), transparent 40%),
-    radial-gradient(circle at 80% 30%, var(--accent2), transparent 40%),
-    radial-gradient(circle at 50% 80%, var(--accent3), transparent 40%);
-
-  opacity: 0.10;
-
-  filter: blur(55px);
-
+  background: radial-gradient(
+    circle at 50% 30%, 
+    rgba(255, 255, 255, 0.02) 0%, 
+    transparent 60%
+  );
+  opacity: 0.6;
+  filter: blur(100px);
   z-index: -1;
-
-  transition:
-    background 2s ease,
-    opacity 2s ease;
+  pointer-events: none;
 }
 
-/* =========================
+/* ==========================================================================
    SCROLLBAR
-========================= */
+   ========================================================================== */
 
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    120deg,
-    var(--accent1),
-    var(--accent2),
-    var(--accent3)
-  );
-
+  background: rgba(255, 255, 255, 0.12);
   border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
 }
 
-/* =========================
-   CONTAINER
-========================= */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.22);
+  background-clip: padding-box;
+}
+
+/* ==========================================================================
+   CONTAINER & LAYOUT
+   ========================================================================== */
 
 .overview-container {
   padding: 20px;
   position: relative;
 }
 
-/* =========================
-   💎 GLASS CARD
-========================= */
+/* ==========================================================================
+   💎 PREMIUM GLASS CARD
+   ========================================================================== */
 
 .glass-card {
   position: relative;
   z-index: 1;
-
   background: var(--glass-bg) !important;
-
-  backdrop-filter: blur(10px) saturate(130%);
-  -webkit-backdrop-filter: blur(10px);
-
+  backdrop-filter: blur(16px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px);
   border-radius: 18px;
-
-  border: 1px solid var(--glass-border);
-
-  box-shadow:
-    0 8px 25px rgba(0,0,0,0.22),
-    inset 0 0 8px rgba(255,255,255,0.02);
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
-
+  border: 1px solid var(--glass-border) !important;
+  box-shadow: 
+    0 8px 32px 0 rgba(0, 0, 0, 0.25),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+  transition: 
+    transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: visible;
 }
 
-/* 🌈 border */
-
+/* Frosted glass border outline (replacing neon colors) */
 .glass-card::before {
   content: '';
-
   position: absolute;
   inset: 0;
-
   border-radius: 18px;
   padding: 1px;
-
   background: linear-gradient(
     135deg,
-    var(--accent1),
-    var(--accent2),
-    var(--accent3)
+    rgba(255, 255, 255, 0.12),
+    rgba(255, 255, 255, 0.02)
   );
-
-  opacity: 0.45;
-
-  -webkit-mask:
-    linear-gradient(#000 0 0) content-box,
+  opacity: 0.75;
+  -webkit-mask: 
+    linear-gradient(#000 0 0) content-box, 
     linear-gradient(#000 0 0);
-
   -webkit-mask-composite: xor;
-
   pointer-events: none;
-
-  transition: background 1.5s ease;
+  transition: 
+    opacity 0.25s ease,
+    background 0.25s ease;
 }
 
-/* ✨ overlay */
-
+/* Faint overlay */
 .glass-card::after {
   content: '';
-
   position: absolute;
   inset: 0;
-
   border-radius: 18px;
-
-  background: rgba(255,255,255,0.02);
-
+  background: rgba(255, 255, 255, 0.01);
   pointer-events: none;
 }
 
-/* hover */
-
+/* Hover effects */
 .glass-card:hover {
-  transform: translateY(-4px) scale(1.01);
-
-  box-shadow:
-    0 16px 30px rgba(0,0,0,0.32),
-    0 0 18px rgba(120,160,255,0.12);
+  transform: translateY(-3px) scale(1.003);
+  box-shadow: 
+    0 16px 40px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
-/* =========================
-   TEXT
-========================= */
+.glass-card:hover::before {
+  opacity: 1;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.18),
+    rgba(255, 255, 255, 0.04)
+  );
+}
+
+/* ==========================================================================
+   TEXT STYLE
+   ========================================================================== */
 
 .card-title {
-  color: #fff;
-
-  text-shadow:
-    0 0 6px rgba(150,180,255,0.25);
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 .fs-1 {
-  color: #fff;
-
   font-weight: 700;
+  color: #ffffff;
 }
 
-/* 🌈 gradient number */
-
-.card-text .fs-1 {
+/* Balanced white/silver gradient for large numbers (replacing neon colors) */
+.card-text .fs-1,
+.fw-bold.fs-1 {
   background: linear-gradient(
-    90deg,
-    var(--accent1),
-    var(--accent2),
-    var(--accent3)
+    135deg,
+    #ffffff 40%,
+    #cbd5e1 100%
   );
-
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* =========================
+/* ==========================================================================
    TABLE
-========================= */
+   ========================================================================== */
 
 .glass-table th {
-  color: #9ecbff58;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.glass-table td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
 }
 
 .glass-table tbody tr:hover {
-  background: rgba(255,255,255,0.04);
+  background: rgba(255, 255, 255, 0.03) !important;
 }
 
-/* =========================
+/* ==========================================================================
    ACCORDION
-========================= */
+   ========================================================================== */
 
 .accordion-item {
   position: relative;
   z-index: 5;
+  background: transparent !important;
+  border: none !important;
 }
 
 .glass-accordion-btn {
-  background: rgba(255,255,255,0.03) !important;
-
-  border: 1px solid rgba(255,255,255,0.08);
-
-  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.02) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  color: var(--text-label) !important;
+  backdrop-filter: blur(12px);
+  border-radius: 12px !important;
+  transition: 
+    background 0.2s ease,
+    color 0.2s ease;
 }
 
 .glass-accordion-btn:hover {
-  background: rgba(255,255,255,0.06) !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  color: #ffffff !important;
 }
 
 .glass-accordion-btn:not(.collapsed) {
-  background: rgba(255,255,255,0.08) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
 }
 
-/* collapse */
-
-.accordion-collapse {
-  overflow: hidden;
-
-  transition:
-    height 0.3s ease;
-}
-
-.accordion-collapse.show {
-  display: block !important;
-
-  height: auto !important;
-
-  visibility: visible !important;
-}
-
-/* body */
-
+/* Accordion body container */
 .glass-body {
-  background: rgba(255,255,255,0.025);
-
-  backdrop-filter: blur(8px);
-
+  background: rgba(255, 255, 255, 0.015);
+  backdrop-filter: blur(12px);
   border-radius: 12px;
-
+  border: 1px solid rgba(255, 255, 255, 0.04);
   margin-top: 6px;
+  padding: 16px;
 }
 
-/* =========================
-   LINKS / FORM
-========================= */
+/* ==========================================================================
+   LINKS & FORM CONTROLS
+   ========================================================================== */
 
 a {
-  color: #8ecaff;
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #d77aff;
+  color: var(--link-hover);
+  text-decoration: underline;
 }
 
 .form-label {
-  color: #9ecbff;
+  color: var(--text-label);
 }
 
-/* =========================
+/* ==========================================================================
    🧩 OPERATOR CARD
-========================= */
+   ========================================================================== */
 
 .operator-card:hover {
-  transform: translateY(-4px) scale(1.02);
-
-  box-shadow:
-    0 16px 30px rgba(0,0,0,0.32),
-    0 0 18px rgba(120,160,255,0.14);
+  transform: translateY(-4px) scale(1.015);
+  box-shadow: 
+    0 16px 30px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
 .operator-card:hover .operator-img {
-  transform: scale(1.05);
-
-  transition:
-    transform 0.25s ease;
+  transform: scale(1.03);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
