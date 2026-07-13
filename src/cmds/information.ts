@@ -55,20 +55,25 @@ function cleanPayload(raw: string): string {
   return raw.replace(/\\"/g, '"').replace(/\\\\/g, '\\');
 }
 
-function extractSection(clean: string, key: 'bulletins' | 'videos', total: number): string {
+function extractSection(clean: string, key: 'bulletins' | 'videos'): string {
   const openMarker = `{"${key}":[`;
-  const closeMarker = `],"total":${total}}`;
   const start = clean.indexOf(openMarker);
   if (start === -1) {
     throw new Error(`Failed to find ${key} section start marker`);
   }
 
-  const end = clean.indexOf(closeMarker, start);
-  if (end === -1) {
-    throw new Error(`Failed to find ${key} section end marker`);
+  const totalMarker = '],"total":';
+  const totalIndex = clean.indexOf(totalMarker, start);
+  if (totalIndex === -1) {
+    throw new Error(`Failed to find ${key} section total marker`);
   }
 
-  return clean.slice(start, end + closeMarker.length);
+  const endBraceIndex = clean.indexOf('}', totalIndex);
+  if (endBraceIndex === -1) {
+    throw new Error(`Failed to find ${key} section end brace`);
+  }
+
+  return clean.slice(start, endBraceIndex + 1);
 }
 
 async function fetchInformationPage(): Promise<InformationPageData> {
@@ -85,8 +90,8 @@ async function fetchInformationPage(): Promise<InformationPageData> {
   const html = await response.text();
   const clean = cleanPayload(html);
 
-  const bulletins = JSON.parse(extractSection(clean, 'bulletins', 48)) as { bulletins: InformationBulletinItem[]; total: number };
-  const videos = JSON.parse(extractSection(clean, 'videos', 20)) as { videos: InformationVideoItem[]; total: number };
+  const bulletins = JSON.parse(extractSection(clean, 'bulletins')) as { bulletins: InformationBulletinItem[]; total: number };
+  const videos = JSON.parse(extractSection(clean, 'videos')) as { videos: InformationVideoItem[]; total: number };
 
   return {
     page: 'https://endfield.gryphline.com/th-th#information',
