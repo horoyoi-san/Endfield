@@ -108,6 +108,10 @@ jobs:
       - name: Format output folder (post)
         run: bun x oxfmt output
 
+      - name: Debug git status
+        run: |
+          git status
+          git diff --name-only
       # ======================
       # 🔄 Pull latest before commit
       # ======================
