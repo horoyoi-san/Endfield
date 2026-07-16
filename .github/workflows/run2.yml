@@ -9,7 +9,7 @@ on:
   schedule:
     - cron: '10 10 * * *'
   workflow_dispatch:
-  repository_dispatch:
+  #repository_dispatch:
 
 jobs:
   run:
