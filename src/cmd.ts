@@ -43,38 +43,6 @@ async function parseCommand() {
       wrapHandler(cmds.archive),
     )
     .command(
-      ['information'],
-      'Fetch the Endfield information page and save media metadata',
-      (yargs) => {
-        yargs.options({
-          'output-dir': {
-            alias: ['o'],
-            desc: 'Output root directory',
-            default: path.resolve('output'),
-            normalize: true,
-            type: 'string',
-          },
-        });
-      },
-      wrapHandler(cmds.information),
-    )
-    .command(
-      ['operator'],
-      'Fetch the Endfield operator page and save operator assets',
-      (yargs) => {
-        yargs.options({
-          'output-dir': {
-            alias: ['o'],
-            desc: 'Output root directory',
-            default: path.resolve('output'),
-            normalize: true,
-            type: 'string',
-          },
-        });
-      },
-      wrapHandler(cmds.operator),
-    )
-    .command(
       ['ghMirrorUpload'],
       'Upload pending large binary file to GitHub mirror',
       (yargs) => {

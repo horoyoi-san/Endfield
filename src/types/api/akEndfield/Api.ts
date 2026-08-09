@@ -37,20 +37,12 @@ type LauncherLatestGame = {
     v2_patch_info_url: string;
     v2_patch_info_size: string;
     v2_patch_info_md5: string;
+    v2_verify_files_url: string;
+    v2_verify_files_size: string;
+    v2_verify_files_md5: string;
   } | null;
   state: number;
   launcher_action: number;
-  pre_patch?: {
-    package_size: string;
-    total_size: string;
-    patches: {
-      url: string;
-      md5: string;
-      package_size: string;
-    }[];
-    version: string;
-  } | null;
-  client_version?: string;
 };
 
 type LauncherLatestGameResources = {
@@ -82,58 +74,6 @@ type LauncherLatestLauncherExe = {
   request_version: string; // x.y.z or blank
   exe_url: string;
   exe_size: string;
-};
-
-type LauncherBatchLatestGame = {
-  latest_games: Record<
-    string,
-    {
-      action: number;
-      version: string;
-      request_version: string;
-      pkg: {
-        packs: {
-          url: string;
-          md5: string;
-          package_size: string;
-        }[];
-        total_size: string;
-        file_path: string;
-        url: string;
-        md5: string;
-        package_size: string;
-        file_id: string;
-        sub_channel: string;
-        game_files_md5: string;
-      };
-      patch: {
-        url: string;
-        md5: string;
-        package_size: string;
-        total_size: string;
-        file_id: string;
-        patches: {
-          url: string;
-          md5: string;
-          package_size: string;
-        }[];
-        v2_patch_info_url: string;
-        v2_patch_info_size: string;
-        v2_patch_info_md5: string;
-      } | null;
-      state: number;
-      launcher_action: number;
-    }
-  >;
-};
-
-type LauncherBatchLauncherAction = {
-  games: Record<
-    string,
-    {
-      launcher_action: number;
-    }
-  >;
 };
 
 type LauncherWebSidebar = {
@@ -614,6 +554,46 @@ type ZonaiWebV1GameEndfieldAttendanceRecord = {
   };
 };
 
+type GameHubBulletinAggregate = {
+  code: number;
+  data: {
+    topicCid: string;
+    type: 0 | 1;
+    platform: string;
+    server: string;
+    channel: string;
+    subChannel: string;
+    lang: string;
+    key: string;
+    version: string;
+    onlineList: {
+      cid: string;
+      version: number;
+      needRedDot: boolean;
+      needPopup: boolean;
+    }[];
+    popupVersion: number;
+    updatedAt: number;
+    list: {
+      cid: string;
+      type: 0 | 1;
+      tab: 'news' | 'updates' | 'events';
+      orderType: number;
+      orderWeight: number;
+      displayType: 'rich_text' | 'picture';
+      startAt: number;
+      focus: number;
+      title: string;
+      header: string;
+      jumpButton: { [key: string]: unknown } | null;
+      data:
+        | { html: string; linkType: number } // displayType 'rich_text'
+        | { url: string; link: string; linkType: number }; // displayType 'picture'
+    }[];
+  };
+  msg: string; // ''=OK
+};
+
 type GameHubGiftCodeRedeem = {
   code: number; // 0=OK, 11004=ActivityExpired
   data: {
@@ -633,9 +613,8 @@ export type {
   BindApiAccBindV1BindList,
   BindApiAccBindV1U8TokenByUid,
   BindApiGeneralV1AuthAppList,
+  GameHubBulletinAggregate,
   GameHubGiftCodeRedeem,
-  LauncherBatchLatestGame,
-  LauncherBatchLauncherAction,
   LauncherLatestGame,
   LauncherLatestGameResources,
   LauncherLatestLauncher,
