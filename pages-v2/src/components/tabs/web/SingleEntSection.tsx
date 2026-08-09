@@ -51,7 +51,10 @@ export default function SingleEntSection({ target, lang }: Props) {
         for (const entry of sortedData) {
           if (!entry.rsp || !entry.rsp.single_ent) continue;
           const ent = entry.rsp.single_ent;
-          const key = ent.version_md5 || ent.version_url;
+          const key = [ent.version_md5, ent.version_url, ent.button_md5, ent.button_url, ent.jump_url]
+            .filter(Boolean)
+            .join('|');
+          if (!key) continue; // Skip empty single_ent entries
           if (!newEntMap.has(key)) {
             newEntMap.set(key, { ent, firstSeen: entry.updatedAt });
           }
@@ -96,51 +99,57 @@ export default function SingleEntSection({ target, lang }: Props) {
                         </span>
                         {ent.need_token && <span className='badge bg-warning text-dark'>Auth</span>}
                       </div>
-                      <div className='mb-3'>
-                        <label className='form-label small fw-bold'>Version Image</label>
-                        <a href={getMirrorUrl(ent.version_url)} target='_blank' rel='noreferrer'>
-                          <img
-                            src={getMirrorUrl(ent.version_url)}
-                            data-original={ent.version_url}
-                            onError={(e) => {
-                              const target = e.currentTarget;
-                              if (target.src !== ent.version_url) {
-                                target.src = ent.version_url;
-                              }
-                            }}
-                            className='img-fluid rounded border'
-                            alt='Version'
-                            loading='lazy'
-                          />
-                        </a>
-                        <p
-                          className='text-muted font-monospace mt-1'
-                          style={{ fontSize: '0.7rem', wordBreak: 'break-all' }}
-                        >
-                          MD5: {ent.version_md5}
-                        </p>
-                      </div>
-                      {ent.button_url && (
+                      {ent.version_url && (
+                        <div className='mb-3'>
+                          <label className='form-label small fw-bold'>Version Image</label>
+                          <a href={getMirrorUrl(ent.version_url)} target='_blank' rel='noreferrer'>
+                            <img
+                              src={getMirrorUrl(ent.version_url)}
+                              data-original={ent.version_url}
+                              onError={(e) => {
+                                const target = e.currentTarget;
+                                if (target.src !== ent.version_url) {
+                                  target.src = ent.version_url;
+                                }
+                              }}
+                              className='img-fluid rounded border'
+                              alt='Version'
+                              loading='lazy'
+                            />
+                          </a>
+                          {ent.version_md5 && (
+                            <p
+                              className='text-muted font-monospace mt-1'
+                              style={{ fontSize: '0.7rem', wordBreak: 'break-all' }}
+                            >
+                              MD5: {ent.version_md5}
+                            </p>
+                          )}
+                        </div>
+                      )}
+                      {(ent.button_url || ent.button_hover_url) && (
                         <div className='mb-3'>
                           <label className='form-label small fw-bold'>Action Button</label>
                           <div className='d-flex gap-2'>
-                            <div className='flex-grow-1 text-center'>
-                              <img
-                                src={getMirrorUrl(ent.button_url)}
-                                data-original={ent.button_url}
-                                onError={(e) => {
-                                  const target = e.currentTarget;
-                                  if (target.src !== ent.button_url) {
-                                    target.src = ent.button_url;
-                                  }
-                                }}
-                                className='img-fluid rounded border bg-light'
-                                alt='Button'
-                                style={{ maxHeight: '60px' }}
-                                loading='lazy'
-                              />
-                              <p className='text-muted small mt-1 mb-0'>Normal</p>
-                            </div>
+                            {ent.button_url && (
+                              <div className='flex-grow-1 text-center'>
+                                <img
+                                  src={getMirrorUrl(ent.button_url)}
+                                  data-original={ent.button_url}
+                                  onError={(e) => {
+                                    const target = e.currentTarget;
+                                    if (target.src !== ent.button_url) {
+                                      target.src = ent.button_url;
+                                    }
+                                  }}
+                                  className='img-fluid rounded border bg-light'
+                                  alt='Button'
+                                  style={{ maxHeight: '60px' }}
+                                  loading='lazy'
+                                />
+                                <p className='text-muted small mt-1 mb-0'>Normal</p>
+                              </div>
+                            )}
                             {ent.button_hover_url && (
                               <div className='flex-grow-1 text-center'>
                                 <img

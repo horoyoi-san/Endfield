@@ -114,7 +114,10 @@ export async function renderSingleEnt(container: HTMLElement) {
       for (const entry of sortedData) {
         if (!entry.rsp || !entry.rsp.single_ent) continue;
         const ent = entry.rsp.single_ent;
-        const key = ent.version_md5 || ent.version_url;
+        const key = [ent.version_md5, ent.version_url, ent.button_md5, ent.button_url, ent.jump_url]
+          .filter(Boolean)
+          .join('|');
+        if (!key) continue; // Skip empty single_ent entries
         if (!entMap.has(key)) {
           entMap.set(key, { ent, firstSeen: entry.updatedAt });
         }
@@ -143,24 +146,35 @@ export async function renderSingleEnt(container: HTMLElement) {
               <span class="text-muted small">First seen: ${DateTime.fromISO(firstSeen).toFormat('yyyy/MM/dd HH:mm')}</span>
               ${ent.need_token ? '<span class="badge bg-warning text-dark">Auth</span>' : ''}
             </div>
+        `;
+
+        if (ent.version_url) {
+          innerHtml += `
             <div class="mb-3">
               <label class="form-label small fw-bold">Version Image</label>
               <a href="${getMirrorUrl(ent.version_url)}" target="_blank">
                 <img src="${getMirrorUrl(ent.version_url)}" class="img-fluid rounded border" alt="Version Image">
               </a>
-              <p class="text-muted font-monospace mt-1" style="font-size: 0.7rem; word-break: break-all;">MD5: ${ent.version_md5}</p>
+              ${ent.version_md5 ? `<p class="text-muted font-monospace mt-1" style="font-size: 0.7rem; word-break: break-all;">MD5: ${ent.version_md5}</p>` : ''}
             </div>
-        `;
+          `;
+        }
 
-        if (ent.button_url) {
+        if (ent.button_url || ent.button_hover_url) {
           innerHtml += `
             <div class="mb-3">
               <label class="form-label small fw-bold">Action Button</label>
               <div class="d-flex gap-2">
+                ${
+                  ent.button_url
+                    ? `
                 <div class="flex-grow-1">
                   <img src="${getMirrorUrl(ent.button_url)}" class="img-fluid rounded border bg-light" alt="Button" style="max-height: 60px;">
                   <p class="text-muted small mt-1 mb-0">Normal</p>
                 </div>
+                `
+                    : ''
+                }
                 ${
                   ent.button_hover_url
                     ? `

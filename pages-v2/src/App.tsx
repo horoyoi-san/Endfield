@@ -24,6 +24,7 @@ function App() {
   const [mirrorFileDb, setMirrorFileDb] = useState<MirrorFileEntry[]>([]);
   const [loading, setLoading] = useState(true);
   const [bgImage, setBgImage] = useState<string | null>(null);
+  const [bgVideo, setBgVideo] = useState<string | null>(null);
   const [bgVisible, setBgVisible] = useState(false);
 
 
@@ -68,29 +69,36 @@ function App() {
         setLoading(false);
       }
 
-      // Fetch latest background image
+      // Fetch latest background image / video
       try {
         const url = `${BASE_URL}/akEndfield/launcher/web/6/main_bg_image/en-us/all.json`;
         const data = await fetchJson<StoredData<LauncherWebMainBgImage>[]>(url);
         if (data.length > 0) {
           // Sort by updatedAt descending
           const sorted = data.sort((a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime());
-          const latest = sorted.find((entry) => entry.rsp?.main_bg_image?.url);
-          if (latest?.rsp?.main_bg_image?.url) {
-            const mirrorUrl = getMirrorUrl(latest.rsp.main_bg_image.url);
+          const latest = sorted.find((entry) => entry.rsp?.main_bg_image?.url || entry.rsp?.main_bg_image?.video_url);
+          if (latest?.rsp?.main_bg_image) {
+            const mainBg = latest.rsp.main_bg_image;
+            const mirrorImgUrl = mainBg.url ? getMirrorUrl(mainBg.url) : null;
+            const mirrorVidUrl = mainBg.video_url ? getMirrorUrl(mainBg.video_url) : null;
 
-            // Preload the image
-            const img = new Image();
-            img.src = mirrorUrl;
-            img.onload = () => {
-              setBgImage(mirrorUrl);
-              // Small delay to trigger transition
-              setTimeout(() => setBgVisible(true), 1);
-            };
+            setBgImage(mirrorImgUrl);
+            setBgVideo(mirrorVidUrl);
+
+            if (mirrorVidUrl) {
+              // Video will trigger setBgVisible on load/canplay or fallback timer safety
+              setTimeout(() => setBgVisible(true), 500);
+            } else if (mirrorImgUrl) {
+              const img = new Image();
+              img.src = mirrorImgUrl;
+              img.onload = () => {
+                setTimeout(() => setBgVisible(true), 1);
+              };
+            }
           }
         }
       } catch (e) {
-        console.warn('Failed to fetch background image', e);
+        console.warn('Failed to fetch background image/video', e);
       }
     };
     init();
@@ -144,14 +152,39 @@ function App() {
               left: 0,
               width: '100%',
               height: '100%',
-              backgroundImage: bgImage ? `url(${bgImage})` : 'none',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
               zIndex: -1,
               opacity: bgVisible ? opacity : 0,
               transition: `opacity ${opacityAnimSec}s ease-in-out`,
+              overflow: 'hidden',
             }}
           >
+            {bgVideo ? (
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                poster={bgImage || undefined}
+                onLoadedData={() => setTimeout(() => setBgVisible(true), 1)}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                }}
+              >
+                <source src={bgVideo} type='video/mp4' />
+              </video>
+            ) : (
+              <div
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  backgroundImage: bgImage ? `url(${bgImage})` : 'none',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}
+              />
+            )}
             <div
               style={{
                 position: 'absolute',
