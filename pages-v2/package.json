@@ -5,7 +5,6 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "bun install --cwd .. && bun ../src/main.ts operator --output-dir ../output",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
