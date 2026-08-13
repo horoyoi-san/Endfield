@@ -18,11 +18,17 @@
       "subChannel": "#DEFAULT",
       "lang": "zh-cn",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:zh-cn",
-      "version": "389b54e51d31c395951bf1923569edb4",
+      "version": "06e9af6d7f7e739bb44b9769630082e3",
       "onlineList": [
         {
           "cid": "2118",
           "version": 1782477623,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "4610",
+          "version": 1786440043,
           "needRedDot": true,
           "needPopup": false
         },
@@ -65,6 +71,12 @@
         {
           "cid": "0708",
           "version": 1786437154,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "1379",
+          "version": 1786591775,
           "needRedDot": true,
           "needPopup": false
         },
@@ -202,7 +214,7 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1786564800,
+      "updatedAt": 1786591776,
       "list": [
         {
           "cid": "2118",
@@ -219,6 +231,23 @@
           "data": {
             "url": "https://web-static.hg-cdn.com/upload/image/20260625/953d369727b038bae4af6f831b3985e8.jpg",
             "link": "https://endfield.gryphline.com/special/discord-binding?u8_token={u8_token}&server={server}",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "4610",
+          "type": 0,
+          "tab": "news",
+          "orderType": 1,
+          "orderWeight": 1,
+          "displayType": "rich_text",
+          "startAt": 1786590000,
+          "focus": 0,
+          "title": "愿望单\\n里程碑活动",
+          "header": "愿望单里程碑活动",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260811/7e6163f44195a69ca06651bbb8651a0d.png\" data-width=\"1650\" data-height=\"300\"><p>亲爱的管理员：<br>为了庆祝《明日方舟：终末地》即将登陆 Steam，我们特别推出上线愿望单里程碑活动！<br>即日起，将游戏加入Steam愿望单，一起冲刺最终目标，解锁特殊纪念头像框等丰厚奖励！<br><br>▼//活动时间<br>2026/08/13活动开启后，至《明日方舟：终末地》Steam 正式上线（具体上线时间将另行公布）。<br><br>▼//里程碑奖励<br>· 第1阶段（30,000）： 折金票 ×8,000 <br>· 第2阶段（100,000）： 初级认知载体 ×2 <br>· 第3阶段（200,000）： 武器检查套组 ×2 <br>· 最终目标（300,000）： 特殊纪念头像框 ×1<br><br>立即前往Steam将《明日方舟：终末地》加入Steam愿望单，向最终目标全力冲刺吧！<br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://store.steampowered.com/app/4732690/\">立即前往Steam</a></p>",
             "linkType": 1
           }
         },
@@ -341,6 +370,23 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260811/415e7037b98b11763265de525b9efe61.jpg\" data-width=\"1920\" data-height=\"2901\"><p></p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "1379",
+          "type": 0,
+          "tab": "updates",
+          "orderType": 1,
+          "orderWeight": 2,
+          "displayType": "rich_text",
+          "startAt": 1786590000,
+          "focus": 0,
+          "title": "版本调研问卷",
+          "header": "「向渊行」版本调研问卷",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260811/3c7fc94a205b6aba795bd23638cd3867.png\" data-width=\"1650\" data-height=\"300\"><p>亲爱的管理员：<br>为了更好地收集管理员对《明日方舟：终末地》游戏内容的意见与反馈，我们将为您发放调研问卷。在此诚邀管理员基于游玩体验，填写问卷并提供您的宝贵意见。成功提交问卷后，我们将通过邮件为您送上【嵌晶玉】×300的问卷答谢礼。<br><br><strong>▼//问卷发放条件</strong><br>解锁【邮箱】功能<br><br><strong>▼//问卷发放时间</strong><br>2026/08/14 00:00（UTC+8）<br><br><strong>▼//问卷填写方式</strong><br>问卷发放后，管理员可前往【邮箱】查看「向渊行」版本调研问卷，点击【前往填写问卷】提供您的宝贵意见。<br>※ 问卷提交后无法修改，还请管理员认真填写问卷。<br><br>为了确保问卷能够准确还原当前节点的游戏体验，问卷邮件存在有效期。问卷需要3 ~ 5分钟填写，在此感谢管理员的耐心填答。<br><br>管理员提交的每一份宝贵意见，都将助力项目组进一步完善游戏内容。后续我们将基于反馈持续优化游戏体验，努力为管理员呈现更好的《明日方舟：终末地》。<br><br>再次感谢管理员一直以来对于《明日方舟：终末地》的关注与支持！<br></p>",
             "linkType": 1
           }
         },

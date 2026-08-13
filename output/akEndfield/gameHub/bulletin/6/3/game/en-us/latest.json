@@ -18,11 +18,17 @@
       "subChannel": "#DEFAULT",
       "lang": "en-us",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:en-us",
-      "version": "389b54e51d31c395951bf1923569edb4",
+      "version": "06e9af6d7f7e739bb44b9769630082e3",
       "onlineList": [
         {
           "cid": "2118",
           "version": 1782477623,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "4610",
+          "version": 1786440043,
           "needRedDot": true,
           "needPopup": false
         },
@@ -65,6 +71,12 @@
         {
           "cid": "0708",
           "version": 1786437154,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "1379",
+          "version": 1786591775,
           "needRedDot": true,
           "needPopup": false
         },
@@ -202,7 +214,7 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1786564800,
+      "updatedAt": 1786591776,
       "list": [
         {
           "cid": "2118",
@@ -219,6 +231,23 @@
           "data": {
             "url": "https://web-static.hg-cdn.com/upload/image/20260625/98f7fa0cee6fe9fb28be78663e29d7ed.jpg",
             "link": "https://endfield.gryphline.com/special/discord-binding?u8_token={u8_token}&server={server}",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "4610",
+          "type": 0,
+          "tab": "news",
+          "orderType": 1,
+          "orderWeight": 1,
+          "displayType": "rich_text",
+          "startAt": 1786590000,
+          "focus": 0,
+          "title": "Wishlist Milestone Event",
+          "header": "Wishlist Milestone Event",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260811/44bef1a5461a1f433c694ed27f94dfe8.png\" data-width=\"1650\" data-height=\"300\"><p>Dear Endministrator, <br>To celebrate Arknights: Endfield's upcoming launch on Steam, we're holding a special Wishlist Milestone Event! <br>Starting today, add Arknights: Endfield to your Steam Wishlist and help us reach the final milestone to unlock a special commemorative portrait frame and other exciting rewards!<br><br>▼// Event Time<br>From the start of the event on Aug. 13, 2026, until the official launch of Arknights: Endfield on Steam (the exact launch date will be announced later).<br><br>▼// Milestone Rewards<br>· Phase 1 (30,000): T-Creds×8,000 <br>· Phase 2 (100,000): Elementary Cognitive Carrier×2 <br>· Phase 3 (200,000): Arms INSP Set×2 <br>· Final Goal (300,000): Special Commemorative Portrait Frame×1<br><br>Head to Steam now and add Arknights: Endfield to your Steam Wishlist. Let's push towards the final goal!<br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://store.steampowered.com/app/4732690/\">Head to Steam now</a></p>",
             "linkType": 1
           }
         },
@@ -341,6 +370,23 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260723/f280bf03e1cf0f85d9130b05be06d482.jpg\" data-width=\"1920\" data-height=\"2901\"><p></p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "1379",
+          "type": 0,
+          "tab": "updates",
+          "orderType": 1,
+          "orderWeight": 2,
+          "displayType": "rich_text",
+          "startAt": 1786590000,
+          "focus": 0,
+          "title": "Version Experience Survey",
+          "header": "[Homecoming] Version Experience Survey",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260811/20f1655d421bee689b661dea05810a3f.png\" data-width=\"1650\" data-height=\"300\"><p>Dear Endministrator, <br>To better collect your thoughts and feedback on Arknights: Endfield, we would like to send you a survey. We invite you to complete the survey based on your gaming experience and share your valuable insights with us. After you successfully submit the survey, we will send you [Oroberyl]×300 as a survey completion reward via in-game mail. <br><br><strong>▼// Survey Eligibility Requirement </strong><br>Unlock the [Mail] feature <br><br><strong>▼// Survey Distribution Time </strong><br>Aug. 14, 2026 at 00:00 (UTC+8) <br><br><strong>▼// How to Access the Survey </strong><br>Once the survey is sent out, you can find the [Homecoming] Version Experience Survey in your [Mail]. Click [Go to Survey] to fill it out and share your valuable feedback. <br>※ Survey responses cannot be edited after submission. Please complete it carefully. <br><br>To ensure your feedback reflects your latest gaming experience, the survey mail will expire after a set period. Completing the survey takes about 3–5 minutes. Thank you for your time and patience. <br><br>Every valuable suggestion you share will help us enhance the game. Your feedback will play an important role in shaping a better Arknights: Endfield experience for all Endministrators. <br><br>Thank you again for your continued interest and support for Arknights: Endfield, Endministrator!<br></p>",
             "linkType": 1
           }
         },

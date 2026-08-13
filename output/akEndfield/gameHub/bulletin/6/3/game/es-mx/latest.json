@@ -18,11 +18,17 @@
       "subChannel": "#DEFAULT",
       "lang": "es-mx",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:es-mx",
-      "version": "389b54e51d31c395951bf1923569edb4",
+      "version": "06e9af6d7f7e739bb44b9769630082e3",
       "onlineList": [
         {
           "cid": "2118",
           "version": 1782477623,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "4610",
+          "version": 1786440043,
           "needRedDot": true,
           "needPopup": false
         },
@@ -65,6 +71,12 @@
         {
           "cid": "0708",
           "version": 1786437154,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "1379",
+          "version": 1786591775,
           "needRedDot": true,
           "needPopup": false
         },
@@ -202,7 +214,7 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1786564800,
+      "updatedAt": 1786591776,
       "list": [
         {
           "cid": "2118",
@@ -219,6 +231,23 @@
           "data": {
             "url": "https://web-static.hg-cdn.com/upload/image/20260625/96b549b59f288176334b5cd70a8f074f.jpg",
             "link": "https://endfield.gryphline.com/special/discord-binding?u8_token={u8_token}&server={server}",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "4610",
+          "type": 0,
+          "tab": "news",
+          "orderType": 1,
+          "orderWeight": 1,
+          "displayType": "rich_text",
+          "startAt": 1786590000,
+          "focus": 0,
+          "title": "El evento de hitos de la lista de deseados",
+          "header": "El evento de hitos de la lista de deseados",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260811/2c7356bbd0d6c582dc5fa3494f053d2b.png\" data-width=\"1650\" data-height=\"300\"><p>Hola, Endministrator:<br>Para celebrar el próximo lanzamiento de Arknights: Endfield en Steam, ¡organizamos un evento especial de hitos de la lista de deseados! <br>A partir de hoy, añade Arknights: Endfield a tu lista de deseados de Steam y ayúdanos a alcanzar el objetivo final para desbloquear un marco de retrato conmemorativo especial y otras fantásticas recompensas.<br><br>▼// Periodo del evento<br>Desde el inicio del evento, el 13 de agosto de 2026, hasta el lanzamiento oficial de Arknights: Endfield en Steam (la fecha exacta de lanzamiento se anunciará más adelante).<br><br>▼// Recompensas por hitos<br>· Fase 1 (30,000): T-Creds ×8,000 <br>· Fase 2 (100,000): Portador cognitivo elemental ×2 <br>· Fase 3 (200,000): Set de inspector de armas ×2 <br>· Objetivo final (300,000): marco de retrato conmemorativo especial ×1<br><br>¡Ve a Steam y añade Arknights: Endfield a tu lista de deseados! ¡Alcancemos juntos el objetivo final!<br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://store.steampowered.com/app/4732690/\">Ve a Steam ahora</a></p>",
             "linkType": 1
           }
         },
@@ -341,6 +370,23 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260723/1f138197534d249a930a43b0d1623734.jpg\" data-width=\"1920\" data-height=\"2901\"><p></p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "1379",
+          "type": 0,
+          "tab": "updates",
+          "orderType": 1,
+          "orderWeight": 2,
+          "displayType": "rich_text",
+          "startAt": 1786590000,
+          "focus": 0,
+          "title": "Encuesta sobre la experiencia de la versión",
+          "header": "Encuesta sobre la experiencia de la versión",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260811/857c9bbaf74d0db1b8fb75e17850090b.png\" data-width=\"1650\" data-height=\"300\"><p>Hola, Endministrator: <br>Para conocer mejor tus opiniones y comentarios sobre Arknights: Endfield, te enviaremos una encuesta. Te invitamos a completarla con base en tu experiencia de juego y a compartir con nosotros tus valiosos comentarios. Una vez que envíes la encuesta correctamente, recibirás [Oroberilio] ×300 como recompensa por participar, que se enviarán por correo dentro del juego. <br><br><strong>▼//Requisito para participar en la encuesta: </strong><br>Desbloquea la función [Correo] <br><br><strong>▼// Tiempo de distribución de la encuesta: </strong><br>14 de agosto de 2026 a las 00:00 (UTC+8) <br><br><strong>▼//Cómo acceder a la encuesta </strong><br>Una vez enviada, podrás encontrar la encuesta sobre la experiencia de la versión [Regreso a casa] en tu [Correo]. Haz clic en [Ir a la encuesta] para completarla y compartir tu opinión. <br>※ Una vez enviadas, las respuestas no podrán modificarse, por lo que te recomendamos completarlas con cuidado. <br><br>Para garantizar que tus comentarios reflejen tu experiencia de juego más reciente, la encuesta enviada por correo será válida por un tiempo limitado, luego del cual caducará. Completar la encuesta te tomará aproximadamente entre 3 y 5 minutos. Gracias por tu tiempo y tu paciencia. <br><br>Cada sugerencia que compartas nos ayudará a mejorar el juego. Tu opinión será clave para crear una mejor experiencia de Arknights: Endfield para todos los Endministrators. <br><br>¡Gracias de nuevo por tu interés y apoyo continuos a Arknights: Endfield, Endministrator!<br></p>",
             "linkType": 1
           }
         },
