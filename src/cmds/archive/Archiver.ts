@@ -11,6 +11,7 @@ import logger from '../../utils/logger.js';
 import mathUtils from '../../utils/math.js';
 import stringUtils from '../../utils/string.js';
 import information from '../information.js';
+import operator from '../operator.js';
 import { DIFF_IGNORE_RULES, getBulletinTargets, getGameTargets, getLauncherTargets } from './constants.js';
 import type {
   AssetToMirror,
