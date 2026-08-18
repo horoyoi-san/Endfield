@@ -45,6 +45,7 @@ export class Archiver {
     await this.fetchAndSaveLatestWebApis();
     await this.fetchAndSaveBulletins();
     await this.fetchAndSaveInformation();
+    await this.fetchAndSaveOperator();
     await this.fetchAndSaveLauncherProtocol();
     await this.fetchAndSaveLatestLauncher();
     await this.fetchAndSaveAllGameResRawData();
@@ -55,6 +56,11 @@ export class Archiver {
   private async fetchAndSaveInformation() {
     logger.debug('Fetching information page & videos ...');
     await information();
+  }
+
+  private async fetchAndSaveOperator() {
+    logger.debug('Fetching operator & character assets ...');
+    await operator();
   }
 
   private async fetchAndSaveLatestGames() {

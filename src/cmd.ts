@@ -75,6 +75,22 @@ async function parseCommand() {
       wrapHandler(cmds.information),
     )
     .command(
+      ['operator'],
+      'Fetch official site operator & character assets payload',
+      (yargs) => {
+        yargs.options({
+          'output-dir': {
+            alias: ['o'],
+            desc: 'Output root directory',
+            default: path.resolve('output'),
+            normalize: true,
+            type: 'string',
+          },
+        });
+      },
+      wrapHandler(cmds.operator),
+    )
+    .command(
       ['authTest [token] [email] [password]'],
       'Auth and gacha fetch test command',
       (yargs) => {
