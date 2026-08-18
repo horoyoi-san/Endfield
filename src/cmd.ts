@@ -59,6 +59,22 @@ async function parseCommand() {
       wrapHandler(cmds.ghMirrorUpload),
     )
     .command(
+      ['information'],
+      'Fetch official site information & videos payload',
+      (yargs) => {
+        yargs.options({
+          'output-dir': {
+            alias: ['o'],
+            desc: 'Output root directory',
+            default: path.resolve('output'),
+            normalize: true,
+            type: 'string',
+          },
+        });
+      },
+      wrapHandler(cmds.information),
+    )
+    .command(
       ['authTest [token] [email] [password]'],
       'Auth and gacha fetch test command',
       (yargs) => {

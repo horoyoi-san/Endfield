@@ -76,10 +76,71 @@ function extractSection(clean: string, key: 'bulletins' | 'videos'): string {
   return clean.slice(start, endBraceIndex + 1);
 }
 
-async function fetchInformationPage(): Promise<InformationPageData> {
-  const response = await fetch('https://endfield.gryphline.com/th-th#information', {
+async function fetchVideosFromApi(lang = 'th-th'): Promise<InformationVideoItem[]> {
+  const videos: InformationVideoItem[] = [];
+  let page = 1;
+  let total = 0;
+
+  try {
+    do {
+      const url = `https://endfield.gryphline.com/api/content/info_video?lang=${lang}&page=${page}&pageSize=10`;
+      const response = await fetch(url, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+          'Accept': 'application/json, text/plain, */*',
+        },
+      });
+
+      if (!response.ok) {
+        logger.warn(`Video API request failed on page ${page}: ${response.status} ${response.statusText}`);
+        break;
+      }
+
+      const json = await response.json();
+      if (json.code !== 0 || !json.data?.list) {
+        logger.warn(`Video API returned non-zero code or empty data on page ${page}`);
+        break;
+      }
+
+      total = json.data.total ?? 0;
+      const pageList: InformationVideoItem[] = json.data.list;
+      videos.push(...pageList);
+
+      if (videos.length >= total || pageList.length === 0) {
+        break;
+      }
+      page++;
+    } while (page <= 20);
+  } catch (error) {
+    logger.warn('Failed to fetch videos from API:', error);
+  }
+
+  return videos;
+}
+
+async function fetchBulletinsFromHtml(lang = 'th-th'): Promise<InformationBulletinItem[]> {
+  const response = await fetch(`https://endfield.gryphline.com/${lang}`, {
     headers: {
-      'User-Agent': 'Mozilla/5.0',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch home page for bulletins: ${response.status} ${response.statusText}`);
+  }
+
+  const html = await response.text();
+  const clean = cleanPayload(html);
+  const bulletinsData = JSON.parse(extractSection(clean, 'bulletins')) as { bulletins: InformationBulletinItem[]; total: number };
+  return bulletinsData.bulletins ?? [];
+}
+
+async function fetchInformationPage(): Promise<InformationPageData> {
+  let videos = await fetchVideosFromApi('th-th');
+
+  const response = await fetch('https://endfield.gryphline.com/th-th', {
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     },
   });
 
@@ -90,15 +151,25 @@ async function fetchInformationPage(): Promise<InformationPageData> {
   const html = await response.text();
   const clean = cleanPayload(html);
 
-  const bulletins = JSON.parse(extractSection(clean, 'bulletins')) as { bulletins: InformationBulletinItem[]; total: number };
-  const videos = JSON.parse(extractSection(clean, 'videos')) as { videos: InformationVideoItem[]; total: number };
+  const bulletinsData = JSON.parse(extractSection(clean, 'bulletins')) as { bulletins: InformationBulletinItem[]; total: number };
+  const bulletins = bulletinsData.bulletins ?? [];
+
+  // Fallback to SSR videos if API returns empty
+  if (videos.length === 0) {
+    try {
+      const videosData = JSON.parse(extractSection(clean, 'videos')) as { videos: InformationVideoItem[]; total: number };
+      videos = videosData.videos ?? [];
+    } catch {
+      logger.warn('Failed to extract SSR videos fallback');
+    }
+  }
 
   return {
     page: 'https://endfield.gryphline.com/th-th#information',
     updatedAt: new Date().toISOString(),
-    total: bulletins.bulletins.length + videos.videos.length,
-    bulletins: bulletins.bulletins,
-    videos: videos.videos,
+    total: bulletins.length + videos.length,
+    bulletins,
+    videos,
   };
 }
 
@@ -107,5 +178,6 @@ export default async function information() {
   const payload = await fetchInformationPage();
   const filePath = path.join(outputDir, 'information.json');
   await Bun.write(filePath, JSON.stringify([payload], null, 2));
-  logger.info(`Saved information page payload to ${filePath}`);
+  logger.info(`Saved information page payload (${payload.videos.length} videos, ${payload.bulletins.length} bulletins) to ${filePath}`);
 }
+

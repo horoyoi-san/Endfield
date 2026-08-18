@@ -10,6 +10,7 @@ import appConfig from '../../utils/config.js';
 import logger from '../../utils/logger.js';
 import mathUtils from '../../utils/math.js';
 import stringUtils from '../../utils/string.js';
+import information from '../information.js';
 import { DIFF_IGNORE_RULES, getBulletinTargets, getGameTargets, getLauncherTargets } from './constants.js';
 import type {
   AssetToMirror,
@@ -43,11 +44,17 @@ export class Archiver {
     await this.fetchAndSaveLatestGameResources();
     await this.fetchAndSaveLatestWebApis();
     await this.fetchAndSaveBulletins();
+    await this.fetchAndSaveInformation();
     await this.fetchAndSaveLauncherProtocol();
     await this.fetchAndSaveLatestLauncher();
     await this.fetchAndSaveAllGameResRawData();
     await this.addAllGameResVFSDataToPending();
     await this.processAssetsToMirror();
+  }
+
+  private async fetchAndSaveInformation() {
+    logger.debug('Fetching information page & videos ...');
+    await information();
   }
 
   private async fetchAndSaveLatestGames() {

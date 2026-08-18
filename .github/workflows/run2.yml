@@ -81,7 +81,7 @@ jobs:
       # ======================
       - name: Git commit and push (stage 1)
         run: |
-          for path in output/akEndfield/ output/raw/ output/mirror_file_list_pending.json output/mirror_file_res_list_pending.json output/mirror_file_res_patch_list_pending.json; do
+          for path in output/information.json output/akEndfield/ output/raw/ output/mirror_file_list_pending.json output/mirror_file_res_list_pending.json output/mirror_file_res_patch_list_pending.json; do
             if [ -e "$path" ]; then
               git add "$path"
             fi
