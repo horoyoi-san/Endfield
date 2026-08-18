@@ -119,7 +119,7 @@ async function run() {
 
   await fs.writeFile(OUTPUT_PATH, JSON.stringify(wrapped, null, 2));
 
-  console.log("✅ saved characters2.json (updated)");
+  console.log("✅ saved characters3.json (updated)");
 
   // ======================
   // 🧾 OPTIONAL LOG DIFF INFO

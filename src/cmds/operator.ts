@@ -96,7 +96,7 @@ export default async function operator() {
       rsp: characterRsp,
     },
   ];
-  const charactersPath = path.join(outputDir, 'characters.json');
+  const charactersPath = path.join(outputDir, 'characters2.json');
   await Bun.write(charactersPath, JSON.stringify(charactersPayload, null, 2));
 
   // 2. Write output/operator.json (grouped asset map format)
