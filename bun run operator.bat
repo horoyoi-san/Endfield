@@ -1,1 +1,1 @@
-bun run operator-2.ts
+bun run operator-3.ts

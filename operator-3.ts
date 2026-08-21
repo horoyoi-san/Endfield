@@ -3,7 +3,7 @@ import fs from "fs/promises";
 import crypto from "crypto";
 
 const BASE = "https://web-static.hg-cdn.com";
-const OUTPUT_PATH = "./output/operator-2.json";
+const OUTPUT_PATH = "./output/operator-3.json";
 
 // ======================
 // 🔐 HASH FUNCTION
