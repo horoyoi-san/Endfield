@@ -18,11 +18,17 @@
       "subChannel": "#DEFAULT",
       "lang": "zh-cn",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:zh-cn",
-      "version": "d54c6f3642cdab23178b2f9ef3a1ff4d",
+      "version": "f609a791603b43c26f647cd9efc0d4e8",
       "onlineList": [
         {
           "cid": "2118",
           "version": 1782477623,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "4619",
+          "version": 1787539061,
           "needRedDot": true,
           "needPopup": false
         },
@@ -71,6 +77,12 @@
         {
           "cid": "0708",
           "version": 1786437154,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "3043",
+          "version": 1787540193,
           "needRedDot": true,
           "needPopup": false
         },
@@ -196,7 +208,7 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1787587140,
+      "updatedAt": 1787630400,
       "list": [
         {
           "cid": "2118",
@@ -213,6 +225,23 @@
           "data": {
             "url": "https://web-static.hg-cdn.com/upload/image/20260625/953d369727b038bae4af6f831b3985e8.jpg",
             "link": "https://endfield.gryphline.com/special/discord-binding?u8_token={u8_token}&server={server}",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "4619",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 1,
+          "displayType": "rich_text",
+          "startAt": 1787630400,
+          "focus": 0,
+          "title": "深林覆雪",
+          "header": "「深林覆雪」限时签到活动说明",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260819/004b318a50b2ed694b62aef40c7a0140.jpg\" data-width=\"1650\" data-height=\"300\"><p><strong>▼//活动时间</strong><br>2026/08/26 12:00（服务器时间） - 版本更新维护前<br>※Asia服务器时区: UTC+8<br>※Americas / Europe服务器时区: UTC-5<br><br><strong>▼//参与条件</strong><br>完成主线任务「第一章 - 进程Ⅰ - 基地解围」<br><br><strong>▼//活动说明</strong><br>· 每日登录游戏即可领取签到奖励。<br>· 完成3日签到累计可领取【基础寻访凭证】×2和【嵌晶玉】×500等奖励。<br></p>",
             "linkType": 1
           }
         },
@@ -351,6 +380,23 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260811/415e7037b98b11763265de525b9efe61.jpg\" data-width=\"1920\" data-height=\"2901\"><p></p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "3043",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 2,
+          "displayType": "rich_text",
+          "startAt": 1787628600,
+          "focus": 0,
+          "title": "理智补给",
+          "header": "「理智补给」限时活动说明",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260812/0e3571030fe668b7d9d8dd1837c192cc.jpg\" data-width=\"1650\" data-height=\"300\"><p><strong>▼//活动时间</strong><br>※Asia服务器：2026/08/26 04:00 - 2026/09/02 04:00（服务器时间）<br>※Americas / Europe服务器：2026/08/26 04:00 - 2026/09/01 17:00（服务器时间）<br>※Asia服务器时区：UTC+8<br>※Americas / Europe服务器时区：UTC-5<br><br><strong>▼//活动奖励</strong><br>活动期间，每日完成指定任务，可获得【应急理智加强剂】×4、【理智消耗许可】×8。<br><br><strong>▼//参与条件</strong><br>完成主线任务「第一章 - 进程Ⅱ - 开拓前路」<br><br><strong>▼//活动说明</strong><br>· 活动期间，每日将固定开放3个理智补给任务，完成任务即可获得奖励。<br>· 每日的理智补给任务将于次日04:00（服务器时间）刷新，请管理员及时领取奖励。<br><br>※ 更多活动详细说明，请前往游戏内【活动中心】查看。<br></p>",
             "linkType": 1
           }
         },
