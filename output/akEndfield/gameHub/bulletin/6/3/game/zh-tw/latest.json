@@ -18,11 +18,17 @@
       "subChannel": "#DEFAULT",
       "lang": "zh-tw",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:zh-tw",
-      "version": "1dfe6a56794660b7bf17f8d099d3ac41",
+      "version": "7dab5d692a28a081f96d9bcab37e150d",
       "onlineList": [
         {
           "cid": "2118",
           "version": 1782477623,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "6435",
+          "version": 1788142081,
           "needRedDot": true,
           "needPopup": false
         },
@@ -63,14 +69,8 @@
           "needPopup": false
         },
         {
-          "cid": "3045",
-          "version": 1784289063,
-          "needRedDot": true,
-          "needPopup": false
-        },
-        {
           "cid": "1371",
-          "version": 1787750576,
+          "version": 1788149315,
           "needRedDot": false,
           "needPopup": false
         },
@@ -135,30 +135,6 @@
           "needPopup": false
         },
         {
-          "cid": "4612",
-          "version": 1785411022,
-          "needRedDot": true,
-          "needPopup": false
-        },
-        {
-          "cid": "5520",
-          "version": 1784722418,
-          "needRedDot": true,
-          "needPopup": false
-        },
-        {
-          "cid": "8954",
-          "version": 1784698047,
-          "needRedDot": true,
-          "needPopup": false
-        },
-        {
-          "cid": "6447",
-          "version": 1784286064,
-          "needRedDot": false,
-          "needPopup": false
-        },
-        {
           "cid": "6448",
           "version": 1784096758,
           "needRedDot": true,
@@ -220,7 +196,7 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1788102000,
+      "updatedAt": 1788191940,
       "list": [
         {
           "cid": "2118",
@@ -237,6 +213,23 @@
           "data": {
             "url": "https://web-static.hg-cdn.com/upload/image/20260625/db3364dfc91b944a8c5d69861842548e.jpg",
             "link": "https://endfield.gryphline.com/special/discord-binding?u8_token={u8_token}&server={server}",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "6435",
+          "type": 0,
+          "tab": "updates",
+          "orderType": 1,
+          "orderWeight": 1,
+          "displayType": "rich_text",
+          "startAt": 1788148800,
+          "focus": 0,
+          "title": "預先下載與更新預告",
+          "header": "「雪淞幽夢」版本預先下載與更新預告",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260829/0509b0e25b47912c84415b67d2ae35d8.jpg\" data-width=\"1650\" data-height=\"300\"><p>親愛的管理員：</p><p>《明日方舟：終末地》「雪淞幽夢」版本預先下載現已開啟，管理員可提前下載PC端及PlayStation®5的部分遊戲資源，在版本更新維護結束後，更快地進入遊戲。</p><p>此外，我們計劃將於2026年9月2日06:00 (UTC+8)開始對遊戲用戶端進行版本更新停機維護，維護完成後將更新至全新版本「雪淞幽夢」。</p><p>本次更新為強制更新，更新維護期間您將無法登入遊戲，請您合理安排遊戲時間。更新結束後，需要重新下載遊戲資源。由於資源量較大，建議管理員在穩定的網路或Wi-Fi環境中下載。</p><p><br></p><p><strong>▼//預先下載引導</strong></p><p>■ PC</p><p>打開GRYPHLINK，【開始遊戲】按鈕左邊將出現【預先下載】圖示，點擊圖示即可開始下載。預先下載資源大小約6GB。</p><p><br></p><p>■ PlayStation®5</p><p>打開系統介面，選擇《明日方舟：終末地》，按下控制器「選項（OPTIONS）」按鈕，選擇「檢查更新」選項即可開始下載。預先下載資源大小約57GB。</p><p><br></p><p>※ 預先下載的過程中，管理員可以繼續體驗遊戲。</p><p>※ 行動裝置預先下載功能也正在加緊開發中，預計將在未來版本開啟。</p><p><br></p><p><strong>▼//版本維護時間</strong></p><p>Asia伺服器：2026/09/02 06:00 ~ 2026/09/02 12:00 (UTC+8)</p><p>Americas / Europe伺服器：2026/09/01 17:00 ~ 2026/09/01 23:00 (UTC-5)</p><p><br></p><p><strong>▼//更新方式</strong></p><p>版本更新維護開始後，管理員可依照遊戲內指引進行更新。</p><p>· PC：關閉遊戲後，重新啟動GRYPHLINK並點擊更新。</p><p>· Android：進入遊戲後，按照遊戲內彈出視窗提示完成更新。</p><p>· iOS：進入App Store，點擊更新。</p><p>· PlayStation®5：打開系統介面，選擇《明日方舟：終末地》，按下控制器「選項（OPTIONS）」按鈕，選擇「檢查更新」選項，確認更新。</p><p><br></p><p><strong>▼//更新維護補償</strong></p><p>· 補償內容：【嵌晶玉】×900</p><p>· 發放時間：更新維護後 - 下次版本更新維護前</p><p>· 發放條件：更新前建立角色</p><p>· 發放說明：更新維護補償將透過遊戲內信件發放，信件將於下次版本更新維護時過期，請注意及時領取。</p><p><br></p><p><strong>▼//更新維護說明</strong></p><p>本次更新為強制更新，更新維護期間您將無法登入遊戲，請您留意並妥善安排遊戲時間。更新結束後，需要重新下載遊戲資源。由於資源量較大，建議管理員在穩定的網路或Wi-Fi環境下載。若您的設備已完成或進行過預先下載，則會基於已下載的資源量，減少更新維護後需要下載的資源，節省該階段更新所需等待的時間。本次更新下載所需儲存空間預估如下：</p><p>· PC：6GB（解壓縮過程中需要額外預留10GB存儲空間；為了您的遊戲體驗，建議將遊戲安裝在固態硬碟）</p><p>· Android：3GB（解壓縮過程中需要額外預留3GB儲存空間）</p><p>· iOS：3GB（解壓縮過程中需要額外預留3GB儲存空間）</p><p>· PlayStation®5：57GB（解壓縮過程中需要額外預留62GB儲存空間）</p><p><br></p><p>※ 解壓縮過程中占用的額外儲存空間將在解壓縮完成後釋放。</p>",
             "linkType": 1
           }
         },
@@ -340,24 +333,6 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260803/206ca3792538235a359f096cd26e71f6.jpg\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(0, 0, 0);\"><strong>▼//賽季更新時間</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">2026/08/09 12:00（伺服器時間） ~ 版本更新維護前</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>▼//參與條件</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 權限等階≥40級</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 完成主線任務「第一章 - 進度II - 開拓前路」</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>▼//賽季更新說明</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">全新賽季「譫妄賽季」開放，該賽季新增2個關卡，分為3個輪換週期，每個輪換週期包含3個關卡。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">※ Asia伺服器時區：UTC+8</span></p><p><span style=\"color: rgb(0, 0, 0);\">※ Americas / Europe伺服器時區：UTC-5</span></p><p><span style=\"color: rgb(0, 0, 0);\">※ 更多活動詳細說明，請前往遊戲內【活動中心】查看。</span></p>",
-            "linkType": 1
-          }
-        },
-        {
-          "cid": "3045",
-          "type": 0,
-          "tab": "news",
-          "orderType": 1,
-          "orderWeight": 1,
-          "displayType": "picture",
-          "startAt": 1784458800,
-          "focus": 0,
-          "title": "向淵行藍圖徵集",
-          "header": "",
-          "jumpButton": null,
-          "data": {
-            "url": "https://web-static.hg-cdn.com/upload/image/20260717/b9c73e9fb288cd4203cf8520344a40a5.png",
-            "link": "https://static.skport.com/u-link/download.html?schema=skport%3A%2F%2Fweb%3Furl%3Dhttps%253A%252F%252Fwww.skport.com%252Farticle%253Fid%253D2078041393880107218%2526hg_media%253Dgame%2526hg_link_campaign%253Dannouncement%2526hg_link_name%253Dblueprint",
             "linkType": 1
           }
         },
@@ -546,77 +521,6 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260715/1c56cf7617b84118f403f7b622369e05.jpg\" data-width=\"1650\" data-height=\"300\"><p>親愛的管理員：<br>「向淵行」版本期間，【採購中心】將上架各類組合包。<br><br><strong>▼//限時組合包<br>■ 向淵妙趣收藏包</strong><br>· 可購買時間：「向淵行」版本期間<br>· 組合包內容：【特許尋訪憑證】×1、【貼紙·抑制器】×1、【頭像·遊樂團團】×1<br>· 特殊說明：限購1次<br><br><strong>■ 相伴慶典組合包</strong><br>· 可購買時間：「向淵行」版本期間<br>· 組合包內容：【特許尋訪憑證】×30、【高階培養自選箱I】×5、【折金票】×100000<br>· 特殊說明：限購1次<br><br><strong>■ 協議源流組合包</strong><br>· 可購買時間：「向淵行」版本期間<br>· 組合包內容：【特許尋訪憑證】×10、【武庫配額】×2000、【存續的痕跡】×10<br>· 特殊說明：目前版本限購1次<br><br><strong>■ 臨淵尋訪組合包</strong><br>· 可購買時間：「向淵行」版本開啟後 ~ 2026/08/09 11:59（伺服器時間）<br>· 組合包內容：【踞淵北眺尋訪憑證】×10、【折金票】×80000<br>· 特殊說明：限購1次<br><br><strong>■ 晨星尋訪組合包</strong><br>· 可購買時間：2026/08/09 12:00（伺服器時間） ~ 版本更新維護前<br>· 組合包內容：【明耀晨星尋訪憑證】×10、【折金票】×80000<br>· 特殊說明：限購1次<br><br><strong>■ 特惠武庫配額包</strong><br>· 組合包內容：【武庫配額】×2000<br>· 特殊說明：限購1次，隨「特許尋訪」的更新而更新限購次數<br><br><strong>■ 資訊更新支援包</strong><br>· 組合包內容：【ID資訊更新卡】×1<br>· 特殊說明：可免費領取禮包一次，免費領取後此禮包將恢復原價<br><br>※ Asia伺服器時區：UTC+8<br>※ Americas / Europe伺服器時區：UTC-5<br>※ 部分組合包可能含有限時道具。管理員可在【購買商品 - 商品內容】中查看限時道具的詳細資訊。如在購買組合包後，其中的限時道具因到期失效，將無法補發。感謝管理員的理解與支持。<br>※ 更多組合包及相關詳細說明，請前往遊戲內【採購中心 - 組合包】查看。</p>",
-            "linkType": 1
-          }
-        },
-        {
-          "cid": "4612",
-          "type": 0,
-          "tab": "news",
-          "orderType": 1,
-          "orderWeight": 4,
-          "displayType": "picture",
-          "startAt": 1785470400,
-          "focus": 0,
-          "title": "【嵌晶玉獎勵】\\n創意拍照活動開啟",
-          "header": "",
-          "jumpButton": null,
-          "data": {
-            "url": "https://web-static.hg-cdn.com/upload/image/20260730/1b54e210471be25c007676d03a7124ee.png",
-            "link": "https://discord.gg/qSpWWZTzUD?event=1531575086560182282",
-            "linkType": 1
-          }
-        },
-        {
-          "cid": "5520",
-          "type": 0,
-          "tab": "news",
-          "orderType": 1,
-          "orderWeight": 4,
-          "displayType": "rich_text",
-          "startAt": 1784779200,
-          "focus": 0,
-          "title": "遊戲工具\\n現已更新",
-          "header": "遊戲工具現已更新",
-          "jumpButton": null,
-          "data": {
-            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260722/1ebdee0920b3e7d187aa5a632b827ade.jpg\" data-width=\"1650\" data-height=\"300\"><p>遊戲工具更新：養成計算機工具上線、完成限時簽到可得嵌晶玉<br><br>親愛的管理員們，<br>《明日方舟：終末地》遊戲工具在新版本「向淵行」期間迎來了以下更新，一起來看看吧~<br><br><strong>養成計算機工具上線！快來體驗吧~</strong><br>在SKPORT APP《明日方舟：終末地》版區，點擊頂部【養成計算機】圖示，即可進入工具介面。<br>- 在本工具中，管理員們可以選定幹員及其武器，預設目標練度，匯總本次養成所需的全部材料。<br>- 可一次選擇最多8名幹員加入計劃，多人材料需求合併展示。<br>- 可自由選擇是否同步倉庫資源，查看倉庫持有量與養成所需資源對比後的缺口，讓後續養成更有方向。<br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://game.skport.com/tools/endfield/cost-calculator?header=0\">點擊前往養成計算機</a><br><br><strong>每日簽到工具更新：限時簽到活動開啟！</strong><br>每日簽到即可獲得各種遊戲道具，完成7日簽到累計可獲得嵌晶玉×260！<br>限時簽到活動時間：7/17 ~ 7/31 23:59 (UTC+8)，快來參與活動吧~<br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://game.skport.com/endfield/sign-in\">點擊前往簽到</a><br><br><strong>地圖工具更新：新版本地區地圖及相關位置更新！</strong><br>新增了「武陵 - 應龍關」、「武陵 - 北部禁區」地區地圖及相關位置。<br>使用即時位置同步功能，便捷探索新的區域、快速定位醚質及儲藏箱！<br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://game.skport.com/map/endfield\">點擊前往地圖工具</a><br><br><strong>編隊推薦&amp;養成建議更新：新幹員「訣」上線！</strong><br>【編隊推薦】和【養成建議】工具頁新增幹員「訣」，管理員們可快速瀏覽其他管理員上傳的編隊陣容推薦和養成資訊！也可前往填寫自己的編隊和養成方案，分享你的獨門心得！<br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://game.skport.com/tools/endfield/rec-team\">點擊前往編隊推薦&amp;養成建議</a><br><br><strong>WIKI更新：新增新版本角色、武器、物品、設備等資訊</strong><br>隨著版本更新，WIKI將新增幹員「訣」、武器「四二式·肅陣」、以及其他版本新增物品、設備、裝備等資訊。<br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://wiki.skport.com/endfield\">點擊前往WIKI</a><br><br>目前版本還會推出更多工具功能更新，敬請期待！<br>以上就是本次新版本工具的更新內容了！希望可以為管理員們的遊戲體驗提供更多幫助~ <br>歡迎管理員們來使用遊戲工具，提供寶貴的反饋建議，我們會持續優化完善各工具的功能和體驗，感謝管理員們的支持！</p>",
-            "linkType": 1
-          }
-        },
-        {
-          "cid": "8954",
-          "type": 0,
-          "tab": "news",
-          "orderType": 1,
-          "orderWeight": 4,
-          "displayType": "picture",
-          "startAt": 1784606400,
-          "focus": 0,
-          "title": "官方衍生品\\n新品上架",
-          "header": "",
-          "jumpButton": null,
-          "data": {
-            "url": "https://web-static.hg-cdn.com/upload/image/20260720/548583f57bb7da3d9df1f94724825aa5.png",
-            "link": "https://store.gryphline.com",
-            "linkType": 1
-          }
-        },
-        {
-          "cid": "6447",
-          "type": 0,
-          "tab": "news",
-          "orderType": 1,
-          "orderWeight": 4,
-          "displayType": "picture",
-          "startAt": 1784199600,
-          "focus": 0,
-          "title": "新版本討論",
-          "header": "",
-          "jumpButton": null,
-          "data": {
-            "url": "https://web-static.hg-cdn.com/upload/image/20260715/f73eaef40eaa08af54b9282b3ad4064d.png",
-            "link": "https://www.skport.com/article?id=2077308566596882273&hg_media=game&hg_link_campaign=announcement&hg_link_name=homecoming",
             "linkType": 1
           }
         },
