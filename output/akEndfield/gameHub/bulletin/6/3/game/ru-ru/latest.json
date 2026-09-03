@@ -18,11 +18,11 @@
       "subChannel": "#DEFAULT",
       "lang": "ru-ru",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:ru-ru",
-      "version": "624a321be390fecec13b395d03113d8b",
+      "version": "df398c333a67793f89839f021673690b",
       "onlineList": [
         {
-          "cid": "1375",
-          "version": 1788360477,
+          "cid": "6433",
+          "version": 1788407699,
           "needRedDot": false,
           "needPopup": false
         },
@@ -83,6 +83,12 @@
         {
           "cid": "8950",
           "version": 1788228586,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "7282",
+          "version": 1788428981,
           "needRedDot": true,
           "needPopup": false
         },
@@ -166,22 +172,23 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1788361200,
+      "updatedAt": 1788433200,
       "list": [
         {
-          "cid": "1375",
+          "cid": "6433",
           "type": 0,
           "tab": "updates",
           "orderType": 1,
           "orderWeight": 1,
           "displayType": "rich_text",
-          "startAt": 1788361200,
-          "focus": 1,
-          "title": "Quick Update Notice",
-          "header": "09/02 - Quick Update Notice",
+          "startAt": 1788404400,
+          "focus": 0,
+          "extraData": {},
+          "title": "Список изменений",
+          "header": "Список изменений Arknights: Endfield",
           "jumpButton": null,
           "data": {
-            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260902/f9f1fa78d5d555f7616dacc80f89f31e.png\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(31, 35, 41);\">Dear Endministrator,</span></p><p><span style=\"color: rgb(31, 35, 41);\">The servers will undergo a quick update from 2026-09-02 21:30 to 2026-09-02 21:40 (UTC-5). During this time, all Endministrators will be logged out and unable to access the game.</span></p><p></p><p>▼// Bug Fixes</p><p>· Fixed an issue with abnormal configuration of [Arms OC: Deep Cold]. After this hot update, selectable weapons in [Arms OC: Deep Cold] will include [Exemplar].</p><p>· Fixed an issue where, under specific circumstances, enemy shields could not be destroyed in the side mission [A Forest Shrouded in Mist], thereby preventing mission progression.</p><p>· Fixed an issue where, under specific circumstances, 6★ operator [Typhoeus]'s arrow special effects persisted for an abnormal amount of time.</p><p>· Fixed an issue where, under specific circumstances, the DMG multipliers displayed in the brief and detailed descriptions of 6★ operator [Typhoeus]'s battle skill [Piercing Arrows of the Woods] are inconsistent.</p><p>· Fixed an issue where the [Depot Unloader]'s On/Off switch was not displayed.</p><p>· Fixed an issue where some information for [Snowy Forest] was incorrectly configured in the Regional Development Level Summary interface.</p><p>· Fixed an issue where, under specific circumstances, the [Endministrator] could cast their battle skill aboard Dijiang.</p><p></p><p>The above updates and fixes will take effect after you restart the client. We sincerely apologize for any inconvenience caused.</p><p></p><p>▼// Update Compensation</p><p><span style=\"color: rgb(31, 35, 41);\">This quick update includes repairs for several important issues. The following update compensation will be distributed via in-game mail.</span></p><p><span style=\"color: rgb(31, 35, 41);\">· Oroberyl×200</span></p><p><span style=\"color: rgb(31, 35, 41);\">· Emergency Sanity Booster×1</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\">Distribution Period: </span>2026/09/02<span style=\"color: rgb(31, 35, 41);\"> after the quick update – Before the next version update and maintenance</span></p><p><span style=\"color: rgb(31, 35, 41);\">Eligibility: All Endministrators who registered and created a character before the update on </span>2026/09/02<span style=\"color: rgb(31, 35, 41);\"> 21:30 (UTC-5)</span></p><p><span style=\"color: rgb(31, 35, 41);\">Note: Claimable after unlocking the [Mail] function. The mail is valid for 30 days. Please be sure to claim it in time.</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\">Thank you for your continued interest and support for Arknights: Endfield, Endministrator!</span></p>",
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260903/26fc4f320de25f57c7fe7327ee525ee8.png\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(0, 0, 0);\">Уважаемый Эндминистратор!</span></p><p><span style=\"color: rgb(0, 0, 0);\">Для вашего удобства мы продолжим оптимизировать игру и исправлять возникающие проблемы. Это обновление включает следующие исправления:</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">▼// Обновления и исправления</span></p><p>■ 02.09.2026 (UTC-5)</p><p>· Исправлена ошибка, из-за которой при определенных обстоятельствах в побочной миссии «Окутанный туманом лес» было невозможно разрушить вражеские щиты, что препятствовало прохождению.</p><p>· Исправлена ошибка, из-за которой при определенных обстоятельствах спецэффекты стрел 6★ оперативника Тифеи отображались дольше положенного.</p><p>· Исправлена ошибка, из-за которой при определенных обстоятельствах не совпадало значение множителя УРН в кратком и подробном описаниях боевого навыка «Пронзающие стрелы лесов» 6★ оперативника Тифеи.</p><p>· Исправлена ошибка, из-за которой не отображался переключатель узла разгрузки склада.</p><p>· Исправлена ошибка, из-за которой некоторая информация о регионе «Снежный лес» некорректно отображалась в сводке по уровню развития региона.</p><p>· Исправлена ошибка, позволявшая Эндминистратору при определенных обстоятельствах применять боевой навык на борту «Дицзян».</p><p></p><p><span style=\"color: rgb(0, 0, 0);\">Приведенные выше обновления и исправления вступят в силу после перезапуска клиента. Приносим искренние извинения за возможные неудобства.</span></p><p><span style=\"color: rgb(0, 0, 0);\">Благодарим за поддержку и интерес к Arknights: Endfield, Эндминистратор!</span></p>",
             "linkType": 1
           }
         },
@@ -354,6 +361,24 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260831/d74cb4b45a7aebd2aaf4bbbf0b85760a.jpg\" data-width=\"1650\" data-height=\"300\"><p>Уважаемый Эндминистратор!</p><p>Пока доступна [поставка «Лютый мороз»], шанс на получение оружия 6★ [Тень закатной стужи (модуль искусств)] увеличен!</p><p><br></p><p><strong>▼// [Поставка «Лютый мороз»]</strong></p><p>· Доступность: откроется после обновления версии [Сны средь ветров и снегов] и завершится после показа 3 баннеров [специального найма] (начиная с баннера [Зимняя охота])</p><p>· Условия участия. Выполните основную миссию [Глава I, операция I: Прорыв осады]</p><p>· В [поставке «Лютый мороз»] представлено оружие 6★ [Тень закатной стужи (модуль искусств)] с высоким шансом получения.</p><p>· Оружие 6★, которое может появиться в [поставке «Лютый мороз»]: Тень закатной стужи (модуль искусств), Эталон (двуручный меч), Кланнибал (пушка), Доблесть (древковое оружие), Забвение (модуль искусств), Модуль взрыва (модуль искусств), Резкий подъем (меч).</p><p><br></p><p><strong>▼// Награды за [поставку арсенала]</strong></p><p>Когда речь идет о любой [поставке арсенала], выполнение заданного числа поставок приносит поочередно то [ящик пополнения арсенала] (пополнение арсенала), соответствующий баннеру, то [оружие 6★ с высоким шансом]. Общее количество поставок, требуемое для получения этих вознаграждений за [поставку арсенала], будет обнуляться после окончания показа баннера. Оно не будет распространяться на другие баннеры [поставки арсенала].</p><p><br></p><p><strong>▼// Сведения о [поставке арсенала]</strong></p><p>· При [поставке арсенала] [билеты арсенала] можно тратить на заказ поставки.</p><p>· Каждая поставка приносит 10 видов оружия, случайно выбираемых из списка доступных вооружений, включая не менее одного вида оружия 5★ и более.</p><p><br></p><p><strong>▼// Сведения об [обменнике арсенала]</strong></p><p>[Билет арсенала] можно использовать в [обменнике арсенала] непосредственно для покупки оружия. Некоторые имеющиеся в продаже виды оружия могут время от времени обновляться. Чтобы узнать о доступности оружия, обратите внимание на информацию, приведенную в [обменнике арсенала в центре закупок].</p><p><br></p><p>※ Чтобы ознакомиться с другими сведениями и узнать правила получения наград, посетите в игре [центр закупок и выберите обменник арсенала].</p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "7282",
+          "type": 0,
+          "tab": "news",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "picture",
+          "startAt": 1788433200,
+          "focus": 0,
+          "title": "Руководство Тифеи по выживанию среди льдов",
+          "header": "",
+          "jumpButton": null,
+          "data": {
+            "url": "https://web-static.hg-cdn.com/upload/image/20260903/28d4220e4bfaab9920135b2ae3bc1d8b.jpg",
+            "link": "https://static.skport.com/u-link/download.html?schema=skport%3A%2F%2Fweb%3Furl%3Dhttps%253A%252F%252Fwww.skport.com%252Farticle%253Fid%253D2095343107828303875%2526hg_media%253Dgame%2526hg_link_campaign%253Dannouncement%2526hg_link_name%253DTyphoeus",
             "linkType": 1
           }
         },

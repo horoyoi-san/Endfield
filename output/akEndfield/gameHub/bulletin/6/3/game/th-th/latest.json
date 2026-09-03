@@ -18,11 +18,11 @@
       "subChannel": "#DEFAULT",
       "lang": "th-th",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:th-th",
-      "version": "624a321be390fecec13b395d03113d8b",
+      "version": "df398c333a67793f89839f021673690b",
       "onlineList": [
         {
-          "cid": "1375",
-          "version": 1788360477,
+          "cid": "6433",
+          "version": 1788407699,
           "needRedDot": false,
           "needPopup": false
         },
@@ -83,6 +83,12 @@
         {
           "cid": "8950",
           "version": 1788228586,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "7282",
+          "version": 1788428981,
           "needRedDot": true,
           "needPopup": false
         },
@@ -166,22 +172,23 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1788361200,
+      "updatedAt": 1788433200,
       "list": [
         {
-          "cid": "1375",
+          "cid": "6433",
           "type": 0,
           "tab": "updates",
           "orderType": 1,
           "orderWeight": 1,
           "displayType": "rich_text",
-          "startAt": 1788361200,
-          "focus": 1,
-          "title": "Quick Update Notice",
-          "header": "09/02 - Quick Update Notice",
+          "startAt": 1788404400,
+          "focus": 0,
+          "extraData": {},
+          "title": "รายละเอียดแพตช์",
+          "header": "รายละเอียดแพตช์ Arknights: Endfield",
           "jumpButton": null,
           "data": {
-            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260902/f9f1fa78d5d555f7616dacc80f89f31e.png\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(31, 35, 41);\">Dear Endministrator,</span></p><p><span style=\"color: rgb(31, 35, 41);\">The servers will undergo a quick update from 2026-09-02 21:30 to 2026-09-02 21:40 (UTC-5). During this time, all Endministrators will be logged out and unable to access the game.</span></p><p></p><p>▼// Bug Fixes</p><p>· Fixed an issue with abnormal configuration of [Arms OC: Deep Cold]. After this hot update, selectable weapons in [Arms OC: Deep Cold] will include [Exemplar].</p><p>· Fixed an issue where, under specific circumstances, enemy shields could not be destroyed in the side mission [A Forest Shrouded in Mist], thereby preventing mission progression.</p><p>· Fixed an issue where, under specific circumstances, 6★ operator [Typhoeus]'s arrow special effects persisted for an abnormal amount of time.</p><p>· Fixed an issue where, under specific circumstances, the DMG multipliers displayed in the brief and detailed descriptions of 6★ operator [Typhoeus]'s battle skill [Piercing Arrows of the Woods] are inconsistent.</p><p>· Fixed an issue where the [Depot Unloader]'s On/Off switch was not displayed.</p><p>· Fixed an issue where some information for [Snowy Forest] was incorrectly configured in the Regional Development Level Summary interface.</p><p>· Fixed an issue where, under specific circumstances, the [Endministrator] could cast their battle skill aboard Dijiang.</p><p></p><p>The above updates and fixes will take effect after you restart the client. We sincerely apologize for any inconvenience caused.</p><p></p><p>▼// Update Compensation</p><p><span style=\"color: rgb(31, 35, 41);\">This quick update includes repairs for several important issues. The following update compensation will be distributed via in-game mail.</span></p><p><span style=\"color: rgb(31, 35, 41);\">· Oroberyl×200</span></p><p><span style=\"color: rgb(31, 35, 41);\">· Emergency Sanity Booster×1</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\">Distribution Period: </span>2026/09/02<span style=\"color: rgb(31, 35, 41);\"> after the quick update – Before the next version update and maintenance</span></p><p><span style=\"color: rgb(31, 35, 41);\">Eligibility: All Endministrators who registered and created a character before the update on </span>2026/09/02<span style=\"color: rgb(31, 35, 41);\"> 21:30 (UTC-5)</span></p><p><span style=\"color: rgb(31, 35, 41);\">Note: Claimable after unlocking the [Mail] function. The mail is valid for 30 days. Please be sure to claim it in time.</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\">Thank you for your continued interest and support for Arknights: Endfield, Endministrator!</span></p>",
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260903/72b4c104939a5c73095b9ab0ef0769e5.jpg\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(0, 0, 0);\">เรียน Endministrator,</span></p><p><span style=\"color: rgb(0, 0, 0);\">เพื่อให้มั่นใจว่าคุณจะได้รับประสบการณ์การเล่นเกมที่ดียิ่งขึ้น เราจะดำเนินการปรับปรุงตัวเกมอย่างต่อเนื่องและแก้ไขปัญหาต่างๆ ที่เกิดขึ้น การอัปเดตในครั้งนี้ ประกอบไปด้วยการแก้ไขดังต่อไปนี้:</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">▼// การอัปเดตและการแก้ไข</span></p><p>■ 02.09.2026 (UTC-5)</p><p>· แก้ไขปัญหาที่ในบางสถานการณ์ ไม่สามารถทำลายโล่ของศัตรูในภารกิจเสริม [ป่าที่ปกคลุมด้วยหมอก] ได้ ส่งผลให้ไม่สามารถดำเนินภารกิจต่อได้</p><p>· แก้ไขปัญหาที่ในบางสถานการณ์ เอฟเฟกต์พิเศษของลูกธนูของโอเปอเรเตอร์ 6★ [ไทฟีอุส] คงอยู่เป็นเวลานานผิดปกติ</p><p>· แก้ไขปัญหาที่ในบางสถานการณ์ ตัวคูณ DMG ที่แสดงในคำอธิบายทักษะการต่อสู้ [ศรเจาะทะลุป่า] ฉบับย่อและฉบับละเอียด ซึ่งเป็นทักษะการต่อสู้ของโอเปอเรเตอร์ 6★ [ไทฟีอุส] ไม่ตรงกัน</p><p>· แก้ไขปัญหาที่สวิตช์เปิด/ปิดของ [‌แท่นส่งคลังสินค้า] ไม่แสดงผล</p><p>· แก้ไขปัญหาที่ข้อมูลบางส่วนของ [ป่าขาวโพลน] ตั้งค่าในหน้าสรุประดับการพัฒนาระดับภูมิภาคไม่ถูกต้อง</p><p>· แก้ไขปัญหาที่ในบางสถานการณ์ [Endministrator] สามารถใช้ทักษะการต่อสู้ขณะอยู่บนตี้เจียงได้</p><p></p><p><span style=\"color: rgb(0, 0, 0);\">การอัปเดตและการแก้ไขข้างต้นจะมีผลหลังจากที่คุณเริ่มเกมใหม่ เราขออภัยเป็นอย่างสูงในความไม่สะดวกที่เกิดขึ้น</span></p><p><span style=\"color: rgb(0, 0, 0);\">ขอขอบคุณสำหรับความสนใจและการสนับสนุน Arknights: Endfield อย่างต่อเนื่องนะ Endministrator!</span></p>",
             "linkType": 1
           }
         },
@@ -354,6 +361,24 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260831/e2d99bb5b0db8d5f895f003f2c3a5a6c.jpg\" data-width=\"1650\" data-height=\"300\"><p>Endministrator ที่เคารพ</p><p>ระหว่างที่ [ตั๋วหนาวยะเยือก] เปิด โอกาสได้รับอาวุธ 6★ [เงามืดแห่งสนธยาเยือกแข็ง (ยูนิตเวท)] จะเพิ่มขึ้น!</p><p><br></p><p><strong>▼// [ตั๋วหนาวยะเยือก]</strong></p><p>· ระยะเวลา: เปิดหลังจากการอัปเดตเวอร์ชัน [ห้วงภวังค์แห่งสายลมและหิมะ] และสิ้นสุดหลังแบนเนอร์ [การสรรหารับรอง] 3 ครั้ง (เริ่มจาก [ไล่ล่ากลางเหมันต์])</p><p>· เกณฑ์การเข้าร่วม: เสร็จสิ้นภารกิจหลัก [บทที่ 1 องก์ 1: ฝ่าวงล้อม]</p><p>· อาวุธ 6★ ที่อัตราได้รับเพิ่มขึ้นใน [ตั๋วหนาวยะเยือก] คือ [เงามืดแห่งสนธยาเยือกแข็ง (ยูนิตเวท)]</p><p>· อาวุธ 6★ ที่อาจจะปรากฏใน [ตั๋วหนาวยะเยือก] ประกอบด้วย: เงามืดแห่งสนธยาเยือกแข็ง (ยูนิตเวท) / เอ็กเซมพลาร์ (ดาบใหญ่) / แคลนิบอล (ปืนหามแล่น) / ผู้กล้า (อาวุธหอก) / ความว่างเปล่า (ยูนิตเวท) / หน่วยจุดระเบิด (ยูนิตเวท) / แรพิดแอสเซนต์ (ดาบ)</p><p><br></p><p><strong>▼// รางวัล [ตั๋วคลังแสง]</strong></p><p>ในทุก [ตั๋วคลังแสง] การใช้ตั๋วคลังแสงถึงจำนวนหนึ่งจะมอบ [ลังเสนออาวุธ] (OC อาวุธ) หรือ [อาวุธ 6★ เพิ่มโอกาสรับ] เฉพาะแบนเนอร์สลับกันไป จำนวนตั๋วสำหรับรางวัลตั๋วคลังแสงเหล่านี้จะถูกรีเซ็ตเมื่อสิ้นสุดแบนเนอร์ และจะไม่ยกยอดไปยังแบนเนอร์ [ตั๋วคลังแสง] อื่นๆ</p><p><br></p><p><strong>▼// รายละเอียด [ตั๋วคลังแสง]</strong></p><p>· คุณสามารถใช้ [บัตรตั๋วคลังแสง] ใน [ตั๋วคลังแสง] เพื่อขอใช้ตั๋ว</p><p>· ตั๋วแต่ละใบจะสุ่มมอบอาวุธ 10 ชิ้นจากรายชื่ออาวุธที่มีอยู่ รวมถึงอาวุธ 5★ ขึ้นไปอย่างน้อยหนึ่งชิ้น</p><p><br></p><p><strong>▼// รายละเอียด [แลกเปลี่ยนคลังแสง]</strong></p><p>ใน [แลกเปลี่ยนคลังแสง] สามารถใช้ [บัตรตั๋วคลังแสง] ซื้ออาวุธโดยตรงได้อีกด้วย อาวุธที่ซื้อได้บางส่วนอาจมีการอัปเดตเป็นระยะ ตรวจดูข้อมูลที่แสดงบนหน้า [ศูนย์สรรพสินค้า - แลกเปลี่ยนคลังแสง] เพื่อดูว่ามีอะไรบ้าง</p><p><br></p><p>※ สามารถดูรายละเอียดเพิ่มเติมและกติการางวัลได้ที่ [ศูนย์สรรพสินค้า - แลกเปลี่ยนคลังแสง] ในเกม</p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "7282",
+          "type": 0,
+          "tab": "news",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "picture",
+          "startAt": 1788433200,
+          "focus": 0,
+          "title": "คู่มือเอาชีวิตรอด\\nในทุ่งหิมะของไทฟีอุส",
+          "header": "",
+          "jumpButton": null,
+          "data": {
+            "url": "https://web-static.hg-cdn.com/upload/image/20260903/b50bebdfa56b28eb1da2124e82549546.jpg",
+            "link": "https://static.skport.com/u-link/download.html?schema=skport%3A%2F%2Fweb%3Furl%3Dhttps%253A%252F%252Fwww.skport.com%252Farticle%253Fid%253D2095343107828303875%2526hg_media%253Dgame%2526hg_link_campaign%253Dannouncement%2526hg_link_name%253DTyphoeus",
             "linkType": 1
           }
         },

@@ -18,11 +18,11 @@
       "subChannel": "#DEFAULT",
       "lang": "de-de",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:de-de",
-      "version": "624a321be390fecec13b395d03113d8b",
+      "version": "df398c333a67793f89839f021673690b",
       "onlineList": [
         {
-          "cid": "1375",
-          "version": 1788360477,
+          "cid": "6433",
+          "version": 1788407699,
           "needRedDot": false,
           "needPopup": false
         },
@@ -83,6 +83,12 @@
         {
           "cid": "8950",
           "version": 1788228586,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "7282",
+          "version": 1788428981,
           "needRedDot": true,
           "needPopup": false
         },
@@ -166,22 +172,23 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1788361200,
+      "updatedAt": 1788433200,
       "list": [
         {
-          "cid": "1375",
+          "cid": "6433",
           "type": 0,
           "tab": "updates",
           "orderType": 1,
           "orderWeight": 1,
           "displayType": "rich_text",
-          "startAt": 1788361200,
-          "focus": 1,
-          "title": "Quick Update Notice",
-          "header": "09/02 - Quick Update Notice",
+          "startAt": 1788404400,
+          "focus": 0,
+          "extraData": {},
+          "title": "Patchnotizen",
+          "header": "Arknights: Endfield – Patchnotizen",
           "jumpButton": null,
           "data": {
-            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260902/f9f1fa78d5d555f7616dacc80f89f31e.png\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(31, 35, 41);\">Dear Endministrator,</span></p><p><span style=\"color: rgb(31, 35, 41);\">The servers will undergo a quick update from 2026-09-02 21:30 to 2026-09-02 21:40 (UTC-5). During this time, all Endministrators will be logged out and unable to access the game.</span></p><p></p><p>▼// Bug Fixes</p><p>· Fixed an issue with abnormal configuration of [Arms OC: Deep Cold]. After this hot update, selectable weapons in [Arms OC: Deep Cold] will include [Exemplar].</p><p>· Fixed an issue where, under specific circumstances, enemy shields could not be destroyed in the side mission [A Forest Shrouded in Mist], thereby preventing mission progression.</p><p>· Fixed an issue where, under specific circumstances, 6★ operator [Typhoeus]'s arrow special effects persisted for an abnormal amount of time.</p><p>· Fixed an issue where, under specific circumstances, the DMG multipliers displayed in the brief and detailed descriptions of 6★ operator [Typhoeus]'s battle skill [Piercing Arrows of the Woods] are inconsistent.</p><p>· Fixed an issue where the [Depot Unloader]'s On/Off switch was not displayed.</p><p>· Fixed an issue where some information for [Snowy Forest] was incorrectly configured in the Regional Development Level Summary interface.</p><p>· Fixed an issue where, under specific circumstances, the [Endministrator] could cast their battle skill aboard Dijiang.</p><p></p><p>The above updates and fixes will take effect after you restart the client. We sincerely apologize for any inconvenience caused.</p><p></p><p>▼// Update Compensation</p><p><span style=\"color: rgb(31, 35, 41);\">This quick update includes repairs for several important issues. The following update compensation will be distributed via in-game mail.</span></p><p><span style=\"color: rgb(31, 35, 41);\">· Oroberyl×200</span></p><p><span style=\"color: rgb(31, 35, 41);\">· Emergency Sanity Booster×1</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\">Distribution Period: </span>2026/09/02<span style=\"color: rgb(31, 35, 41);\"> after the quick update – Before the next version update and maintenance</span></p><p><span style=\"color: rgb(31, 35, 41);\">Eligibility: All Endministrators who registered and created a character before the update on </span>2026/09/02<span style=\"color: rgb(31, 35, 41);\"> 21:30 (UTC-5)</span></p><p><span style=\"color: rgb(31, 35, 41);\">Note: Claimable after unlocking the [Mail] function. The mail is valid for 30 days. Please be sure to claim it in time.</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\">Thank you for your continued interest and support for Arknights: Endfield, Endministrator!</span></p>",
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260903/2ae389c3ecb9e124f0df98269d1165e0.jpg\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(0, 0, 0);\">Hallo Endministrator!</span></p><p><span style=\"color: rgb(0, 0, 0);\">Um ein besseres Spielerlebnis zu gewährleisten, werden wir das Spiel weiterhin optimieren und auftretende Probleme beheben. Dieses Update enthält die folgenden Fehlerbehebungen:</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">▼// Updates &amp; Fehlerbehebungen</span></p><p>■ 02.09.2026 (UTC-5)</p><p>· Es wurde ein Problem behoben, bei dem unter bestimmten Umständen gegnerische Schilde in der Nebenmission [Ein nebelverhangener Wald] nicht zerstört werden konnten, was den Missionsfortschritt verhinderte.</p><p>· Es wurde ein Problem behoben, bei dem unter bestimmten Umständen die Pfeil-Spezialeffekte der 6★-Operatorin [Typhoeus] ungewöhnlich lange anhielten.</p><p>· Ein Problem wurde behoben, bei dem unter bestimmten Umständen der in den kurzen und ausführlichen Versionen der Kampffertigkeit-Beschreibung der 6★-Operatorin [Typhoeus] für [Durchbohrende Pfeile des Waldes] angezeigte SDN-Multiplikator nicht übereinstimmte.</p><p>· Ein Problem wurde behoben, bei dem der ON/OFF-Schalter des [Depot-Entladers] nicht angezeigt wurde.</p><p>· Es wurde ein Problem behoben, bei dem in der Oberfläche der Regionsentwicklungslevel-Zusammenfassung einige Daten für [Verschneiter Wald] fehlerhaft konfiguriert waren.</p><p>· Ein Problem wurde behoben, bei dem unter bestimmten Umständen der [Endministrator] seine Kampffertigkeit an Bord der Dijiang wirken konnte.</p><p></p><p><span style=\"color: rgb(0, 0, 0);\">Die oben genannten Updates und Fehlerbehebungen werden nach einem Neustart des Clients wirksam. Wir entschuldigen uns für alle eventuellen Unannehmlichkeiten.</span></p><p><span style=\"color: rgb(0, 0, 0);\">Vielen Dank für dein anhaltendes Interesse und deine Unterstützung für Arknights: Endfield, Endministrator!</span></p>",
             "linkType": 1
           }
         },
@@ -354,6 +361,24 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260831/fa68a8208e481cb019535d5968f2b540.jpg\" data-width=\"1650\" data-height=\"300\"><p>Geschätzter Endministrator:</p><p>Während [Eiskalt-Ausgabe] verfügbar ist, ist die Chance auf Erhalt der 6★-Waffe [Umbra der eisigen Abenddämmerung (Tech-Einheit)] erhöht!</p><p><br></p><p><strong>▼// [Eiskalt-Ausgabe]</strong></p><p>· Verfügbarkeit: Öffnet nach dem [Traumlandschaft aus Wind und Schnee]-Versions-Update; endet nach 3 [Rekrutierung: Priorisiert]-Bannern (beginnend mit [Winterjagd]).</p><p>· Teilnahmekriterien: Abschluss der Hauptmission [Kapitel I Prozess I: Die Belagerung durchbrechen]</p><p>· In der [Eiskalt-Ausgabe] ist die Rate-UP 6★-Waffe [Umbra der eisigen Abenddämmerung (Tech-Einheit)] verfügbar.</p><p>· Zu den 6★-Waffen, die in der [Eiskalt-Ausgabe] verfügbar sind, gehören: Umbra der eisigen Abenddämmerung (Tech-Einheit) / Mustermodell (Großschwert) / Klannibale (Handfeuerwaffe) / Tapferkeit (Stangenwaffe) / Vergessenheit (Tech-Einheit) / Zünder (Tech-Einheit) / Schneller Aufstieg (Schwert).</p><p><br></p><p><strong>▼// [Waffenausgabe]-Belohnungen</strong></p><p>In jeder [Waffenausgabe] erhältst du für eine bestimmte Anzahl von Ausgaben abwechselnd die spezifische [Waffenangebotskiste] (Waffen-AK) oder [6★-Waffe mit erhöhter Wahrscheinlichkeit] des Banners. Die Gesamtzahl der Ausgaben für diese Waffenausgabe-Belohnungen wird nach Ende des Banners zurückgesetzt und nicht auf andere [Waffenausgabe]-Banner übertragen.</p><p><br></p><p><strong>▼// [Waffenausgabe]-Details</strong></p><p>· In [Waffenausgabe] kannst du [Waffentickets] ausgeben, um eine Ausgabe zu beantragen.</p><p>· Bei jeder Ausgabe erhältst du 10 zufällige Waffen aus der Liste der verfügbaren Waffen, darunter mindestens eine 5★-Waffe oder besser.</p><p><br></p><p><strong>▼// [Arsenal-Tauschbörse]-Details</strong></p><p>In der [Arsenal-Tauschbörse] kann das [Waffenticket] auch zum direkten Kauf von Waffen verwendet werden. Einige käufliche Waffen können von Zeit zu Zeit aktualisiert werden. Informiere dich auf dem Bildschirm [Ankaufszentrum – Arsenal-Tauschbörse] über die tatsächlich verfügbaren Waffen.</p><p><br></p><p>※ Weiterführende Informationen und Regeln der Belohnungsvergabe sind im Spiel unter [Ankaufszentrum – Arsenal-Tauschbörse] verfügbar.</p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "7282",
+          "type": 0,
+          "tab": "news",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "picture",
+          "startAt": 1788433200,
+          "focus": 0,
+          "title": "Typhoeus’ Schneefeld-Überlebenshandbuch",
+          "header": "",
+          "jumpButton": null,
+          "data": {
+            "url": "https://web-static.hg-cdn.com/upload/image/20260903/24867b149e492f05a8ef61360816a51e.jpg",
+            "link": "https://static.skport.com/u-link/download.html?schema=skport%3A%2F%2Fweb%3Furl%3Dhttps%253A%252F%252Fwww.skport.com%252Farticle%253Fid%253D2095343107828303875%2526hg_media%253Dgame%2526hg_link_campaign%253Dannouncement%2526hg_link_name%253DTyphoeus",
             "linkType": 1
           }
         },
