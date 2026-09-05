@@ -18,11 +18,11 @@
       "subChannel": "#DEFAULT",
       "lang": "es-mx",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:es-mx",
-      "version": "97fbb5ed7ccb7dc685137036697c3a9b",
+      "version": "829d8a6d9093469079978927379e9bc8",
       "onlineList": [
         {
           "cid": "6433",
-          "version": 1788532892,
+          "version": 1788584931,
           "needRedDot": false,
           "needPopup": false
         },
@@ -77,6 +77,12 @@
         {
           "cid": "8950",
           "version": 1788228586,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "1374",
+          "version": 1788520549,
           "needRedDot": true,
           "needPopup": false
         },
@@ -172,7 +178,7 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1788532893,
+      "updatedAt": 1788606000,
       "list": [
         {
           "cid": "6433",
@@ -188,7 +194,7 @@
           "header": "Notas del parche de Arknights: Endfield",
           "jumpButton": null,
           "data": {
-            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260903/b2154ee428fe433f0a7806f687bb9585.png\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(0, 0, 0);\">Hola, Endministrator:</span></p><p><span style=\"color: rgb(0, 0, 0);\">Para garantizar una mejor experiencia, continuaremos optimizando el juego y resolviendo los problemas a medida que surjan. Esta actualización incluye las siguientes correcciones:</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">▼// Actualizaciones y correcciones</span></p><p>■ 03.09.2026 (UTC-5)</p><p>· Se corrigió un problema por el cual, con ciertos comandos, el contador de golpes de la operadora de 6★ [Typhoeus] era incorrecto cuando atacaba a ciertos enemigos.</p><p>· Se corrigió un problema por el cual, en ciertas circunstancias, era incorrecta la cantidad de [Flechas de caza] del efecto de habilidad de la operadora de 6★ [Typhoeus] cuando se volvía a enfrentar a ciertas fases.</p><p>· Se corrigió un problema por el cual, en ciertas circunstancias, aparecía un texto anormal en la misión secundaria [Un reino nevado marcado por las pesadillas].</p><p></p><p>■ 02.09.2026 (UTC-5)</p><p>· Se corrigió un problema de una configuración anormal de [CO de armas: Frío intenso]. Las armas seleccionables ahora incluyen a [Ejemplar]. Si el Endministrator utilizó este objeto antes de la actualización en caliente del 02 de septiembre, por favor, envía tus comentarios a través de [Ajustes] - [Contactar a Soporte] durante el periodo de la versión [Paisaje onírico de Viento y Nieve], y nosotros verificaremos la situación y la procesaremos como corresponda.</p><p>· Se corrigió un problema por el cual, en circunstancias específicas, los escudos enemigos no se podían destruir en la misión secundaria [Un bosque envuelto en niebla], lo que impedía progresar en la misión.</p><p>· Se corrigió un problema por el cual, en circunstancias específicas, se mantenían activados por un tiempo anormal los efectos especiales de la flecha de la operadora de 6★ [Typhoeus].</p><p>· Se corrigió un problema por el cual, en circunstancias específicas, no coincidía el Multiplicador de DAÑ mostrado en las versiones resumidas y detalladas de la descripción de habilidad de batalla de [Flechas perforantes del bosque] de la operadora de 6★ [Typhoeus].</p><p>· Se corrigió un problema por el que no se mostraba el interruptor de encendido y apagado de [Descargador del depósito].</p><p>· Se corrigió un problema en el que algunas informaciones de [Bosque Nevado] estaban configuradas incorrectamente en la interfaz del Resumen de Nivel de desarrollo regional.</p><p>· Se corrigió un problema por el cual, en circunstancias específicas, [Endministrator] podía activar su habilidad de batalla sobre la Dijiang.</p><p></p><p><span style=\"color: rgb(0, 0, 0);\">Las actualizaciones y correcciones anteriores se aplicarán después de que reinicies el cliente. Lamentamos sinceramente cualquier inconveniente ocasionado.</span></p><p><span style=\"color: rgb(0, 0, 0);\">¡Gracias por tu continuo interés y apoyo a Arknights: Endfield, Endministrator!</span></p>",
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260903/b2154ee428fe433f0a7806f687bb9585.png\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(0, 0, 0);\">Hola, Endministrator:</span></p><p><span style=\"color: rgb(0, 0, 0);\">Para garantizar una mejor experiencia, continuaremos optimizando el juego y resolviendo los problemas a medida que surjan. Esta actualización incluye las siguientes correcciones:</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">▼// Actualizaciones y correcciones</span></p><p>■ 03.09.2026 (UTC-5)</p><p>· Se corrigió un problema por el cual, con ciertos comandos, el contador de golpes de la operadora de 6★ [Typhoeus] era incorrecto cuando atacaba a ciertos enemigos.</p><p>· Se corrigió un problema por el cual, en ciertas circunstancias, era incorrecta la cantidad de [Flechas de caza] del efecto de habilidad de la operadora de 6★ [Typhoeus] cuando se volvía a enfrentar a ciertas fases.</p><p>· Se corrigió un problema por el cual, en ciertas circunstancias, aparecía un texto anormal en la misión secundaria [Un reino nevado marcado por las pesadillas].</p><p><span>· Se corrigió un problema por el cual algunas acciones de la operadora de 6★ [Typhoeus] eran anormales.</span></p><p><span>· Se corrigió un problema por el cual, en determinadas circunstancias, ciertas operaciones causaban que los operadores no controlados igual siguieran de forma anómala al operador controlado aunque se pausaran sus acciones.</span></p><p><span>· Se corrigió un problema por el cual, en determinadas circunstancias, las opciones de interacción de [Nexus de control] aparecían de forma anómala en áreas que no eran el [Nexus de control].</span></p><p><span>· Se corrigió un problema por el cual, en determinadas circunstancias, se mostraban anormalmente algunos íconos de funciones en la interfaz principal.</span></p><p></p><p>■ 02.09.2026 (UTC-5)</p><p>· Se corrigió un problema de una configuración anormal de [CO de armas: Frío intenso]. Las armas seleccionables ahora incluyen a [Ejemplar]. Si el Endministrator utilizó este objeto antes de la actualización en caliente del 02 de septiembre, por favor, envía tus comentarios a través de [Ajustes] - [Contactar a Soporte] durante el periodo de la versión [Paisaje onírico de Viento y Nieve], y nosotros verificaremos la situación y la procesaremos como corresponda.</p><p>· Se corrigió un problema por el cual, en circunstancias específicas, los escudos enemigos no se podían destruir en la misión secundaria [Un bosque envuelto en niebla], lo que impedía progresar en la misión.</p><p>· Se corrigió un problema por el cual, en circunstancias específicas, se mantenían activados por un tiempo anormal los efectos especiales de la flecha de la operadora de 6★ [Typhoeus].</p><p>· Se corrigió un problema por el cual, en circunstancias específicas, no coincidía el Multiplicador de DAÑ mostrado en las versiones resumidas y detalladas de la descripción de habilidad de batalla de [Flechas perforantes del bosque] de la operadora de 6★ [Typhoeus].</p><p>· Se corrigió un problema por el que no se mostraba el interruptor de encendido y apagado de [Descargador del depósito].</p><p>· Se corrigió un problema en el que algunas informaciones de [Bosque Nevado] estaban configuradas incorrectamente en la interfaz del Resumen de Nivel de desarrollo regional.</p><p>· Se corrigió un problema por el cual, en circunstancias específicas, [Endministrator] podía activar su habilidad de batalla sobre la Dijiang.</p><p></p><p><span style=\"color: rgb(0, 0, 0);\">Las actualizaciones y correcciones anteriores se aplicarán después de que reinicies el cliente. Lamentamos sinceramente cualquier inconveniente ocasionado.</span></p><p><span style=\"color: rgb(0, 0, 0);\">¡Gracias por tu continuo interés y apoyo a Arknights: Endfield, Endministrator!</span></p>",
             "linkType": 1
           }
         },
@@ -343,6 +349,24 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260831/67b16732cc7267d11c5c0ff7f438a69c.jpg\" data-width=\"1650\" data-height=\"300\"><p>Hola, Endministrator:</p><p>Durante el periodo de disponibilidad de [Solicitud de Frío intenso], ¡aumenta la probabilidad de obtener el arma de 6★ [Sombra del gélido crepúsculo (Unidad de las Artes)]!</p><p><br></p><p><strong>▼// [Solicitud de Frío intenso]</strong></p><p>· Disponibilidad: inicia tras la actualización de la versión [Paisaje onírico de Viento y Nieve] y termina después de 3 banners de [Caza de reclutas certificada], a partir de [Cacería invernal]</p><p>· Requisitos de participación: completa la misión principal [Capítulo I Proceso I: Rompiendo el asedio]</p><p>· [Solicitud de Frío intenso] incluye el arma de 6★ con aumento de probabilidad [Sombra del gélido crepúsculo (Unidad de las Artes)].</p><p>· Las armas de 6★ que pueden aparecer en [Solicitud de Frío intenso] incluyen: Sombra del gélido crepúsculo (Unidad de las Artes) / Ejemplar (gran espada) / Clannibal (cañón de mano) / Valiente (arma de asta) / Olvido (Unidad de las Artes) / Unidad de detonación (Unidad de las Artes) / Ascenso rápido (espada).</p><p><br></p><p><strong>▼// Recompensas de [Solicitud de Arsenal]</strong></p><p>En cada [Solicitud de Arsenal], al completar un número determinado de misiones, se obtendrá la [Caja de ofrenda de armas] (CO de armas) específica del banner o el [arma de 6★ con aumento de probabilidad] en orden alterno. El número total de solicitudes para estas recompensas de Solicitud de Arsenal se restablecerá una vez que finalice el banner y no se transferirá a otros banners de [Solicitud de Arsenal].</p><p><br></p><p><strong>▼// Detalles de [Solicitud de Arsenal]</strong></p><p>· En [Solicitud de Arsenal], puedes gastar [Boletos de Arsenal] para enviar una solicitud.</p><p>· Cada solicitud otorga 10 armas al azar de la lista de armas disponibles, que incluye al menos un arma de 5★ o más.</p><p><br></p><p><strong>▼// Detalles del [Intercambio de Arsenal]</strong></p><p>En [Intercambio de Arsenal], el [Boleto de Arsenal] también se puede usar para comprar armas directamente. Algunas armas a la venta pueden actualizarse de vez en cuando. Consulta la información que se muestra en la pantalla [Centro de adquisición: Intercambio de Arsenal] para saber qué hay disponible.</p><p><br></p><p>※ Visita el [Centro de adquisición: Intercambio de Arsenal] para conocer más detalles y reglas de las recompensas.</p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "1374",
+          "type": 0,
+          "tab": "news",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "picture",
+          "startAt": 1788606000,
+          "focus": 0,
+          "title": "Tributo del campo nevado",
+          "header": "",
+          "jumpButton": null,
+          "data": {
+            "url": "https://web-static.hg-cdn.com/upload/image/20260904/84d4fd8e543eb3a49e6e9d9fdf934ced.png",
+            "link": "https://static.skport.com/u-link/download.html?schema=skport%3A%2F%2Fdetail%3Fid%3D2095742439963507984&redirectUrl=https%3A%2F%2Fwww.skport.com%2Farticle%3Fid%3D2095742439963507984%26hg_media%3Dgame%26hg_link_campaign%3Dannouncement%26hg_link_name%3Dphoto",
             "linkType": 1
           }
         },

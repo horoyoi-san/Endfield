@@ -18,11 +18,11 @@
       "subChannel": "#DEFAULT",
       "lang": "fr-fr",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:fr-fr",
-      "version": "97fbb5ed7ccb7dc685137036697c3a9b",
+      "version": "829d8a6d9093469079978927379e9bc8",
       "onlineList": [
         {
           "cid": "6433",
-          "version": 1788532892,
+          "version": 1788584931,
           "needRedDot": false,
           "needPopup": false
         },
@@ -77,6 +77,12 @@
         {
           "cid": "8950",
           "version": 1788228586,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "1374",
+          "version": 1788520549,
           "needRedDot": true,
           "needPopup": false
         },
@@ -172,7 +178,7 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1788532893,
+      "updatedAt": 1788606000,
       "list": [
         {
           "cid": "6433",
@@ -188,7 +194,7 @@
           "header": "Notes de patch d'Arknights: Endfield",
           "jumpButton": null,
           "data": {
-            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260903/3879800fdd1d9f22d7a49888d1218ac2.jpg\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(0, 0, 0);\">Endministrator,</span></p><p><span style=\"color: rgb(0, 0, 0);\">Afin de vous garantir la meilleure expérience possible, nous continuerons à optimiser le jeu et à corriger les problèmes au fur et à mesure qu'ils se présenteront. Cette mise à jour inclut les correctifs suivants :</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">▼// Mises à jour et correctifs</span></p><p>■ 03.09.2026 (UTC-5)</p><p>· Correction d'un problème affectant le décompte des coups de l'opératrice 6★ [Typhoeus] avec certaines commandes en attaquant certains ennemis.</p><p>· Correction d'un problème affectant le nombre de [flèches de chasse] dans l'effet de la compétence de l'opératrice 6★ [Typhoeus] en tentant une nouvelle fois certains niveaux, dans certaines circonstances.</p><p>· Correction d'un problème d'apparition de texte anormal dans la mission annexe [Un royaume enneigé marqué par les cauchemars], dans certaines circonstances.</p><p></p><p>■ 02.09.2026 (UTC-5)</p><p>· Correction d'un problème de configuration du [CO d'armes : froid mordant]. Les armes sélectionnables incluent désormais [Exemplaire]. Si vous avez utilisé cet objet avant la mise à jour rapide du 02/09, veuillez nous envoyer un commentaire via [Paramètres] - [Contacter le service client] pendant la période de la version [Monde onirique de neige et de vent], et nous procèderons à des vérifications afin d'y répondre en conséquence.</p><p>· Correction d'un problème à cause duquel, dans certaines circonstances, les boucliers ennemis ne pouvaient pas être détruits dans la mission annexe [Une forêt enveloppée de brume], ce qui entravait la progression de la mission.</p><p>· Correction d'un problème à cause duquel, dans certaines circonstances, les effets spéciaux de la flèche de l'opératrice 6★ [Typhoeus] persistaient pendant une durée anormale.</p><p>· Correction d'un problème à cause duquel, dans certaines circonstances, le multiplicateur de DÉG affiché dans la description courte de la compétence de combat [Flèches perforantes sylvestres] de l'opératrice 6★ [Typhoeus] ne correspondait pas à celui affiché dans la description détaillée.</p><p>· Correction d'un problème d'affichage de l'interrupteur du [déchargeur d'entrepôt].</p><p>· Correction d'un problème de configuration de certaines informations concernant la [Forêt enneigée] dans l'interface d'aperçu du niveau de développement régional.</p><p>· Correction d'un problème à cause duquel, dans certaines circonstances, l'[Endministrator] pouvait lancer sa compétence de combat à bord du Dijiang.</p><p></p><p><span style=\"color: rgb(0, 0, 0);\">Les mises à jour et correctifs ci-dessus prendront effet après le redémarrage du client. Nous nous excusons sincèrement pour la gêne occasionnée.</span></p><p><span style=\"color: rgb(0, 0, 0);\">Merci pour votre intérêt et votre soutien indéfectible à Arknights: Endfield, Endministrator !</span></p>",
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260903/3879800fdd1d9f22d7a49888d1218ac2.jpg\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(0, 0, 0);\">Endministrator,</span></p><p><span style=\"color: rgb(0, 0, 0);\">Afin de vous garantir la meilleure expérience possible, nous continuerons à optimiser le jeu et à corriger les problèmes au fur et à mesure qu'ils se présenteront. Cette mise à jour inclut les correctifs suivants :</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">▼// Mises à jour et correctifs</span></p><p>■ 03.09.2026 (UTC-5)</p><p>· Correction d'un problème affectant le décompte des coups de l'opératrice 6★ [Typhoeus] avec certaines commandes en attaquant certains ennemis.</p><p>· Correction d'un problème affectant le nombre de [flèches de chasse] dans l'effet de la compétence de l'opératrice 6★ [Typhoeus] en tentant une nouvelle fois certains niveaux, dans certaines circonstances.</p><p>· Correction d'un problème d'apparition de texte anormal dans la mission annexe [Un royaume enneigé marqué par les cauchemars], dans certaines circonstances.</p><p><span>· Correction d'un problème affectant certaines des actions de l'opératrice 6★ [Typhoeus].</span></p><p><span>· Correction d'un problème à cause duquel, dans certaines circonstances, les opérateurs non contrôlés continuaient de suivre l'opérateur contrôlé anormalement, même lorsque leurs actions étaient en pause, lors d'opérations spécifiques.</span></p><p><span>· Correction d'un problème à cause duquel, dans certaines circonstances, les options d'interaction du [Nexus de contrôle] apparaissaient anormalement dans des zones qui ne faisaient pas partie du [Nexus de contrôle].</span></p><p><span>· Correction d'un problème d'affichage de certaines icônes de fonctions de l'interface principale, dans certaines circonstances.</span></p><p></p><p>■ 02.09.2026 (UTC-5)</p><p>· Correction d'un problème de configuration du [CO d'armes : froid mordant]. Les armes sélectionnables incluent désormais [Exemplaire]. Si vous avez utilisé cet objet avant la mise à jour rapide du 02/09, veuillez nous envoyer un commentaire via [Paramètres] - [Contacter le service client] pendant la période de la version [Monde onirique de neige et de vent], et nous procèderons à des vérifications afin d'y répondre en conséquence.</p><p>· Correction d'un problème à cause duquel, dans certaines circonstances, les boucliers ennemis ne pouvaient pas être détruits dans la mission annexe [Une forêt enveloppée de brume], ce qui entravait la progression de la mission.</p><p>· Correction d'un problème à cause duquel, dans certaines circonstances, les effets spéciaux de la flèche de l'opératrice 6★ [Typhoeus] persistaient pendant une durée anormale.</p><p>· Correction d'un problème à cause duquel, dans certaines circonstances, le multiplicateur de DÉG affiché dans la description courte de la compétence de combat [Flèches perforantes sylvestres] de l'opératrice 6★ [Typhoeus] ne correspondait pas à celui affiché dans la description détaillée.</p><p>· Correction d'un problème d'affichage de l'interrupteur du [déchargeur d'entrepôt].</p><p>· Correction d'un problème de configuration de certaines informations concernant la [Forêt enneigée] dans l'interface d'aperçu du niveau de développement régional.</p><p>· Correction d'un problème à cause duquel, dans certaines circonstances, l'[Endministrator] pouvait lancer sa compétence de combat à bord du Dijiang.</p><p></p><p><span style=\"color: rgb(0, 0, 0);\">Les mises à jour et correctifs ci-dessus prendront effet après le redémarrage du client. Nous nous excusons sincèrement pour la gêne occasionnée.</span></p><p><span style=\"color: rgb(0, 0, 0);\">Merci pour votre intérêt et votre soutien indéfectible à Arknights: Endfield, Endministrator !</span></p>",
             "linkType": 1
           }
         },
@@ -343,6 +349,24 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260831/a7055b0b27b7ad4743266b8890df5627.jpg\" data-width=\"1650\" data-height=\"300\"><p>Endministrator,</p><p>Tant que le [tirage du froid mordant] est disponible, les chances d'obtenir l'arme 6★ [Ombre du crépuscule glacé (unité des Arts)] sont augmentées !</p><p><br></p><p><strong>▼// [Tirage du froid mordant]</strong></p><p>· Disponibilité : Ouvre après la sortie de la version [Monde onirique de neige et de vent], et se termine au bout de 3 bannières de [recrutement certifié] (à partir de [Chasse hivernale])</p><p>· Critères de participation : Terminer la mission principale [Chapitre I - Processus I : Rompre le siège]</p><p>· Le [tirage du froid mordant] propose l'arme 6★ [Ombre du crépuscule glacé (unité des Arts)] à taux SUP.</p><p>· Les armes 6★ susceptibles d'apparaître dans le [tirage du froid mordant] sont les suivantes : Ombre du crépuscule glacé (unité des Arts) / Exemplaire (espadon) / Clannibale (canon portatif) / Vaillance (arme d'hast) / Oubli (unité des Arts) / Unité de détonation (unité des Arts) / Ascension rapide (épée).</p><p><br></p><p><strong>▼// Récompenses de [tirage de l'arsenal]</strong></p><p>Dans chaque [tirage de l'arsenal], lancer un nombre défini de tirages offre alternativement un [coffre d'offrande d'armes] (CO d'armes) ou une [arme 6★ à taux SUP] spécifique à cette bannière. Le nombre total de tirages pour obtenir ces récompenses de tirage de l'arsenal sera réinitialisé à l'issue de la bannière et ne sera pas répercuté sur d'autres bannières de [tirage de l'arsenal].</p><p><br></p><p><strong>▼// Détails sur le [tirage de l'arsenal]</strong></p><p>· Dans le [tirage de l'arsenal], vous pouvez dépenser des [tickets de l'arsenal] pour lancer un tirage.</p><p>· Chaque tirage offre 10 armes aléatoires issues de la liste des armes disponibles, incluant au moins une arme 5★ ou plus.</p><p><br></p><p><strong>▼// Détails sur la [boutique de l'arsenal]</strong></p><p>Dans la [boutique de l'arsenal], vous pouvez également utiliser des [tickets de l'arsenal] pour acheter directement des armes. Certaines armes achetables peuvent être mises à jour de temps à autre. Consultez les informations affichées sur l'écran du [Centre d'acquisition : boutique de l'arsenal] pour connaître les disponibilités actuelles.</p><p><br></p><p>※ Pour plus de détails et de règles concernant les récompenses, visitez le [Centre d'acquisition : boutique de l'arsenal] dans le jeu.</p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "1374",
+          "type": 0,
+          "tab": "news",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "picture",
+          "startAt": 1788606000,
+          "focus": 0,
+          "title": "Don du champ de neige",
+          "header": "",
+          "jumpButton": null,
+          "data": {
+            "url": "https://web-static.hg-cdn.com/upload/image/20260904/c08a8a726901ea47a2904620b24abb6a.png",
+            "link": "https://static.skport.com/u-link/download.html?schema=skport%3A%2F%2Fdetail%3Fid%3D2095742439963507984&redirectUrl=https%3A%2F%2Fwww.skport.com%2Farticle%3Fid%3D2095742439963507984%26hg_media%3Dgame%26hg_link_campaign%3Dannouncement%26hg_link_name%3Dphoto",
             "linkType": 1
           }
         },
