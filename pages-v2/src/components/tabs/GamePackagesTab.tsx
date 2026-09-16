@@ -20,6 +20,7 @@ interface GamePackageData {
     dateStr: string;
     packedSizeStr: string;
     unpackedSizeStr: string;
+    prePatchVersion: string | null;
     packs: Array<{
       fileName: string;
       md5: string;
@@ -35,7 +36,7 @@ export default function GamePackagesTab({ mirrorFileDb }: Props) {
 
   useEffect(() => {
     const fetchData = async () => {
-      const promises = gameTargets.map(async (target) => {
+      const promises = gameTargets.map(async (target): Promise<GamePackageData | null> => {
         const url = `${BASE_URL}/akEndfield/launcher/game/${target.dirName}/all.json`;
         try {
           const data = await fetchJson<StoredData<any>[]>(url);
@@ -47,23 +48,26 @@ export default function GamePackagesTab({ mirrorFileDb }: Props) {
               const version = e.rsp.version;
               const dateStr = DateTime.fromISO(e.updatedAt).toFormat('yyyy/MM/dd HH:mm:ss');
 
-              const packSizes = e.rsp.pkg.packs.map((f: any) => parseInt(f.package_size));
+              const packSizes = e.rsp.pkg?.packs ? e.rsp.pkg.packs.map((f: any) => parseInt(f.package_size)) : [];
               const packedSize = math.arrayTotal(packSizes);
-              const totalSize = parseInt(e.rsp.pkg.total_size);
+              const totalSize = parseInt(e.rsp.pkg?.total_size || '0');
               const unpackedSize = totalSize - packedSize;
 
-              const packs = e.rsp.pkg.packs.map((f: any) => ({
+              const packs = (e.rsp.pkg?.packs || []).map((f: any) => ({
                 fileName: new URL(f.url).pathname.split('/').pop() ?? '',
                 md5: f.md5,
                 sizeStr: math.formatFileSize(parseInt(f.package_size), FILE_SIZE_OPTS),
                 url: f.url,
               }));
 
+              const prePatchVersion: string | null = e.rsp.pre_patch?.version ?? null;
+
               return {
                 version,
                 dateStr,
                 packedSizeStr: math.formatFileSize(packedSize, FILE_SIZE_OPTS),
                 unpackedSizeStr: math.formatFileSize(unpackedSize, FILE_SIZE_OPTS),
+                prePatchVersion,
                 packs,
               };
             })
@@ -83,9 +87,11 @@ export default function GamePackagesTab({ mirrorFileDb }: Props) {
       const results = await Promise.all(promises);
       const validResults = results.filter((r): r is GamePackageData => r !== null);
 
-      const sortedResults = gameTargets
-        .map((t) => validResults.find((r) => r.dirName === t.dirName))
-        .filter((r): r is GamePackageData => r !== undefined && r !== null);
+      const sortedResults: GamePackageData[] = [];
+      for (const t of gameTargets) {
+        const found = validResults.find((r) => r.dirName === t.dirName);
+        if (found) sortedResults.push(found);
+      }
 
       setPackages(sortedResults);
       setLoading(false);
@@ -123,8 +129,15 @@ export default function GamePackagesTab({ mirrorFileDb }: Props) {
                       aria-expanded='false'
                       aria-controls={`collapse-${itemId}`}
                     >
-                      <div className='d-flex w-100 justify-content-between me-3'>
-                        <span className='fw-bold'>{ver.version}</span>
+                      <div className='d-flex w-100 justify-content-between me-3 align-items-center'>
+                        <span className='fw-bold'>
+                          {ver.version}
+                          {ver.prePatchVersion && (
+                            <span className='badge bg-warning text-dark ms-2'>
+                              Pre-patch: v{ver.prePatchVersion}
+                            </span>
+                          )}
+                        </span>
                         <span className='text-muted small align-bottom'>{ver.dateStr}</span>
                       </div>
                     </button>

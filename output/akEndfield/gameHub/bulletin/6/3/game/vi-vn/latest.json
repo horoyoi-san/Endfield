@@ -18,7 +18,7 @@
       "subChannel": "#DEFAULT",
       "lang": "vi-vn",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:vi-vn",
-      "version": "09a0483467a1119366aca179b68471fe",
+      "version": "0141b9bf078efe5e16029ec35eeb3bc3",
       "onlineList": [
         {
           "cid": "6433",
@@ -81,6 +81,12 @@
           "needPopup": false
         },
         {
+          "cid": "6432",
+          "version": 1789464561,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
           "cid": "3048",
           "version": 1789106681,
           "needRedDot": true,
@@ -100,7 +106,7 @@
         },
         {
           "cid": "1374",
-          "version": 1788520549,
+          "version": 1789545430,
           "needRedDot": true,
           "needPopup": false
         },
@@ -196,7 +202,7 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1789445058,
+      "updatedAt": 1789545431,
       "list": [
         {
           "cid": "6433",
@@ -371,6 +377,23 @@
           }
         },
         {
+          "cid": "6432",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "rich_text",
+          "startAt": 1789531200,
+          "focus": 0,
+          "title": "Tiếp Tế Tinh Chất Tỉnh Táo",
+          "header": "Tiếp Tế Tinh Chất Tỉnh Táo",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260915/6ff1f712dd1c92d59f7ff59333ab14f6.png\" data-width=\"1650\" data-height=\"300\"><p><strong>▼// Th</strong><span style=\"color: rgb(0, 0, 0);\"><strong>ời Gian Sự Kiện </strong><br>04:00 ngày 17/09/2026 – 04:00 ngày 24/09/2026 (giờ máy chủ)<br><br><strong>▼// Phần Thưởng Sự Kiện </strong><br>Trong thời gian diễn ra sự kiện, hoàn thành các nhiệm vụ chỉ định mỗi ngày để nhận ngay: [Tăng Tỉnh Táo Khẩn Cấp]×4 và [Vé Dùng Tỉnh Táo]×8.<br><br><strong>▼// Điều Kiện Tham Gia </strong><br>Hoàn thành nhiệm vụ chính [Chương I Tiến Trình II: Mở Đường]<br><strong><br>▼// Chi Tiết Sự Kiện </strong><br>· Trong sự kiện này, mỗi ngày sẽ có 3 nhiệm vụ Tiếp Tế Tinh Chất Tỉnh Táo được mở. Chỉ cần hoàn thành là có thưởng. <br>· Nhiệm vụ Tiếp Tế Tinh Chất Tỉnh Táo sẽ được làm mới vào lúc 04:00 hàng ngày (giờ máy chủ). Hãy nhớ nhận thưởng đúng hạn.<br><br>※ Múi Giờ Máy Chủ Asia: UTC+8 <br>※ Múi Giờ Máy Chủ Americas / Europe: UTC-5 <br>※ Mọi thông tin chi tiết khác về sự kiện, hãy kiểm tra tại [Trung Tâm Sự Kiện] trong game.</span></p>",
+            "linkType": 1
+          }
+        },
+        {
           "cid": "3048",
           "type": 0,
           "tab": "news",
@@ -433,6 +456,7 @@
           "displayType": "picture",
           "startAt": 1788606000,
           "focus": 0,
+          "extraData": {},
           "title": "Quà Tặng Từ Đồng Tuyết",
           "header": "",
           "jumpButton": null,

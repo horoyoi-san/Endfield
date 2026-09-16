@@ -84,6 +84,27 @@ export class Archiver {
         )}`,
       );
 
+      // Check pre-patch for current version
+      try {
+        const preRsp = await apiUtils.akEndfield.launcher.latestGameWeb(
+          target.appCode,
+          target.channel,
+          target.subChannel,
+          rsp.version,
+          target.region,
+        );
+        if (preRsp?.pre_patch) {
+          rsp.pre_patch = preRsp.pre_patch;
+          logger.info(
+            `Fetched pre_patch: ${target.region.toUpperCase()}, ${target.name}, v${rsp.pre_patch.version}, ${this.formatBytes(
+              parseInt(rsp.pre_patch.total_size) - parseInt(rsp.pre_patch.package_size),
+            )}`,
+          );
+        }
+      } catch (err) {
+        logger.trace(`No pre_patch or error fetching pre_patch for ${target.name}:`, err);
+      }
+
       const prettyRsp = {
         req: {
           appCode: target.appCode,
@@ -98,14 +119,56 @@ export class Archiver {
       };
 
       const subChns = appConfig.network.api.akEndfield.subChannel;
-      if ([subChns.cnWinRel, subChns.cnWinRelBilibili, subChns.osWinRel].includes(target.subChannel)) {
+      if (
+        [subChns.cnWinRel, subChns.cnWinRelBilibili, subChns.osWinRel, subChns.cnWinDEV].includes(target.subChannel)
+      ) {
         if (rsp.pkg.url) this.queueAssetForMirroring(rsp.pkg.url);
         rsp.pkg.packs.forEach((e) => this.queueAssetForMirroring(e.url));
+        if (rsp.pre_patch?.patches) {
+          rsp.pre_patch.patches.forEach((e) =>
+            this.queueAssetForMirroring(
+              e.url,
+              new URL(e.url).pathname.split('/').filter(Boolean).slice(-5).join('_'),
+            ),
+          );
+        }
       }
 
       await saveResultWithHistory(['akEndfield', 'launcher', 'game', target.dirName], rsp.version, prettyRsp, {
         ignoreRules: DIFF_IGNORE_RULES,
       });
+
+      // Save pre_patch history if present
+      if (rsp.pre_patch) {
+        const outputDir = argvUtils.getArgv()['outputDir'];
+        const prePatchAllPath = path.join(
+          outputDir,
+          'akEndfield',
+          'launcher',
+          'game',
+          target.dirName,
+          'all_pre_patch.json',
+        );
+        let prePatchAll: StoredData<any>[] = (await Bun.file(prePatchAllPath).exists())
+          ? await Bun.file(prePatchAllPath).json()
+          : [];
+        const prettyPreRsp = {
+          req: {
+            appCode: target.appCode,
+            channel: target.channel,
+            subChannel: target.subChannel,
+            version: rsp.version,
+          },
+          rsp: rsp.pre_patch,
+        };
+        const exists = prePatchAll.some(
+          (e) => Object.keys(getObjectDiff({ rsp: e.rsp }, { rsp: prettyPreRsp.rsp }, DIFF_IGNORE_RULES)).length === 0,
+        );
+        if (!exists) {
+          prePatchAll.push({ updatedAt: DateTime.now().toISO(), ...prettyPreRsp });
+          await Bun.write(prePatchAllPath, JSON.stringify(prePatchAll, null, 2));
+        }
+      }
     }
   }
 
@@ -226,7 +289,7 @@ export class Archiver {
     const platforms = ['Windows', 'Android', 'iOS', 'PlayStation'] as const;
 
     const filteredTargets = this.gameTargets.filter(
-      (t) => t.channel !== appConfig.network.api.akEndfield.channel.cnWinRelBilibili,
+      (t) => t.channel !== appConfig.network.api.akEndfield.channel.cnWinRelBilibili && t.name !== 'DEV',
     );
     const uniqueTargets = Array.from(
       new Set(filteredTargets.map((t) => JSON.stringify({ region: t.region, appCode: t.appCode, channel: t.channel }))),
@@ -303,7 +366,7 @@ export class Archiver {
     // 1. Gather URLs from game resources
     const platforms = ['Windows', 'Android', 'iOS', 'PlayStation'] as const;
     const filteredTargets = this.gameTargets.filter(
-      (t) => t.channel !== appConfig.network.api.akEndfield.channel.cnWinRelBilibili,
+      (t) => t.channel !== appConfig.network.api.akEndfield.channel.cnWinRelBilibili && t.name !== 'DEV',
     );
     const uniqueTargets = Array.from(
       new Set(filteredTargets.map((t) => JSON.stringify({ region: t.region, appCode: t.appCode, channel: t.channel }))),
@@ -489,7 +552,7 @@ export class Archiver {
       { name: 'urlConfig', method: apiUtils.akEndfield.launcherWeb.urlConfig, dir: 'url_config' },
     ] as const;
 
-    for (const target of this.gameTargets) {
+    for (const target of this.gameTargets.filter((t) => t.name !== 'DEV')) {
       for (const lang of target.region === 'cn' ? langsCN : langs) {
         for (const api of apis) {
           this.networkQueue.add(async () => {
@@ -612,7 +675,7 @@ export class Archiver {
     const outputDir = argvUtils.getArgv()['outputDir'];
     const platforms = ['Windows', 'Android', 'iOS', 'PlayStation'] as const;
     const filteredTargets = this.gameTargets.filter(
-      (t) => t.channel !== appConfig.network.api.akEndfield.channel.cnWinRelBilibili,
+      (t) => t.channel !== appConfig.network.api.akEndfield.channel.cnWinRelBilibili && t.name !== 'DEV',
     );
     const uniqueTargets = [...new Set(filteredTargets.map((t) => t.channel))];
 

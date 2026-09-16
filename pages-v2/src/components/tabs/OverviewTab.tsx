@@ -97,8 +97,11 @@ export default function OverviewTab({ mirrorFileDb }: Props) {
           if (!latest) continue;
 
           const version = latest.rsp.version;
-          const packedSize = math.arrayTotal(latest.rsp.pkg.packs.map((f: any) => parseInt(f.package_size)));
-          const totalSize = parseInt(latest.rsp.pkg.total_size);
+          const packSizes = latest.rsp.pkg?.packs
+            ? latest.rsp.pkg.packs.map((f: any) => parseInt(f.package_size))
+            : [];
+          const packedSize = math.arrayTotal(packSizes);
+          const totalSize = parseInt(latest.rsp.pkg?.total_size || '0');
           const unpackedSize = totalSize - packedSize;
 
           newTableData.push({
@@ -113,6 +116,11 @@ export default function OverviewTab({ mirrorFileDb }: Props) {
             if (entry.rsp.pkg && entry.rsp.pkg.packs) {
               for (const pack of entry.rsp.pkg.packs) {
                 checkAndAddSize(pack.url, parseInt(pack.package_size));
+              }
+            }
+            if (entry.rsp.pre_patch?.patches) {
+              for (const patch of entry.rsp.pre_patch.patches) {
+                checkAndAddSize(patch.url, parseInt(patch.package_size));
               }
             }
           }
@@ -134,6 +142,22 @@ export default function OverviewTab({ mirrorFileDb }: Props) {
             }
             if (entry.rsp.patch.patches) {
               for (const p of entry.rsp.patch.patches) {
+                checkAndAddSize(p.url, parseInt(p.package_size));
+              }
+            }
+          }
+        } catch {}
+
+        const preUrl = `${BASE_URL}/akEndfield/launcher/game/${target.dirName}/all_pre_patch.json`;
+        try {
+          const data = await fetchJson<StoredData<any>[]>(preUrl);
+          for (const entry of data) {
+            if (!entry.rsp) continue;
+            if (entry.rsp.url) {
+              checkAndAddSize(entry.rsp.url, parseInt(entry.rsp.package_size || '0'));
+            }
+            if (entry.rsp.patches) {
+              for (const p of entry.rsp.patches) {
                 checkAndAddSize(p.url, parseInt(p.package_size));
               }
             }

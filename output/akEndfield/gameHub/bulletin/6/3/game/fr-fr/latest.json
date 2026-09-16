@@ -18,7 +18,7 @@
       "subChannel": "#DEFAULT",
       "lang": "fr-fr",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:fr-fr",
-      "version": "09a0483467a1119366aca179b68471fe",
+      "version": "0141b9bf078efe5e16029ec35eeb3bc3",
       "onlineList": [
         {
           "cid": "6433",
@@ -81,6 +81,12 @@
           "needPopup": false
         },
         {
+          "cid": "6432",
+          "version": 1789464561,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
           "cid": "3048",
           "version": 1789106681,
           "needRedDot": true,
@@ -100,7 +106,7 @@
         },
         {
           "cid": "1374",
-          "version": 1788520549,
+          "version": 1789545430,
           "needRedDot": true,
           "needPopup": false
         },
@@ -196,7 +202,7 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1789445058,
+      "updatedAt": 1789545431,
       "list": [
         {
           "cid": "6433",
@@ -371,6 +377,23 @@
           }
         },
         {
+          "cid": "6432",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "rich_text",
+          "startAt": 1789531200,
+          "focus": 0,
+          "title": "Approvisionnement en lucidité",
+          "header": "Approvisionnement en lucidité",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260915/284fdd951ea503e6698b237d3d4b454d.jpg\" data-width=\"1650\" data-height=\"300\"><p><strong>▼// Dates de l'événement </strong><br>Du 17 septembre 2026 à 4 h (heure du serveur) au 24 septembre 2026 à 4 h (heure du serveur)<br><br><strong>▼// Récompenses d'événement </strong><br>Pendant l'événement, terminez chaque jour les missions indiquées pour obtenir les récompenses suivantes : 4 [bonus de lucidité d'urgence] et 8 [permis d'utilisation de lucidité].<br><br><strong>▼// Conditions de participation </strong><br>Terminer la mission principale [Chapitre I Processus II : Ouvrir la voie]<br><br><strong>▼// Détails de l'événement </strong><br>· Pendant l'événement, 3 missions d'Approvisionnement en lucidité seront disponibles chaque jour. Terminez ces missions pour récupérer les récompenses. <br>· Les missions d'Approvisionnement en lucidité seront réinitialisées chaque jour à 4 h (heure du serveur). N'oubliez pas de récupérer vos récompenses à temps.<br><br>※ Fuseau horaire du serveur Asia : UTC+8 <br>※ Fuseau horaire du serveur Americas / Europe : UTC-5 <br>※ Pour plus de détails sur l'événement, consultez le [Centre d'événement] en jeu.<br></p>",
+            "linkType": 1
+          }
+        },
+        {
           "cid": "3048",
           "type": 0,
           "tab": "news",
@@ -433,6 +456,7 @@
           "displayType": "picture",
           "startAt": 1788606000,
           "focus": 0,
+          "extraData": {},
           "title": "Don du champ de neige",
           "header": "",
           "jumpButton": null,

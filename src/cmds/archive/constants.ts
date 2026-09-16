@@ -7,10 +7,14 @@ export const DIFF_IGNORE_RULES = [
   ['rsp', 'pkg', 'packs', '*', 'url'],
   ['rsp', 'patch', 'url'],
   ['rsp', 'patch', 'patches', '*', 'url'],
+  ['rsp', 'pre_patch', 'url'],
+  ['rsp', 'pre_patch', 'patches', '*', 'url'],
   ['rsp', 'zip_package_url'],
   ['rsp', 'exe_url'],
   ['rsp', 'patch', 'v2_patch_info_url'],
   ['rsp', 'patch', 'v2_verify_files_url'],
+  ['rsp', 'pre_patch', 'v2_patch_info_url'],
+  ['rsp', 'pre_patch', 'v2_verify_files_url'],
 ].map((path) => ({ path, pattern: /[?&]auth_key=[^&]+/g }));
 
 export const getGameTargets = (): GameTarget[] => {
@@ -65,6 +69,16 @@ export const getGameTargets = (): GameTarget[] => {
       subChannel: cfg.subChannel.cnWinRelBilibili,
       launcherSubChannel: cfg.subChannel.cnWinRelBilibili,
       dirName: String(cfg.channel.cnWinRelBilibili),
+    },
+    {
+      name: 'DEV',
+      region: 'cn',
+      appCode: cfg.appCode.game.cnWinDEV,
+      launcherAppCode: cfg.appCode.launcher.cnWinRel,
+      channel: cfg.channel.cnWinDEV,
+      subChannel: cfg.subChannel.cnWinDEV,
+      launcherSubChannel: cfg.subChannel.cnWinDEV,
+      dirName: 'dev',
     },
   ];
 };

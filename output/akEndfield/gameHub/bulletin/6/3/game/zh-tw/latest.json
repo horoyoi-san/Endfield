@@ -18,7 +18,7 @@
       "subChannel": "#DEFAULT",
       "lang": "zh-tw",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:zh-tw",
-      "version": "09a0483467a1119366aca179b68471fe",
+      "version": "0141b9bf078efe5e16029ec35eeb3bc3",
       "onlineList": [
         {
           "cid": "6433",
@@ -81,6 +81,12 @@
           "needPopup": false
         },
         {
+          "cid": "6432",
+          "version": 1789464561,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
           "cid": "3048",
           "version": 1789106681,
           "needRedDot": true,
@@ -100,7 +106,7 @@
         },
         {
           "cid": "1374",
-          "version": 1788520549,
+          "version": 1789545430,
           "needRedDot": true,
           "needPopup": false
         },
@@ -196,7 +202,7 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1789445058,
+      "updatedAt": 1789545431,
       "list": [
         {
           "cid": "6433",
@@ -371,6 +377,23 @@
           }
         },
         {
+          "cid": "6432",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "rich_text",
+          "startAt": 1789531200,
+          "focus": 0,
+          "title": "理智補給",
+          "header": "「理智補給」限時活動說明",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260915/a9250375a4fc39eda0816dec1e359e34.jpg\" data-width=\"1650\" data-height=\"300\"><p><strong>▼//活動時間</strong><br>2026/09/17 04:00 ~ 2026/09/24 04:00（伺服器時間）<br><br><strong>▼//活動獎勵</strong><br>活動期間，每日完成指定任務，可獲得【緊急理智加強劑】×4、【理智消耗許可】×8。<br><br><strong>▼//參與條件</strong><br>完成主線任務「第一章 - 進度II - 開拓前路」<br><br><strong>▼//活動說明</strong><br>· 活動期間，每日將固定開放3個理智補給任務，完成任務即可獲得獎勵。<br>· 每日的理智補給任務將於次日04:00（伺服器時間）更新，請管理員及時領取獎勵。<br><br>※ Asia伺服器時區：UTC+8<br>※ Americas / Europe伺服器時區：UTC-5<br>※ 更多活動詳細說明，請前往遊戲內【活動中心】查看。<br></p>",
+            "linkType": 1
+          }
+        },
+        {
           "cid": "3048",
           "type": 0,
           "tab": "news",
@@ -433,11 +456,12 @@
           "displayType": "picture",
           "startAt": 1788606000,
           "focus": 0,
+          "extraData": {},
           "title": "來自雪域的贈禮",
           "header": "",
           "jumpButton": null,
           "data": {
-            "url": "https://web-static.hg-cdn.com/upload/image/20260904/365fffd408ce5338f05e77042b4b83f1.png",
+            "url": "https://web-static.hg-cdn.com/upload/image/20260916/0818b0f5ba33629347952db9f27c6661.jpeg",
             "link": "https://static.skport.com/u-link/download.html?schema=skport%3A%2F%2Fdetail%3Fid%3D2095742439963507984&redirectUrl=https%3A%2F%2Fwww.skport.com%2Farticle%3Fid%3D2095742439963507984%26hg_media%3Dgame%26hg_link_campaign%3Dannouncement%26hg_link_name%3Dphoto",
             "linkType": 1
           }

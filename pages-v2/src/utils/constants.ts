@@ -16,6 +16,7 @@ export const gameTargets = [
   { name: 'Google Play', region: 'os' as const, dirName: '802', channel: 6 },
   { name: 'Official', region: 'cn' as const, dirName: '1', channel: 1 },
   { name: 'Bilibili', region: 'cn' as const, dirName: '2', channel: 2 },
+  { name: 'DEV', region: 'cn' as const, dirName: 'dev', channel: 1 },
 ];
 
 export const launcherTargets = [

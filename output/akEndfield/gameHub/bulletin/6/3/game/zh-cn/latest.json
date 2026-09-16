@@ -18,7 +18,7 @@
       "subChannel": "#DEFAULT",
       "lang": "zh-cn",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:zh-cn",
-      "version": "7699eb0a1a26539c3e6e3ec09333b5e6",
+      "version": "ea61b137aa2e17d17355e162c92d9da5",
       "onlineList": [
         {
           "cid": "6433",
@@ -81,6 +81,12 @@
           "needPopup": false
         },
         {
+          "cid": "6432",
+          "version": 1789464561,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
           "cid": "3048",
           "version": 1789106681,
           "needRedDot": true,
@@ -94,7 +100,7 @@
         },
         {
           "cid": "1374",
-          "version": 1788520549,
+          "version": 1789545430,
           "needRedDot": true,
           "needPopup": false
         },
@@ -190,7 +196,7 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1789445058,
+      "updatedAt": 1789545431,
       "list": [
         {
           "cid": "6433",
@@ -365,6 +371,23 @@
           }
         },
         {
+          "cid": "6432",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "rich_text",
+          "startAt": 1789531200,
+          "focus": 0,
+          "title": "理智补给",
+          "header": "「理智补给」限时活动说明",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260915/0e3571030fe668b7d9d8dd1837c192cc.jpg\" data-width=\"1650\" data-height=\"300\"><p><strong>▼//活动时间</strong><br>2026/09/17 04:00 - 2026/09/24 04:00（服务器时间）<br><br><strong>▼//活动奖励</strong><br>活动期间，每日完成指定任务，可获得【应急理智加强剂】×4、【理智消耗许可】×8。<br><br><strong>▼//参与条件</strong><br>完成主线任务「第一章 - 进程Ⅱ - 开拓前路」<br><br><strong>▼//活动说明</strong><br>· 活动期间，每日将固定开放3个理智补给任务，完成任务即可获得奖励。<br>· 每日的理智补给任务将于次日04:00（服务器时间）刷新，请管理员及时领取奖励。<br><br>※Asia服务器时区：UTC+8<br>※Americas / Europe服务器时区：UTC-5<br>※ 更多活动详细说明，请前往游戏内【活动中心】查看。<br></p>",
+            "linkType": 1
+          }
+        },
+        {
           "cid": "3048",
           "type": 0,
           "tab": "news",
@@ -409,6 +432,7 @@
           "displayType": "picture",
           "startAt": 1788606000,
           "focus": 0,
+          "extraData": {},
           "title": "来自雪域的赠礼",
           "header": "",
           "jumpButton": null,

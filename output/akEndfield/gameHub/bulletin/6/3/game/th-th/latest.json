@@ -18,7 +18,7 @@
       "subChannel": "#DEFAULT",
       "lang": "th-th",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:th-th",
-      "version": "09a0483467a1119366aca179b68471fe",
+      "version": "0141b9bf078efe5e16029ec35eeb3bc3",
       "onlineList": [
         {
           "cid": "6433",
@@ -81,6 +81,12 @@
           "needPopup": false
         },
         {
+          "cid": "6432",
+          "version": 1789464561,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
           "cid": "3048",
           "version": 1789106681,
           "needRedDot": true,
@@ -100,7 +106,7 @@
         },
         {
           "cid": "1374",
-          "version": 1788520549,
+          "version": 1789545430,
           "needRedDot": true,
           "needPopup": false
         },
@@ -196,7 +202,7 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1789445058,
+      "updatedAt": 1789545431,
       "list": [
         {
           "cid": "6433",
@@ -371,6 +377,23 @@
           }
         },
         {
+          "cid": "6432",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "rich_text",
+          "startAt": 1789531200,
+          "focus": 0,
+          "title": "เสบียงค่าสติ",
+          "header": "รายละเอียดกิจกรรมจำกัดเวลา [เสบียงค่าสติ]",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260915/49cfe4c0fd709cb15327badb84748116.jpg\" data-width=\"1650\" data-height=\"300\"><p><strong>▼// </strong><span style=\"color: rgb(0, 0, 0);\"><strong>เวลากิจกรรม </strong><br>17 ก.ย. 2026 เวลา 04:00 น. - 24 ก.ย. 2026 เวลา 04:00 น. (ตามเวลาเซิร์ฟเวอร์)<br><br><strong>▼// รางวัลกิจกรรม </strong><br>ระหว่างกิจกรรม ทำภารกิจที่กำหนดให้สำเร็จทุกวันเพื่อรับ: [บูสเตอร์ค่าสติฉุกเฉิน]×4 และ [ใบอนุญาตใช้ค่าสติ]×8<br><br><strong>▼// เงื่อนไขการเข้าร่วม </strong><br>ทำภารกิจหลัก [บทที่ 1 องก์ 2: ถางเส้นทาง] เสร็จสิ้น<br><br><strong>▼// รายละเอียดกิจกรรม </strong><br>· ระหว่างกิจกรรม จะมีภารกิจเสบียงค่าสติ 3 ภารกิจในแต่ละวัน ทำภารกิจให้เสร็จสิ้นเพื่อรับรางวัล <br>· ภารกิจเสบียงค่าสติจะรีเฟรชทุกวัน เวลา 04:00 น. (ตามเวลาเซิร์ฟเวอร์) อย่าลืมรับรางวัลโดยเร็ว<br><br>※ เขตเวลาเซิร์ฟเวอร์ Asia: UTC+8 <br>※ เขตเวลาเซิร์ฟเวอร์ Americas / Europe: UTC-5 <br>※ สำหรับรายละเอียดกิจกรรมเพิ่มเติม โปรดตรวจสอบที่ [ศูนย์กิจกรรม] ภายในเกม</span></p>",
+            "linkType": 1
+          }
+        },
+        {
           "cid": "3048",
           "type": 0,
           "tab": "news",
@@ -433,6 +456,7 @@
           "displayType": "picture",
           "startAt": 1788606000,
           "focus": 0,
+          "extraData": {},
           "title": "เครื่องบรรณาการจากทุ่งหิมะ",
           "header": "",
           "jumpButton": null,

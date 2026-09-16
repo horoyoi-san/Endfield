@@ -81,6 +81,42 @@ export default class Launcher {
     return rsp as TypesApiAkEndfield.LauncherLatestGame;
   };
 
+  latestGameWeb = async (
+    appCode: string,
+    channel: number,
+    subChannel: number,
+    version: string,
+    region: 'os' | 'cn',
+    platform: 'Windows' = 'Windows',
+  ): Promise<TypesApiAkEndfield.LauncherLatestGame> => {
+    const apiBase =
+      region === 'cn'
+        ? appConfig.network.api.akEndfield.base.launcherCN
+        : appConfig.network.api.akEndfield.base.launcher;
+    const rsp = await this.ky
+      .post(`https://${apiBase}/proxy/batch_proxy`, {
+        headers: {
+          'User-Agent': appConfig.network.userAgent.hgLauncher,
+        },
+        json: {
+          proxy_reqs: [
+            {
+              kind: 'get_latest_game',
+              get_latest_game_req: {
+                appcode: appCode,
+                channel: String(channel),
+                sub_channel: String(subChannel),
+                platform,
+                version,
+              },
+            },
+          ],
+        },
+      })
+      .json();
+    return (rsp as any).proxy_rsps[0].get_latest_game_rsp as TypesApiAkEndfield.LauncherLatestGame;
+  };
+
   latestGameResources = async (
     appCode: string,
     gameVersion: string, // example: 1.0

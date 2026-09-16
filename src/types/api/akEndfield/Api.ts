@@ -43,6 +43,18 @@ type LauncherLatestGame = {
   } | null;
   state: number;
   launcher_action: number;
+  pre_patch?: {
+    package_size: string;
+    total_size: string;
+    patches: {
+      url: string;
+      md5: string;
+      package_size: string;
+    }[];
+    version: string;
+    client_version: string;
+  } | null;
+  client_version?: string;
 };
 
 type LauncherLatestGameResources = {

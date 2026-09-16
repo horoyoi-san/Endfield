@@ -18,7 +18,7 @@
       "subChannel": "#DEFAULT",
       "lang": "it-it",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:it-it",
-      "version": "09a0483467a1119366aca179b68471fe",
+      "version": "0141b9bf078efe5e16029ec35eeb3bc3",
       "onlineList": [
         {
           "cid": "6433",
@@ -81,6 +81,12 @@
           "needPopup": false
         },
         {
+          "cid": "6432",
+          "version": 1789464561,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
           "cid": "3048",
           "version": 1789106681,
           "needRedDot": true,
@@ -100,7 +106,7 @@
         },
         {
           "cid": "1374",
-          "version": 1788520549,
+          "version": 1789545430,
           "needRedDot": true,
           "needPopup": false
         },
@@ -196,7 +202,7 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1789445058,
+      "updatedAt": 1789545431,
       "list": [
         {
           "cid": "6433",
@@ -371,6 +377,23 @@
           }
         },
         {
+          "cid": "6432",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "rich_text",
+          "startAt": 1789531200,
+          "focus": 0,
+          "title": "Fornitura di Lucidità",
+          "header": "Dettagli evento a tempo limitato [Fornitura di Lucidità]",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260915/1cc2a594ad792cd4ad324c3a6619f547.jpg\" data-width=\"1650\" data-height=\"300\"><p><strong>▼// Periodo dell'evento </strong><br>17 settembre 2026 alle 04:00 - 24 settembre 2026 alle 04:00 (fuso orario del server)<br><br><strong>▼// Ricompense dell'evento </strong><br>Durante l'evento, completa ogni giorno le missioni indicate per ricevere: 4 [potenziamenti di Lucidità d'emergenza] e 8 [permessi d'uso di Lucidità].<br><br><strong>▼// Requisiti di partecipazione </strong><br>Aver completato la missione principale [Capitolo I - Elaborazione II: Aprire la strada]<br><br><strong>▼// Dettagli evento </strong><br>· Durante l'evento, saranno disponibili 3 missioni Fornitura di Lucidità giornaliere. Completa le missioni per ottenere ricompense. <br>· Le missioni Fornitura di Lucidità vengono aggiornate ogni giorno alle 04:00 (fuso orario del server). Riscuoti le ricompense in tempo.<br><br>※ Fuso orario del server Asia: UTC+8 <br>※ Fuso orario del server Americas / Europe: UTC-5 <br>※ Per maggiori dettagli sull'evento, apri la schermata di gioco [Centro eventi].<br></p>",
+            "linkType": 1
+          }
+        },
+        {
           "cid": "3048",
           "type": 0,
           "tab": "news",
@@ -433,6 +456,7 @@
           "displayType": "picture",
           "startAt": 1788606000,
           "focus": 0,
+          "extraData": {},
           "title": "Tributo dal campo innevato",
           "header": "",
           "jumpButton": null,

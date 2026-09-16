@@ -21,6 +21,7 @@ interface PatchData {
     dateStr: string;
     packedSizeStr: string;
     unpackedSizeStr: string;
+    isPrePatch: boolean;
     files: Array<{
       fileName: string;
       md5: string;
@@ -36,76 +37,136 @@ export default function PatchesTab({ mirrorFileDb }: Props) {
 
   useEffect(() => {
     const fetchData = async () => {
-      const promises = gameTargets.map(async (target) => {
-        const url = `${BASE_URL}/akEndfield/launcher/game/${target.dirName}/all_patch.json`;
+      const promises = gameTargets.map(async (target): Promise<PatchData | null> => {
+        const patchUrl = `${BASE_URL}/akEndfield/launcher/game/${target.dirName}/all_patch.json`;
+        const prePatchUrl = `${BASE_URL}/akEndfield/launcher/game/${target.dirName}/all_pre_patch.json`;
+
+        let patchesRaw: StoredData<any>[] = [];
+        let prePatchesRaw: StoredData<any>[] = [];
+
         try {
-          const data = await fetchJson<StoredData<any>[]>(url);
-          if (data.length === 0) return null;
+          patchesRaw = await fetchJson<StoredData<any>[]>(patchUrl);
+        } catch {}
+        try {
+          prePatchesRaw = await fetchJson<StoredData<any>[]>(prePatchUrl);
+        } catch {}
 
-          const patches = [...data]
-            .reverse()
-            .map((e) => {
-              if (!e.rsp.patch) return null;
-              const version = e.rsp.version;
-              const reqVersion = e.rsp.request_version;
-              const dateStr = DateTime.fromISO(e.updatedAt).toFormat('yyyy/MM/dd HH:mm:ss');
+        if (patchesRaw.length === 0 && prePatchesRaw.length === 0) return null;
 
-              let packedSize = 0;
-              if (e.rsp.patch.patches) {
-                packedSize = math.arrayTotal(e.rsp.patch.patches.map((f: any) => parseInt(f.package_size)));
-              }
+        const prePatches = [...prePatchesRaw]
+          .reverse()
+          .map((e) => {
+            if (!e || !e.rsp) return null;
+            const version = e.rsp.version;
+            const reqVersion = e.req?.version ?? 'Current';
+            const dateStr = DateTime.fromISO(e.updatedAt).toFormat('yyyy/MM/dd HH:mm:ss');
 
-              const totalSize = parseInt(e.rsp.patch.total_size);
-              const unpackedSize = totalSize - packedSize;
+            let packedSize = 0;
+            if (e.rsp.patches) {
+              packedSize = math.arrayTotal(e.rsp.patches.map((f: any) => parseInt(f.package_size)));
+            } else if (e.rsp.package_size) {
+              packedSize = parseInt(e.rsp.package_size);
+            }
 
-              const files = [];
-              if (e.rsp.patch.url) {
+            const totalSize = parseInt(e.rsp.total_size || '0');
+            const unpackedSize = totalSize > packedSize ? totalSize - packedSize : 0;
+
+            const files = [];
+            if (e.rsp.url) {
+              files.push({
+                fileName: new URL(e.rsp.url).pathname.split('/').pop() ?? '',
+                md5: e.rsp.md5 || '',
+                sizeStr: math.formatFileSize(packedSize, FILE_SIZE_OPTS),
+                url: e.rsp.url,
+              });
+            }
+            if (e.rsp.patches) {
+              e.rsp.patches.forEach((f: any) => {
                 files.push({
-                  fileName: new URL(e.rsp.patch.url).pathname.split('/').pop() ?? '',
-                  md5: e.rsp.patch.md5,
-                  sizeStr: math.formatFileSize(parseInt(e.rsp.patch.package_size), FILE_SIZE_OPTS),
-                  url: e.rsp.patch.url,
+                  fileName: new URL(f.url).pathname.split('/').pop() ?? '',
+                  md5: f.md5,
+                  sizeStr: math.formatFileSize(parseInt(f.package_size), FILE_SIZE_OPTS),
+                  url: f.url,
                 });
-              }
-              if (e.rsp.patch.patches) {
-                e.rsp.patch.patches.forEach((f: any) => {
-                  files.push({
-                    fileName: new URL(f.url).pathname.split('/').pop() ?? '',
-                    md5: f.md5,
-                    sizeStr: math.formatFileSize(parseInt(f.package_size), FILE_SIZE_OPTS),
-                    url: f.url,
-                  });
+              });
+            }
+
+            return {
+              version,
+              reqVersion,
+              dateStr,
+              packedSizeStr: math.formatFileSize(packedSize, FILE_SIZE_OPTS),
+              unpackedSizeStr: math.formatFileSize(unpackedSize, FILE_SIZE_OPTS),
+              isPrePatch: true,
+              files,
+            };
+          })
+          .filter((p): p is NonNullable<typeof p> => p !== null);
+
+        const normalPatches = [...patchesRaw]
+          .reverse()
+          .map((e) => {
+            if (!e.rsp.patch) return null;
+            const version = e.rsp.version;
+            const reqVersion = e.rsp.request_version;
+            const dateStr = DateTime.fromISO(e.updatedAt).toFormat('yyyy/MM/dd HH:mm:ss');
+
+            let packedSize = 0;
+            if (e.rsp.patch.patches) {
+              packedSize = math.arrayTotal(e.rsp.patch.patches.map((f: any) => parseInt(f.package_size)));
+            }
+
+            const totalSize = parseInt(e.rsp.patch.total_size);
+            const unpackedSize = totalSize - packedSize;
+
+            const files = [];
+            if (e.rsp.patch.url) {
+              files.push({
+                fileName: new URL(e.rsp.patch.url).pathname.split('/').pop() ?? '',
+                md5: e.rsp.patch.md5,
+                sizeStr: math.formatFileSize(parseInt(e.rsp.patch.package_size), FILE_SIZE_OPTS),
+                url: e.rsp.patch.url,
+              });
+            }
+            if (e.rsp.patch.patches) {
+              e.rsp.patch.patches.forEach((f: any) => {
+                files.push({
+                  fileName: new URL(f.url).pathname.split('/').pop() ?? '',
+                  md5: f.md5,
+                  sizeStr: math.formatFileSize(parseInt(f.package_size), FILE_SIZE_OPTS),
+                  url: f.url,
                 });
-              }
+              });
+            }
 
-              return {
-                version,
-                reqVersion,
-                dateStr,
-                packedSizeStr: math.formatFileSize(packedSize, FILE_SIZE_OPTS),
-                unpackedSizeStr: math.formatFileSize(unpackedSize, FILE_SIZE_OPTS),
-                files,
-              };
-            })
-            .filter((p): p is NonNullable<typeof p> => p !== null);
+            return {
+              version,
+              reqVersion,
+              dateStr,
+              packedSizeStr: math.formatFileSize(packedSize, FILE_SIZE_OPTS),
+              unpackedSizeStr: math.formatFileSize(unpackedSize, FILE_SIZE_OPTS),
+              isPrePatch: false,
+              files,
+            };
+          })
+          .filter((p): p is NonNullable<typeof p> => p !== null);
 
-          return {
-            targetName: target.name,
-            region: target.region,
-            dirName: target.dirName,
-            patches,
-          };
-        } catch (err) {
-          return null;
-        }
+        return {
+          targetName: target.name,
+          region: target.region,
+          dirName: target.dirName,
+          patches: [...prePatches, ...normalPatches],
+        };
       });
 
       const results = await Promise.all(promises);
       const validResults = results.filter((r): r is PatchData => r !== null);
 
-      const sortedResults = gameTargets
-        .map((t) => validResults.find((r) => r.dirName === t.dirName))
-        .filter((r): r is PatchData => r !== undefined && r !== null);
+      const sortedResults: PatchData[] = [];
+      for (const t of gameTargets) {
+        const found = validResults.find((r) => r.dirName === t.dirName);
+        if (found) sortedResults.push(found);
+      }
 
       setPatchesData(sortedResults);
       setLoading(false);
@@ -143,8 +204,11 @@ export default function PatchesTab({ mirrorFileDb }: Props) {
                       aria-expanded='false'
                       aria-controls={`collapse-${itemId}`}
                     >
-                      <div className='d-flex w-100 justify-content-between me-3'>
+                      <div className='d-flex w-100 justify-content-between me-3 align-items-center'>
                         <span className='fw-bold'>
+                          {ver.isPrePatch && (
+                            <span className='badge bg-warning text-dark me-2'>PRE-PATCH</span>
+                          )}
                           {ver.reqVersion} → {ver.version}
                         </span>
                         <span className='text-muted small align-bottom'>{ver.dateStr}</span>
