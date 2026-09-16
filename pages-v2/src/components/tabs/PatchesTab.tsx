@@ -1,5 +1,6 @@
 import { DateTime } from 'luxon';
 import { useEffect, useState } from 'react';
+import semver from 'semver';
 import type { MirrorFileEntry, StoredData } from '../../types';
 import { fetchJson } from '../../utils/api';
 import { BASE_URL, FILE_SIZE_OPTS, gameTargets } from '../../utils/constants';
@@ -11,25 +12,72 @@ interface Props {
   mirrorFileDb: MirrorFileEntry[];
 }
 
+interface PatchItem {
+  version: string;
+  reqVersion: string;
+  format?: 'Format v2' | 'Format v3';
+  dateStr: string;
+  packedSizeStr: string;
+  unpackedSizeStr: string;
+  isPrePatch: boolean;
+  files: Array<{
+    fileName: string;
+    md5: string;
+    sizeStr: string;
+    url: string;
+  }>;
+}
+
 interface PatchData {
   targetName: string;
   region: 'os' | 'cn';
   dirName: string;
-  patches: Array<{
-    version: string;
-    reqVersion: string;
-    dateStr: string;
-    packedSizeStr: string;
-    unpackedSizeStr: string;
-    isPrePatch: boolean;
-    files: Array<{
-      fileName: string;
-      md5: string;
-      sizeStr: string;
-      url: string;
-    }>;
-  }>;
+  patches: PatchItem[];
 }
+
+const getFormat = (
+  diskType?: number,
+  patches?: Array<{ url: string }>,
+  mainUrl?: string,
+): 'Format v2' | 'Format v3' | undefined => {
+  if (diskType === 1) return 'Format v3';
+  if (diskType === 0) return 'Format v2';
+  const urls = [...(patches ?? []).map((p) => p.url), mainUrl ?? ''].join(' ');
+  if (urls.includes('/v3/')) return 'Format v3';
+  if (urls.includes('/v2/')) return 'Format v2';
+  return undefined;
+};
+
+const deduplicatePatches = (list: PatchItem[]): PatchItem[] => {
+  const seen = new Set<string>();
+  return list.filter((p) => {
+    const md5List = p.files.map((f) => f.md5).join(',');
+    const sig = `${p.isPrePatch ? 'pre' : 'norm'}_${p.reqVersion}_${p.version}_${p.format ?? ''}_${md5List}`;
+    if (seen.has(sig)) return false;
+    seen.add(sig);
+    return true;
+  });
+};
+
+const sortPatches = (list: PatchItem[]): PatchItem[] => {
+  return [...list].sort((a, b) => {
+    if (a.isPrePatch !== b.isPrePatch) {
+      return a.isPrePatch ? -1 : 1;
+    }
+
+    const vA = semver.coerce(a.version)?.version ?? '0.0.0';
+    const vB = semver.coerce(b.version)?.version ?? '0.0.0';
+    const vCompare = semver.rcompare(vA, vB);
+    if (vCompare !== 0) return vCompare;
+
+    const reqA = semver.coerce(a.reqVersion)?.version ?? '0.0.0';
+    const reqB = semver.coerce(b.reqVersion)?.version ?? '0.0.0';
+    const reqCompare = semver.rcompare(reqA, reqB);
+    if (reqCompare !== 0) return reqCompare;
+
+    return (b.format ?? '').localeCompare(a.format ?? '');
+  });
+};
 
 export default function PatchesTab({ mirrorFileDb }: Props) {
   const [patchesData, setPatchesData] = useState<PatchData[]>([]);
@@ -53,13 +101,14 @@ export default function PatchesTab({ mirrorFileDb }: Props) {
 
         if (patchesRaw.length === 0 && prePatchesRaw.length === 0) return null;
 
-        const prePatches = [...prePatchesRaw]
+        const prePatches: PatchItem[] = [...prePatchesRaw]
           .reverse()
           .map((e) => {
             if (!e || !e.rsp) return null;
             const version = e.rsp.version;
             const reqVersion = e.req?.version ?? 'Current';
             const dateStr = DateTime.fromISO(e.updatedAt).toFormat('yyyy/MM/dd HH:mm:ss');
+            const format = getFormat(e.req?.diskType, e.rsp.patches, e.rsp.url);
 
             let packedSize = 0;
             if (e.rsp.patches) {
@@ -94,6 +143,7 @@ export default function PatchesTab({ mirrorFileDb }: Props) {
             return {
               version,
               reqVersion,
+              format,
               dateStr,
               packedSizeStr: math.formatFileSize(packedSize, FILE_SIZE_OPTS),
               unpackedSizeStr: math.formatFileSize(unpackedSize, FILE_SIZE_OPTS),
@@ -103,13 +153,14 @@ export default function PatchesTab({ mirrorFileDb }: Props) {
           })
           .filter((p): p is NonNullable<typeof p> => p !== null);
 
-        const normalPatches = [...patchesRaw]
+        const normalPatches: PatchItem[] = [...patchesRaw]
           .reverse()
           .map((e) => {
             if (!e.rsp.patch) return null;
             const version = e.rsp.version;
             const reqVersion = e.rsp.request_version;
             const dateStr = DateTime.fromISO(e.updatedAt).toFormat('yyyy/MM/dd HH:mm:ss');
+            const format = getFormat(e.req?.diskType, e.rsp.patch.patches, e.rsp.patch.url);
 
             let packedSize = 0;
             if (e.rsp.patch.patches) {
@@ -142,6 +193,7 @@ export default function PatchesTab({ mirrorFileDb }: Props) {
             return {
               version,
               reqVersion,
+              format,
               dateStr,
               packedSizeStr: math.formatFileSize(packedSize, FILE_SIZE_OPTS),
               unpackedSizeStr: math.formatFileSize(unpackedSize, FILE_SIZE_OPTS),
@@ -155,7 +207,7 @@ export default function PatchesTab({ mirrorFileDb }: Props) {
           targetName: target.name,
           region: target.region,
           dirName: target.dirName,
-          patches: [...prePatches, ...normalPatches],
+          patches: sortPatches(deduplicatePatches([...prePatches, ...normalPatches])),
         };
       });
 
@@ -209,6 +261,15 @@ export default function PatchesTab({ mirrorFileDb }: Props) {
                           {ver.isPrePatch && (
                             <span className='badge bg-warning text-dark me-2'>PRE-PATCH</span>
                           )}
+                          {ver.format && (
+                            <span
+                              className={`badge ${
+                                ver.format === 'Format v3' ? 'bg-primary' : 'bg-secondary'
+                              } me-2`}
+                            >
+                              {ver.format}
+                            </span>
+                          )}
                           {ver.reqVersion} → {ver.version}
                         </span>
                         <span className='text-muted small align-bottom'>{ver.dateStr}</span>
@@ -224,6 +285,12 @@ export default function PatchesTab({ mirrorFileDb }: Props) {
                     <div className='accordion-body glass-body'>
                       <table className='table table-sm table-borderless w-auto mb-2'>
                         <tbody>
+                          {ver.format && (
+                            <tr>
+                              <td>Patch Format</td>
+                              <td className='text-end fw-bold'>{ver.format}</td>
+                            </tr>
+                          )}
                           <tr>
                             <td>Unpacked Size</td>
                             <td className='text-end fw-bold'>{ver.unpackedSizeStr}</td>
