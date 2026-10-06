@@ -110,7 +110,7 @@ export async function downloadRawFile(url: string): Promise<{ isWrote: boolean; 
       .get(url, {
         headers: { 'User-Agent': appConfig.network.userAgent.minimum },
         timeout: appConfig.network.timeout,
-        retry: { limit: appConfig.network.retryCount },
+        retry: { limit: appConfig.network.retryCount, retryOnTimeout: true },
       })
       .bytes();
     await Bun.write(localPath, data);
