@@ -18,7 +18,7 @@
       "subChannel": "#DEFAULT",
       "lang": "ja-jp",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:ja-jp",
-      "version": "010075419dbbd39e97662c5ec42e4530",
+      "version": "b49591f76190b3751edb304b4d647265",
       "onlineList": [
         {
           "cid": "9854",
@@ -81,12 +81,6 @@
           "needPopup": false
         },
         {
-          "cid": "5523",
-          "version": 1789445057,
-          "needRedDot": true,
-          "needPopup": false
-        },
-        {
           "cid": "9867",
           "version": 1788491081,
           "needRedDot": true,
@@ -119,6 +113,12 @@
         {
           "cid": "7284",
           "version": 1788228578,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "3039",
+          "version": 1790763494,
           "needRedDot": true,
           "needPopup": false
         },
@@ -214,7 +214,7 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1791288000,
+      "updatedAt": 1791334800,
       "list": [
         {
           "cid": "9854",
@@ -390,24 +390,6 @@
           }
         },
         {
-          "cid": "5523",
-          "type": 0,
-          "tab": "events",
-          "orderType": 1,
-          "orderWeight": 2,
-          "displayType": "rich_text",
-          "startAt": 1789444800,
-          "focus": 0,
-          "extraData": {},
-          "title": "集成支援\\n龍泡泡出撃",
-          "header": "「集成支援・龍泡泡出撃」集成生産イベント概要",
-          "jumpButton": null,
-          "data": {
-            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260911/e7588744edfd5c30eb38d487a18a7b4f.jpg\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(31, 35, 41);\"><strong>▼//開催期間</strong></span></p><p><span style=\"color: rgb(31, 35, 41);\">2026/09/16 12:00～2026/09/30 16:00（サーバー時間）</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\"><strong>▼//イベント報酬</strong></span></p><p><span style=\"color: rgb(31, 35, 41);\">開催期間中、クエストを完了すると、【赤晶玉】【上級育成強化ボックスⅠ】【上級認識媒体】【存続の痕跡】などの報酬を受け取ることができます。</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\"><strong>▼//参加条件</strong></span></p><p><span style=\"color: rgb(31, 35, 41);\">メイン任務：第二章-プロセスⅡ「見えざる災い」を完了</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\"><strong>▼//説明</strong></span></p><p><span style=\"color: rgb(31, 35, 41);\">· イベント期間中、指定の任務を完了することで、支援物資のレシピおよび物資交換所が解放されます。支援物資を生産して拠点に提出することで、【武陵取引券】と【支援成果券】を入手できます。【支援成果券】は物資交換所にて物資を交換できます。（イベント開始8日目になると、物資交換所に新しい交換可能な物資が追加されます。）</span></p><p><span style=\"color: rgb(31, 35, 41);\">· 9月30日16:00（サーバー時間）にイベントは終了し、拠点に提出していない生産済みの支援物資は、【武陵取引券】と【支援成果券】へ自動的に交換され、メールで送付されます。そのうち、交換可能な上限を超えた分の取引券は、【支援成果券】へ自動的に交換されます。</span></p><p><span style=\"color: rgb(31, 35, 41);\">· 残りの物資を交換できるよう、物資交換所はイベント終了後もしばらく開放されます。10月7日04:00（サーバー時間）までに交換していただくようお願いします。</span></p><p><span style=\"color: rgb(31, 35, 41);\">· イベント期間中、指定の条件を達成すると本イベント専用の勲章を入手できます。</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\">※ Asiaサーバーのタイムゾーン：UTC+8</span></p><p><span style=\"color: rgb(31, 35, 41);\">※ Americas / Europeサーバーのタイムゾーン：UTC-5</span></p><p><span style=\"color: rgb(31, 35, 41);\">※イベントの詳細は、ゲーム内【イベント】よりご確認ください。</span></p>",
-            "linkType": 1
-          }
-        },
-        {
           "cid": "9867",
           "type": 0,
           "tab": "events",
@@ -506,6 +488,23 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260831/263f8183a37fc2344d962fb4bde31771.jpg\" data-width=\"1650\" data-height=\"300\"><p>親愛なる管理人</p><p><br></p><p>バージョン「雪氷の幽夢」期間中、【購買部】に各種パックが登場します。</p><p><br></p><p><strong>▼//時限パック</strong></p><p>■ 協約起源パック</p><p>· 購入可能期間：バージョン「雪氷の幽夢」期間中</p><p>· パックの内容：【特別スカウト券】×10、【武庫配給】×2,000、【存続の痕跡】×10</p><p>· 注意事項：現在のバージョンで購入は1回限りです</p><p><br></p><p>■ 冬狩スカウトパック</p><p>· 購入可能期間：バージョン「雪氷の幽夢」開始後～2026/09/30 11:59（サーバー時間）</p><p>· パックの内容：【「弓の練磨」スカウト券】×10、【折金券】×80,000</p><p>· 注意事項：現在のバージョンで購入は1回限りです</p><p><br></p><p>■ 武庫配給特別パック</p><p>· 購入可能期間：バージョン「雪氷の幽夢」期間中</p><p>· パックの内容：【武庫配給】×2,000</p><p>· 注意事項：現在のバージョンで購入は1回限りです</p><p><br></p><p>※ Asiaサーバーのタイムゾーン：UTC+8</p><p>※ Americas / Europeサーバーのタイムゾーン：UTC-5</p><p>※ 一部のパックには時限アイテムが含まれている場合があります。【購入 - 商品内容】で時限アイテムの詳細を確認できます。パックの購入後、それに含まれる時限アイテムが期限切れとなった場合、再配布はできません。あらかじめご了承ください。</p><p>※ パックの詳細はゲーム内の【購買部 - パック】よりご確認ください。</p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "3039",
+          "type": 0,
+          "tab": "news",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "rich_text",
+          "startAt": 1791334800,
+          "focus": 0,
+          "title": "Steam\\nウィッシュリスト\\nマイルストーン達成",
+          "header": "Steamウィッシュリストマイルストーン達成",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260930/b020713425764c9613457d5adf8ec384.png\" data-width=\"1650\" data-height=\"300\"><p>親愛なる管理人</p><p>皆さまの応援のおかげで、『アークナイツ：エンドフィールド』のSteamウィッシュリスト登録数が30万を突破しました！さらに、『アークナイツ：エンドフィールド』Steam版の正式リリース日が、10月15日に決定しました！</p><p>最終目標の達成を記念して、「特別記念フレーム」と、これまでの各段階のマイルストーン報酬を、すべての管理人の皆さまに配布いたします。</p><p></p><p>▼//シリアルコード</p><p>ENDFIELDSTEAM</p><p></p><p>▼//報酬</p><p>· 折金券×8,000</p><p>· 初級認識媒体×2</p><p>· 武器検査ボックス×2</p><p>· 特別記念フレーム×1</p><p></p><p>▼//シリアルコード有効期限</p><p>Asiaサーバー：2026/10/06 19:30～2026/11/25 23:59（UTC+8）</p><p>Americas / Europeサーバー：2026/10/06 06:30～2026/11/25 10:59（UTC-5）</p><p></p><p>まだSteamで『アークナイツ：エンドフィールド』をウィッシュリストに追加していない場合は、こちらのリンクからぜひ追加してください。</p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://store.steampowered.com/app/4732690/\">https://store.steampowered.com/app/4732690/</a></p><p>公式Discordへの参加もお忘れなく！ほかの管理人たちと一緒に交流しましょう！</p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://discord.gg/akendfield\">https://discord.gg/akendfield</a></p>",
             "linkType": 1
           }
         },
