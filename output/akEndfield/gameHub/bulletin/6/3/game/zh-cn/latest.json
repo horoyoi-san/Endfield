@@ -18,8 +18,14 @@
       "subChannel": "#DEFAULT",
       "lang": "zh-cn",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:zh-cn",
-      "version": "b49591f76190b3751edb304b4d647265",
+      "version": "b5f56cf3ec670b4c5950879db057f454",
       "onlineList": [
+        {
+          "cid": "5512",
+          "version": 1791287529,
+          "needRedDot": false,
+          "needPopup": false
+        },
         {
           "cid": "9854",
           "version": 1791152945,
@@ -53,6 +59,12 @@
         {
           "cid": "4610",
           "version": 1786440043,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "6420",
+          "version": 1791168614,
           "needRedDot": true,
           "needPopup": false
         },
@@ -105,14 +117,14 @@
           "needPopup": false
         },
         {
-          "cid": "7289",
-          "version": 1790567535,
+          "cid": "7284",
+          "version": 1788228578,
           "needRedDot": true,
           "needPopup": false
         },
         {
-          "cid": "7284",
-          "version": 1788228578,
+          "cid": "2107",
+          "version": 1791152975,
           "needRedDot": true,
           "needPopup": false
         },
@@ -214,8 +226,25 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1791334800,
+      "updatedAt": 1791388800,
       "list": [
+        {
+          "cid": "5512",
+          "type": 0,
+          "tab": "updates",
+          "orderType": 1,
+          "orderWeight": 1,
+          "displayType": "rich_text",
+          "startAt": 1791385200,
+          "focus": 1,
+          "title": "闪断更新公告",
+          "header": "10月07日闪断更新公告",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260825/26d5c3d45627ac682586b4dbfb9c76b3.png\" data-width=\"1650\" data-height=\"300\"><p>亲爱的管理员：</p><p>《明日方舟：终末地》将于2026/10/07 21:30 - 21:40（UTC-5）进行闪断更新，届时将强制掉线。更新期间给管理员带来不便，敬请谅解。<br></p><p>▼//更新内容</p><p>· 更新了后续限时签到活动「天地墨显」的相关资源。<br></p><p>▼//更新补偿</p><p>· 应急理智加强剂 × 1</p><p></p><p>· 发放时间：2026/10/07 闪断更新维护后 - 下个版本更新维护前</p><p>· 发放条件：2026/10/07 21:30（UTC-5）更新前所有注册并创建角色的管理员。</p><p>· 发放说明：开启【邮箱】功能后领取，邮件有效期为30天，请注意及时领取。</p><p></p><p>感谢管理员对《明日方舟：终末地》一直以来的关注与支持！</p>",
+            "linkType": 1
+          }
+        },
         {
           "cid": "9854",
           "type": 0,
@@ -317,6 +346,23 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260811/7e6163f44195a69ca06651bbb8651a0d.png\" data-width=\"1650\" data-height=\"300\"><p>亲爱的管理员：<br>为了庆祝《明日方舟：终末地》即将登陆 Steam，我们特别推出上线愿望单里程碑活动！<br>即日起，将游戏加入Steam愿望单，一起冲刺最终目标，解锁特殊纪念头像框等丰厚奖励！<br><br>▼//活动时间<br>2026/08/13活动开启后，至《明日方舟：终末地》Steam 正式上线（具体上线时间将另行公布）。<br><br>▼//里程碑奖励<br>· 第1阶段（30,000）： 折金票 ×8,000 <br>· 第2阶段（100,000）： 初级认知载体 ×2 <br>· 第3阶段（200,000）： 武器检查套组 ×2 <br>· 最终目标（300,000）： 特殊纪念头像框 ×1<br><br>立即前往Steam将《明日方舟：终末地》加入Steam愿望单，向最终目标全力冲刺吧！<br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://store.steampowered.com/app/4732690/\">立即前往Steam</a></p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "6420",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 2,
+          "displayType": "rich_text",
+          "startAt": 1791345600,
+          "focus": 0,
+          "title": "天地墨显",
+          "header": "「天地墨显」限时签到活动说明",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260930/ec2db6fb160071cc641ab1ea106811b8.jpg\" data-width=\"1650\" data-height=\"300\"><p><strong>▼//活动时间</strong><br>2026/10/08 12:00（服务器时间） - 版本更新维护前<br><br><strong>▼//参与条件</strong><br>完成主线任务「第一章 - 进程Ⅰ - 基地解围」<br><br><strong>▼//活动说明</strong><br>· 每日登录游戏即可领取签到奖励。<br>· 完成3日签到累计可领取【基础寻访凭证】×2和【嵌晶玉】×500等奖励。<br><br>※Asia服务器时区: UTC+8<br>※Americas / Europe服务器时区: UTC-5<br></p>",
             "linkType": 1
           }
         },
@@ -458,23 +504,6 @@
           }
         },
         {
-          "cid": "7289",
-          "type": 0,
-          "tab": "updates",
-          "orderType": 1,
-          "orderWeight": 3,
-          "displayType": "rich_text",
-          "startAt": 1790650800,
-          "focus": 0,
-          "title": "版本调研问卷",
-          "header": "「雪凇幽梦」版本调研问卷",
-          "jumpButton": null,
-          "data": {
-            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260924/3c7fc94a205b6aba795bd23638cd3867.png\" data-width=\"1650\" data-height=\"300\"><p>亲爱的管理员：<br>为了更好地收集管理员对《明日方舟：终末地》游戏内容的意见与反馈，我们将为您发放调研问卷。在此诚邀管理员基于游玩体验，填写问卷并提供您的宝贵意见。成功提交问卷后，我们将通过邮件为您送上【嵌晶玉】×300的问卷答谢礼。<br><br><strong>▼//问卷发放条件</strong><br>解锁【邮箱】功能<br><br><strong>▼//问卷发放时间</strong><br>2026/09/30 00:00（UTC+8）<br><br><strong>▼//问卷填写方式</strong><br>问卷发放后，管理员可前往【邮箱】查看「雪凇幽梦」版本调研问卷，点击【前往填写问卷】提供您的宝贵意见。<br>※ 问卷提交后无法修改，还请管理员认真填写问卷。<br><br>为了确保问卷能够准确还原当前节点的游戏体验，问卷邮件存在有效期。问卷需要3 ~ 5分钟填写，在此感谢管理员的耐心填答。<br><br>管理员提交的每一份宝贵意见，都将助力项目组进一步完善游戏内容。后续我们将基于反馈持续优化游戏体验，努力为管理员呈现更好的《明日方舟：终末地》。<br><br>再次感谢管理员一直以来对于《明日方舟：终末地》的关注与支持！<br></p>",
-            "linkType": 1
-          }
-        },
-        {
           "cid": "7284",
           "type": 0,
           "tab": "updates",
@@ -488,6 +517,23 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260831/7c770277ae4e1017c404217f79fdc9b6.jpg\" data-width=\"1650\" data-height=\"300\"><p>亲爱的管理员：</p><p>「雪凇幽梦」版本期间，【采购中心】将上架各类组合包。</p><p><br></p><p><strong>▼//限时组合包</strong></p><p>■ 协议源流组合包</p><p>· 可购买时间：「雪凇幽梦」版本期间</p><p>· 组合包内容：【特许寻访凭证】×10、【武库配额】×2000、【存续的痕迹】×10</p><p>· 特殊说明：当前版本限购1次</p><p><br></p><p>■ 冬猎寻访组合包</p><p>· 可购买时间：「雪凇幽梦」版本更新后 - 2026/09/30 11:59（服务器时间）</p><p>· 组合包内容：【镞砺括羽寻访凭证】×10、【折金票】×80000</p><p>· 特殊说明：限购1次</p><p><br></p><p>■ 特惠武库配额包</p><p>· 可购买时间：「雪凇幽梦」版本期间</p><p>· 组合包内容：【武库配额】×2000</p><p>· 特殊说明：当前版本限购1次<br><br></p><p>※ Asia服务器时区：UTC+8</p><p>※ Americas / Europe服务器时区：UTC-5</p><p>※ 部分组合包可能含有限时道具。管理员可在【购买商品 - 商品内容】中查看限时道具的具体信息。如在购买组合包后，其中的限时道具因到期失效，将无法补发。感谢管理员的理解与支持。</p><p>※ 更多组合包及相关详细说明，请前往游戏内【采购中心 - 组合包】查看。</p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "2107",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "rich_text",
+          "startAt": 1791343800,
+          "focus": 0,
+          "title": "理智补给",
+          "header": "「理智补给」限时活动说明",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260926/0e3571030fe668b7d9d8dd1837c192cc.jpg\" data-width=\"1650\" data-height=\"300\"><p><strong>▼//活动时间：</strong></p><p>Asia服务器：</p><p>2026/10/08 04:00 - 2026/10/15 04:00（服务器时间）</p><p><br></p><p>Americas / Europe服务器：</p><p>2026/10/08 04:00 - 2026/10/14 17:00（服务器时间）</p><p><br></p><p><strong>▼//活动奖励</strong></p><p>活动期间，每日完成指定任务，可获得【应急理智加强剂】×4、【理智消耗许可】×8。</p><p><br></p><p><strong>▼//参与条件</strong></p><p>完成主线任务「第一章 - 进程Ⅱ - 开拓前路」</p><p><br></p><p><strong>▼//活动说明</strong></p><p>· 活动期间，每日将固定开放3个理智补给任务，完成任务即可获得奖励。</p><p>· 每日的理智补给任务将于次日04:00（服务器时间）刷新，请管理员及时领取奖励。</p><p><br></p><p>※ Asia服务器时区：UTC+8</p><p>※ Americas / Europe服务器时区：UTC-5</p><p>※ 更多活动详细说明，请前往游戏内【活动中心】查看。</p>",
             "linkType": 1
           }
         },

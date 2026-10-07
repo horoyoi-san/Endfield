@@ -18,8 +18,14 @@
       "subChannel": "#DEFAULT",
       "lang": "zh-cn",
       "key": "0:Windows:#DEFAULT:2:#DEFAULT:zh-cn",
-      "version": "a9d41575d4937f13b36cbf7fe0d57c09",
+      "version": "84cdf32eb92294166cb6b982684014d3",
       "onlineList": [
+        {
+          "cid": "4692",
+          "version": 1791382388,
+          "needRedDot": false,
+          "needPopup": false
+        },
         {
           "cid": "0779",
           "version": 1790266262,
@@ -60,6 +66,12 @@
           "cid": "1392",
           "version": 1768982321,
           "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "3025",
+          "version": 1790061126,
+          "needRedDot": false,
           "needPopup": false
         },
         {
@@ -111,14 +123,14 @@
           "needPopup": false
         },
         {
-          "cid": "0776",
-          "version": 1789961219,
+          "cid": "8939",
+          "version": 1787997516,
           "needRedDot": true,
           "needPopup": false
         },
         {
-          "cid": "8939",
-          "version": 1787997516,
+          "cid": "3027",
+          "version": 1789209467,
           "needRedDot": true,
           "needPopup": false
         },
@@ -172,8 +184,25 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1791316800,
+      "updatedAt": 1791388800,
       "list": [
+        {
+          "cid": "4692",
+          "type": 0,
+          "tab": "updates",
+          "orderType": 0,
+          "orderWeight": 1,
+          "displayType": "rich_text",
+          "startAt": 1791385200,
+          "focus": 1,
+          "title": "闪断更新公告",
+          "header": "10月08日闪断更新公告",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web.hycdn.cn/upload/image/20261007/f3be930b3bcf27d40519fc60752cb3d9.png\" data-width=\"1650\" data-height=\"300\"><p>亲爱的管理员：</p><p>《明日方舟：终末地》将于2026/10/08 10:00 - 10:10（UTC+8）进行闪断更新，届时将强制掉线。更新期间给管理员带来不便，敬请谅解<br><br><strong>▼//更新内容</strong></p><p>· 更新了后续限时签到活动「天地墨显」的相关资源。</p><p></p><p><strong>▼//更新补偿</strong><br>· 应急理智加强剂 × 1<br><br>· 发放时间：2026/10/08 闪断更新维护后 - 下个版本更新维护前<br>· 发放条件：2026/10/08 10:00（UTC+8）更新前所有注册并创建角色的管理员。<br>· 发放说明：开启【邮箱】功能后领取，邮件有效期为30天，请注意及时领取。<br></p><p>感谢管理员对《明日方舟：终末地》一直以来的关注与支持！</p>",
+            "linkType": 1
+          }
+        },
         {
           "cid": "0779",
           "type": 0,
@@ -294,6 +323,23 @@
             "url": "https://web.hycdn.cn/upload/image/20260121/528a5c2a39687aaa0e15ef79c8e879f9.jpg",
             "link": "https://ef-webview.hypergryph.com/act/social-media?u8_token={u8_token}&server={server}",
             "linkType": 2
+          }
+        },
+        {
+          "cid": "3025",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 2,
+          "displayType": "rich_text",
+          "startAt": 1791345600,
+          "focus": 0,
+          "title": "天地墨显",
+          "header": "「天地墨显」限时签到活动说明",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web.hycdn.cn/upload/image/20260922/a5cc5e6dc7d0e50f0de6f64a3314215b.png\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(31, 35, 41);\">▼//活动时间</span></p><p><span style=\"color: rgb(31, 35, 41);\">2026/10/08 12:00（服务器时间） - 版本更新维护前</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\">▼//参与条件</span></p><p><span style=\"color: rgb(31, 35, 41);\">完成主线任务「第一章 - 进程Ⅰ - 基地解围」</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\">▼//活动说明</span></p><p><span style=\"color: rgb(31, 35, 41);\">· 每日登录游戏即可领取签到奖励。</span></p><p><span style=\"color: rgb(31, 35, 41);\">· 完成3日签到累计可领取【基础寻访凭证】×2和【嵌晶玉】×500等奖励。</span></p>",
+            "linkType": 1
           }
         },
         {
@@ -433,23 +479,6 @@
           }
         },
         {
-          "cid": "0776",
-          "type": 0,
-          "tab": "updates",
-          "orderType": 1,
-          "orderWeight": 3,
-          "displayType": "rich_text",
-          "startAt": 1790650800,
-          "focus": 0,
-          "title": "版本调研问卷",
-          "header": "「雪凇幽梦」版本调研问卷",
-          "jumpButton": null,
-          "data": {
-            "html": "<img src=\"https://web.hycdn.cn/upload/image/20260917/5151363b78fa4d9a2c88b833ad368380.png\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(0, 0, 0);\">亲爱的管理员：</span></p><p><span style=\"color: rgb(0, 0, 0);\">为了更好地收集管理员对《明日方舟：终末地》游戏内容的意见与反馈，我们将为您发放调研问卷。在此诚邀管理员基于游玩体验，填写问卷并提供您的宝贵意见。成功提交问卷后，我们将通过邮件为您送上【嵌晶玉】×300的问卷答谢礼。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">▼//问卷发放条件</span></p><p><span style=\"color: rgb(0, 0, 0);\">解锁【邮箱】功能</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">▼//问卷发放时间</span></p><p><span style=\"color: rgb(31, 35, 41);\">2026/09/30 00:00（UTC+8）</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">▼//问卷填写方式</span></p><p><span style=\"color: rgb(0, 0, 0);\">问卷发放后，管理员可前往【邮箱】查看「雪凇幽梦」版本调研问卷，点击【前往填写问卷】提供您的宝贵意见。</span></p><p><span style=\"color: rgb(0, 0, 0);\">※ 问卷提交后无法修改，还请管理员认真填写问卷。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">为了确保问卷能够准确还原当前节点的游戏体验，问卷邮件存在有效期。问卷需要3 ~ 5分钟填写，在此感谢管理员的耐心填答。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">管理员提交的每一份宝贵意见，都将助力项目组进一步完善游戏内容。后续我们将基于反馈持续优化游戏体验，努力为管理员呈现更好的《明日方舟：终末地》。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">再次感谢管理员一直以来对于《明日方舟：终末地》的关注与支持！</span></p>",
-            "linkType": 1
-          }
-        },
-        {
           "cid": "8939",
           "type": 0,
           "tab": "updates",
@@ -463,6 +492,23 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web.hycdn.cn/upload/image/20260829/06361ba814e2ecf1d32955559e2f7d0e.jpg\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(31, 35, 41);\">亲爱的管理员：</span></p><p><span style=\"color: rgb(31, 35, 41);\">「雪凇幽梦」版本期间，【采购中心】将上架各类组合包。</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\">▼//限时组合包</span></p><p><span style=\"color: rgb(31, 35, 41);\">■ 协议源流组合包</span></p><p><span style=\"color: rgb(31, 35, 41);\">· 组合包价格：198元</span></p><p><span style=\"color: rgb(31, 35, 41);\">· 可购买时间：「雪凇幽梦」版本期间</span></p><p><span style=\"color: rgb(31, 35, 41);\">· 组合包内容：【特许寻访凭证】×10、【武库配额】×2000、【存续的痕迹】×10</span></p><p><span style=\"color: rgb(31, 35, 41);\">· 特殊说明：当前版本限购1次</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\">■ 冬猎寻访组合包</span></p><p><span style=\"color: rgb(31, 35, 41);\">· 组合包价格：98元</span></p><p><span style=\"color: rgb(31, 35, 41);\">· 可购买时间：「雪凇幽梦」版本更新后 - 2026/09/30 11:59（服务器时间）</span></p><p><span style=\"color: rgb(31, 35, 41);\">· 组合包内容：【镞砺括羽寻访凭证】×10、【折金票】×80000</span></p><p><span style=\"color: rgb(31, 35, 41);\">· 特殊说明：限购1次</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\">■ 特惠武库配额包</span></p><p><span style=\"color: rgb(31, 35, 41);\">· 组合包价格：88元</span></p><p><span style=\"color: rgb(31, 35, 41);\">· 可购买时间：「雪凇幽梦」版本期间</span></p><p><span style=\"color: rgb(31, 35, 41);\">· 组合包内容：【武库配额】×2000</span></p><p><span style=\"color: rgb(31, 35, 41);\">· 特殊说明：当前版本限购1次</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\">※ 部分组合包可能含有限时道具。管理员可在【购买商品 - 商品内容】中查看限时道具的具体信息。如在购买组合包后，其中的限时道具因到期失效，将无法补发。感谢管理员的理解与支持。</span></p><p><span style=\"color: rgb(31, 35, 41);\">※ 更多组合包及相关详细说明，请前往游戏内【采购中心 - 组合包】查看。</span></p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "3027",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "rich_text",
+          "startAt": 1791343800,
+          "focus": 0,
+          "title": "理智补给",
+          "header": "「理智补给」限时活动说明",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web.hycdn.cn/upload/image/20260912/0e3571030fe668b7d9d8dd1837c192cc.jpg\" data-width=\"1650\" data-height=\"300\"><p>▼//活动时间</p><p>2026/10/08 04:00 - 2026/10/15 04:00（服务器时间）</p><p></p><p>▼//活动奖励</p><p>活动期间，每日完成指定任务，可获得【应急理智加强剂】×4、【理智消耗许可】×8。</p><p></p><p>▼//参与条件</p><p>完成主线任务「第一章 - 进程Ⅱ - 开拓前路」</p><p></p><p>▼//活动说明</p><p>· 活动期间，每日将固定开放3个理智补给任务，完成任务即可获得奖励。</p><p>· 每日的理智补给任务将于次日04:00（服务器时间）刷新，请管理员及时领取奖励。</p><p></p><p>※ 更多活动详细说明，请前往游戏内【活动中心】查看。</p>",
             "linkType": 1
           }
         },

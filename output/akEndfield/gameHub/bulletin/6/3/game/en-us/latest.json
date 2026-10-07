@@ -18,8 +18,14 @@
       "subChannel": "#DEFAULT",
       "lang": "en-us",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:en-us",
-      "version": "5d5fc14cb0f6ae4f6b72828098e55e0c",
+      "version": "7f4608f512d90872bbd64cdefb9df82d",
       "onlineList": [
+        {
+          "cid": "5512",
+          "version": 1791287529,
+          "needRedDot": false,
+          "needPopup": false
+        },
         {
           "cid": "9854",
           "version": 1791152945,
@@ -53,6 +59,12 @@
         {
           "cid": "4610",
           "version": 1786440043,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "6420",
+          "version": 1791168614,
           "needRedDot": true,
           "needPopup": false
         },
@@ -105,14 +117,14 @@
           "needPopup": false
         },
         {
-          "cid": "7289",
-          "version": 1790567535,
+          "cid": "7284",
+          "version": 1788228578,
           "needRedDot": true,
           "needPopup": false
         },
         {
-          "cid": "7284",
-          "version": 1788228578,
+          "cid": "2107",
+          "version": 1791152975,
           "needRedDot": true,
           "needPopup": false
         },
@@ -220,8 +232,25 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1791334800,
+      "updatedAt": 1791388800,
       "list": [
+        {
+          "cid": "5512",
+          "type": 0,
+          "tab": "updates",
+          "orderType": 1,
+          "orderWeight": 1,
+          "displayType": "rich_text",
+          "startAt": 1791385200,
+          "focus": 1,
+          "title": "Quick Update Notice",
+          "header": "10/07 Quick Update Notice",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260825/f9f1fa78d5d555f7616dacc80f89f31e.png\" data-width=\"1650\" data-height=\"300\"><p>Dear Endministrator,</p><p>The servers will undergo a quick update from 2026/10/07 21:30 - 21:40 (UTC-5). During this time, all Endministrators will be logged out and unable to access the game.<br></p><p>▼// Update Details</p><p>· Updated resources for the upcoming limited-time sign-in event [Inkwashed World].<br></p><p>▼// Update Compensation</p><p>· Emergency Sanity Booster×1<br></p><p>Distribution Period: 2026/10/07 after the quick update - Before the next version update and maintenance</p><p>Eligibility: All Endministrators who registered and created a character before the update on 2026/10/07 21:30 (UTC-5).</p><p>Note: Claimable after unlocking the [Mail] function. The mail is valid for 30 days. Please be sure to claim it in time.</p><p></p><p>Thank you for your continued interest and support for Arknights: Endfield, Endministrator!</p>",
+            "linkType": 1
+          }
+        },
         {
           "cid": "9854",
           "type": 0,
@@ -323,6 +352,23 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260811/44bef1a5461a1f433c694ed27f94dfe8.png\" data-width=\"1650\" data-height=\"300\"><p>Dear Endministrator, <br>To celebrate Arknights: Endfield's upcoming launch on Steam, we're holding a special Wishlist Milestone Event! <br>Starting today, add Arknights: Endfield to your Steam Wishlist and help us reach the final milestone to unlock a special commemorative portrait frame and other exciting rewards!<br><br>▼// Event Time<br>From the start of the event on Aug. 13, 2026, until the official launch of Arknights: Endfield on Steam (the exact launch date will be announced later).<br><br>▼// Milestone Rewards<br>· Phase 1 (30,000): T-Creds×8,000 <br>· Phase 2 (100,000): Elementary Cognitive Carrier×2 <br>· Phase 3 (200,000): Arms INSP Set×2 <br>· Final Goal (300,000): Special Commemorative Portrait Frame×1<br><br>Head to Steam now and add Arknights: Endfield to your Steam Wishlist. Let's push towards the final goal!<br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://store.steampowered.com/app/4732690/\">Head to Steam now</a></p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "6420",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 2,
+          "displayType": "rich_text",
+          "startAt": 1791345600,
+          "focus": 0,
+          "title": "Inkwashed World",
+          "header": "[Inkwashed World] Limited-Time Sign-In Event Details",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260930/488be440728d1f4eecf1e7265ea95cc4.jpg\" data-width=\"1650\" data-height=\"300\"><p><strong>▼// Event Time</strong><br>Oct. 8, 2026 at 12:00 (server time) – Before version update and maintenance<br><br><strong>▼// Participation Requirements</strong><br>Complete the main mission [Chapter I Process I: Break the Siege]<br><br><strong>▼// Event Details</strong><br>· Log into the game every day to claim sign-in rewards.<br>· Complete the 3-day sign-in to earn rewards including [Basic HH Permit]×2 and [Oroberyl]×500.<br><br>※ Asia Server Time Zone: UTC+8<br>※ Americas / Europe Server Time Zone: UTC-5<br></p>",
             "linkType": 1
           }
         },
@@ -464,23 +510,6 @@
           }
         },
         {
-          "cid": "7289",
-          "type": 0,
-          "tab": "updates",
-          "orderType": 1,
-          "orderWeight": 3,
-          "displayType": "rich_text",
-          "startAt": 1790650800,
-          "focus": 0,
-          "title": "Version Experience Survey",
-          "header": "Version Experience Survey",
-          "jumpButton": null,
-          "data": {
-            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260924/20f1655d421bee689b661dea05810a3f.png\" data-width=\"1650\" data-height=\"300\"><p>Dear Endministrator, <br>To better collect your thoughts and feedback on Arknights: Endfield, we would like to send you a survey. We invite you to complete the survey based on your gaming experience and share your valuable insights with us. After you successfully submit the survey, we will send you [Oroberyl]×300 as a survey completion reward via in-game mail. <br><br><strong>▼// Survey Eligibility Requirement </strong><br>Unlock the [Mail] feature <br><br><strong>▼// Survey Distribution Time </strong><br>Sept. 30, 2026 at 00:00 (UTC+8)<br><br><strong>▼// How to Access the Survey </strong><br>Once the survey is sent out, you can find the [Dreamscape of Wind and Snow] Version Experience Survey in your [Mail]. Click [Go to Survey] to fill it out and share your valuable feedback. <br>※ Survey responses cannot be edited after submission. Please complete it carefully. <br><br>To ensure your feedback reflects your latest gaming experience, the survey mail will expire after a set period. Completing the survey takes about 3–5 minutes. Thank you for your time and patience. <br><br>Every valuable suggestion you share will help us enhance the game. Your feedback will play an important role in shaping a better Arknights: Endfield experience for all Endministrators. <br><br>Thank you again for your continued interest and support for Arknights: Endfield, Endministrator!<br></p>",
-            "linkType": 1
-          }
-        },
-        {
           "cid": "7284",
           "type": 0,
           "tab": "updates",
@@ -494,6 +523,23 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260831/1e2ea607a8a870c9a79f5fbed4248580.jpg\" data-width=\"1650\" data-height=\"300\"><p>Dear Endministrator,</p><p>During the [Dreamscape of Wind and Snow] version, the [Acquisition Center] will offer a variety of bundles.</p><p><br></p><p><strong>▼// Limited Bundles</strong></p><p>■ Protocol Flow Bundle</p><p>· Availability: Throughout the [Dreamscape of Wind and Snow] version</p><p>· Bundle Contents: [Chartered HH Permit]×10, [Arsenal Ticket]×2000, [Mark of Perseverance]×10</p><p>· Special Note: Only 1 purchase allowed in current version</p><p><br></p><p>■ Winter Hunt HH Bundle</p><p>· Availability: After [Dreamscape of Wind and Snow] version update – Sept. 30, 2026 at 11:59 (server time)</p><p>· Bundle Contents: [Fletched Irontip HH Permit]×10, [T-Creds]×80000</p><p>· Special Note: Only 1 purchase allowed</p><p><br></p><p>■ Value Arsenal Ticket Pack</p><p>· Availability: Throughout the [Dreamscape of Wind and Snow] version</p><p>· Bundle Contents: [Arsenal Ticket]×2000</p><p>· Special Note: Only 1 purchase allowed in current version<br></p><p></p><p>※ Asia Server Time Zone: UTC+8</p><p>※ Americas / Europe Server Time Zone: UTC-5</p><p>※ Some bundles may include limited-time items. You can check the details of limited-time items in [Purchase - Item Contents]. If limited-time items in a bundle expire after purchase, they cannot be reissued. Thank you for your understanding and support.</p><p>※ For more bundles and their details, visit the in-game [Acquisition Center - Bundles].</p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "2107",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "rich_text",
+          "startAt": 1791343800,
+          "focus": 0,
+          "title": "Sanity Supply",
+          "header": "[Sanity Supply] Limited-Time Event Details",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260926/fe933ae2b965edf33bfeda9c9610b824.jpg\" data-width=\"1650\" data-height=\"300\"><p><strong>▼// Event Time:</strong></p><p>Asia Server:</p><p>Oct. 8, 2026 at 04:00 – Oct. 15, 2026 at 04:00 (server time)</p><p><br></p><p>Americas / Europe Server:</p><p>Oct. 8, 2026 at 04:00 – Oct. 14, 2026 at 17:00 (server time)</p><p><br></p><p><strong>▼// Event Rewards</strong></p><p>During the event, complete specified missions every day to receive: [Emergency Sanity Booster]×4 and [Sanity Usage Permit]×8.</p><p><br></p><p><strong>▼// Participation Requirements</strong></p><p>Complete the main mission [Chapter I Process II: Paving the Way]</p><p><br></p><p><strong>▼// Event Details</strong></p><p>· During the event, 3 Sanity Supply missions will be available daily. Complete the missions to earn rewards.</p><p>· Sanity Supply missions will be refreshed daily at 04:00 (server time). Please remember to claim the rewards promptly.</p><p><br></p><p>※ Asia Server Time Zone: UTC+8</p><p>※ Americas / Europe Server Time Zone: UTC-5</p><p>※ For more event details, check the in-game [Event Center].</p>",
             "linkType": 1
           }
         },

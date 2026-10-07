@@ -18,8 +18,14 @@
       "subChannel": "#DEFAULT",
       "lang": "de-de",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:de-de",
-      "version": "5d5fc14cb0f6ae4f6b72828098e55e0c",
+      "version": "7f4608f512d90872bbd64cdefb9df82d",
       "onlineList": [
+        {
+          "cid": "5512",
+          "version": 1791287529,
+          "needRedDot": false,
+          "needPopup": false
+        },
         {
           "cid": "9854",
           "version": 1791152945,
@@ -53,6 +59,12 @@
         {
           "cid": "4610",
           "version": 1786440043,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "6420",
+          "version": 1791168614,
           "needRedDot": true,
           "needPopup": false
         },
@@ -105,14 +117,14 @@
           "needPopup": false
         },
         {
-          "cid": "7289",
-          "version": 1790567535,
+          "cid": "7284",
+          "version": 1788228578,
           "needRedDot": true,
           "needPopup": false
         },
         {
-          "cid": "7284",
-          "version": 1788228578,
+          "cid": "2107",
+          "version": 1791152975,
           "needRedDot": true,
           "needPopup": false
         },
@@ -220,8 +232,25 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1791334800,
+      "updatedAt": 1791388800,
       "list": [
+        {
+          "cid": "5512",
+          "type": 0,
+          "tab": "updates",
+          "orderType": 1,
+          "orderWeight": 1,
+          "displayType": "rich_text",
+          "startAt": 1791385200,
+          "focus": 1,
+          "title": "Hinweis zum schnellen Update",
+          "header": "07.10. – Hinweis zum schnellen Update",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260825/b373c127c4d98aef8d9c43125ae93383.jpg\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(31, 35, 41);\">Hallo Endministrator!</span></p><p><span style=\"color: rgb(31, 35, 41);\">Auf den Servern wird vom 07.10.2026 um 21:30 Uhr bis zum 07.10.2026 um 21:40 Uhr (UTC-5) ein schnelles Update durchgeführt. Während dieser Zeit werden alle Endministratoren abgemeldet und können nicht auf das Spiel zugreifen.Wir bitten um dein Verständnis für alle durch dieses Update verursachten Unannehmlichkeiten!</span></p><p></p><p>▼// Details zum Update</p><p><span style=\"color: rgb(0, 0, 0);\">· Ressourcen für das bevorstehende zeitlich begrenzte Anmeldung-Event [Tuschegezeichnete Welt] wurden aktualisiert.</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\">▼// Entschädigung für das Update</span></p><p><span style=\"color: rgb(31, 35, 41);\">· Verstandsverstärker für den Notfall ×1</span></p><p></p><p>Verteilungszeitraum: <span style=\"color: rgb(31, 35, 41);\">07.10.2026</span> nach dem kurzfristigen Update – vor dem nächsten Versionsupdate und der Wartung</p><p>Empfänger: Alle Endministratoren, die sich vor dem Update am <span style=\"color: rgb(31, 35, 41);\">07.10</span>.2026 um 21:30 Uhr (UTC-5) angemeldet und einen Charakter erstellt hatten.</p><p><span style=\"color: rgb(31, 35, 41);\">Hinweis: Kann nach dem Freischalten der [Mail]-Funktion abgeholt werden. Diese Mail ist 30 Tage lang verfügbar. Bitte hole sie rechtzeitig vor Ablauf ab.</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\">Danke für dein fortgesetztes Interesse und deine Unterstützung für Arknights: Endfield, Endministrator!</span></p>",
+            "linkType": 1
+          }
+        },
         {
           "cid": "9854",
           "type": 0,
@@ -323,6 +352,23 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260811/de1e1f92f5cab77b066bd98f3d844deb.png\" data-width=\"1650\" data-height=\"300\"><p>Geschätzter Endministrator:<br>Um den bevorstehenden Start von Arknights: Endfield auf Steam zu feiern, veranstalten wir ein besonderes Wunschlisten-Meilenstein-Event!<br>Füge ab heute Arknights: Endfield zu deiner Steam-Wunschliste hinzu und hilf uns, den letzten Meilenstein zu erreichen, um einen speziellen Gedenk-Profilbildrahmen und andere aufregende Belohnungen freizuschalten!<br><br>▼// Eventzeitraum<br>Vom Beginn des Events am 13. August 2026 bis zum offiziellen Start von Arknights: Endfield auf Steam (das genaue Startdatum wird später bekannt gegeben).<br><br>▼// Meilenstein-Belohnungen<br>· Phase 1 (30.000): T-Kreditscheine ×8.000<br>· Phase 2 (100.000): Grundlegender kognitiver Datenträger ×2<br>· Phase 3 (200.000): Waffen-INSP-Set ×2<br>· Endziel (300.000): Spezieller Gedenk-Profilbildrahmen ×1<br><br>Geh jetzt auf Steam und füge Arknights: Endfield deiner Steam-Wunschliste hinzu. Lasst uns gemeinsam das Endziel erreichen!<br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://store.steampowered.com/app/4732690/\">Geh jetzt auf Steam</a></p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "6420",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 2,
+          "displayType": "rich_text",
+          "startAt": 1791345600,
+          "focus": 0,
+          "title": "Tuschegezeichnete Welt",
+          "header": "Tuschegezeichnete Welt",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260930/c014fb85164f5fda4125a6e85a1f45a1.jpg\" data-width=\"1650\" data-height=\"300\"><p><strong>▼// Eventzeitraum</strong><br>8. Oktober 2026 um 12:00 Uhr (Serverzeit) – Vor dem Versions-Update und der Wartung<br><br><strong>▼// Teilnahmevoraussetzungen</strong><br>Abschluss der Hauptmission [Kapitel I, Prozess I: Die Belagerung durchbrechen]<br><br><strong>▼// Eventdetails</strong><br>· Logge dich täglich im Spiel ein, um Anmeldebelohnungen zu erhalten.<br>· Schließe die 3-Tage-Anmeldung ab, um Belohnungen einschließlich [RK-Genehmigung: Einfach] ×2 und [Oro-Beryll] ×500 zu erhalten.<br><br>※ Zeitzone des Asia-Servers: UTC+8<br>※ Zeitzone des Americas / Europe-Servers: UTC-5<br></p>",
             "linkType": 1
           }
         },
@@ -464,23 +510,6 @@
           }
         },
         {
-          "cid": "7289",
-          "type": 0,
-          "tab": "updates",
-          "orderType": 1,
-          "orderWeight": 3,
-          "displayType": "rich_text",
-          "startAt": 1790650800,
-          "focus": 0,
-          "title": "Umfrage zur Erfahrung mit der Version",
-          "header": "Umfrage zur Erfahrung mit der Version",
-          "jumpButton": null,
-          "data": {
-            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260924/f372a99cc5f75b1e67734128779d0be7.jpg\" data-width=\"1650\" data-height=\"300\"><p>Geschätzter Endministrator, <br>um deine Eindrücke und dein Feedback zu Arknights: Endfield einzuholen, möchten wir dich zur Teilnahme an einer Umfrage einladen. Bitte schließe die Umfrage deinem Spielerlebnis entsprechend ab und teile deine Gedanken zum Spiel mit uns. Nach dem Abschluss der Umfrage senden wir dir [Oro-Beryll]×300 als Abschlussbelohnung per Nachricht im Spiel. <br><br><strong>▼//Teilnahmeberechtigung für die Umfrage: </strong><br>Schalte die [Mail]-Funktion frei. <br><br><strong>▼//Zeitpunkt der Umfrage-Zustellung: </strong><br>30. September 2026 um 00:00 Uhr (UTC+8) <br><br><strong>▼//So gelangst du zur Umfrage </strong><br>Sobald die Zustellung erfolgt ist, findest du die Umfrage zur Erfahrung mit der Version [Traumlandschaft aus Wind und Schnee] in deiner [Mail]. Klicke auf [Zur Umfrage], um sie auszufüllen und Feedback zu geben. <br>※ Nach dem Absenden der Umfrage kannst du sie nicht nachträglich bearbeiten. Bitte fülle sie sorgfältig aus. <br><br>Damit dein Feedback auch auf dem neuesten Stand ist, verfällt die Umfrage-Mail nach bestimmter Zeit. Die Umfrage dauert ungefähr 3–5 Minuten. Danke für deine Zeit und Geduld. <br><br>Deine Vorschläge helfen uns dabei, das Spiel weiter zu verbessern. Dein Feedback spielt eine wichtige Rolle, um Arknights: Endfield zu einem besseren Erlebnis für alle Endministratoren zu machen. <br><br>Danke noch mal für dein anhaltendes Interesse und deine Unterstützung von Arknights: Endfield, Endministrator!<br></p>",
-            "linkType": 1
-          }
-        },
-        {
           "cid": "7284",
           "type": 0,
           "tab": "updates",
@@ -494,6 +523,23 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260831/70032ebc9fa0905786b4dced855c8727.jpg\" data-width=\"1650\" data-height=\"300\"><p>Lieber Endministrator,</p><p>während der Version [Traumlandschaft aus Wind und Schnee] werden im [Ankaufszentrum] verschiedene Pakete angeboten.</p><p><br></p><p><strong>▼// Limitierte Pakete</strong></p><p>■ Paket: Protokollfluss</p><p>· Verfügbarkeit: Während der gesamten Version [Traumlandschaft aus Wind und Schnee]</p><p>· Paketinhalt: [RK-Genehmigung: Priorisiert] ×10, [Waffenticket] ×2.000, [Mal der Beharrlichkeit] ×10</p><p>· Hinweis: Nur 1 Kauf in der aktuellen Version erlaubt</p><p><br></p><p>■ Paket: Winterjagd-RK</p><p>· Verfügbarkeit: Nach dem Versionsupdate der [Traumlandschaft aus Wind und Schnee] – 30. Sept. 2026 um 11:59 Uhr (Serverzeit)</p><p>· Paketinhalt: [„Befiederte Eisenspitze“-RK-Genehmigung] ×10, [T-Kreditscheine] ×80.000</p><p>· Hinweis: Nur 1 Kauf erlaubt</p><p><br></p><p>■ Preiswertes Waffenticket-Paket</p><p>· Verfügbarkeit: Während der gesamten Version [Traumlandschaft aus Wind und Schnee]</p><p>· Paketinhalt: [Waffenticket] ×2.000</p><p>· Hinweis: Nur 1 Kauf in der aktuellen Version erlaubt</p><p></p><p>※ Zeitzone des Asia-Servers: UTC+8</p><p>※ Zeitzone des Americas / Europe-Servers: UTC-5</p><p>※ Manche Pakete enthalten befristete Gegenstände. Details zu zeitlich begrenzten Gegenständen findest du unter [Kaufen – Gegenstandsinhalte]. Sollten zeitlich begrenzte Objekte in einem Paket nach dem Kauf verfallen, können diese nicht erneut ausgegeben werden. Vielen Dank für dein Verständnis und deine Unterstützung.</p><p>※ Weitere Pakete und Details findest du im Spiel unter [Ankaufszentrum – Pakete].</p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "2107",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "rich_text",
+          "startAt": 1791343800,
+          "focus": 0,
+          "title": "Verstandsversorgung",
+          "header": "Verstandsversorgung",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260926/bd878f3121ddbf2038fdf927d7c75441.jpg\" data-width=\"1650\" data-height=\"300\"><p><strong>▼// Eventzeitraum:</strong></p><p>„Asia“-Server:</p><p>8. Oktober 2026 um 04:00 Uhr bis 15. Oktober 2026 um 04:00 Uhr (Serverzeit)</p><p><br></p><p>„Americas / Europe“-Server:</p><p>8. Oktober 2026 um 04:00 Uhr bis 14. Oktober 2026 um 17:00 Uhr (Serverzeit)</p><p><br></p><p><strong>▼// Event-Belohnungen</strong></p><p>Schließe während des Events jeden Tag bestimmte Missionen ab und erhalte: [Verstandsverstärker für den Notfall]×4 und [Verstandsverbrauch-Genehmigung]×8.</p><p><br></p><p><strong>▼// Teilnahmevoraussetzungen</strong></p><p>Abschluss der Hauptmission [Kapitel I Prozess II: Den Weg freimachen]</p><p><br></p><p><strong>▼// Eventdetails</strong></p><p>· Während des Events sind täglich 3 Verstandsversorgung-Missionen verfügbar. Schließe die Missionen ab, um Belohnungen zu erhalten.</p><p>· Verstandsversorgung-Missionen werden täglich um 04:00 Uhr (Serverzeit) aktualisiert. Bitte denk dran, deine Belohnungen rechtzeitig abzuholen.</p><p><br></p><p>※ Zeitzone des Asia-Servers: UTC+8</p><p>※ Zeitzone des Americas / Europe-Servers: UTC-5</p><p>※ Weitere Eventdetails findest du im [Eventcenter] im Spiel.</p>",
             "linkType": 1
           }
         },

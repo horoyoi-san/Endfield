@@ -18,8 +18,14 @@
       "subChannel": "#DEFAULT",
       "lang": "ja-jp",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:ja-jp",
-      "version": "b49591f76190b3751edb304b4d647265",
+      "version": "b5f56cf3ec670b4c5950879db057f454",
       "onlineList": [
+        {
+          "cid": "5512",
+          "version": 1791287529,
+          "needRedDot": false,
+          "needPopup": false
+        },
         {
           "cid": "9854",
           "version": 1791152945,
@@ -53,6 +59,12 @@
         {
           "cid": "4610",
           "version": 1786440043,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "6420",
+          "version": 1791168614,
           "needRedDot": true,
           "needPopup": false
         },
@@ -105,14 +117,14 @@
           "needPopup": false
         },
         {
-          "cid": "7289",
-          "version": 1790567535,
+          "cid": "7284",
+          "version": 1788228578,
           "needRedDot": true,
           "needPopup": false
         },
         {
-          "cid": "7284",
-          "version": 1788228578,
+          "cid": "2107",
+          "version": 1791152975,
           "needRedDot": true,
           "needPopup": false
         },
@@ -214,8 +226,25 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1791334800,
+      "updatedAt": 1791388800,
       "list": [
+        {
+          "cid": "5512",
+          "type": 0,
+          "tab": "updates",
+          "orderType": 1,
+          "orderWeight": 1,
+          "displayType": "rich_text",
+          "startAt": 1791385200,
+          "focus": 1,
+          "title": "データ更新のご案内",
+          "header": "10月07日データ更新のご案内",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260825/3d1d3bb4c0aa89f5ea8832033134d6c7.png\" data-width=\"1650\" data-height=\"300\"><p>親愛なる管理人：</p><p>サーバーは2026年10月07日 21:30 - 21:40（UTC-5）にアップデートを行う予定です。アップデート中は強制的にログアウトされ、ゲームにログインすることができません。皆さまにはご迷惑をおかけいたしますが、ご理解のほどよろしくお願いいたします。<br></p><p>▼//アップデート内容</p><p><span style=\"color: rgb(0, 0, 0);\">· 開催予定のイベント「天地の墨跡」スタンプに関連するリソースを更新</span><br></p><p>▼//メンテナンス補填内容</p><p>· 初級理性回復剤×1<br></p><p>配布日時：2026/10/07 アップデート後～次のバージョンアップメンテナンス</p><p>配布条件：2026/10/07 21:30（UTC-5）メンテナンス前にアカウントおよびキャラクターを作成済み</p><p>注意事項：【メールボックス】機能が解放されてから受け取れます。メールの有効期間は30日間ですので、忘れずにお受け取りください。</p><p></p><p>引き続き、『アークナイツ：エンドフィールド』をよろしくお願いします。</p>",
+            "linkType": 1
+          }
+        },
         {
           "cid": "9854",
           "type": 0,
@@ -317,6 +346,23 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260811/9adb2a4692bf4d4ab6d7b0eee91d292e.png\" data-width=\"1650\" data-height=\"300\"><p>親愛なる管理人<br>『アークナイツ：エンドフィールド』Steam版のリリース決定を記念して、ウィッシュリスト登録数マイルストーンキャンペーンを開催します！<br>本日より、Steamのウィッシュリストに追加して、みんなで最終目標の達成を目指しましょう！最終目標を達成すると、特別記念フレームなどの豪華報酬がもらえます！<br><br>▼//開催期間<br>2026/08/13のキャンペーン開始後～『アークナイツ：エンドフィールド』Steam版の正式リリースまで（正式リリース日は後日お知らせします）<br><br>▼//報酬<br>· 第1段階（30,000）：折金券×8,000<br>· 第2段階（100,000）：初級認識媒体×2<br>· 第3段階（200,000）：武器検査ボックス×2<br>· 最終目標（300,000）：特別記念フレーム×1<br><br>今すぐSteamで『アークナイツ：エンドフィールド』をウィッシュリストに追加して、最終目標の達成を目指しましょう！<br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://store.steampowered.com/app/4732690/\">今すぐSteamへ</a></p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "6420",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 2,
+          "displayType": "rich_text",
+          "startAt": 1791345600,
+          "focus": 0,
+          "title": "天地の墨跡",
+          "header": "「天地の墨跡」スタンプラリーイベント概要",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260930/72f98d47844c39cd397d153d228d909e.jpg\" data-width=\"1650\" data-height=\"300\"><p><strong>▼//開催期間</strong><br>2026/10/08 12:00（サーバー時間）～バージョンアップメンテナンス前<br><br><strong>▼//参加条件</strong><br>メイン任務：第一章-プロセスⅠ「基地救援」を完了<br><br><strong>▼//説明</strong><br>· 毎日ログインするとスタンプラリー報酬を獲得できます。<br>· 計3日間ログインすると、【通常スカウト券】×2、【赤晶玉】×500などの報酬を獲得できます。<br><br>※Asiaサーバーのタイムゾーン：UTC+8<br>※Americas / Europeサーバーのタイムゾーン：UTC-5<br></p>",
             "linkType": 1
           }
         },
@@ -458,23 +504,6 @@
           }
         },
         {
-          "cid": "7289",
-          "type": 0,
-          "tab": "updates",
-          "orderType": 1,
-          "orderWeight": 3,
-          "displayType": "rich_text",
-          "startAt": 1790650800,
-          "focus": 0,
-          "title": "バージョンアンケート",
-          "header": "バージョン「雪氷の幽夢」アンケート",
-          "jumpButton": null,
-          "data": {
-            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260924/0ea624f5a9ba01bfff505265b30eebdd.png\" data-width=\"1650\" data-height=\"300\"><p>親愛なる管理人<br>『アークナイツ：エンドフィールド』をより快適にお楽しみいただけるよう、アンケートを実施いたします。実際のプレイ体験をもとに、ぜひ率直なご意見やご要望をお寄せください。アンケートをご提出いただいた方には、お礼として【赤晶玉】×300をゲーム内メールにてお送りいたします。<br><br><strong>▼//アンケート参加条件</strong><br>「メール」機能を解放<br><br><strong>▼//アンケート配布日時</strong><br>2026/09/30 00:00（UTC+8）<br><br><strong>▼//回答方法</strong><br>アンケート配布後、「メール」よりバージョン「雪氷の幽夢」アンケートをご確認いただけます。「アンケートのご記入はこちら」を押してご回答ください。<br>※アンケートは一度送信すると修正できませんので、送信前に内容をよくご確認ください。<br><br>なお、特定の進行段階におけるゲーム体験を正確に反映できるよう、アンケートメールには有効期限を設けております。回答時間の目安は3～5分です。お手数をおかけしますが、ご協力をお願いいたします。<br><br>皆さまからお寄せいただく貴重なご意見やご要望は、今後のゲーム体験のさらなる向上に活用させていただきます。<br><br>引き続き、『アークナイツ：エンドフィールド』をよろしくお願いいたします。<br></p>",
-            "linkType": 1
-          }
-        },
-        {
           "cid": "7284",
           "type": 0,
           "tab": "updates",
@@ -488,6 +517,23 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260831/263f8183a37fc2344d962fb4bde31771.jpg\" data-width=\"1650\" data-height=\"300\"><p>親愛なる管理人</p><p><br></p><p>バージョン「雪氷の幽夢」期間中、【購買部】に各種パックが登場します。</p><p><br></p><p><strong>▼//時限パック</strong></p><p>■ 協約起源パック</p><p>· 購入可能期間：バージョン「雪氷の幽夢」期間中</p><p>· パックの内容：【特別スカウト券】×10、【武庫配給】×2,000、【存続の痕跡】×10</p><p>· 注意事項：現在のバージョンで購入は1回限りです</p><p><br></p><p>■ 冬狩スカウトパック</p><p>· 購入可能期間：バージョン「雪氷の幽夢」開始後～2026/09/30 11:59（サーバー時間）</p><p>· パックの内容：【「弓の練磨」スカウト券】×10、【折金券】×80,000</p><p>· 注意事項：現在のバージョンで購入は1回限りです</p><p><br></p><p>■ 武庫配給特別パック</p><p>· 購入可能期間：バージョン「雪氷の幽夢」期間中</p><p>· パックの内容：【武庫配給】×2,000</p><p>· 注意事項：現在のバージョンで購入は1回限りです</p><p><br></p><p>※ Asiaサーバーのタイムゾーン：UTC+8</p><p>※ Americas / Europeサーバーのタイムゾーン：UTC-5</p><p>※ 一部のパックには時限アイテムが含まれている場合があります。【購入 - 商品内容】で時限アイテムの詳細を確認できます。パックの購入後、それに含まれる時限アイテムが期限切れとなった場合、再配布はできません。あらかじめご了承ください。</p><p>※ パックの詳細はゲーム内の【購買部 - パック】よりご確認ください。</p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "2107",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "rich_text",
+          "startAt": 1791343800,
+          "focus": 0,
+          "title": "理性補給",
+          "header": "「理性補給」期間限定イベント概要",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260926/0ee36d13162a8cd633144942c4a20d5e.jpg\" data-width=\"1650\" data-height=\"300\"><p><strong>▼//開催期間：</strong></p><p>Asiaサーバー：</p><p>2026/10/08 04:00～2026/10/15 04:00（サーバー時間）</p><p><br></p><p>Americas / Europeサーバー：</p><p>2026/10/08 04:00～2026/10/14 17:00（サーバー時間）</p><p><br></p><p><strong>▼//イベント報酬</strong></p><p>開催期間中、クエストを完了すると、【初級理性回復剤】×4、【理性消費許可証】×8を受け取ることができます。</p><p><br></p><p><strong>▼//参加条件</strong></p><p>メイン任務：第一章-プロセスⅡ「前路開拓」を完了</p><p><br></p><p><strong>▼//説明</strong></p><p>· 期間中、毎日3つの理性補給クエストが解放されます。クエストを完了すると、報酬を受け取ることができます。</p><p>· 理性補給クエストは翌日04:00（サーバー時間）に更新されます。報酬はお早めにお受け取りください。</p><p><br></p><p>※Asiaサーバーのタイムゾーン：UTC+8</p><p>※Americas / Europeサーバーのタイムゾーン：UTC-5</p><p>※イベントの詳細は、ゲーム内の【イベント】よりご確認ください。</p>",
             "linkType": 1
           }
         },

@@ -18,8 +18,14 @@
       "subChannel": "#DEFAULT",
       "lang": "fr-fr",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:fr-fr",
-      "version": "5d5fc14cb0f6ae4f6b72828098e55e0c",
+      "version": "7f4608f512d90872bbd64cdefb9df82d",
       "onlineList": [
+        {
+          "cid": "5512",
+          "version": 1791287529,
+          "needRedDot": false,
+          "needPopup": false
+        },
         {
           "cid": "9854",
           "version": 1791152945,
@@ -53,6 +59,12 @@
         {
           "cid": "4610",
           "version": 1786440043,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "6420",
+          "version": 1791168614,
           "needRedDot": true,
           "needPopup": false
         },
@@ -105,14 +117,14 @@
           "needPopup": false
         },
         {
-          "cid": "7289",
-          "version": 1790567535,
+          "cid": "7284",
+          "version": 1788228578,
           "needRedDot": true,
           "needPopup": false
         },
         {
-          "cid": "7284",
-          "version": 1788228578,
+          "cid": "2107",
+          "version": 1791152975,
           "needRedDot": true,
           "needPopup": false
         },
@@ -220,8 +232,25 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1791334800,
+      "updatedAt": 1791388800,
       "list": [
+        {
+          "cid": "5512",
+          "type": 0,
+          "tab": "updates",
+          "orderType": 1,
+          "orderWeight": 1,
+          "displayType": "rich_text",
+          "startAt": 1791385200,
+          "focus": 1,
+          "title": "Avis de mise à jour rapide",
+          "header": "07/10 - Avis de mise à jour rapide",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260825/9b3d45dfb0a05282ed8ec5f95b97fd7f.jpg\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(31, 35, 41);\">Endministrator,</span></p><p><span style=\"color: rgb(31, 35, 41);\">Les serveurs feront l'objet d'une mise à jour rapide du 07/10/2026 21:30 au 07/10/2026 21:40 (UTC-5). Pendant cette période, tous les Endministrators seront déconnectés et ne pourront pas accéder au jeu. Nous vous remercions de votre compréhension pour la gêne occasionnée par cette mise à jour !</span></p><p></p><p>▼// Détails de la mise à jour</p><p><span style=\"color: rgb(0, 0, 0);\">· Ressources mises à jour pour le prochain événement de connexion à durée limitée [Le monde du lavis d'encre].</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\">▼// Compensation de mise à jour</span></p><p><span style=\"color: rgb(31, 35, 41);\">· 1 bonus de lucidité d'urgence</span></p><p></p><p>Période de distribution : à partir du 07/10<span style=\"color: rgb(31, 35, 41);\">/2026</span> après la mise à jour rapide – jusqu'à la prochaine mise à jour de version et maintenance</p><p>Éligibilité : tous les Endministrators qui se sont inscrits et ont créé un personnage avant la mise à jour du 07/10/2026 à 21:30 (UTC-5)</p><p><span style=\"color: rgb(31, 35, 41);\">Remarque : vous pourrez récupérer cette compensation après avoir débloqué la fonctionnalité [Courrier]. Ce message est valable pendant 30 jours. Veuillez vous assurer de le récupérer à temps.</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\">Merci pour votre attention et votre soutien sans faille à Arknights: Endfield, Endministrator !</span></p>",
+            "linkType": 1
+          }
+        },
         {
           "cid": "9854",
           "type": 0,
@@ -323,6 +352,23 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260811/83f3c524e8e28122dc03aee0b745730c.png\" data-width=\"1650\" data-height=\"300\"><p>Endministrator, <br>Pour célébrer le lancement imminent d'Arknights: Endfield sur Steam, nous vous avons préparé un événement de jalon spécial, [Liste de souhaits] ! <br>Ajoutez Arknights: Endfield à votre liste de souhaits Steam dès aujourd'hui et aidez-nous à atteindre le dernier jalon pour débloquer un cadre du portrait commémoratif spécial et d'autres récompenses !<br><br>▼// Dates de l'événement<br>Du 13 août 2026 au lancement officiel d'Arknights: Endfield sur Steam (la date exacte sera annoncée ultérieurement).<br><br>▼// Récompenses de jalon<br>· Phase 1 (30 000) : 8 000 crédits T <br>· Phase 2 (100 000) : 2 supports cognitifs de base <br>· Phase 3 (200 000) : 2 ensembles INSP d'arme <br>· Objectif final (300 000) : 1 cadre du portrait commémoratif spécial<br><br>Rendez-vous dès à présent sur Steam et ajoutez Arknights: Endfield à votre liste de souhaits. Ensemble, nous atteindrons l'objectif final !<br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://store.steampowered.com/app/4732690/\">Accédez à Steam</a></p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "6420",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 2,
+          "displayType": "rich_text",
+          "startAt": 1791345600,
+          "focus": 0,
+          "title": "Le monde du lavis d'encre",
+          "header": "Le monde du lavis d'encre",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260930/8ecd9ff10aa77c0df5bedd260bfd2f57.jpg\" data-width=\"1650\" data-height=\"300\"><p><strong>▼// Dates de l'événement</strong><br>Du 8 octobre 2026 à 12 h (heure du serveur) jusqu'à la prochaine mise à jour de version et maintenance<br><br><strong>▼// Conditions de participation</strong><br>Avoir terminé la mission principale [Chapitre I - Processus I : Rompre le siège]<br><br><strong>▼// Détails de l'événement</strong><br>· Connectez-vous au jeu chaque jour pour recevoir des récompenses de connexion.<br>· Connectez-vous pendant 3 jours pour recevoir des récompenses incluant 2 [permis REC de base] et 500 [orobéryls].<br><br>※ Fuseau horaire du serveur Asia : UTC+8<br>※ Fuseau horaire du serveur Americas / Europe : UTC-5<br></p>",
             "linkType": 1
           }
         },
@@ -464,23 +510,6 @@
           }
         },
         {
-          "cid": "7289",
-          "type": 0,
-          "tab": "updates",
-          "orderType": 1,
-          "orderWeight": 3,
-          "displayType": "rich_text",
-          "startAt": 1790650800,
-          "focus": 0,
-          "title": "Sondage sur l'expérience de version",
-          "header": "Sondage sur l'expérience de version",
-          "jumpButton": null,
-          "data": {
-            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260924/64fa5f4fffe919a912e686f7e49e2ab2.jpg\" data-width=\"1650\" data-height=\"300\"><p>Cher Endministrator, <br>Pour en savoir plus sur vos ressentis et commentaires sur Arknights: Endfield, nous aimerions vous envoyer un sondage. Nous vous invitons à y répondre en fonction de votre expérience dans le jeu et à nous transmettre tous vos précieux commentaires. Lorsque vous aurez envoyé le sondage, nous vous offrirons 300 [orobéryls] en guise de récompense d'achèvement via la messagerie dans le jeu. <br><br><strong>▼// Conditions d'éligibilité au sondage </strong><br>Avoir débloqué la fonctionnalité [Courrier] <br><br><strong>▼// Heure d'envoi du sondage </strong><br>30 septembre 2026 à minuit (UTC+8)<br><br><strong>▼// Comment accéder au sondage </strong><br>Une fois disponible, vous trouverez le sondage sur l'expérience de version [Monde onirique de neige et de vent] dans votre [Courrier]. Cliquez sur [Accéder au sondage] pour le remplir et nous transmettre vos précieux commentaires. <br>※ Une fois le sondage envoyé, les réponses ne peuvent plus être modifiées. Veillez à tout vérifier soigneusement avant d'envoyer. <br><br>Pour veiller à ce que vos commentaires portent bien sur votre expérience de jeu la plus récente, ce message de sondage expirera au bout d'un certain temps. Remplir ce sondage prend environ 3 à 5 minutes. Merci pour votre attention et votre patience. <br><br>Chacune de vos suggestions nous aidera à améliorer le jeu. Vos commentaires joueront un rôle important dans l'élaboration de la suite de l'expérience Arknights: Endfield pour tous les Endministrators. <br><br>Merci encore pour votre intérêt et votre soutien permanent à Arknights: Endfield, Endministrator !<br></p>",
-            "linkType": 1
-          }
-        },
-        {
           "cid": "7284",
           "type": 0,
           "tab": "updates",
@@ -494,6 +523,23 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260831/16d3528c8283bb1b5a27d2d325099244.jpg\" data-width=\"1650\" data-height=\"300\"><p>Endministrator,</p><p>Pendant la version [Monde onirique de neige et de vent], le [Centre d'acquisition] proposera divers lots.</p><p><br></p><p><strong>▼// Lots limités</strong></p><p>■ Lot de flux du Protocole</p><p>· Disponibilité : pendant toute la durée de la version [Monde onirique de neige et de vent]</p><p>· Contenu du lot : [Permis REC certifié] ×10, [Ticket de l'arsenal] ×2 000, [Marque de persévérance] ×10</p><p>· Remarque : 1 seul achat autorisé dans la version actuelle</p><p><br></p><p>■ Lot de REC Chasse hivernale</p><p>· Disponibilité : après la mise à jour de la version [Monde onirique de neige et de vent] — 30 septembre 2026 à 11 h 59 (heure du serveur)</p><p>· Contenu du lot : [Permis REC Pointe de fer empennée] ×10, [Crédits T] ×80 000</p><p>· Remarque : 1 seul achat autorisé</p><p><br></p><p>■ Pack de tickets de l'arsenal - éco</p><p>· Disponibilité : pendant toute la durée de la version [Monde onirique de neige et de vent]</p><p>· Contenu du lot : [Ticket de l'arsenal] ×2 000</p><p>· Remarque : 1 seul achat autorisé dans la version actuelle</p><p><br></p><p>※ Fuseau horaire du serveur Asia : UTC+8</p><p>※ Fuseau horaire du serveur Americas / Europe : UTC-5</p><p>※ Certains lots peuvent inclure des objets à durée limitée. Vous pouvez consulter les détails des objets à durée limitée dans [Achat — Contenu de l'article]. Si les objets à durée limitée d'un lot expirent après l'achat, ils ne pourront pas être réémis. Merci de votre compréhension et de votre soutien.</p><p>※ Pour plus de lots et de détails, visitez la section [Centre d'acquisition — Lots] en jeu.</p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "2107",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "rich_text",
+          "startAt": 1791343800,
+          "focus": 0,
+          "title": "Approvisionnement en lucidité",
+          "header": "Approvisionnement en lucidité",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260926/284fdd951ea503e6698b237d3d4b454d.jpg\" data-width=\"1650\" data-height=\"300\"><p><strong>▼// Dates de l'événement :</strong></p><p>Serveur Asia :</p><p>Du 8 octobre 2026 à 4 h au 15 octobre 2026 à 4 h (heure du serveur)</p><p><br></p><p>Serveur Americas / Europe :</p><p>Du 8 octobre 2026 à 4 h au 14 octobre 2026 à 17 h (heure du serveur)</p><p><br></p><p><strong>▼// Récompenses d'événement</strong></p><p>Au cours de l'événement, terminez chaque jour les missions indiquées pour obtenir les récompenses suivantes : 4 [bonus de lucidité d'urgence] et 8 [permis d'utilisation de lucidité].</p><p><br></p><p><strong>▼// Conditions de participation</strong></p><p>Terminer la mission principale [Chapitre I Processus II : Ouvrir la voie]</p><p><br></p><p><strong>▼// Détails de l'événement</strong></p><p>· Pendant l'événement, 3 missions d'Approvisionnement en lucidité seront disponibles chaque jour. Terminez ces missions pour récupérer les récompenses.</p><p>· Les missions d'Approvisionnement en lucidité seront réinitialisées chaque jour à 4 h (heure du serveur). N'oubliez pas de récupérer vos récompenses à temps.</p><p><br></p><p>※ Fuseau horaire du serveur Asia : UTC+8</p><p>※ Fuseau horaire du serveur Americas / Europe : UTC-5</p><p>※ Pour plus de détails sur l'événement, consultez le [Centre d'événement] en jeu.</p>",
             "linkType": 1
           }
         },
