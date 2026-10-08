@@ -18,14 +18,8 @@
       "subChannel": "#DEFAULT",
       "lang": "de-de",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:de-de",
-      "version": "7f4608f512d90872bbd64cdefb9df82d",
+      "version": "2d7f7b95909f9392e4ab0c707581e009",
       "onlineList": [
-        {
-          "cid": "5512",
-          "version": 1791287529,
-          "needRedDot": false,
-          "needPopup": false
-        },
         {
           "cid": "9854",
           "version": 1791152945,
@@ -40,7 +34,7 @@
         },
         {
           "cid": "6433",
-          "version": 1790404370,
+          "version": 1791429405,
           "needRedDot": false,
           "needPopup": false
         },
@@ -123,6 +117,18 @@
           "needPopup": false
         },
         {
+          "cid": "0788",
+          "version": 1790763677,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "4613",
+          "version": 1790756500,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
           "cid": "2107",
           "version": 1791152975,
           "needRedDot": true,
@@ -149,12 +155,6 @@
         {
           "cid": "9864",
           "version": 1790242018,
-          "needRedDot": true,
-          "needPopup": false
-        },
-        {
-          "cid": "8955",
-          "version": 1790239059,
           "needRedDot": true,
           "needPopup": false
         },
@@ -232,25 +232,8 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1791388800,
+      "updatedAt": 1791471600,
       "list": [
-        {
-          "cid": "5512",
-          "type": 0,
-          "tab": "updates",
-          "orderType": 1,
-          "orderWeight": 1,
-          "displayType": "rich_text",
-          "startAt": 1791385200,
-          "focus": 1,
-          "title": "Hinweis zum schnellen Update",
-          "header": "07.10. – Hinweis zum schnellen Update",
-          "jumpButton": null,
-          "data": {
-            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260825/b373c127c4d98aef8d9c43125ae93383.jpg\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(31, 35, 41);\">Hallo Endministrator!</span></p><p><span style=\"color: rgb(31, 35, 41);\">Auf den Servern wird vom 07.10.2026 um 21:30 Uhr bis zum 07.10.2026 um 21:40 Uhr (UTC-5) ein schnelles Update durchgeführt. Während dieser Zeit werden alle Endministratoren abgemeldet und können nicht auf das Spiel zugreifen.Wir bitten um dein Verständnis für alle durch dieses Update verursachten Unannehmlichkeiten!</span></p><p></p><p>▼// Details zum Update</p><p><span style=\"color: rgb(0, 0, 0);\">· Ressourcen für das bevorstehende zeitlich begrenzte Anmeldung-Event [Tuschegezeichnete Welt] wurden aktualisiert.</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\">▼// Entschädigung für das Update</span></p><p><span style=\"color: rgb(31, 35, 41);\">· Verstandsverstärker für den Notfall ×1</span></p><p></p><p>Verteilungszeitraum: <span style=\"color: rgb(31, 35, 41);\">07.10.2026</span> nach dem kurzfristigen Update – vor dem nächsten Versionsupdate und der Wartung</p><p>Empfänger: Alle Endministratoren, die sich vor dem Update am <span style=\"color: rgb(31, 35, 41);\">07.10</span>.2026 um 21:30 Uhr (UTC-5) angemeldet und einen Charakter erstellt hatten.</p><p><span style=\"color: rgb(31, 35, 41);\">Hinweis: Kann nach dem Freischalten der [Mail]-Funktion abgeholt werden. Diese Mail ist 30 Tage lang verfügbar. Bitte hole sie rechtzeitig vor Ablauf ab.</span></p><p></p><p><span style=\"color: rgb(31, 35, 41);\">Danke für dein fortgesetztes Interesse und deine Unterstützung für Arknights: Endfield, Endministrator!</span></p>",
-            "linkType": 1
-          }
-        },
         {
           "cid": "9854",
           "type": 0,
@@ -299,7 +282,7 @@
           "header": "Arknights: Endfield – Patchnotizen",
           "jumpButton": null,
           "data": {
-            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260903/2ae389c3ecb9e124f0df98269d1165e0.jpg\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(0, 0, 0);\">Hallo Endministrator!</span></p><p><span style=\"color: rgb(0, 0, 0);\">Um ein besseres Spielerlebnis zu gewährleisten, werden wir das Spiel weiterhin optimieren und auftretende Probleme beheben. Dieses Update enthält die folgenden Fehlerbehebungen:</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">▼// Updates &amp; Fehlerbehebungen</span></p><p>■ 23.09.2026 (UTC-5)</p><p>· Es wurde ein Problem behoben, durch das die Originium-Schnecke unter bestimmten Umständen nicht in die große Grube in Suiming getreten werden konnte.</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen der [Aktueller Wasserstand]-Fortschrittsbalken beim Erkunden von [Suiming] fehlerhaft angezeigt wurde.</p><p>· Ein unter bestimmten Umständen auftretendes Problem wurde behoben, bei dem nach dem Verlassen von [Simulation] der Wechsel zwischen dem [Erkundungsmodus] und dem [AIK-Modus] nicht ordnungsgemäß funktionierte.</p><p>· Ein unter bestimmten Umständen auftretendes Problem wurde behoben, bei dem die Fortschritteffekte bestimmter Operator-Talente in [Ätzbereich: Bergung] nicht ordnungsgemäß wirksam wurden.</p><p>· Die Sprint-Soundeffekte der 6★-Operatorin [Arkan] wurden unter bestimmten Umständen optimiert.</p><p></p><p>■ 07.09.2026 (UTC-5)</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen die Angriffe der 6★-Operatorin [Typhoeus] bestimmte Gegner nicht treffen konnten, wenn sie [Jagdpfeile] hatte.</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen die Angriffe der 6★-Operatorin [Typhoeus] [Gezeitenwanderer] nicht treffen konnten, während sie im Zustand „Schweben“ war.</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen manche Vorratskisten im [Verschneiten Wald] nicht geöffnet werden konnten.</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen Fabrikanlagen in bestimmten Missionen fehlerhaft platziert werden konnten.</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen Operatoren auf der Dijiang an falschen Positionen standen.</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen die Profile von Freunden im Bildschirm [Produktionsunterstützung] fehlerhaft angezeigt wurden.</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen die Waffensymbole im Bildschirm [Essenz-Wunschliste] fehlerhaft angezeigt wurden.</p><p></p><p>■ 03.09.2026 (UTC-5)</p><p>· Es wurde ein Problem behoben, durch das bei bestimmten Eingaben die Trefferanzahl der 6★-Operatorin [Typhoeus] beim Angriff auf bestimmte Gegner fehlerhaft war.</p><p>· Es wurde ein Problem behoben, bei dem unter bestimmten Umständen die Anzahl der [Jagdpfeile] des Fertigkeitseffekts der 6★-Operatorin [Typhoeus] fehlerhaft war, wenn bestimmte Phasen erneut herausgefordert wurden.</p><p>· Es wurde ein Problem behoben, bei dem unter bestimmten Umständen in der Nebenmission [Das Reich von Schnee und Albträumen] fehlerhafter Text angezeigt wurde.</p><p>· Ein Problem wurde behoben, durch das manche Aktionen der 6★-Operatorin [Typhoeus] nicht wie vorgesehen funktionierten.</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen bestimmte Aktionen dazu führten, dass nicht gesteuerte Operatoren dem gesteuerten Operator ungewöhnlicherweise noch folgten, wenn ihre Aktionen pausiert waren.</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen Interaktionsoptionen für [Kontrollnexus] fälschlicherweise in Bereichen angezeigt wurden, die nicht zum [Kontrollnexus] gehören.</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen manche Funktionssymbole auf der Hauptoberfläche fehlerhaft angezeigt wurden.</p><p></p><p>■ 02.09.2026 (UTC-5)</p><p>· Ein Problem mit einer ungewöhnlichen Konfiguration von [Waffen-AK: Eiskalt] wurde behoben. [Mustermodell] gehört nun zu den wählbaren Waffen. Falls der Endministrator diesen Gegenstand vor dem Hot-Update am 02.09. verwendet hat, übermitteln Sie uns bitte während des Zeitraums der Version [Traumlandschaft aus Wind und Schnee] Feedback über [Einstellungen] – [Kundendienst kontaktieren]. Wir werden den Sachverhalt prüfen und entsprechende Maßnahmen ergreifen.</p><p>· Es wurde ein Problem behoben, bei dem unter bestimmten Umständen gegnerische Schilde in der Nebenmission [Ein nebelverhangener Wald] nicht zerstört werden konnten, was den Missionsfortschritt verhinderte.</p><p>· Es wurde ein Problem behoben, bei dem unter bestimmten Umständen die Pfeil-Spezialeffekte der 6★-Operatorin [Typhoeus] ungewöhnlich lange anhielten.</p><p>· Ein Problem wurde behoben, bei dem unter bestimmten Umständen der in den kurzen und ausführlichen Versionen der Kampffertigkeit-Beschreibung der 6★-Operatorin [Typhoeus] für [Durchbohrende Pfeile des Waldes] angezeigte SDN-Multiplikator nicht übereinstimmte.</p><p>· Ein Problem wurde behoben, bei dem der ON/OFF-Schalter des [Depot-Entladers] nicht angezeigt wurde.</p><p>· Es wurde ein Problem behoben, bei dem in der Oberfläche der Regionsentwicklungslevel-Zusammenfassung einige Daten für [Verschneiter Wald] fehlerhaft konfiguriert waren.</p><p>· Ein Problem wurde behoben, bei dem unter bestimmten Umständen der [Endministrator] seine Kampffertigkeit an Bord der Dijiang wirken konnte.</p><p></p><p><span style=\"color: rgb(0, 0, 0);\">Die oben genannten Updates und Fehlerbehebungen werden nach einem Neustart des Clients wirksam. Wir entschuldigen uns für alle eventuellen Unannehmlichkeiten.</span></p><p><span style=\"color: rgb(0, 0, 0);\">Vielen Dank für dein anhaltendes Interesse und deine Unterstützung für Arknights: Endfield, Endministrator!</span></p>",
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260903/2ae389c3ecb9e124f0df98269d1165e0.jpg\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(0, 0, 0);\">Hallo Endministrator!</span></p><p><span style=\"color: rgb(0, 0, 0);\">Um ein besseres Spielerlebnis zu gewährleisten, werden wir das Spiel weiterhin optimieren und auftretende Probleme beheben. Dieses Update enthält die folgenden Fehlerbehebungen:</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">▼// Updates &amp; Fehlerbehebungen</span></p><p>■ 07.10.2026 (UTC-5)</p><p>· Ein Problem im Bildschirm [Fortschrittsübersicht] wurde behoben, bei dem die Kampffertigkeit-Symbole für die 5★-Operatorin [Purrchena] nicht korrekt angezeigt wurden.</p><p>· Ein Problem mit der Textbeschreibung des Profilbildrahmens [Süß und verschneit] wurde behoben.</p><p></p><p>■ 23.09.2026 (UTC-5)</p><p>· Es wurde ein Problem behoben, durch das die Originium-Schnecke unter bestimmten Umständen nicht in die große Grube in Suiming getreten werden konnte.</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen der [Aktueller Wasserstand]-Fortschrittsbalken beim Erkunden von [Suiming] fehlerhaft angezeigt wurde.</p><p>· Ein unter bestimmten Umständen auftretendes Problem wurde behoben, bei dem nach dem Verlassen von [Simulation] der Wechsel zwischen dem [Erkundungsmodus] und dem [AIK-Modus] nicht ordnungsgemäß funktionierte.</p><p>· Ein unter bestimmten Umständen auftretendes Problem wurde behoben, bei dem die Fortschritteffekte bestimmter Operator-Talente in [Ätzbereich: Bergung] nicht ordnungsgemäß wirksam wurden.</p><p>· Die Sprint-Soundeffekte der 6★-Operatorin [Arkan] wurden unter bestimmten Umständen optimiert.</p><p></p><p>■ 07.09.2026 (UTC-5)</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen die Angriffe der 6★-Operatorin [Typhoeus] bestimmte Gegner nicht treffen konnten, wenn sie [Jagdpfeile] hatte.</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen die Angriffe der 6★-Operatorin [Typhoeus] [Gezeitenwanderer] nicht treffen konnten, während sie im Zustand „Schweben“ war.</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen manche Vorratskisten im [Verschneiten Wald] nicht geöffnet werden konnten.</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen Fabrikanlagen in bestimmten Missionen fehlerhaft platziert werden konnten.</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen Operatoren auf der Dijiang an falschen Positionen standen.</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen die Profile von Freunden im Bildschirm [Produktionsunterstützung] fehlerhaft angezeigt wurden.</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen die Waffensymbole im Bildschirm [Essenz-Wunschliste] fehlerhaft angezeigt wurden.</p><p></p><p>■ 03.09.2026 (UTC-5)</p><p>· Es wurde ein Problem behoben, durch das bei bestimmten Eingaben die Trefferanzahl der 6★-Operatorin [Typhoeus] beim Angriff auf bestimmte Gegner fehlerhaft war.</p><p>· Es wurde ein Problem behoben, bei dem unter bestimmten Umständen die Anzahl der [Jagdpfeile] des Fertigkeitseffekts der 6★-Operatorin [Typhoeus] fehlerhaft war, wenn bestimmte Phasen erneut herausgefordert wurden.</p><p>· Es wurde ein Problem behoben, bei dem unter bestimmten Umständen in der Nebenmission [Das Reich von Schnee und Albträumen] fehlerhafter Text angezeigt wurde.</p><p>· Ein Problem wurde behoben, durch das manche Aktionen der 6★-Operatorin [Typhoeus] nicht wie vorgesehen funktionierten.</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen bestimmte Aktionen dazu führten, dass nicht gesteuerte Operatoren dem gesteuerten Operator ungewöhnlicherweise noch folgten, wenn ihre Aktionen pausiert waren.</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen Interaktionsoptionen für [Kontrollnexus] fälschlicherweise in Bereichen angezeigt wurden, die nicht zum [Kontrollnexus] gehören.</p><p>· Ein Problem wurde behoben, durch das unter bestimmten Umständen manche Funktionssymbole auf der Hauptoberfläche fehlerhaft angezeigt wurden.</p><p></p><p>■ 02.09.2026 (UTC-5)</p><p>· Ein Problem mit einer ungewöhnlichen Konfiguration von [Waffen-AK: Eiskalt] wurde behoben. [Mustermodell] gehört nun zu den wählbaren Waffen. Falls der Endministrator diesen Gegenstand vor dem Hot-Update am 02.09. verwendet hat, übermitteln Sie uns bitte während des Zeitraums der Version [Traumlandschaft aus Wind und Schnee] Feedback über [Einstellungen] – [Kundendienst kontaktieren]. Wir werden den Sachverhalt prüfen und entsprechende Maßnahmen ergreifen.</p><p>· Es wurde ein Problem behoben, bei dem unter bestimmten Umständen gegnerische Schilde in der Nebenmission [Ein nebelverhangener Wald] nicht zerstört werden konnten, was den Missionsfortschritt verhinderte.</p><p>· Es wurde ein Problem behoben, bei dem unter bestimmten Umständen die Pfeil-Spezialeffekte der 6★-Operatorin [Typhoeus] ungewöhnlich lange anhielten.</p><p>· Ein Problem wurde behoben, bei dem unter bestimmten Umständen der in den kurzen und ausführlichen Versionen der Kampffertigkeit-Beschreibung der 6★-Operatorin [Typhoeus] für [Durchbohrende Pfeile des Waldes] angezeigte SDN-Multiplikator nicht übereinstimmte.</p><p>· Ein Problem wurde behoben, bei dem der ON/OFF-Schalter des [Depot-Entladers] nicht angezeigt wurde.</p><p>· Es wurde ein Problem behoben, bei dem in der Oberfläche der Regionsentwicklungslevel-Zusammenfassung einige Daten für [Verschneiter Wald] fehlerhaft konfiguriert waren.</p><p>· Ein Problem wurde behoben, bei dem unter bestimmten Umständen der [Endministrator] seine Kampffertigkeit an Bord der Dijiang wirken konnte.</p><p></p><p><span style=\"color: rgb(0, 0, 0);\">Die oben genannten Updates und Fehlerbehebungen werden nach einem Neustart des Clients wirksam. Wir entschuldigen uns für alle eventuellen Unannehmlichkeiten.</span></p><p><span style=\"color: rgb(0, 0, 0);\">Vielen Dank für dein anhaltendes Interesse und deine Unterstützung für Arknights: Endfield, Endministrator!</span></p>",
             "linkType": 1
           }
         },
@@ -527,6 +510,41 @@
           }
         },
         {
+          "cid": "0788",
+          "type": 0,
+          "tab": "news",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "picture",
+          "startAt": 1791455400,
+          "focus": 0,
+          "title": "Updates für das Discord-Spielstatistik-Widget",
+          "header": "",
+          "jumpButton": null,
+          "data": {
+            "url": "https://web-static.hg-cdn.com/upload/image/20260930/4cc876b229d28ed7db5382836ff0eeab.png",
+            "link": "https://endfield.gryphline.com/special/discord-binding",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "4613",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "rich_text",
+          "startAt": 1791428400,
+          "focus": 0,
+          "title": "Beschleunigungsmissionen jetzt verfügbar",
+          "header": "[Protokollpass] Beschleunigungsmissionen jetzt verfügbar",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260925/5e1366bfa1c5e5e14c4e1f77a030fb33.jpg\" data-width=\"1650\" data-height=\"300\"><p>Geschätzter Endministrator: <br>[Protokollpass] Beschleunigungsmissionen sind jetzt verfügbar. Schließe alle Beschleunigungsmissionen für die aktuelle Pass-Saison ab, um jede Menge zusätzliche Pass-EP zu erhalten.<br><br><strong>▼// Verfügbarkeit </strong><br>8. Oktober 2026 um 04:00 Uhr (Serverzeit) – Vor dem Versions-Update und der Wartung<br><br><strong>▼// Teilnahmekriterien </strong><br>Schließe die Hauptmission [Kapitel I, Prozess II: Den Weg freimachen] ab.<br><br><strong>▼// Besondere Hinweise </strong><br>Du kannst weiterhin Pass-EP erhalten, auch wenn du bereits das max. [Protokollpass]-Level erreicht hast. Die gesamten EP, die nach Erreichen des max. Passlevels gesammelt werden, werden gegen [Wiederkehrende Kisten des Unerwarteten] als Belohnungen eingetauscht. Die Kiste wird nach Erhalt automatisch geöffnet und gewährt eine zufällige [Oro-Beryll]-Belohnung, eine zufällige [Fortschrittsmaterial]-Belohnung und eine zufällige [Verstandsverbrauch-Genehmigung]-Belohnung.<br><br>※ Zeitzone des Asia-Servers: UTC+8 <br>※ Zeitzone des Americas / Europe-Servers: UTC-5 <br>※ Weitere Details zu den Regeln sind im Spiel unter [Protokollpass] und dann [Details zum Protokollpass] zu finden.<br></p>",
+            "linkType": 1
+          }
+        },
+        {
           "cid": "2107",
           "type": 0,
           "tab": "events",
@@ -611,24 +629,6 @@
           "data": {
             "url": "https://web-static.hg-cdn.com/upload/image/20260924/7d76b5110673924f342677b1eefef8bc.png",
             "link": "https://static.skport.com/u-link/download.html?schema=skland%3A%2F%2Fdetail%3Fid%3D2101920275328397423&redirectUrl=https%3A%2F%2Fwww.skport.com%2Farticle%3Fid%3D2101920275328397423%26hg_media%3Dlauncher%26hg_link_campaign%3Dbanner%26hg_link_name%3DSuiming",
-            "linkType": 1
-          }
-        },
-        {
-          "cid": "8955",
-          "type": 0,
-          "tab": "news",
-          "orderType": 1,
-          "orderWeight": 4,
-          "displayType": "picture",
-          "startAt": 1790247600,
-          "focus": 0,
-          "title": "Bring mehr Farbe in die Welt",
-          "header": "",
-          "jumpButton": null,
-          "data": {
-            "url": "https://web-static.hg-cdn.com/upload/image/20260924/eafe7b31fb27c68c78d1e7f0819c2393.jpg",
-            "link": "https://static.skport.com/u-link/download.html?schema=skland%3A%2F%2Fdetail%3Fid%3D2101873401401199011&redirectUrl=https%3A%2F%2Fwww.skport.com%2Farticle%3Fid%3D2101873401401199011%26hg_media%3Dlauncher%26hg_link_campaign%3Dbanner%26hg_link_name%3DYvonne",
             "linkType": 1
           }
         },
