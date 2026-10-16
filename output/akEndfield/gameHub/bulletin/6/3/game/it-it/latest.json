@@ -18,8 +18,14 @@
       "subChannel": "#DEFAULT",
       "lang": "it-it",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:it-it",
-      "version": "7063c24be233d2c5929d74abc18b634e",
+      "version": "e538808f8e2b7171fb09fbcba28dd385",
       "onlineList": [
+        {
+          "cid": "3035",
+          "version": 1792132103,
+          "needRedDot": false,
+          "needPopup": false
+        },
         {
           "cid": "8941",
           "version": 1792071377,
@@ -45,6 +51,12 @@
           "needPopup": false
         },
         {
+          "cid": "7279",
+          "version": 1792056736,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
           "cid": "5510",
           "version": 1791972303,
           "needRedDot": true,
@@ -65,6 +77,12 @@
         {
           "cid": "1362",
           "version": 1791970442,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "9851",
+          "version": 1791978077,
           "needRedDot": true,
           "needPopup": false
         },
@@ -166,8 +184,26 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1792076400,
+      "updatedAt": 1792148400,
       "list": [
+        {
+          "cid": "3035",
+          "type": 0,
+          "tab": "updates",
+          "orderType": 1,
+          "orderWeight": 1,
+          "displayType": "rich_text",
+          "startAt": 1792080000,
+          "focus": 0,
+          "extraData": {},
+          "title": "Note di patch",
+          "header": "Arknights: Endfield, note di patch",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260903/884f151ebf9975d3c2b884819c2bce3b.jpg\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(0, 0, 0);\">Gentile Endministrator,</span></p><p><span style=\"color: rgb(0, 0, 0);\">Per garantire un'esperienza migliore, continueremo a ottimizzare il gioco e a risolvere i problemi man mano che si presentano. Questo aggiornamento include le seguenti correzioni:</span></p><p><br><span style=\"color: rgb(0, 0, 0);\">▼// Aggiornamenti e correzioni</span></p><p>■ 15.10.2026 (UTC-5)<br>· Risolto un problema per cui l'operatrice da 6★ [Rossi] non recuperava energia suprema in modo corretto dopo aver colpito determinati bersagli con la sua abilità di combattimento.</p><p>· Risolto un problema episodico per cui, dopo che l'operatrice da 5★ [Purrchena] aveva bloccato con successo un attacco, il lancio della sua abilità suprema poteva essere interrotto in modo anomalo.</p><p>· Risolto un problema per cui compariva erroneamente un messaggio dopo aver selezionato i farmaci per la Lucidità nella schermata [Scambio Lucidità].</p><p>· Risolto un problema per cui, con determinate impostazioni grafiche su dispositivi mobili, il riquadro in basso a destra non veniva visualizzato per intero quando si usava [pittura spirituale] per dipingere i riquadri in [Wuling - Dipinto di Si - Grotta di Linglong].</p><p>· Risolto un problema episodico per cui si verificavano sfarfallii su alcuni dispositivi Android quando i boss nemici usavano determinate abilità in [Capitolo II - Elaborazione VIII: Dipingi con inchiostro fresco].</p><p>· Risolto un problema episodico per cui si verificavano arresti anomali del gioco su alcuni dispositivi iOS a causa di una RAM insufficiente.</p><p>· Risolto un problema per cui mancavano alcune animazioni quando alcuni operatori PNG ricevevano regali sulla [OMV Dijiang].</p><p>· Risolto un problema legato al testo dei tutorial nell'evento [Fornelli roventi di Yuanyuan].</p><p>· Risolto un problema episodico che causava anomalie visive in alcune sequenze narrative e nelle animazioni delle abilità supreme degli operatori.</p><p>· Risolto un problema episodico per cui alcuni pulsanti di interazione in determinate scene non venivano visualizzati correttamente.</p><p>· Risolto un problema per cui gli scenari non venivano visualizzati correttamente in alcuni filmati della storia.</p><p>· Ottimizzata la visualizzazione delle quantità richieste di casse di rifornimenti nella schermata [Panoramica sviluppo].</p><p>· Ottimizzate alcune descrizioni testuali nel gioco.</p><p></p><p><span style=\"color: rgb(0, 0, 0);\">Gli aggiornamenti e le correzioni di cui sopra saranno effettivi dopo il riavvio del client. Siamo spiacenti per eventuali disagi.</span></p><p><span style=\"color: rgb(0, 0, 0);\">Grazie ancora per l'interesse e il sostegno dimostrati per Arknights: Endfield, Endministrator!</span></p>",
+            "linkType": 1
+          }
+        },
         {
           "cid": "8941",
           "type": 0,
@@ -238,6 +274,24 @@
           }
         },
         {
+          "cid": "7279",
+          "type": 0,
+          "tab": "news",
+          "orderType": 1,
+          "orderWeight": 2,
+          "displayType": "picture",
+          "startAt": 1792123200,
+          "focus": 0,
+          "title": "Collegamento dell'account WhatsApp",
+          "header": "",
+          "jumpButton": null,
+          "data": {
+            "url": "https://web-static.hg-cdn.com/upload/image/20261014/ebf86cc8b905d7e538afe602a8fc39b9.png",
+            "link": "https://endfield.gryphline.com/special/whatsapp-bind?u8_token={u8_token}&server={server}",
+            "linkType": 1
+          }
+        },
+        {
           "cid": "5510",
           "type": 0,
           "tab": "updates",
@@ -302,6 +356,24 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20261013/69e859057400371b2a07af6997114878.jpg\" data-width=\"1650\" data-height=\"300\"><p>Ciao, Endministrator.</p><p>Durante la caccia ai talenti certificata [Rinnovamento], l'operatrice da 6★ [Si] è in evidenza!</p><p>L'evento accesso a tempo limitato [Rinascita dello spirito] sarà disponibile nello stesso periodo. Accumula accessi per ottenere ricompense, tra cui 5 [permessi CT: Rinascita dello spirito]. Inoltre, puoi effettuare uno scambio scontato per ottenere il [permesso CT: Rinascita dello spirito] allo [Scambio cedole SIA]. Sempre nello stesso periodo, sarà disponibile anche l'evento prova operatore [Esercitazioni di combattimento].</p><p><br></p><p><strong>▼// Caccia ai talenti certificata [Rinnovamento]</strong></p><p>· Disponibilità: dopo l'aggiornamento della versione [Santuario dell'inchiostro] - 5 novembre 2026 alle 11:59 (fuso orario del server)</p><p>· Requisiti per partecipare: aver completato la missione principale [Capitolo I - Elaborazione I: Sotto assedio]</p><p>· La caccia ai talenti certificata [Rinnovamento] include l'operatrice da 6★ in evidenza [Si].</p><p>· Gli operatori da 6★ che potrebbero apparire nella caccia ai talenti certificata [Rinnovamento] includono: Si / Typhoeus / Liino / Ember / Lifeng / Ardelia / Last Rite / Pogranichnik.</p><p>· Nella caccia ai talenti certificata [Rinnovamento] potrai utilizzare i [permessi CT: Rinascita dello spirito], i [permessi CT certificata] o gli [Oroberilli] per effettuare la caccia ai talenti.</p><p>※ Dopo 3 campagne di [caccia ai talenti certificata], l'operatore da 6★ in evidenza di ogni campagna di [caccia ai talenti certificata] verrà rimosso dall'elenco degli operatori che potrebbero comparire nella [caccia ai talenti certificata]. Inoltre, l'operatore da 6★ in evidenza non verrà aggiunto alla [caccia ai talenti base].</p><p><br></p><p><strong>▼// Ricompense della [caccia ai talenti certificata]</strong></p><p>Effettua un determinato numero di tentativi nella caccia ai talenti certificata [Rinnovamento] per ottenere le ricompense corrispondenti.</p><p><br></p><p>■ Reclutamento urgente</p><p>· Una volta effettuati 30 tentativi di caccia ai talenti, riceverai 10 tentativi di Reclutamento urgente bonus (che contano come 1 tentativo di caccia ai talenti da 10 utilizzi gratis). Tali tentativi saranno validi unicamente durante questa campagna di [caccia ai talenti certificata] e non saranno utilizzabili in altre campagne di caccia ai talenti.</p><p>· I tassi di ottenimento degli operatori nel Reclutamento urgente sono uguali ai tassi di ottenimento base di questa campagna di [caccia ai talenti certificata] e i 10 tentativi gratuiti di caccia ai talenti del Reclutamento urgente ti danno la garanzia di ottenere un operatore da almeno 5★.</p><p>· I 10 tentativi gratuiti del Reclutamento urgente non verranno conteggiati ai fini delle garanzie per questa o altre campagne di [caccia ai talenti certificata], né verranno aggiunti al totale dei tentativi di caccia ai talenti necessari per ottenere le ricompense della [caccia ai talenti certificata].</p><p>■ Dossier sulla caccia ai talenti</p><p>· Una volta eseguiti 60 tentativi di caccia ai talenti, riceverai un [Dossier sulla caccia ai talenti] bonus.</p><p>· Una volta soddisfatti i requisiti, il [Dossier sulla caccia ai talenti] verrà automaticamente inviato alla tua scorta delle risorse chiave. All'inizio della prossima campagna di [caccia ai talenti certificata], tale [Dossier sulla caccia ai talenti] verrà automaticamente convertito in 10 permessi CT speciali per la suddetta campagna di [caccia ai talenti certificata]. Tuttavia, i permessi CT scadranno al termine della campagna stessa.</p><p>■ Tributo gettone</p><p>· In ogni campagna di [caccia ai talenti certificata], per ogni 240 tentativi di caccia ai talenti riceverai un [gettone dell'operatore da 6★ in evidenza della suddetta campagna] bonus.</p><p><br></p><p><strong>▼// Dettagli sui biglietti arsenale</strong></p><p>Ogni tentativo di caccia ai talenti per reclutare operatori fornisce anche [biglietti arsenale].</p><p>· Ottenere un operatore da 6★ fornisce 2000 [biglietti arsenale].</p><p>· Ottenere un operatore da 5★ fornisce 200 [biglietti arsenale].</p><p>· Ottenere un operatore da 4★ fornisce 20 [biglietti arsenale].</p><p>※ I [biglietti arsenale] possono essere spesi al [Centro di acquisizione - Scambio arsenale].</p><p><br></p><p>Durante la caccia ai talenti certificata [Rinnovamento] saranno disponibili anche i seguenti contenuti:</p><p><strong>▼// Evento accesso a tempo limitato [Rinascita dello spirito]</strong></p><p>Accedi per un totale di 7 giorni per ottenere delle ricompense, tra cui 5 [permessi CT: Rinascita dello spirito].</p><p><br></p><p><strong>▼// Evento prova operatore [Esercitazioni di combattimento]</strong></p><p>Saranno disponibili delle [esercitazioni di combattimento] per provare l'operatrice da 6★ [Si]. Completa il livello specificato con la squadra predefinita che include l'operatore in prova per riscattare 100 [Oroberilli], [Cassa di difesa dell'arsenale], [simbolo di perseveranza] e altre ricompense. La [Cassa di difesa dell'arsenale] contiene un set di equipaggiamenti di livello 60 sottoposti ad artificio completo che risulteranno particolarmente adatti all'operatore in prova attuale.</p><p><br></p><p><strong>▼// Nota speciale sullo [Scambio cedole SIA]</strong></p><p>Lo [Scambio cedole] propone delle offerte speciali a tempo limitato. Puoi spendere cedole SIA per acquistare oggetti, tra cui 5 [permessi CT: Rinascita dello spirito].</p><p><br></p><p>※ Fuso orario del server Asia: UTC+8</p><p>※ Fuso orario del server Americas / Europe: UTC -5</p><p>※ Per maggiori dettagli sulla caccia ai talenti, apri la schermata di gioco [Caccia ai talenti].</p><p>※ Per maggiori dettagli sugli eventi, apri la schermata di gioco [Centro eventi].</p><p>※ Per maggiori dettagli sullo [Scambio cedole SIA], apri la schermata di gioco [Centro di acquisizione].</p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "9851",
+          "type": 0,
+          "tab": "news",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "picture",
+          "startAt": 1792148400,
+          "focus": 0,
+          "title": "Il mondo nel Dipinto di Si",
+          "header": "",
+          "jumpButton": null,
+          "data": {
+            "url": "https://web-static.hg-cdn.com/upload/image/20261014/de41ff86e86fc5963e118a392932981a.png",
+            "link": "https://static.skport.com/u-link/download.html?schema=skport%3A%2F%2Fdetail%3Fid%3D2110270556049318740&redirectUrl=https%3A%2F%2Fwww.skport.com%2Farticle%3Fid%3D2110270556049318740%26hg_media%3Dgame%26hg_link_campaign%3Dannouncement%26hg_link_name%3DSi",
             "linkType": 1
           }
         },

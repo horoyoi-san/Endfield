@@ -18,8 +18,14 @@
       "subChannel": "#DEFAULT",
       "lang": "zh-cn",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:zh-cn",
-      "version": "7063c24be233d2c5929d74abc18b634e",
+      "version": "e538808f8e2b7171fb09fbcba28dd385",
       "onlineList": [
+        {
+          "cid": "3035",
+          "version": 1792132103,
+          "needRedDot": false,
+          "needPopup": false
+        },
         {
           "cid": "8941",
           "version": 1792071377,
@@ -45,6 +51,12 @@
           "needPopup": false
         },
         {
+          "cid": "7279",
+          "version": 1792056736,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
           "cid": "5510",
           "version": 1791972303,
           "needRedDot": true,
@@ -65,6 +77,12 @@
         {
           "cid": "1362",
           "version": 1791970442,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "9851",
+          "version": 1791978077,
           "needRedDot": true,
           "needPopup": false
         },
@@ -166,8 +184,26 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1792076400,
+      "updatedAt": 1792148400,
       "list": [
+        {
+          "cid": "3035",
+          "type": 0,
+          "tab": "updates",
+          "orderType": 1,
+          "orderWeight": 1,
+          "displayType": "rich_text",
+          "startAt": 1792080000,
+          "focus": 0,
+          "extraData": {},
+          "title": "更新修复说明",
+          "header": "《明日方舟：终末地》更新修复说明",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20261016/02eea9d022e93cca338903cbecf348b6.png\" data-width=\"1650\" data-height=\"300\"><p>亲爱的管理员：<br>为了给大家带来更好的体验，我们将对游戏持续进行优化及问题修复。本次更新修复说明如下：</p><p></p><p>▼//游戏更新修复说明</p><p><span style=\"color: rgb(0, 0, 0);\">■ 2026-10-15 (UTC-5)</span></p><p>· 修复了6星干员【洛茜】使用战技命中特定目标时，终结技能量未正常恢复的问题。</p><p>· 修复了特定情况下，5星干员【噗切娜】成功格挡攻击后释放终结技时，终结技被异常打断的问题。</p><p>· 修复了在【理智兑换】界面选择理智药剂后，提示信息异常弹出的问题。</p><p>· 修复了移动端部分画质设置下，在「武陵 - 祀的画 - 玲珑窟」中使用【灵涂】绘画图块时，右下角图块显示不完整的问题。</p><p>· 修复了在「第二章 - 进程Ⅷ - 着新墨」中，部分安卓设备上领袖敌人释放特定技能时出现画面闪烁的问题。</p><p>· 修复了在特定情况下，部分iOS设备因设备内存不足导致游戏异常退出的问题。</p><p>· 修复了在「O.M.V.帝江号」中，部分干员NPC在收礼时缺少部分演出表现的问题。</p><p>· 修复了「烟火生缘」活动教学记录中的文本内容。</p><p>· 修复了特定情况下，部分剧情演出及干员终结技演出中画面表现异常的问题。</p><p>· 修复了特定情况下，部分场景中交互按钮未正常显示的问题。</p><p>· 修复了部分剧情演出中，场景显示异常的问题。</p><p>· 优化了【培养总览】界面中物资箱所需数量的显示。</p><p>· 优化了游戏内部分文本描述。</p><p></p><p>以上更新修复的内容将在重启客户端进行更新后生效，给管理员带来的不便敬请谅解。<br>感谢管理员对《明日方舟：终末地》一直以来的关注与支持！</p>",
+            "linkType": 1
+          }
+        },
         {
           "cid": "8941",
           "type": 0,
@@ -238,6 +274,24 @@
           }
         },
         {
+          "cid": "7279",
+          "type": 0,
+          "tab": "news",
+          "orderType": 1,
+          "orderWeight": 2,
+          "displayType": "picture",
+          "startAt": 1792123200,
+          "focus": 0,
+          "title": "WhatsApp\\n账号绑定",
+          "header": "",
+          "jumpButton": null,
+          "data": {
+            "url": "https://web-static.hg-cdn.com/upload/image/20261014/c36d2aa22da06523dfebfb4310ca1dea.jpg",
+            "link": "https://endfield.gryphline.com/special/whatsapp-bind?u8_token={u8_token}&server={server}",
+            "linkType": 1
+          }
+        },
+        {
           "cid": "5510",
           "type": 0,
           "tab": "updates",
@@ -302,6 +356,24 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20261013/4aecb8b0646268c07144fc5a0acc42bf.jpg\" data-width=\"1650\" data-height=\"300\"><p>亲爱的管理员：</p><p>「万物更新」特许寻访开放期间，6星干员【祀】获取概率提升！</p><p>「万物有灵」限时签到活动同步开放，累计签到可获得【万物有灵寻访凭证】×5等奖励，还可在【集成配额交易】中进行【万物有灵寻访凭证】的特惠兑换。同时，开放「作战演练」干员试用活动。</p><p><br></p><p><strong>▼//「万物更新」特许寻访说明</strong></p><p>· 开放时间：「丹青渡」版本更新后 - 2026/11/05 11:59（服务器时间）</p><p>· 开放条件：完成主线任务「第一章 - 进程Ⅰ - 基地解围」</p><p>· 「万物更新」特许寻访中，概率提升的6星干员为【祀】。</p><p>· 「万物更新」特许寻访中，全部可能出现的6星干员包括：祀/提弗洛斯/梨诺/余烬/黎风/艾尔黛拉/别礼/骏卫。</p><p>· 「万物更新」特许寻访中，可使用【万物有灵寻访凭证】【特许寻访凭证】或【嵌晶玉】进行寻访。</p><p>※ 在「特许寻访」中概率提升的6星干员，将于3次「特许寻访」结束后，移出「特许寻访」全部可能出现的干员列表。移出后，概率提升的6星干员不会进入「基础寻访」。</p><p><br></p><p><strong>▼//「特许寻访」奖励</strong></p><p>在「万物更新」特许寻访中，累计达到指定寻访次数，即可获得对应奖励。</p><p><br></p><p>■ 加急招募</p><p>· 累计寻访30次，将额外获得10次加急招募（即1次免费十连），仅在本次「特许寻访」期间生效，不会保留到其他寻访。</p><p>· 加急招募的干员获取概率与本次「特许寻访」的基础概率一致，加急招募所赠送的十连必定能通过保底获取5星或以上干员。</p><p>· 加急招募所赠送的免费十连，其抽取结果将不计入本次或其他「特许寻访」保底计数，也不会累加至「特许寻访」奖励所需的累计寻访次数中。</p><p>■ 寻访情报书</p><p>· 累计寻访60次，将额外获得【寻访情报书】×1。</p><p>· 【寻访情报书】在满足条件后将自动发放至贵重品库。在下一次「特许寻访」开启后，【寻访情报书】将自动转化为对应「特许寻访」的专有寻访凭证×10，此寻访凭证将在对应寻访结束后失效。</p><p>■ 信物赠礼</p><p>· 在每次「特许寻访」中，每累计寻访240次，将额外获得【该寻访中概率提升的6星干员的信物】×1。</p><p><br></p><p><strong>▼//武库配额说明</strong></p><p>每次通过寻访获取干员的同时，还会获得【武库配额】。</p><p>· 获取6星干员时，获得【武库配额】×2000。</p><p>· 获取5星干员时，获得【武库配额】×200。</p><p>· 获取4星干员时，获得【武库配额】×20。</p><p>※ 【武库配额】可在【采购中心 - 武库交易所】中使用。</p><p><br></p><p>「万物更新」特许寻访开放期间，还将同步开放如下内容：</p><p><strong>▼//「万物有灵」限时签到活动</strong></p><p>累计签到7日，即可获得【万物有灵寻访凭证】×5等奖励。</p><p><br></p><p><strong>▼//「作战演练」干员试用活动</strong></p><p>开放6星干员【祀】的「作战演练」干员试用活动。使用包含试用干员的固定队伍体验指定关卡，完成后可领取【嵌晶玉】×100、【武库防具箱】及【存续的痕迹】等奖励。其中，【武库防具箱】内包含较为适配当期试用干员的特殊满精锻60级套组装备。</p><p><br></p><p><strong>▼//【集成配额交易】特别说明</strong></p><p>【配额兑换所】限时开放特惠物品购买，可消耗集成配额购买【万物有灵寻访凭证】×5等物品。</p><p><br></p><p>※Asia服务器时区: UTC+8</p><p>※Americas / Europe服务器时区: UTC-5</p><p>※ 更多寻访详细说明，请前往游戏内【干员寻访】查看。</p><p>※ 更多活动详细说明，请前往游戏内【活动中心】查看。</p><p>※ 【集成配额交易】详细说明，请前往游戏内【采购中心】查看。</p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "9851",
+          "type": 0,
+          "tab": "news",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "picture",
+          "startAt": 1792148400,
+          "focus": 0,
+          "title": "祀的画中世界",
+          "header": "",
+          "jumpButton": null,
+          "data": {
+            "url": "https://web-static.hg-cdn.com/upload/image/20261014/928a68d727f655a1c9dae2a03f8ed791.png",
+            "link": "https://static.skport.com/u-link/download.html?schema=skport%3A%2F%2Fdetail%3Fid%3D2110270556049318740&redirectUrl=https%3A%2F%2Fwww.skport.com%2Farticle%3Fid%3D2110270556049318740%26hg_media%3Dgame%26hg_link_campaign%3Dannouncement%26hg_link_name%3DSi",
             "linkType": 1
           }
         },

@@ -18,8 +18,14 @@
       "subChannel": "#DEFAULT",
       "lang": "id-id",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:id-id",
-      "version": "7063c24be233d2c5929d74abc18b634e",
+      "version": "e538808f8e2b7171fb09fbcba28dd385",
       "onlineList": [
+        {
+          "cid": "3035",
+          "version": 1792132103,
+          "needRedDot": false,
+          "needPopup": false
+        },
         {
           "cid": "8941",
           "version": 1792071377,
@@ -45,6 +51,12 @@
           "needPopup": false
         },
         {
+          "cid": "7279",
+          "version": 1792056736,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
           "cid": "5510",
           "version": 1791972303,
           "needRedDot": true,
@@ -65,6 +77,12 @@
         {
           "cid": "1362",
           "version": 1791970442,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "9851",
+          "version": 1791978077,
           "needRedDot": true,
           "needPopup": false
         },
@@ -166,8 +184,26 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1792076400,
+      "updatedAt": 1792148400,
       "list": [
+        {
+          "cid": "3035",
+          "type": 0,
+          "tab": "updates",
+          "orderType": 1,
+          "orderWeight": 1,
+          "displayType": "rich_text",
+          "startAt": 1792080000,
+          "focus": 0,
+          "extraData": {},
+          "title": "Catatan Patch",
+          "header": "Catatan Patch Arknights: Endfield",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20260903/422a57625e9ef4802664000535ae63cc.jpg\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(0, 0, 0);\">Halo, Endministrator,</span></p><p><span style=\"color: rgb(0, 0, 0);\">Untuk memastikan pengalaman yang lebih baik, kami akan terus mengoptimalkan game dan memperbaiki masalah yang muncul. Pembaruan ini mencakup perbaikan berikut:</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">▼// Pembaruan &amp; Perbaikan</span></p><p>■ 15.10.2026 (UTC-5)<br>· Perbaikan atas masalah yang menyebabkan operator 6★ [Rossi] tidak memulihkan Energi Ultimate secara normal setelah skill tarung miliknya mengenai target tertentu.</p><p>· Perbaikan atas masalah situasional yang menyebabkan penggunaan ultimate operator 5★ [Purrchena] terhenti secara tidak normal setelah dia berhasil memblokir serangan.</p><p>· Perbaikan atas masalah yang menyebabkan prompt muncul secara tidak semestinya setelah memilih Obat Sanity di layar [Penukaran Sanity].</p><p>· Perbaikan atas masalah yang, pada pengaturan grafis tertentu di perangkat seluler, menyebabkan petak di kanan bawah tidak ditampilkan secara utuh saat menggunakan [Spirit Paint] untuk melukis petak-petak di [Wuling - Lukisan Si - Groto Linglong].</p><p>· Perbaikan atas masalah yang menyebabkan layar berkedip di beberapa perangkat Android ketika musuh bos menggunakan skill tertentu dalam [Bab Ⅱ - Proses Ⅷ - Melukis dengan Tinta Baru].</p><p>· Perbaikan atas masalah situasional yang menyebabkan game mengalami crash di beberapa perangkat iOS akibat RAM yang tidak cukup.</p><p>· Perbaikan atas masalah yang menyebabkan sebagian animasi penerimaan hadiah tidak ditampilkan pada beberapa NPC operator di [PPO Dijiang].</p><p>· Perbaikan atas masalah pada teks Tutorial untuk event [Dapur Membara Yuanyuan].</p><p>· Perbaikan atas masalah situasional pada tampilan visual dari beberapa adegan cerita dan animasi ultimate operator.</p><p>· Perbaikan atas masalah situasional yang menyebabkan beberapa tombol interaksi pada adegan tertentu tidak ditampilkan dengan benar.</p><p>· Perbaikan atas masalah yang menyebabkan lingkungan tidak ditampilkan dengan benar dalam beberapa cutscene cerita.</p><p>· Pengoptimalan tampilan jumlah peti pasokan yang diperlukan di layar [Gambaran Umum Progresi].</p><p>· Pengoptimalan deskripsi teks tertentu di dalam game.</p><p></p><p><span style=\"color: rgb(0, 0, 0);\">Pembaruan dan perbaikan di atas akan berlaku setelah kamu memulai ulang klien. Kami mohon maaf atas ketidaknyamanan yang ditimbulkan.</span></p><p><span style=\"color: rgb(0, 0, 0);\">Sekali lagi, terima kasih atas minat dan dukunganmu yang tiada habisnya untuk Arknights: Endfield, Endministrator!</span></p>",
+            "linkType": 1
+          }
+        },
         {
           "cid": "8941",
           "type": 0,
@@ -238,6 +274,24 @@
           }
         },
         {
+          "cid": "7279",
+          "type": 0,
+          "tab": "news",
+          "orderType": 1,
+          "orderWeight": 2,
+          "displayType": "picture",
+          "startAt": 1792123200,
+          "focus": 0,
+          "title": "Penautan Akun WhatsApp",
+          "header": "",
+          "jumpButton": null,
+          "data": {
+            "url": "https://web-static.hg-cdn.com/upload/image/20261014/8edf922c64971d6d073637c9cf3573a7.png",
+            "link": "https://endfield.gryphline.com/special/whatsapp-bind?u8_token={u8_token}&server={server}",
+            "linkType": 1
+          }
+        },
+        {
           "cid": "5510",
           "type": 0,
           "tab": "updates",
@@ -302,6 +356,24 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20261013/3e93045397aad8a8dd72a3e19a816fe9.jpg\" data-width=\"1650\" data-height=\"300\"><p>Kepada Endministrator,</p><p>Selama Headhunt Khusus [Rejuvenasi], operator 6★ [Si] termasuk dalam Rate NAIK!</p><p>Event sign in berbatas waktu [Pemulihan Roh] akan terbuka pada saat yang sama. Sign in selama beberapa hari untuk mendapatkan imbalan seperti [Surat Izin HH Pemulihan Roh] ×5. Anda juga bisa menukar untuk mendapatkan [Surat Izin HH Pemulihan Roh] dengan diskon di [Bursa Kuota AIC]. Event uji coba operator [Latihan Pertarungan] juga akan tersedia selama periode ini.</p><p><br></p><p><strong>▼// Headhunt Khusus [Rejuvenasi]</strong></p><p>· Ketersediaan: Setelah perilisan versi [Suaka Tinta] – 5 November 2026, 11.59 (waktu server)</p><p>· Kriteria Partisipasi: Menyelesaikan misi utama [Bab I Proses I: Tembus Kepungan]</p><p>· Headhunt Khusus [Rejuvenasi] menghadirkan operator 6★ Rate NAIK [Si].</p><p>· Operator 6★ yang mungkin muncul di Headhunt Khusus [Rejuvenasi] termasuk: Si / Typhoeus / Liino / Ember / Lifeng / Ardelia / Last Rite / Pogranichnik.</p><p>· Dalam Headhunt Khusus [Rejuvenasi], Anda bisa menggunakan [Surat Izin HH Pemulihan Roh], [Surat Izin HH Khusus], atau [Oroberyl] untuk melakukan headhunt.</p><p>※ Setelah 3 banner [Headhunt Khusus], operator 6★ Rate NAIK yang dihadirkan dalam banner [Headhunt Khusus] akan dihilangkan dari daftar operator yang mungkin muncul dalam [Headhunt Khusus]. Operator 6★ Rate NAIK ini juga tidak akan ditambahkan pada [Headhunt Biasa].</p><p><br></p><p><strong>▼// Imbalan [Headhunt Khusus]</strong></p><p>Dalam Headhunt Khusus [Rejuvenasi], lakukan sejumlah upaya headhunt untuk mendapatkan imbalan yang sesuai.</p><p><br></p><p>■ Rekrutmen Mendesak</p><p>· Setelah melakukan 30 upaya headhunt, Anda akan menerima bonus 10 upaya Rekrutmen Mendesak (yang dihitung sebagai 1 kali gratis untuk 10× upaya headhunt), yang hanya valid selama banner [Headhunt Khusus] ini, dan tidak berlaku untuk banner headhunt lain.</p><p>· Rate untuk mendapatkan operator melalui Rekrutmen Mendesak sama dengan drop rate dasar dari banner [Headhunt Khusus] ini, dan 10× upaya headhunt gratis dari Rekrutmen Mendesak memberikan jaminan untuk mendapatkan operator 5★ atau yang lebih tinggi.</p><p>· Upaya headhunt gratis sebanyak 10× dari Rekrutmen Mendesak tidak termasuk dalam jaminan untuk banner [Headhunt Khusus] ini atau yang lain, juga tidak akan ditambahkan pada total upaya headhunt yang dibutuhkan untuk mendapatkan imbalan [Headhunt Khusus].</p><p>■ Dokumen Headhunt</p><p>· Setelah melakukan 60 upaya headhunt, Anda akan menerima bonus [Dokumen Headhunt] ×1.</p><p>· Begitu persyaratan terpenuhi, [Dokumen Headhunt] akan terkirim otomatis ke Simpanan Barang Berharga Anda. Begitu banner [Headhunt Khusus] berikutnya dimulai, [Dokumen Headhunt] ini akan dikonversi otomatis menjadi Surat Izin HH Spesial ×10 dari banner [Headhunt Khusus] tersebut. Namun, Surat Izin HH ini juga akan kedaluwarsa setelah banner tersebut berakhir.</p><p>■ Persembahan Token</p><p>· Dalam tiap banner [Headhunt Khusus], tiap 240 upaya headhunt akan memberikan bonus [Token Rate NAIK operator 6★ yang hadir dalam banner tersebut] ×1.</p><p><br></p><p><strong>▼// Detail Tiket Senjata</strong></p><p>Tiap upaya headhunt untuk operator juga memberikan [Tiket Senjata].</p><p>· Mendapatkan operator 6★ akan memberikan [Tiket Senjata] ×2.000.</p><p>· Mendapatkan operator 5★ akan memberikan [Tiket Senjata] ×200.</p><p>· Mendapatkan operator 4★ akan memberikan [Tiket Senjata] ×20.</p><p>※ [Tiket Senjata] bisa digunakan di [Pusat Akuisisi - Bursa Senjata].</p><p><br></p><p>Selama Headhunt Khusus [Rejuvenasi], konten berikut juga akan tersedia:</p><p><strong>▼// Event Sign In Berbatas Waktu [Pemulihan Roh]</strong></p><p>Sign in selama total 7 hari untuk mendapatkan imbalan seperti [Surat Izin HH Pemulihan Roh] ×5.</p><p><br></p><p><strong>▼// Event Uji Coba Operator [Latihan Pertarungan]</strong></p><p>[Latihan Pertarungan] akan tersedia untuk mencoba operator 6★ [Si]. Selesaikan stage yang ditentukan dengan tim prasetel yang mencakup operator uji coba untuk mengklaim [Oroberyl] ×100, [Kerat Pertahanan Senjata], [Tanda Kegigihan], dan imbalan lainnya. [Kerat Pertahanan Senjata] berisi Set Gear Level 60 Sempurna Penuh yang sangat cocok untuk operator uji coba saat ini.</p><p><br></p><p><strong>▼// Catatan Khusus [Bursa Kuota AIC]</strong></p><p>[Bursa Kuota] akan memberikan penawaran khusus berbatas waktu. Anda bisa menggunakan Kuota AIC untuk membeli item seperti [Surat Izin HH Pemulihan Roh] ×5.</p><p><br></p><p>※ Zona Waktu Server Asia: UTC+8</p><p>※ Zona Waktu Server Americas / Europe: UTC -5</p><p>※ Untuk detail headhunt selengkapnya, kunjungi layar [Headhunt] dalam game.</p><p>※ Untuk detail event selengkapnya, kunjungi [Pusat Event] dalam game.</p><p>※ Untuk detail mengenai [Bursa Kuota AIC], kunjungi [Pusat Akuisisi] dalam game.</p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "9851",
+          "type": 0,
+          "tab": "news",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "picture",
+          "startAt": 1792148400,
+          "focus": 0,
+          "title": "Dunia dalam Lukisan Si",
+          "header": "",
+          "jumpButton": null,
+          "data": {
+            "url": "https://web-static.hg-cdn.com/upload/image/20261014/8a381fc7b68780ba3225bf64c0101ca7.png",
+            "link": "https://static.skport.com/u-link/download.html?schema=skport%3A%2F%2Fdetail%3Fid%3D2110270556049318740&redirectUrl=https%3A%2F%2Fwww.skport.com%2Farticle%3Fid%3D2110270556049318740%26hg_media%3Dgame%26hg_link_campaign%3Dannouncement%26hg_link_name%3DSi",
             "linkType": 1
           }
         },
