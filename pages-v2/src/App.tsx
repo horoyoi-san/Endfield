@@ -10,6 +10,44 @@ import type { LauncherWebMainBgImage, MirrorFileEntry, StoredData } from './type
 import { fetchJson, preloadData } from './utils/api';
 import { BASE_URL } from './utils/constants';
 
+const navigation = [
+  { id: 'overview', label: 'Overview', code: '01', icon: '◈', group: 'ARCHIVE' },
+  { id: 'game', label: 'Packages', code: '02', icon: '▤', group: 'ARCHIVE' },
+  { id: 'patch', label: 'Patches', code: '03', icon: '⌁', group: 'ARCHIVE' },
+  { id: 'resources', label: 'Resources', code: '04', icon: '◫', group: 'ARCHIVE' },
+  { id: 'launcher', label: 'Launcher', code: '05', icon: '⏵', group: 'ARCHIVE' },
+  { id: 'announcement', label: 'News', code: '06', icon: '▤', group: 'WEB ARCHIVE' },
+  { id: 'media', label: 'Media', code: '07', icon: '▶', group: 'WEB ARCHIVE' },
+  { id: 'banner', label: 'Banners', code: '08', icon: '▧', group: 'WEB ARCHIVE' },
+  { id: 'main-bg-image', label: 'Backgrounds', code: '09', icon: '◫', group: 'WEB ARCHIVE' },
+  { id: 'single-ent', label: 'Entity', code: '10', icon: '◈', group: 'WEB ARCHIVE' },
+  { id: 'sidebar', label: 'Sidebar', code: '11', icon: '▥', group: 'WEB ARCHIVE' },
+  { id: 'operator', label: 'Operators', code: '12', icon: '✳', group: 'WEB ARCHIVE' },
+  { id: 'about', label: 'About', code: '13', icon: 'ⓘ', group: 'ABOUT' },
+];
+
+const pageCopy: Record<string, { title: string; description: string }> = {
+  overview: { title: 'Overview', description: 'Current deployments and resource indexes across the Endfield archive.' },
+  game: { title: 'Game packages', description: 'Build history, package manifests, checksums, and distribution links.' },
+  patch: { title: 'Patch archive', description: 'Version-to-version updates and patch package manifests.' },
+  resources: { title: 'Game resources', description: 'Platform resource indexes and regional release history.' },
+  launcher: { title: 'Launcher', description: 'Launcher packages and installer releases by channel.' },
+  announcement: { title: 'News', description: 'Notices and event announcements from the official web client.' },
+  media: { title: 'Media', description: 'Featured trailers, videos, and image archive.' },
+  banner: { title: 'Banners', description: 'Promotional artwork and campaign banners.' },
+  'main-bg-image': { title: 'Backgrounds', description: 'Launcher background images and video environments.' },
+  'single-ent': { title: 'Single entity', description: 'Standalone client content and version assets.' },
+  sidebar: { title: 'Sidebar', description: 'Launcher sidebar artwork and destination links.' },
+  operator: { title: 'Operators', description: 'Character artwork and visual records from the web archive.' },
+  about: { title: 'About this archive', description: 'Project details, data sources, and archive status.' },
+};
+
+const getInitialTab = () => {
+  const requestedTab = window.location.hash.slice(1);
+  if (requestedTab === 'information') return 'media';
+  return Object.hasOwn(pageCopy, requestedTab) ? requestedTab : 'overview';
+};
+
 const getMirrorUrl = (url: string) => {
   try {
     const u = new URL(url);
@@ -20,35 +58,15 @@ const getMirrorUrl = (url: string) => {
 };
 
 function App() {
-  const [activeTab, setActiveTab] = useState('overview');
+  const [activeTab, setActiveTab] = useState(getInitialTab);
   const [mirrorFileDb, setMirrorFileDb] = useState<MirrorFileEntry[]>([]);
   const [loading, setLoading] = useState(true);
   const [bgImage, setBgImage] = useState<string | null>(null);
   const [bgVideo, setBgVideo] = useState<string | null>(null);
   const [bgVisible, setBgVisible] = useState(false);
 
-
   useEffect(() => {
-
-
-
-}, []);
-
-  useEffect(() => {
-    const getPreferredTheme = () => {
-      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    };
-    const setTheme = (theme: string) => {
-      document.documentElement.setAttribute('data-bs-theme', theme);
-    };
-
-    setTheme(getPreferredTheme());
-
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    const handleChange = () => setTheme(getPreferredTheme());
-    mediaQuery.addEventListener('change', handleChange);
-
-    return () => mediaQuery.removeEventListener('change', handleChange);
+    document.documentElement.setAttribute('data-bs-theme', 'dark');
   }, []);
 
   useEffect(() => {
@@ -107,9 +125,9 @@ function App() {
   const renderContent = () => {
     if (loading) {
       return (
-        <div className='text-center'>
+        <div className='ef-loading'>
           <div className='spinner-border' role='status'></div>
-          <p>Loading data...</p>
+          <p>Establishing archive uplink…</p>
         </div>
       );
     }
@@ -125,10 +143,16 @@ function App() {
         return <ResourcesTab />;
       case 'launcher':
         return <LauncherTab mirrorFileDb={mirrorFileDb} />;
-      case 'web-pretty':
-        return <WebTab />;
       case 'about':
         return <AboutTab />;
+      case 'announcement':
+      case 'media':
+      case 'banner':
+      case 'main-bg-image':
+      case 'single-ent':
+      case 'sidebar':
+      case 'operator':
+        return <WebTab moduleId={activeTab} />;
       default:
         return null;
     }
@@ -152,7 +176,7 @@ function App() {
               left: 0,
               width: '100%',
               height: '100%',
-              zIndex: -1,
+              zIndex: 0,
               opacity: bgVisible ? opacity : 0,
               transition: `opacity ${opacityAnimSec}s ease-in-out`,
               overflow: 'hidden',
@@ -200,109 +224,50 @@ function App() {
           </div>
         );
       })()}
-      <div className='container my-4 px-4' id='mainContainer'>
-        <section>
-          <h1 className='text-center fw-bold'>Arknights: Endfield API Archive</h1>
-          <ul className='nav nav-tabs justify-content-center'>
-            <li className='nav-item'>
-              <button
-                className={`nav-link ${activeTab === 'overview' ? 'active' : ''}`}
-                onClick={() => setActiveTab('overview')}
-              >
-                Overview
-              </button>
-            </li>
-            <li className='nav-item'>
-              <button
-                className={`nav-link ${activeTab === 'game' ? 'active' : ''}`}
-                onClick={() => setActiveTab('game')}
-              >
-                Game Packages
-              </button>
-            </li>
-            <li className='nav-item'>
-              <button
-                className={`nav-link ${activeTab === 'patch' ? 'active' : ''}`}
-                onClick={() => setActiveTab('patch')}
-              >
-                Patches
-              </button>
-            </li>
-            <li className='nav-item'>
-              <button
-                className={`nav-link ${activeTab === 'resources' ? 'active' : ''}`}
-                onClick={() => setActiveTab('resources')}
-              >
-                Resources
-              </button>
-            </li>
-            <li className='nav-item'>
-              <button
-                className={`nav-link ${activeTab === 'launcher' ? 'active' : ''}`}
-                onClick={() => setActiveTab('launcher')}
-              >
-                Launcher
-              </button>
-            </li>
-            <li className='nav-item'>
-              <button
-                className={`nav-link ${activeTab === 'web-pretty' ? 'active' : ''}`}
-                onClick={() => setActiveTab('web-pretty')}
-              >
-                Web
-              </button>
-            </li>
-            <li className='nav-item'>
-              <button
-                className={`nav-link ${activeTab === 'about' ? 'active' : ''}`}
-                onClick={() => setActiveTab('about')}
-              >
-                About
-              </button>
-            </li>
-          </ul>
-        </section>
+      <div className='ef-app' id='mainContainer'>
+        <aside className='ef-sidebar'>
+          <div className='ef-brand'>
+            <div className='ef-brand-mark'>E<span>F</span></div>
+            <div><strong>ENDFIELD</strong><small>API ARCHIVE / 01</small></div>
+          </div>
+          <div className='ef-sidebar-rule'><span>TERMINAL ACCESS</span><span>● ONLINE</span></div>
+          <nav aria-label='Archive sections'>
+          {['ARCHIVE', 'WEB ARCHIVE', 'ABOUT'].map((group) => (
+            <div className='ef-nav-group' key={group}>
+              <div className='ef-nav-heading'>{group}</div>
+              {navigation.filter((item) => item.group === group).map((item) => (
+                <button key={item.id} type='button' title={item.label} aria-current={activeTab === item.id ? 'page' : undefined} className={`ef-nav-item ${activeTab === item.id ? 'active' : ''}`} onClick={() => { setActiveTab(item.id); window.history.replaceState(null, '', `#${item.id}`); }}>
+                  <span className='ef-nav-icon'>{item.icon}</span><span>{item.label}</span><small>{item.code}</small>
+                </button>
+              ))}
+            </div>
+          ))}
+          </nav>
+          <div className='ef-sidebar-bottom'><span className='ef-status-dot' /> MIRROR LINK ESTABLISHED<small>ENDFIELD ARCHIVE NODE // ASIA</small></div>
+        </aside>
 
-        <section id='content' className='mt-4'>
-          {renderContent()}
-        </section>
-
-        <hr />
-
-        <section>
-          <button
-            id='debug-log-openBtn'
-            className='d-none btn btn-secondary btn-sm'
-            data-bs-toggle='modal'
-            data-bs-target='#debug-log-modal'
-          >
-            Open Debug Log
-          </button>
-          <p className='text-center text-muted'>
-            <small>(C) horoyoi-san and contributors</small>
-          </p>
-        </section>
+        <main className='ef-main'>
+          <header className='ef-topbar'>
+            <div><span className='ef-breadcrumb'>FIELD SYSTEMS</span><span className='ef-breadcrumb-sep'>/</span><span>{pageCopy[activeTab].title.toUpperCase()}</span></div>
+            <div className='ef-topbar-status'><span className='ef-status-dot' /> SYSTEM NOMINAL <span className='ef-topbar-divider' /> ARCHIVE NODE 01</div>
+          </header>
+          <div className='ef-page-heading'>
+            <div><div className='ef-eyebrow'>ENDFIELD INDUSTRIES <span>//</span> DATA ARCHIVE</div><h1>{pageCopy[activeTab].title}</h1><p>{pageCopy[activeTab].description}</p></div>
+            <div className='ef-heading-index'><span>ACTIVE MODULE</span><strong>{navigation.find((item) => item.id === activeTab)?.code}</strong></div>
+          </div>
+          <section id='content' className='ef-content'>{renderContent()}</section>
+          <footer className='ef-footer'><span>© HOROYOI-SAN AND CONTRIBUTORS</span><span>ENDFIELD API ARCHIVE <i>•</i> DATA IS PROVIDED AS COLLECTED</span></footer>
+        </main>
 
         <div className='modal fade' id='debug-log-modal' tabIndex={-1}>
           <div className='modal-dialog modal-dialog-centered modal-dialog-scrollable'>
             <div className='modal-content'>
-              <div className='modal-header'>
-                <h1 className='modal-title fs-5' id='debug-log-modal-label'>
-                  Debug Panel
-                </h1>
-                <button type='button' className='btn-close' data-bs-dismiss='modal'></button>
-              </div>
-              <div className='modal-body'>
-                <section>
-                  <p>Debug Log</p>
-                  <pre id='debug-log'>
-                    <code id='debug-log-inner'></code>
-                  </pre>
-                </section>
-              </div>
+              <div className='modal-header'><h1 className='modal-title fs-5' id='debug-log-modal-label'>Debug Panel</h1><button type='button' className='btn-close' data-bs-dismiss='modal'></button></div>
+              <div className='modal-body'><section><p>Debug Log</p><pre id='debug-log'><code id='debug-log-inner'></code></pre></section></div>
             </div>
           </div>
         </div>
+        <button id='debug-log-openBtn' className='d-none btn btn-secondary btn-sm' data-bs-toggle='modal' data-bs-target='#debug-log-modal'>Open Debug Log</button>
       </div>
     </>
   );

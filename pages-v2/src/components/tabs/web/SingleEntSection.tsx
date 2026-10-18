@@ -24,7 +24,7 @@ export default function SingleEntSection({ target, lang }: Props) {
     new Map(),
   );
   const [loading, setLoading] = useState(false);
-  const [shouldLoad, setShouldLoad] = useState(false);
+  const [shouldLoad, setShouldLoad] = useState(true);
   const collapseRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

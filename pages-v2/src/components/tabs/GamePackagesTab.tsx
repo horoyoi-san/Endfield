@@ -109,12 +109,11 @@ export default function GamePackagesTab({ mirrorFileDb }: Props) {
   }
 
   return (
-      <div className="overview-container">
+      <div className="overview-container ef-module-page ef-builds-view">
       {packages.map((pkg) => (
-        <div key={pkg.dirName} className='mb-5'>
-          <h3 className='mb-3 neon-title'>
-            {pkg.region === 'cn' ? 'China' : 'Global'}, {pkg.targetName}
-          </h3>
+        <section key={pkg.dirName} className='ef-record-group mb-5'>
+          <div className='ef-record-heading'><div><span className='ef-record-kicker'>{pkg.region === 'cn' ? 'CN' : 'GLOBAL'} REGION // CHANNEL</span><h3>{pkg.targetName}</h3></div><div className='ef-record-count'><strong>{String(pkg.versions.length).padStart(2, '0')}</strong><span>BUILDS<br />ARCHIVED</span></div></div>
+          <div className='ef-record-caption'><span>VERSION HISTORY</span><span>SELECT A BUILD TO INSPECT ITS MANIFEST</span></div>
           <div className='accordion glass-accordion' id={`accordion-game-${pkg.dirName}`}>
             {pkg.versions.map((ver, idx) => {
               const itemId = `game-${pkg.dirName}-${idx}`;
@@ -129,8 +128,8 @@ export default function GamePackagesTab({ mirrorFileDb }: Props) {
                       aria-expanded='false'
                       aria-controls={`collapse-${itemId}`}
                     >
-                      <div className='d-flex w-100 justify-content-between me-3 align-items-center'>
-                        <span className='fw-bold'>
+                      <div className='ef-accordion-summary'>
+                        <span className='ef-accordion-title'>
                           {ver.version}
                           {ver.prePatchVersion && (
                             <span className='badge bg-warning text-dark ms-2'>
@@ -138,7 +137,7 @@ export default function GamePackagesTab({ mirrorFileDb }: Props) {
                             </span>
                           )}
                         </span>
-                        <span className='text-muted small align-bottom'>{ver.dateStr}</span>
+                        <span className='ef-accordion-meta'><b>{ver.packs.length} FILES</b><b>{ver.packedSizeStr} PACKED</b><time>{ver.dateStr}</time></span>
                       </div>
                     </button>
                   </h2>
@@ -194,7 +193,7 @@ export default function GamePackagesTab({ mirrorFileDb }: Props) {
               );
             })}
           </div>
-        </div>
+        </section>
       ))}
     </div>
   );

@@ -104,12 +104,11 @@ export default function LauncherTab({ mirrorFileDb }: Props) {
   }
 
   return (
-      <div className="overview-container">
+      <div className="overview-container ef-module-page ef-launcher-view">
       {data.map((item) => (
-        <div key={`${item.regionId}-${item.app}`} className='mb-5'>
-          <h3 className='mb-3 neon-title'>
-            {item.regionId.toUpperCase()} {item.app}
-          </h3>
+        <section key={`${item.regionId}-${item.app}`} className='ef-record-group mb-5'>
+          <div className='ef-record-heading'><div><span className='ef-record-kicker'>CLIENT DISTRIBUTION // {item.regionId.toUpperCase()}</span><h3>{item.app}</h3></div><div className='ef-record-count'><strong>{String(item.zips.length + item.exes.length).padStart(2, '0')}</strong><span>INSTALLERS<br />ARCHIVED</span></div></div>
+          <div className='ef-record-caption'><span>PACKAGE STREAMS</span><span>ZIP PAYLOADS {item.zips.length} <b>•</b> INSTALLERS {item.exes.length}</span></div>
           <div className='accordion glass-accordion' id={`accordion-launcher-${item.regionId}-${item.app}`}>
             {item.zips.length > 0 && (
               <div className='accordion-item glass-card'>
@@ -122,7 +121,8 @@ export default function LauncherTab({ mirrorFileDb }: Props) {
                     aria-expanded='false'
                     aria-controls={`collapse-zip-${item.regionId}-${item.app}`}
                   >
-                    Launcher Packages (zip)
+                    <span className='ef-platform-name'><span className='ef-nav-icon'>▤</span>Launcher package payloads</span>
+                    <span className='ef-platform-meta'><b>{item.zips.length} BUILDS</b><time>{item.zips[0]?.version || 'NO DATA'}</time></span>
                   </button>
                 </h2>
                 <div
@@ -180,7 +180,8 @@ export default function LauncherTab({ mirrorFileDb }: Props) {
                     aria-expanded='false'
                     aria-controls={`collapse-exe-${item.regionId}-${item.app}`}
                   >
-                    Launcher Packages (Installer)
+                    <span className='ef-platform-name'><span className='ef-nav-icon'>⬡</span>Installer releases</span>
+                    <span className='ef-platform-meta'><b>{item.exes.length} BUILDS</b><time>{item.exes[0]?.version || 'NO DATA'}</time></span>
                   </button>
                 </h2>
                 <div
@@ -221,7 +222,7 @@ export default function LauncherTab({ mirrorFileDb }: Props) {
               </div>
             )}
           </div>
-        </div>
+        </section>
       ))}
     </div>
   );

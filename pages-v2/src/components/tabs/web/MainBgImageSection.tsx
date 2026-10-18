@@ -23,7 +23,7 @@ export default function MainBgImageSection({ target, lang }: Props) {
     Map<string, { image: LauncherWebMainBgImage['main_bg_image']; firstSeen: string }>
   >(new Map());
   const [loading, setLoading] = useState(false);
-  const [shouldLoad, setShouldLoad] = useState(false);
+  const [shouldLoad, setShouldLoad] = useState(true);
   const collapseRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

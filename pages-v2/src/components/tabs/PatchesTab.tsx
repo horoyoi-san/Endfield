@@ -236,12 +236,11 @@ export default function PatchesTab({ mirrorFileDb }: Props) {
   }
 
   return (
-      <div className="overview-container">
+      <div className="overview-container ef-module-page ef-patches-view">
       {patchesData.map((pkg) => (
-        <div key={pkg.dirName} className='mb-5'>
-          <h3 className='mb-3 neon-title'>
-            {pkg.region === 'cn' ? 'China' : 'Global'}, {pkg.targetName}
-          </h3>
+        <section key={pkg.dirName} className='ef-record-group mb-5'>
+          <div className='ef-record-heading'><div><span className='ef-record-kicker'>{pkg.region === 'cn' ? 'CN' : 'GLOBAL'} REGION // UPDATE CHANNEL</span><h3>{pkg.targetName}</h3></div><div className='ef-record-count'><strong>{String(pkg.patches.length).padStart(2, '0')}</strong><span>PATCHES<br />ARCHIVED</span></div></div>
+          <div className='ef-record-caption'><span>PATCH TRANSITIONS</span><span>SELECT A RECORD TO VIEW PACKAGE DETAILS</span></div>
           <div className='accordion glass-accordion' id={`accordion-patch-${pkg.dirName}`}>
             {pkg.patches.map((ver, idx) => {
               const itemId = `patch-${pkg.dirName}-${idx}`;
@@ -256,8 +255,8 @@ export default function PatchesTab({ mirrorFileDb }: Props) {
                       aria-expanded='false'
                       aria-controls={`collapse-${itemId}`}
                     >
-                      <div className='d-flex w-100 justify-content-between me-3 align-items-center'>
-                        <span className='fw-bold'>
+                      <div className='ef-accordion-summary'>
+                        <span className='ef-accordion-title'>
                           {ver.isPrePatch && (
                             <span className='badge bg-warning text-dark me-2'>PRE-PATCH</span>
                           )}
@@ -272,7 +271,7 @@ export default function PatchesTab({ mirrorFileDb }: Props) {
                           )}
                           {ver.reqVersion} → {ver.version}
                         </span>
-                        <span className='text-muted small align-bottom'>{ver.dateStr}</span>
+                        <span className='ef-accordion-meta'><b>{ver.files.length} FILES</b><b>{ver.packedSizeStr} PATCH</b><time>{ver.dateStr}</time></span>
                       </div>
                     </button>
                   </h2>
@@ -334,7 +333,7 @@ export default function PatchesTab({ mirrorFileDb }: Props) {
               );
             })}
           </div>
-        </div>
+        </section>
       ))}
     </div>
   );

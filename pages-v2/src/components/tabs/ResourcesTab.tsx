@@ -212,41 +212,37 @@ const ResourceTable = ({ groups }: { groups: ResourceGroup[] }) => (
     </table>
   </div>
 );
-const PlatformAccordion = ({
-  region,
-  channel,
-  platformData,
-}: {
-  region: string;
-  channel: number;
-  platformData: PlatformData;
-}) => {
-  const itemId = `res-${region}-${channel}-${platformData.platform}`;
+const PlatformResourceConsole = ({ platforms }: { platforms: PlatformData[] }) => {
+  const [selectedPlatform, setSelectedPlatform] = useState(platforms[0]?.platform || '');
+  const activePlatform = platforms.find((platform) => platform.platform === selectedPlatform) || platforms[0];
 
   return (
-    <div className='accordion-item glass-card'>
-      <h2 className='accordion-header' id={`heading-${itemId}`}>
-        <button
-          className='accordion-button collapsed glass-accordion-btn'
-          type='button'
-          data-bs-toggle='collapse'
-          data-bs-target={`#collapse-${itemId}`}
-          aria-expanded='false'
-          aria-controls={`collapse-${itemId}`}
-        >
-          {platformData.platform}
-        </button>
-      </h2>
-      <div
-        id={`collapse-${itemId}`}
-        className='accordion-collapse collapse'
-        aria-labelledby={`heading-${itemId}`}
-        data-bs-parent={`#accordion-res-${region}-${channel}`}
-      >
-        <div className='accordion-body glass-body'>
-          <ResourceTable groups={platformData.groups} />
-        </div>
+    <div className='ef-resource-console'>
+      <div className='ef-resource-platforms' role='tablist' aria-label='Select platform'>
+        {platforms.map((platform, index) => (
+          <button
+            key={platform.platform}
+            type='button'
+            role='tab'
+            aria-selected={platform.platform === activePlatform?.platform}
+            className={`ef-resource-platform${platform.platform === activePlatform?.platform ? ' active' : ''}`}
+            onClick={() => setSelectedPlatform(platform.platform)}
+          >
+            <span className='ef-resource-platform-index'>{String(index + 1).padStart(2, '0')}</span>
+            <span className='ef-resource-platform-copy'><strong>{platform.platform}</strong><small>{platform.groups.length} VERSION INDEXES</small></span>
+            <span className='ef-resource-platform-arrow' aria-hidden='true'>↗</span>
+          </button>
+        ))}
       </div>
+      {activePlatform && (
+        <section className='ef-resource-history' aria-label={`${activePlatform.platform} resource history`}>
+          <header className='ef-resource-history-head'>
+            <div><span className='ef-record-kicker'>VERSION HISTORY // {activePlatform.platform.toUpperCase()}</span><h4>{activePlatform.platform} resource indexes</h4></div>
+            <div className='ef-resource-latest'><small>LATEST RECORD</small><strong>{activePlatform.groups[0]?.dateStr || 'NO DATA'}</strong></div>
+          </header>
+          <ResourceTable groups={activePlatform.groups} />
+        </section>
+      )}
     </div>
   );
 };
@@ -275,21 +271,13 @@ export default function ResourcesTab() {
   }
 
   return (
-      <div className="overview-container">
+      <div className="overview-container ef-module-page ef-resources-view">
       {data.map((regionData) => (
-        <div key={`${regionData.region}-${regionData.channel}`} className='mb-5'>
-          <h3 className='mb-3 neon-title'>{TARGETS.find((t) => t.region === regionData.region)?.label || regionData.region}</h3>
-          <div className='accordion glass-accordion' id={`accordion-res-${regionData.region}-${regionData.channel}`}>
-            {regionData.platforms.map((plat) => (
-              <PlatformAccordion
-                key={plat.platform}
-                region={regionData.region}
-                channel={regionData.channel}
-                platformData={plat}
-              />
-            ))}
-          </div>
-        </div>
+        <section key={`${regionData.region}-${regionData.channel}`} className='ef-record-group mb-5'>
+          <div className='ef-record-heading'><div><span className='ef-record-kicker'>RESOURCE NETWORK // CHANNEL {regionData.channel}</span><h3>{TARGETS.find((t) => t.region === regionData.region)?.label || regionData.region}</h3></div><div className='ef-record-count'><strong>{String(regionData.platforms.length).padStart(2, '0')}</strong><span>PLATFORMS<br />AVAILABLE</span></div></div>
+          <div className='ef-record-caption'><span>PLATFORM INDEXES</span><span>SELECT A PLATFORM TO EXPLORE VERSION HISTORY</span></div>
+          <PlatformResourceConsole key={`${regionData.region}-${regionData.channel}`} platforms={regionData.platforms} />
+        </section>
       ))}
     </div>
   );

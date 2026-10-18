@@ -23,7 +23,7 @@ export default function BannerSection({ target, lang }: Props) {
     Map<string, { banner: LauncherWebBanner['banners'][0]; firstSeen: string }>
   >(new Map());
   const [loading, setLoading] = useState(false);
-  const [shouldLoad, setShouldLoad] = useState(false);
+  const [shouldLoad, setShouldLoad] = useState(true);
   const collapseRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

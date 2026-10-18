@@ -24,7 +24,7 @@ export default function SidebarSection({ target, lang }: Props) {
     updatedAt: string;
   } | null>(null);
   const [loading, setLoading] = useState(false);
-  const [shouldLoad, setShouldLoad] = useState(false);
+  const [shouldLoad, setShouldLoad] = useState(true);
   const collapseRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

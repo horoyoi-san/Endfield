@@ -237,97 +237,36 @@ export default function OverviewTab({ mirrorFileDb }: Props) {
   }
 
   return (
-      <div className="overview-container">
-      <div className='card mb-3 glass-card'>
-        <div className='card-body'>
-          <h3 className='card-title mb-4'>Latest Game Packages</h3>
-          <div className='row text-center mb-4'>
-            <div className='col-md-6 mb-md-0 mb-3'>
-              <p className='lh-1 mb-0'>
-                <span className='fw-bold fs-1'>{globalPkg.version}</span>
-                <br />
-                <span className='small opacity-75' style={{ lineHeight: 1.5 }}>
-                  {globalPkg.date}
-                </span>
-                <br />
-                Latest Version (Global)
-              </p>
-            </div>
-            <div className='col-md-6'>
-              <p className='lh-1 mb-0'>
-                <span className='fw-bold fs-1'>{chinaPkg.version}</span>
-                <br />
-                <span className='small opacity-75' style={{ lineHeight: 1.5 }}>
-                  {chinaPkg.date}
-                </span>
-                <br />
-                Latest Version (China)
-              </p>
-            </div>
-          </div>
+    <div className='ef-dashboard'>
+      <section className='ef-hero-panel'>
+        <div className='ef-hero-copy'>
+          <div className='ef-panel-code'>ARCHIVE STATUS <span>•</span> OPERATIONAL</div>
+          <h2>Arknights<br /><em>ENDFIELD</em></h2>
+          <p>Current deployments and content indexes from the Endfield archive network.</p>
+        </div>
+        <div className='ef-hero-mark'><span>EF</span><i>FIELD<br />INTEL</i></div>
+        <div className='ef-hero-corner'>TERMINAL 01 <b>///</b> LIVE FEED</div>
+      </section>
 
-          <div className='table-responsive'>
-            <table className='table table-striped table-bordered table-sm align-middle text-nowrap glass-table'>
-              <thead>
-                <tr>
-                  <th>Region</th>
-                  <th>Channel</th>
-                  <th>Version</th>
-                  <th className='text-end'>Packed</th>
-                  <th className='text-end'>Unpacked</th>
-                </tr>
-              </thead>
-              <tbody>
-                {tableData.map((row, i) => (
-                  <tr key={i}>
-                    <td>{row.region}</td>
-                    <td>{row.channelName}</td>
-                    <td>{row.version}</td>
-                    <td className='text-end'>{row.packedSize}</td>
-                    <td className='text-end'>{row.unpackedSize}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+      <div className='ef-stat-grid'>
+        <article className='ef-stat-card'><div className='ef-stat-label'><span className='ef-status-dot' /> GLOBAL BUILD</div><strong>{globalPkg.version}</strong><small>DEPLOYED {globalPkg.date}</small><div className='ef-stat-corner'>01</div></article>
+        <article className='ef-stat-card'><div className='ef-stat-label'><span className='ef-status-dot' /> CN BUILD</div><strong>{chinaPkg.version}</strong><small>DEPLOYED {chinaPkg.date}</small><div className='ef-stat-corner'>02</div></article>
+        <article className='ef-stat-card ef-stat-accent'><div className='ef-stat-label'>MIRROR STORAGE</div><strong>{mirrorStats}</strong><small>AVAILABLE IN ARCHIVE</small><div className='ef-stat-corner'>03</div></article>
+      </div>
+
+      <div className='ef-section-bar'><div><span>01</span><h2>Build manifest</h2></div><small>GAME PACKAGE CHANNELS</small></div>
+      <div className='ef-panel ef-manifest-panel'>
+        <div className='ef-panel-topline'><span>DEPLOYMENT RECORDS</span><span>{String(tableData.length).padStart(2, '0')} CHANNELS</span></div>
+        <div className='table-responsive'>
+          <table className='table table-sm align-middle text-nowrap glass-table mb-0'>
+            <thead><tr><th>Region</th><th>Channel</th><th>Build</th><th className='text-end'>Packed</th><th className='text-end'>Unpacked</th></tr></thead>
+            <tbody>{tableData.map((row, i) => <tr key={i}><td><span className='ef-region-mark'>{row.region === 'China' ? 'CN' : 'GL'}</span>{row.region}</td><td>{row.channelName}</td><td><code className='ef-version-code'>{row.version}</code></td><td className='text-end'>{row.packedSize}</td><td className='text-end'>{row.unpackedSize}</td></tr>)}</tbody>
+          </table>
         </div>
       </div>
 
-      <div className='card mb-3 glass-card'>
-        <div className='card-body'>
-          <h3 className='card-title mb-4'>Latest Game Resources</h3>
-          <div className='row text-center'>
-            {resourceData.map((res, i) => (
-              <div key={i} className='col-12 col-md-6 col-lg-3 mb-3 mb-lg-0'>
-                <p className='lh-1 mb-0'>
-                  <span className='fw-bold fs-1'>{res.version}</span>
-                  <br />
-                  {res.date && (
-                    <>
-                      <span className='small opacity-75' style={{ lineHeight: 1.5 }}>
-                        {res.date}
-                      </span>
-                      <br />
-                    </>
-                  )}
-                  {res.platform}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <div className='card'>
-        <div className='card-body'>
-          <h3 className='card-title'>Mirror Statistics</h3>
-          <p className='card-text text-center lh-1'>
-            <span className='fw-bold fs-1'>{mirrorStats}</span>
-            <br />
-            uploaded to mirror
-          </p>
-        </div>
-      </div>
+      <div className='ef-section-bar'><div><span>02</span><h2>Resource channels</h2></div><small>INDEX STATUS BY PLATFORM</small></div>
+      <div className='ef-resource-grid'>{resourceData.map((res, i) => <article className='ef-resource-card' key={i}><div className='ef-resource-icon'>{['▣', '▰', '◉', '◈'][i]}</div><div className='ef-resource-platform'>{res.platform}</div><strong>{res.version}</strong><small>{res.date ? `SYNC ${res.date}` : 'AWAITING DATA'}</small><div className='ef-resource-state'><span className='ef-status-dot' /> INDEXED</div></article>)}</div>
     </div>
   );
 }
