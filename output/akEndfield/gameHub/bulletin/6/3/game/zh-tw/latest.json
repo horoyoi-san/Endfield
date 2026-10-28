@@ -18,8 +18,20 @@
       "subChannel": "#DEFAULT",
       "lang": "zh-tw",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:zh-tw",
-      "version": "2d25d3d5cd01f90f5dedbaf688e72b8d",
+      "version": "f0a479c65d1966fb1feef887dfc3a7d6",
       "onlineList": [
+        {
+          "cid": "2192",
+          "version": 1793158716,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "0783",
+          "version": 1793118973,
+          "needRedDot": true,
+          "needPopup": false
+        },
         {
           "cid": "3035",
           "version": 1793085247,
@@ -40,13 +52,13 @@
         },
         {
           "cid": "2194",
-          "version": 1791977778,
+          "version": 1793155206,
           "needRedDot": true,
           "needPopup": false
         },
         {
           "cid": "9854",
-          "version": 1792030352,
+          "version": 1793167771,
           "needRedDot": true,
           "needPopup": false
         },
@@ -64,7 +76,19 @@
         },
         {
           "cid": "9853",
-          "version": 1793074566,
+          "version": 1793168511,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "3034",
+          "version": 1793073788,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "8940",
+          "version": 1793158861,
           "needRedDot": true,
           "needPopup": false
         },
@@ -117,12 +141,6 @@
           "needPopup": false
         },
         {
-          "cid": "9852",
-          "version": 1792070709,
-          "needRedDot": true,
-          "needPopup": false
-        },
-        {
           "cid": "7271",
           "version": 1792041104,
           "needRedDot": false,
@@ -165,6 +183,12 @@
           "needPopup": false
         },
         {
+          "cid": "6425",
+          "version": 1793082735,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
           "cid": "1369",
           "version": 1792498429,
           "needRedDot": true,
@@ -178,7 +202,7 @@
         },
         {
           "cid": "0787",
-          "version": 1791970448,
+          "version": 1793167791,
           "needRedDot": true,
           "needPopup": false
         },
@@ -220,8 +244,43 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1793085248,
+      "updatedAt": 1793199600,
       "list": [
+        {
+          "cid": "2192",
+          "type": 0,
+          "tab": "updates",
+          "orderType": 1,
+          "orderWeight": 1,
+          "displayType": "rich_text",
+          "startAt": 1793154600,
+          "focus": 0,
+          "extraData": {},
+          "title": "部分活動\\n時間調整說明",
+          "header": "部分活動時間調整說明",
+          "jumpButton": null,
+          "data": {
+            "html": "<p></p><img src=\"https://web-static.hg-cdn.com/upload/image/20261027/341c9eb5e14edb5e2ff5e5356c724190.jpg\" alt=\"\"><p>親愛的管理員：<br>遊戲團隊將對「丹青渡」版本中部分活動時間進行調整，相關內容及獎勵均保持不變。本次調整將於2026/11/05快速維護更新後生效，調整內容如下：</p><p><br></p><p><strong>▼//時間調整說明</strong><br>■ 「煙火生緣」趣味活動的結束時間將調整為2026/11/25 06:00（伺服器時間）<br>■ 「危機合約 浸藍測試作戰」中「機密聖所」兌換的結束時間將調整為2026/12/02 04:00（伺服器時間）<br>■ 「理智補給」限時活動的活動時間將調整為：</p><p>Asia伺服器：2026/11/18 04:00 ~ 2026/11/25 04:00（伺服器時間）</p><p>Americas / Europe伺服器：2026/11/18 04:00 ~ 2026/11/24 17:00（伺服器時間）<br></p><p><strong>▼//其他說明</strong><br>其他活動及玩法（如「影拓豐碑 - 深林囈語」系列、「密境行者 - 畫外遺光」等）的內容、獎勵等均保持不變。</p><p><br></p><p>感謝管理員一直以來對《明日方舟：終末地》的理解與支持！<br>※Asia伺服器時區：UTC+8<br>※Americas / Europe伺服器時區：UTC-5</p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "0783",
+          "type": 0,
+          "tab": "updates",
+          "orderType": 1,
+          "orderWeight": 1,
+          "displayType": "rich_text",
+          "startAt": 1793154600,
+          "focus": 0,
+          "title": "協議通行證·墨卷\\n時間調整說明",
+          "header": "「協議通行證·墨卷」時間調整說明",
+          "jumpButton": null,
+          "data": {
+            "html": "<p></p><img src=\"https://web-static.hg-cdn.com/upload/image/20261027/341c9eb5e14edb5e2ff5e5356c724190.jpg\" alt=\"\"><p>親愛的管理員：<br>遊戲團隊將對「丹青渡」版本中「協議通行證·墨卷」的結束時間進行調整，並同步調整【採購中心】部分內容的販售結束時間，相關內容及獎勵均保持不變。因本次時間調整影響，我們將補發對應的通行證經驗。</p><p><br></p><p><strong>▼//補償內容說明</strong><br>· 補償內容：【通行證經驗】×4000<br>· 發放時間：2026/10/28 10:30（UTC+8） ~ 下次版本更新維護前<br>· 發放條件：2026/11/05快速維護更新前所有註冊並建立角色的管理員。<br>· 發放說明：補償將透過遊戲內信件發放，信件將於下次版本更新維護時過期，請注意及時領取。</p><p><br></p><p><strong>▼//時間調整說明</strong><br>本次調整將於2026/11/05快速維護更新後生效，調整內容如下：<br>■ 「協議通行證·墨卷」的結束時間將調整為2026/11/25 06:00（伺服器時間）<br>■ 【採購中心】部分商品可購買的結束時間將調整為2026/11/25 06:00（伺服器時間）</p><p><br></p><p>感謝管理員一直以來對《明日方舟：終末地》的理解與支持！<br>※Asia伺服器時區：UTC+8<br>※Americas / Europe伺服器時區：UTC-5</p>",
+            "linkType": 1
+          }
+        },
         {
           "cid": "3035",
           "type": 0,
@@ -284,11 +343,12 @@
           "displayType": "rich_text",
           "startAt": 1792026000,
           "focus": 0,
+          "extraData": {},
           "title": "版本更新說明",
           "header": "「丹青渡」版本更新說明",
           "jumpButton": null,
           "data": {
-            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20261014/d9823105c8e002d527a044aa514add9e.jpg\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(0, 0, 0);\">秋景現，丹青垂，渡過千般崎嶇，萬種嶙峋。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">親愛的管理員：</span></p><p><span style=\"color: rgb(0, 0, 0);\">歡迎來到全新版本「丹青渡」！</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>▼//更新維護及補償說明</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 更新維護時間</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">Asia伺服器：2026/10/15 06:00 ~ 2026/10/15 12:00 (UTC+8)</span></p><p><span style=\"color: rgb(0, 0, 0);\">Americas / Europe伺服器：2026/10/14 17:00 ~ 2026/10/14 23:00 (UTC-5)</span></p><p><span style=\"color: rgb(0, 0, 0);\">※ 維護後的開服時間可能會提前或延遲，詳情請關注官方公告。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 更新維護及問題修復補償說明</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 更新維護補償內容：【嵌晶玉】×900</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 問題修復補償內容：【嵌晶玉】×900</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 發放時間：更新維護後 ~ 下次版本更新維護前</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 發放條件：更新前創立角色</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 發放說明：更新維護補償及問題修復補償將在解鎖【信箱】功能後，透過遊戲內信件分兩封發放，信件將於下次版本更新維護時過期，請注意及時領取。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 更新說明</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">本次更新為強制更新，更新結束後，需重新下載並安裝遊戲用戶端。版本更新維護開始後，管理員可依照遊戲內指引進行更新。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· iOS：進入App Store，點擊更新。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· Android：進入遊戲後，依照遊戲內彈出視窗提示完成更新。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· PlayStation®5：打開系統介面，選擇《明日方舟：終末地》，按下控制器「選項（OPTIONS）」按鈕，選擇「檢查更新」選項，確認更新。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· PC：關閉遊戲後，重啟GRYPHLINK並點擊更新。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>※ 「丹青渡」版本更新後，部分更新內容將隨時間及管理員的探索進度逐一解鎖，實際更新內容請以遊戲內為準。</strong></span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>▼//版本全新內容</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 全新劇情</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>1. 主線任務</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">開放至「第二章 - 進度VIII - 著新墨」。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>2. 探索任務</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">「奇聞滿地跑」、「後目的地」、「開畫大吉」、「農植自動化改造」</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>3. 支線任務</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">「歸野」、「無終之戀」、「前緣再續」、「紀念日」、「緣緣莊經營·其一」、「緣緣莊經營·其二」、「緣緣莊經營·其三」</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 全新幹員</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">6星幹員【祀】、【明河】</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 全新武器</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">6星武器【玉中身（雙手劍）】【喚月（單手劍）】【悠久傳承（雙手劍）】【聚合工業（單手劍）】</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 全新敵人</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">「存祿」、「用奇」、「解燥」、「行度」等</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 全新區域</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">「武陵 - 祀的畫」</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 全新尋訪及申領</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>1. 「萬物更新」特許尋訪</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 開放時間：「丹青渡」版本更新後 ~ 2026/11/05 11:59（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 尋訪說明: 「萬物更新」特許尋訪中，6星幹員【祀】獲得機率提升。 「萬物更新」特許尋訪中，全部可能出現的6星幹員包括：祀/提弗洛斯/梨諾/餘燼/黎風/艾爾黛拉/別禮/駿衛。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 「萬物更新」特許尋訪開放期間，還將開放6星幹員【祀】的「作戰演練」幹員試用活動。使用包含試用幹員的固定隊伍體驗指定關卡，完成後可前往【活動中心】介面領取【嵌晶玉】×100、【武庫防具箱】及【存續的痕跡】等獎勵。其中，【武庫防具箱】內包含較為適用於當期試用幹員的特殊滿精鍛60級裝備套裝。 還可在【集成配額交易】中特惠兌換【萬物有靈尋訪憑證】，最多可兌換【萬物有靈尋訪憑證】×5。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>2. 「篆玉申領」武庫申領開放</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 開放時間：「丹青渡」版本更新後開啟，於3次「特許尋訪」後結束（從「萬物更新」起計算）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 申領說明: 「篆玉申領」武庫申領中，6星武器【玉中身（雙手劍）】獲得機率提升。 「篆玉申領」武庫申領中，全部可能出現的6星武器包括：玉中身（雙手劍）/昔日精品（雙手劍）/楔子（手銃）/J.E.T.（長柄武器）/騎士精神（施術單元）/破碎君王（雙手劍）/顯赫聲名（單手劍）。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>3. 「祖泉的新流」重構尋訪#1</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 開放時間：2026/10/29 12:00 ~ 2026/11/19 11:59（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 尋訪說明: 「祖泉的新流」重構尋訪#1中，6星幹員【湯湯】獲得機率提升。 「祖泉的新流」重構尋訪#1中，全部可能出現的6星幹員包括：湯湯/餘燼/黎風/艾爾黛拉/別禮/駿衛。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>4. 「細枝申領」重構申領#1開放</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 開放時間：2026/10/29 12:00 ~ 2026/11/19 11:59（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 申領說明: 「細枝申領」重構申領#1中，6星武器【落草（手銃）】獲得機率提升。 「細枝申領」重構申領#1中，全部可能出現的6星武器包括：落草（手銃）/同類相食（手銃）/楔子（手銃）/騎士精神（施術單元）/熱熔切割器（單手劍）/破碎君王（雙手劍）/J.E.T.（長柄武器）。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>5. 「煙火邀星河」特許尋訪</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 開放時間：2026/11/05 12:00（伺服器時間） ~ 版本更新維護前</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 尋訪說明: 「煙火邀星河」特許尋訪中，6星幹員【明河】獲得機率提升。 「煙火邀星河」特許尋訪中，全部可能出現的6星幹員包括：明河/祀/提弗洛斯/餘燼/黎風/艾爾黛拉/別禮/駿衛。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 「煙火邀星河」特許尋訪開放期間，還將開放6星幹員【明河】的「作戰演練」幹員試用活動。使用包含試用幹員的固定隊伍體驗指定關卡，完成後可前往【活動中心】介面領取【嵌晶玉】×100、【武庫防具箱】及【存續的痕跡】等獎勵。其中，【武庫防具箱】內包含較為適用於當期試用幹員的特殊滿精鍛60級裝備套裝。 還可在【集成配額交易】中特惠兌換【星河共我尋訪憑證】，最多可兌換【星河共我尋訪憑證】×5。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>6. 「月映申領」武庫申領開放</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 開放時間：2026/11/05 12:00（伺服器時間）開啟，於3次「特許尋訪」後結束（從「煙火邀星河」起計算）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 申領說明: 「月映申領」武庫申領中，6星武器【喚月（單手劍）】獲得機率提升。 「月映申領」武庫申領中，全部可能出現的6星武器包括：喚月（單手劍）/熱熔切割器（單手劍）/白夜新星（單手劍）/驍勇（長柄武器）/遺忘（施術單元）/同類相食（手銃）/典範（雙手劍）。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">※ 更多尋訪及申領的詳細說明，請前往遊戲內查看。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 全新活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>1. 「煙火生緣」趣味活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：「丹青渡」版本更新後 ~ 版本更新維護前</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動內容更新時間：2026/10/22 04:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：前往「武陵」地區的「祀的畫」區域，經營「緣緣莊客棧」，完成相應的經營任務，提升經營里程，即可領取【嵌晶玉】×1000、【存續的痕跡】等獎勵。</span></p><p><span style=\"color: rgb(0, 0, 0);\">※ 「煙火生緣」趣味活動結束後，將無法完成經營任務或領取對應獎勵，但仍可遊玩「緣緣莊客棧」，獲取經營里程階段獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>2. 「萬物有靈」簽到活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：「丹青渡」版本更新後 ~ 2026/11/05 11:59（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：累計簽到7日，即可獲得【萬物有靈尋訪憑證】×5等獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>3. 「墨分諸彩」引入活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：「丹青渡」版本更新後 ~ 2026/11/05 12:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：前往「武陵」地區的「祀的畫」區域完成指定任務，即可領取【嵌晶玉】×1200、【存續的痕跡】活動獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>4. 「卡莉的芳菲童話」拍照活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：2026/10/22 12:00 ~ 2026/11/05 04:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：完成拍照任務，即可獲得【嵌晶玉】×1500、【頭像框·卡莉的芳菲集】、【存續的痕跡】等活動獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>5. 「危機籌備」限時活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：2026/10/29 04:00 ~ 2026/11/05 04:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：活動期間，每日完成指定任務即可獲得【理智消耗許可】、【緊急理智加強劑】、【武陵精鍛助劑】及【冷卻脂】活動獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>6. 「百趣演武」挑戰活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：2026/10/29 12:00 ~ 2026/11/19 04:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動內容更新時間：2026/11/11 04:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：活動期間挑戰「百趣演武」，獲取演武積分，達到演武歷程中的全部檔位，即可獲得【嵌晶玉】×1200、【存續的痕跡】等活動獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>7. 「予眾魂的新光影」趣味活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：2026/10/31 12:00 ~ 2026/11/14 04:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：前往網頁活動，透過搭配演員與道具完成故事拍攝，解鎖不同結局，可領取【嵌晶玉】×300、【折金票】活動獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>8. 明河敘事活動「歸野」</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：2026/11/05 12:00（伺服器時間） ~ 版本更新維護前</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：完成支線任務「歸野」，可獲得【嵌晶玉】×600、【初級認知載體】等獎勵。</span></p><p><span style=\"color: rgb(0, 0, 0);\">※ 敘事活動的活動頁面關閉後，若達成任務參與條件，仍可在【任務】中繼續體驗該支線任務並獲得對應獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>9. 「星河共我」簽到活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：2026/11/05 12:00（伺服器時間） ~ 版本更新維護前</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：累計簽到7日，即可獲得【星河共我尋訪憑證】×5等獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>10. 「危機合約 浸藍測試作戰」挑戰活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動開放時間：2026/11/05 12:00（伺服器時間） ~ 版本更新維護前</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動內容更新時間：2026/11/12 12:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 「機密聖所」開放時間：2026/11/05 12:00 ~ 2026/12/03 04:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：活動期間，透過自由選擇指標組合完成戰鬥挑戰，達成活動任務目標可獲得【頭像·白刃的獎章】、【頭像框·危機響應】及【晶化硬幣·浸藍】獎勵。消耗【晶化硬幣·浸藍】可在「機密聖所」中兌換【嵌晶玉】×2000、【貼紙·除危記號】、【高階培養自選箱II】等豐富獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>11. 「理智補給」限時活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：</span></p><p><span style=\"color: rgb(0, 0, 0);\">Asia伺服器：</span></p><p><span style=\"color: rgb(0, 0, 0);\">2026/11/19 04:00 ~ 2026/11/26 04:00（伺服器時間）</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">Americas / Europe伺服器：</span></p><p><span style=\"color: rgb(0, 0, 0);\">2026/11/19 04:00 ~ 2026/11/25 17:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：活動期間，每日完成指定任務即可領取理智補給獎勵【理智消耗許可】及【緊急理智加強劑】。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 活動及玩法更新</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>1. 「戰爭迴響」常駐挑戰玩法更新</strong></span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>○「異想賽季」</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 賽季更新：「丹青渡」版本更新後 ~ 2026/11/05 11:59（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 更新說明：全新賽季「異想賽季」開放，該賽季分為3個輪換週期，每個輪換週期包含3個關卡。「異想賽季」新增3個關卡，完成所有新增關卡的普通難度即可領取【嵌晶玉】×300等獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>○「狂熱賽季」</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 賽季更新：2026/11/05 12:00（伺服器時間） ~ 版本更新維護前</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 更新說明：全新賽季「狂熱賽季」開放，該賽季分為3個輪換週期，每個輪換週期包含3個關卡。「狂熱賽季」新增3個關卡，完成所有新增關卡的普通難度即可領取【嵌晶玉】×300等獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>2. 「影拓豐碑」挑戰玩法更新，開放「深林囈語」系列關卡</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 開放時間：2026/10/22 12:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 更新說明：本次「影拓豐碑」挑戰玩法開放1個新系列「深林囈語」，包含4個關卡。完成全部關卡挑戰，累計可獲得【存續的痕跡】、【高級認知載體】、【武器檢查套組】、【協議稜柱組】等獎勵。</span></p><p><span style=\"color: rgb(0, 0, 0);\">同時，玩法更新後還將同步開放「豐碑留名·魘林」限時挑戰活動</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：2026/10/22 12:00 ~ 2026/11/05 04:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：「深林囈語」系列開放後，將開啟「豐碑留名·魘林」限時活動。活動期間在「影拓豐碑」完成對應挑戰，即可領取【嵌晶玉】×1200、【高階培養自選箱II】等活動獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>3. 「密境行者」空間組更新</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 更新時間：2026/11/12 12:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 更新說明：「密境行者」解謎活動將更新新空間組「畫外遺光」，率先開放3個協議空間，並在2026/11/19 04:00（伺服器時間）開放後續3個協議空間。完成該空間組挑戰，累計可領取【嵌晶玉】×1200、【存續的痕跡】等活動獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">※ 更多活動及玩法內容請關注後續官方公告。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 採購中心更新</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 開放「協議通行證·墨卷」，「丹青渡」版本期間，管理員可在「協議通行證」中獲得武庫工程師列出的各類支援。每期協議通行證開啟時，將預設解鎖「基礎配給」。提升通行證等級，可獲得【基礎尋訪憑證】【嵌晶玉】【兌換驚喜箱】【培養材料】等獎勵。 其中，獎勵【高階培養自選箱I】更改為【高階培養自選箱II】，並追加可選擇的培養材料【躍遷漿體塗片】。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 【採購中心 - 組合包】新增【奇妙視線收藏包】【協議源流組合包】【萬象尋訪組合包】【天河尋訪組合包】；【特惠武庫配額包】可購買次數更新。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">※ 更多組合包及相關詳細說明，請前往遊戲內【採購中心 - 組合包】查看。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 集成工業系統</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 「武陵」地區建設等級上限提升；「武陵 - 應龍關」物資調度終端等級上限提升；「武陵物資調度」中新增部分可兌換物資。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 新增【自動農植機】：解鎖【自動農植機】後，可以對「祀的畫」中的種植區進行自動育苗和自動收穫。隨著相關劇情推進，「武陵城」中的種植區也可使用【自動農植機】。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 戰鬥系統</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 新增連攜技優先順序設定：可在【編隊】介面調整幹員連攜技優先順序；局內同一時點觸發多個連攜技時，將按所設優先順序依次施放。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 新增第六、第七小隊：管理員可在編隊介面配置並儲存更多小隊陣容。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 系統</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 新增【裝備方案】功能：可儲存多套裝備方案並自訂命名，便於按編隊需求為幹員快速切換裝備。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 新增限時理智藥劑到期自動使用功能：限時理智藥劑到期時將自動轉化為理智；超出理智上限的部分，將透過【理智萃取器】轉化為不限時的【理智精粹藥劑】。若理智已達上限，且【理智精粹藥劑】已達持有上限或無可用【理智萃取器】，剩餘限時理智藥劑將被銷毀。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 新增艙室小組功能：每個艙室最多可設定A、B兩個小組，支援手動【啟用小組】或【自動輪換】；請注意，若小組預計工時不足以覆蓋所分配工作時段，艙室生產可能中斷。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 其他</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 新增部分【幹員教學】、【能量淤積點】、【危境再現】、【NPC】、【蝕刻章】、【名片主題】、【頭像】、【頭像框】、【濾鏡】、【貼紙】、【消耗品】、【材料】、【理智藥劑】、【百科條目】、【情報檔案】、【隨身裝置】、【裝飾物品】、【唱片】、【拍照動作】、【地區提交醚質階段】等內容，將隨管理員的進度逐漸解鎖。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 裝備套組【50式應龍】、【脈衝式】、【長息】、【涉淵】、【集成實訓】新增部分裝備部件。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 新增珍貴培養材料【躍遷漿體塗片】。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>▼//優化與調整</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 任務</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了「自由開拓」任務的顯示邏輯。當管理員仍有未完成的緊要任務時，將不再顯示「自由開拓」任務；待其餘緊要任務全部完成後，「自由開拓」任務將自動顯示。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了探索任務「往日珍瑰」接取的指引和方式。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 戰鬥</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 調整了6星幹員【湯湯】終結技的技能描述將「湯湯揭開眼罩，釋放眼中的古老圖形封鎖範圍內的敵人，使其暫停行動一段時間」調整為「湯湯揭開眼罩，釋放眼中的古老圖形對範圍內的敵人施加一段時間的定身」。【定身】的效果為「持續時間內，受影響的目標暫停行動」。本次僅調整文本描述，調整前後均不影響該技能的實際效果。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了索敵操作：戰鬥中長按鎖定鍵將出現準星，可旋轉鏡頭瞄準敵人；鬆開後鎖定距離準星最近的敵人。原有鎖定與切換鎖定功能仍可正常使用。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了6星幹員【梨諾】作為非主控幹員施放戰技與終結技時的震動表現。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 活動及玩法</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了使用行動端裝置體驗時，玩法「選劍演武」的抽牌動畫表現。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 語音語言及音效</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了遊戲語音為中文時，「O.M.V.帝江號」中，特定NPC的配音表現。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了遊戲語音為英語時，部分配音的表現。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 集成工業系統</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了設備擺放體驗：擺放設備時，只要背包或任意倉庫中已有該設備，或倉庫內材料足以製造該設備，即可直接擺放。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了種植體驗：種植區支援【俯瞰模式】，田塊支援密集排布；在【施肥模式】中可開啟輔助施肥並設定輔助模式，選擇肥料進行施肥後，小隊內其他幹員將消耗對應肥料完成施肥。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了種植區地圖標記，支援查看種植區整體狀態及【自動農植機】相關資訊。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了裝備精鍛流程：【請選擇待消耗物品】介面新增【待製造】分頁，將自動篩選可作為精鍛消耗的裝備，支援調整數量或一鍵填充，無需跳轉頁面即可完成裝備製造並將其用於精鍛。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了線索收取與贈予的體驗：在【總控事項】中，好友贈予的線索也可快速收取並填入。同時還可將重複線索快速贈予需要該線索的好友。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了拜訪好友時的體驗：拜訪好友飛船時，可透過【快速拜訪】或快速鍵直接前往下一位好友的飛船。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了幹員展示的效果：【好友列表】與【個人名片】中，6星滿潛能幹員新增展示效果；在帝江號內走動時，6星滿潛能幹員也將呈現相應滿潛能特效。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了拍照貼紙的效果：支援縮放與旋轉、同時放置多個貼紙，並可快速刪除全部已放置貼紙。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了控制器操作相容性的體驗：針對養成、運送委託及關卡結算等場景進行了相容性優化，涵蓋【幹員 - 總覽】、【幹員 - 能力擴展】、【幹員 - 檔案】、【武器 - 潛能】、【地區建設 - 倉儲節點】等介面。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 其他</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 調整了【徘徊樹傀】在百科中的怪物類型顯示。其怪物類型由「精英敵人」調整為「進階敵人」。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了部分場景細節表現：落葉會隨幹員移動、技能釋放或場景風力產生飄動。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了特定情況下，部分幹員的模型、服飾、特效、動作、鏡頭等表現。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了特定情況下，部分NPC、敵方等的模型、服飾、特效、動作、鏡頭等表現。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了特定情況下，部分場景、武器、關卡等的模型、動態效果、特效、動畫等的表現。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了部分介面的顯示效果、特效表現、互動邏輯、文本描述。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了武器效果描述中有關法術傷害提升的表述文本，不影響實際效果。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 根據實際遊戲表現，優化了部分裝備名稱及相關說明文本，不影響實際效果。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 根據實際遊戲體驗，優化了部分提弗洛斯的靶場的操作提示文本。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了協議通行證部分任務描述文本。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了部分劇情文本。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了部分活動的說明文本。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了部分蝕刻章獲得方式與鍍層方式的說明文本。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了部分任務名稱。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 根據實際遊戲表現，優化了部分道具名稱及相關說明文本。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了部分介面操作提示文本。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>▼//問題修復</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 任務</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 修復了特定情況下，支線任務「終其一生」中部分敵人消失，導致無法正常推進任務的問題。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 戰鬥</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 修復了透過特定方式進入「協議空間」時，特效表現異常的問題。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 修復了透過特定操作進行閃避時，幹員有機率墜落懸崖的問題。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 修復了特定情況下，6星幹員【莊方宜】開啟終結技後退出副本時，終結技能量未正確繼承進入副本時狀態的問題。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 系統</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 修復了特定情況下，傳送後互動選項異常殘留的問題。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 修復了特定情況下，地圖縮放功能異常的問題。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 修復了特定情況下，地圖標記點顯示異常的問題。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 修復了特定情況下，主介面倒數計時異常殘留的問題。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 修復了特定情況下，主介面功能入口排列順序異常的問題。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 其他</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 修復了6星武器【藝術暴君（手銃）】模型中，部分裝飾文本顯示異常的問題。</span></p><p></p>",
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20261014/d9823105c8e002d527a044aa514add9e.jpg\" data-width=\"1650\" data-height=\"300\"><p><span style=\"color: rgb(0, 0, 0);\">秋景現，丹青垂，渡過千般崎嶇，萬種嶙峋。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">親愛的管理員：</span></p><p><span style=\"color: rgb(0, 0, 0);\">歡迎來到全新版本「丹青渡」！</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>▼//更新維護及補償說明</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 更新維護時間</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">Asia伺服器：2026/10/15 06:00 ~ 2026/10/15 12:00 (UTC+8)</span></p><p><span style=\"color: rgb(0, 0, 0);\">Americas / Europe伺服器：2026/10/14 17:00 ~ 2026/10/14 23:00 (UTC-5)</span></p><p><span style=\"color: rgb(0, 0, 0);\">※ 維護後的開服時間可能會提前或延遲，詳情請關注官方公告。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 更新維護及問題修復補償說明</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 更新維護補償內容：【嵌晶玉】×900</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 問題修復補償內容：【嵌晶玉】×900</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 發放時間：更新維護後 ~ 下次版本更新維護前</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 發放條件：更新前創立角色</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 發放說明：更新維護補償及問題修復補償將在解鎖【信箱】功能後，透過遊戲內信件分兩封發放，信件將於下次版本更新維護時過期，請注意及時領取。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 更新說明</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">本次更新為強制更新，更新結束後，需重新下載並安裝遊戲用戶端。版本更新維護開始後，管理員可依照遊戲內指引進行更新。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· iOS：進入App Store，點擊更新。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· Android：進入遊戲後，依照遊戲內彈出視窗提示完成更新。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· PlayStation®5：打開系統介面，選擇《明日方舟：終末地》，按下控制器「選項（OPTIONS）」按鈕，選擇「檢查更新」選項，確認更新。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· PC：關閉遊戲後，重啟GRYPHLINK並點擊更新。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>※ 「丹青渡」版本更新後，部分更新內容將隨時間及管理員的探索進度逐一解鎖，實際更新內容請以遊戲內為準。</strong></span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>▼//版本全新內容</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 全新劇情</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>1. 主線任務</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">開放至「第二章 - 進度VIII - 著新墨」。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>2. 探索任務</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">「奇聞滿地跑」、「後目的地」、「開畫大吉」、「農植自動化改造」</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>3. 支線任務</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">「歸野」、「無終之戀」、「前緣再續」、「紀念日」、「緣緣莊經營·其一」、「緣緣莊經營·其二」、「緣緣莊經營·其三」</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 全新幹員</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">6星幹員【祀】、【明河】</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 全新武器</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">6星武器【玉中身（雙手劍）】【喚月（單手劍）】【悠久傳承（雙手劍）】【聚合工業（單手劍）】</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 全新敵人</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">「存祿」、「用奇」、「解燥」、「行度」等</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 全新區域</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">「武陵 - 祀的畫」</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 全新尋訪及申領</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>1. 「萬物更新」特許尋訪</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 開放時間：「丹青渡」版本更新後 ~ 2026/11/05 11:59（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 尋訪說明: 「萬物更新」特許尋訪中，6星幹員【祀】獲得機率提升。 「萬物更新」特許尋訪中，全部可能出現的6星幹員包括：祀/提弗洛斯/梨諾/餘燼/黎風/艾爾黛拉/別禮/駿衛。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 「萬物更新」特許尋訪開放期間，還將開放6星幹員【祀】的「作戰演練」幹員試用活動。使用包含試用幹員的固定隊伍體驗指定關卡，完成後可前往【活動中心】介面領取【嵌晶玉】×100、【武庫防具箱】及【存續的痕跡】等獎勵。其中，【武庫防具箱】內包含較為適用於當期試用幹員的特殊滿精鍛60級裝備套裝。 還可在【集成配額交易】中特惠兌換【萬物有靈尋訪憑證】，最多可兌換【萬物有靈尋訪憑證】×5。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>2. 「篆玉申領」武庫申領開放</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 開放時間：「丹青渡」版本更新後開啟，於3次「特許尋訪」後結束（從「萬物更新」起計算）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 申領說明: 「篆玉申領」武庫申領中，6星武器【玉中身（雙手劍）】獲得機率提升。 「篆玉申領」武庫申領中，全部可能出現的6星武器包括：玉中身（雙手劍）/昔日精品（雙手劍）/楔子（手銃）/J.E.T.（長柄武器）/騎士精神（施術單元）/破碎君王（雙手劍）/顯赫聲名（單手劍）。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>3. 「祖泉的新流」重構尋訪#1</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 開放時間：2026/10/29 12:00 ~ 2026/11/19 11:59（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 尋訪說明: 「祖泉的新流」重構尋訪#1中，6星幹員【湯湯】獲得機率提升。 「祖泉的新流」重構尋訪#1中，全部可能出現的6星幹員包括：湯湯/餘燼/黎風/艾爾黛拉/別禮/駿衛。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>4. 「細枝申領」重構申領#1開放</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 開放時間：2026/10/29 12:00 ~ 2026/11/19 11:59（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 申領說明: 「細枝申領」重構申領#1中，6星武器【落草（手銃）】獲得機率提升。 「細枝申領」重構申領#1中，全部可能出現的6星武器包括：落草（手銃）/同類相食（手銃）/楔子（手銃）/騎士精神（施術單元）/熱熔切割器（單手劍）/破碎君王（雙手劍）/J.E.T.（長柄武器）。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>5. 「煙火邀星河」特許尋訪</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 開放時間：2026/11/05 12:00（伺服器時間） ~ 版本更新維護前</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 尋訪說明: 「煙火邀星河」特許尋訪中，6星幹員【明河】獲得機率提升。 「煙火邀星河」特許尋訪中，全部可能出現的6星幹員包括：明河/祀/提弗洛斯/餘燼/黎風/艾爾黛拉/別禮/駿衛。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 「煙火邀星河」特許尋訪開放期間，還將開放6星幹員【明河】的「作戰演練」幹員試用活動。使用包含試用幹員的固定隊伍體驗指定關卡，完成後可前往【活動中心】介面領取【嵌晶玉】×100、【武庫防具箱】及【存續的痕跡】等獎勵。其中，【武庫防具箱】內包含較為適用於當期試用幹員的特殊滿精鍛60級裝備套裝。 還可在【集成配額交易】中特惠兌換【星河共我尋訪憑證】，最多可兌換【星河共我尋訪憑證】×5。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>6. 「月映申領」武庫申領開放</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 開放時間：2026/11/05 12:00（伺服器時間）開啟，於3次「特許尋訪」後結束（從「煙火邀星河」起計算）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 申領說明: 「月映申領」武庫申領中，6星武器【喚月（單手劍）】獲得機率提升。 「月映申領」武庫申領中，全部可能出現的6星武器包括：喚月（單手劍）/熱熔切割器（單手劍）/白夜新星（單手劍）/驍勇（長柄武器）/遺忘（施術單元）/同類相食（手銃）/典範（雙手劍）。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">※ 更多尋訪及申領的詳細說明，請前往遊戲內查看。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 全新活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>1. 「煙火生緣」趣味活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：「丹青渡」版本更新後 ~ 版本更新維護前</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動內容更新時間：2026/10/22 04:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：前往「武陵」地區的「祀的畫」區域，經營「緣緣莊客棧」，完成相應的經營任務，提升經營里程，即可領取【嵌晶玉】×1000、【存續的痕跡】等獎勵。</span></p><p><span style=\"color: rgb(0, 0, 0);\">※ 「煙火生緣」趣味活動結束後，將無法完成經營任務或領取對應獎勵，但仍可遊玩「緣緣莊客棧」，獲取經營里程階段獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>2. 「萬物有靈」簽到活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：「丹青渡」版本更新後 ~ 2026/11/05 11:59（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：累計簽到7日，即可獲得【萬物有靈尋訪憑證】×5等獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>3. 「墨分諸彩」引入活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：「丹青渡」版本更新後 ~ 2026/11/05 12:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：前往「武陵」地區的「祀的畫」區域完成指定任務，即可領取【嵌晶玉】×1200、【存續的痕跡】活動獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>4. 「卡莉的芳菲童話」拍照活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：2026/10/22 12:00 ~ 2026/11/05 04:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：完成拍照任務，即可獲得【嵌晶玉】×1500、【頭像框·卡莉的芳菲集】、【存續的痕跡】等活動獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>5. 「危機籌備」限時活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：2026/10/29 04:00 ~ 2026/11/05 04:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：活動期間，每日完成指定任務即可獲得【理智消耗許可】、【緊急理智加強劑】、【武陵精鍛助劑】及【冷卻脂】活動獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>6. 「百趣演武」挑戰活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：2026/10/29 12:00 ~ 2026/11/19 04:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動內容更新時間：2026/11/11 04:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：活動期間挑戰「百趣演武」，獲取演武積分，達到演武歷程中的全部檔位，即可獲得【嵌晶玉】×1200、【存續的痕跡】等活動獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>7. 「予眾魂的新光影」趣味活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：2026/10/31 12:00 ~ 2026/11/14 04:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：前往網頁活動，透過搭配演員與道具完成故事拍攝，解鎖不同結局，可領取【嵌晶玉】×300、【折金票】活動獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>8. 明河敘事活動「歸野」</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：2026/11/05 12:00（伺服器時間） ~ 版本更新維護前</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：完成支線任務「歸野」，可獲得【嵌晶玉】×600、【初級認知載體】等獎勵。</span></p><p><span style=\"color: rgb(0, 0, 0);\">※ 敘事活動的活動頁面關閉後，若達成任務參與條件，仍可在【任務】中繼續體驗該支線任務並獲得對應獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>9. 「星河共我」簽到活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：2026/11/05 12:00（伺服器時間） ~ 版本更新維護前</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：累計簽到7日，即可獲得【星河共我尋訪憑證】×5等獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>10. 「危機合約 浸藍測試作戰」挑戰活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動開放時間：2026/11/05 12:00（伺服器時間） ~ 版本更新維護前</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動內容更新時間：2026/11/12 12:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 「機密聖所」開放時間：2026/11/05 12:00 ~ 2026/12/02 04:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：活動期間，透過自由選擇指標組合完成戰鬥挑戰，達成活動任務目標可獲得【頭像·白刃的獎章】、【頭像框·危機響應】及【晶化硬幣·浸藍】獎勵。消耗【晶化硬幣·浸藍】可在「機密聖所」中兌換【嵌晶玉】×2000、【貼紙·除危記號】、【高階培養自選箱II】等豐富獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>11. 「理智補給」限時活動</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：</span></p><p><span style=\"color: rgb(0, 0, 0);\">Asia伺服器：</span></p><p><span style=\"color: rgb(0, 0, 0);\">2026/11/18 04:00 ~ 2026/11/25 04:00（伺服器時間）</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">Americas / Europe伺服器：</span></p><p><span style=\"color: rgb(0, 0, 0);\">2026/11/18 04:00 ~ 2026/11/24 17:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：活動期間，每日完成指定任務即可領取理智補給獎勵【理智消耗許可】及【緊急理智加強劑】。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 活動及玩法更新</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>1. 「戰爭迴響」常駐挑戰玩法更新</strong></span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>○「異想賽季」</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 賽季更新：「丹青渡」版本更新後 ~ 2026/11/05 11:59（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 更新說明：全新賽季「異想賽季」開放，該賽季分為3個輪換週期，每個輪換週期包含3個關卡。「異想賽季」新增3個關卡，完成所有新增關卡的普通難度即可領取【嵌晶玉】×300等獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>○「狂熱賽季」</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 賽季更新：2026/11/05 12:00（伺服器時間） ~ 版本更新維護前</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 更新說明：全新賽季「狂熱賽季」開放，該賽季分為3個輪換週期，每個輪換週期包含3個關卡。「狂熱賽季」新增3個關卡，完成所有新增關卡的普通難度即可領取【嵌晶玉】×300等獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>2. 「影拓豐碑」挑戰玩法更新，開放「深林囈語」系列關卡</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 開放時間：2026/10/22 12:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 更新說明：本次「影拓豐碑」挑戰玩法開放1個新系列「深林囈語」，包含4個關卡。完成全部關卡挑戰，累計可獲得【存續的痕跡】、【高級認知載體】、【武器檢查套組】、【協議稜柱組】等獎勵。</span></p><p><span style=\"color: rgb(0, 0, 0);\">同時，玩法更新後還將同步開放「豐碑留名·魘林」限時挑戰活動</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動時間：2026/10/22 12:00 ~ 2026/11/05 04:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 活動說明：「深林囈語」系列開放後，將開啟「豐碑留名·魘林」限時活動。活動期間在「影拓豐碑」完成對應挑戰，即可領取【嵌晶玉】×1200、【高階培養自選箱II】等活動獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>3. 「密境行者」空間組更新</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 更新時間：2026/11/12 12:00（伺服器時間）</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 更新說明：「密境行者」解謎活動將更新新空間組「畫外遺光」，率先開放3個協議空間，並在2026/11/19 04:00（伺服器時間）開放後續3個協議空間。完成該空間組挑戰，累計可領取【嵌晶玉】×1200、【存續的痕跡】等活動獎勵。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">※ 更多活動及玩法內容請關注後續官方公告。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 採購中心更新</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 開放「協議通行證·墨卷」，「丹青渡」版本期間，管理員可在「協議通行證」中獲得武庫工程師列出的各類支援。每期協議通行證開啟時，將預設解鎖「基礎配給」。提升通行證等級，可獲得【基礎尋訪憑證】【嵌晶玉】【兌換驚喜箱】【培養材料】等獎勵。 其中，獎勵【高階培養自選箱I】更改為【高階培養自選箱II】，並追加可選擇的培養材料【躍遷漿體塗片】。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 【採購中心 - 組合包】新增【奇妙視線收藏包】【協議源流組合包】【萬象尋訪組合包】【天河尋訪組合包】；【特惠武庫配額包】可購買次數更新。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\">※ 更多組合包及相關詳細說明，請前往遊戲內【採購中心 - 組合包】查看。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 集成工業系統</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 「武陵」地區建設等級上限提升；「武陵 - 應龍關」物資調度終端等級上限提升；「武陵物資調度」中新增部分可兌換物資。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 新增【自動農植機】：解鎖【自動農植機】後，可以對「祀的畫」中的種植區進行自動育苗和自動收穫。隨著相關劇情推進，「武陵城」中的種植區也可使用【自動農植機】。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 戰鬥系統</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 新增連攜技優先順序設定：可在【編隊】介面調整幹員連攜技優先順序；局內同一時點觸發多個連攜技時，將按所設優先順序依次施放。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 新增第六、第七小隊：管理員可在編隊介面配置並儲存更多小隊陣容。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 系統</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 新增【裝備方案】功能：可儲存多套裝備方案並自訂命名，便於按編隊需求為幹員快速切換裝備。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 新增限時理智藥劑到期自動使用功能：限時理智藥劑到期時將自動轉化為理智；超出理智上限的部分，將透過【理智萃取器】轉化為不限時的【理智精粹藥劑】。若理智已達上限，且【理智精粹藥劑】已達持有上限或無可用【理智萃取器】，剩餘限時理智藥劑將被銷毀。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 新增艙室小組功能：每個艙室最多可設定A、B兩個小組，支援手動【啟用小組】或【自動輪換】；請注意，若小組預計工時不足以覆蓋所分配工作時段，艙室生產可能中斷。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 其他</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 新增部分【幹員教學】、【能量淤積點】、【危境再現】、【NPC】、【蝕刻章】、【名片主題】、【頭像】、【頭像框】、【濾鏡】、【貼紙】、【消耗品】、【材料】、【理智藥劑】、【百科條目】、【情報檔案】、【隨身裝置】、【裝飾物品】、【唱片】、【拍照動作】、【地區提交醚質階段】等內容，將隨管理員的進度逐漸解鎖。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 裝備套組【50式應龍】、【脈衝式】、【長息】、【涉淵】、【集成實訓】新增部分裝備部件。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 新增珍貴培養材料【躍遷漿體塗片】。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>▼//優化與調整</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 任務</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了「自由開拓」任務的顯示邏輯。當管理員仍有未完成的緊要任務時，將不再顯示「自由開拓」任務；待其餘緊要任務全部完成後，「自由開拓」任務將自動顯示。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了探索任務「往日珍瑰」接取的指引和方式。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 戰鬥</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 調整了6星幹員【湯湯】終結技的技能描述將「湯湯揭開眼罩，釋放眼中的古老圖形封鎖範圍內的敵人，使其暫停行動一段時間」調整為「湯湯揭開眼罩，釋放眼中的古老圖形對範圍內的敵人施加一段時間的定身」。【定身】的效果為「持續時間內，受影響的目標暫停行動」。本次僅調整文本描述，調整前後均不影響該技能的實際效果。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了索敵操作：戰鬥中長按鎖定鍵將出現準星，可旋轉鏡頭瞄準敵人；鬆開後鎖定距離準星最近的敵人。原有鎖定與切換鎖定功能仍可正常使用。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了6星幹員【梨諾】作為非主控幹員施放戰技與終結技時的震動表現。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 活動及玩法</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了使用行動端裝置體驗時，玩法「選劍演武」的抽牌動畫表現。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 語音語言及音效</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了遊戲語音為中文時，「O.M.V.帝江號」中，特定NPC的配音表現。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了遊戲語音為英語時，部分配音的表現。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 集成工業系統</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了設備擺放體驗：擺放設備時，只要背包或任意倉庫中已有該設備，或倉庫內材料足以製造該設備，即可直接擺放。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了種植體驗：種植區支援【俯瞰模式】，田塊支援密集排布；在【施肥模式】中可開啟輔助施肥並設定輔助模式，選擇肥料進行施肥後，小隊內其他幹員將消耗對應肥料完成施肥。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了種植區地圖標記，支援查看種植區整體狀態及【自動農植機】相關資訊。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了裝備精鍛流程：【請選擇待消耗物品】介面新增【待製造】分頁，將自動篩選可作為精鍛消耗的裝備，支援調整數量或一鍵填充，無需跳轉頁面即可完成裝備製造並將其用於精鍛。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了線索收取與贈予的體驗：在【總控事項】中，好友贈予的線索也可快速收取並填入。同時還可將重複線索快速贈予需要該線索的好友。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了拜訪好友時的體驗：拜訪好友飛船時，可透過【快速拜訪】或快速鍵直接前往下一位好友的飛船。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了幹員展示的效果：【好友列表】與【個人名片】中，6星滿潛能幹員新增展示效果；在帝江號內走動時，6星滿潛能幹員也將呈現相應滿潛能特效。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了拍照貼紙的效果：支援縮放與旋轉、同時放置多個貼紙，並可快速刪除全部已放置貼紙。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了控制器操作相容性的體驗：針對養成、運送委託及關卡結算等場景進行了相容性優化，涵蓋【幹員 - 總覽】、【幹員 - 能力擴展】、【幹員 - 檔案】、【武器 - 潛能】、【地區建設 - 倉儲節點】等介面。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 其他</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 調整了【徘徊樹傀】在百科中的怪物類型顯示。其怪物類型由「精英敵人」調整為「進階敵人」。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了部分場景細節表現：落葉會隨幹員移動、技能釋放或場景風力產生飄動。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了特定情況下，部分幹員的模型、服飾、特效、動作、鏡頭等表現。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了特定情況下，部分NPC、敵方等的模型、服飾、特效、動作、鏡頭等表現。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了特定情況下，部分場景、武器、關卡等的模型、動態效果、特效、動畫等的表現。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了部分介面的顯示效果、特效表現、互動邏輯、文本描述。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了武器效果描述中有關法術傷害提升的表述文本，不影響實際效果。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 根據實際遊戲表現，優化了部分裝備名稱及相關說明文本，不影響實際效果。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 根據實際遊戲體驗，優化了部分提弗洛斯的靶場的操作提示文本。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了協議通行證部分任務描述文本。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了部分劇情文本。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了部分活動的說明文本。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了部分蝕刻章獲得方式與鍍層方式的說明文本。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了部分任務名稱。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 根據實際遊戲表現，優化了部分道具名稱及相關說明文本。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 優化了部分介面操作提示文本。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>▼//問題修復</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 任務</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 修復了特定情況下，支線任務「終其一生」中部分敵人消失，導致無法正常推進任務的問題。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 戰鬥</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 修復了透過特定方式進入「協議空間」時，特效表現異常的問題。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 修復了透過特定操作進行閃避時，幹員有機率墜落懸崖的問題。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 修復了特定情況下，6星幹員【莊方宜】開啟終結技後退出副本時，終結技能量未正確繼承進入副本時狀態的問題。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 系統</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 修復了特定情況下，傳送後互動選項異常殘留的問題。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 修復了特定情況下，地圖縮放功能異常的問題。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 修復了特定情況下，地圖標記點顯示異常的問題。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 修復了特定情況下，主介面倒數計時異常殘留的問題。</span></p><p><span style=\"color: rgb(0, 0, 0);\">· 修復了特定情況下，主介面功能入口排列順序異常的問題。</span></p><p></p><p><span style=\"color: rgb(0, 0, 0);\"><strong>■ 其他</strong></span></p><p><span style=\"color: rgb(0, 0, 0);\">· 修復了6星武器【藝術暴君（手銃）】模型中，部分裝飾文本顯示異常的問題。</span></p><p></p>",
             "linkType": 1
           }
         },
@@ -360,6 +420,40 @@
           "jumpButton": null,
           "data": {
             "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20261027/83d8a63f10b50f5b764419de1e055858.jpg\" data-width=\"1920\" data-height=\"3601\"><p></p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "3034",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 3,
+          "displayType": "rich_text",
+          "startAt": 1793181600,
+          "focus": 0,
+          "title": "重構尋訪\\n重構申領",
+          "header": "「祖泉的新流」重構尋訪#1與「細枝申領」重構申領#1開放",
+          "jumpButton": null,
+          "data": {
+            "html": "<p>親愛的管理員：<br>「祖泉的新流」重構尋訪#1開放期間，6星幹員【湯湯】獲得機率提升！<br>「細枝申領」重構申領#1開放期間，6星武器【落草（手銃）】獲得機率提升！<br><br><strong>▼//開放時間<br></strong>2026/10/29 12:00 ~ 2026/11/19 11:59（伺服器時間）<br>※ Asia伺服器時區：UTC+8<br>※ Americas / Europe伺服器時區：UTC-5<br><strong><br>▼//開放條件</strong><br>完成主線任務「第一章 - 進度I - 基地解圍」<br><br><strong>▼//「祖泉的新流」重構尋訪#1說明</strong></p><img src=\"https://web-static.hg-cdn.com/upload/image/20261027/5054da837789b55c71256671eedfb6f9.png\" alt=\"\" data-width=\"1650\" data-height=\"300\"><p><strong>■ 尋訪說明</strong><br>「祖泉的新流」重構尋訪中，機率提升的6星幹員為【湯湯】。在本尋訪中，前120次尋訪必定能獲得6星幹員【湯湯】，該規則在所有「祖泉的新流」重構尋訪中僅生效1次。該計數將繼承到後續的「祖泉的新流」重構尋訪中。<br><br><strong>■ 尋訪獎勵</strong><br>「祖泉的新流」重構尋訪中，累計達到指定尋訪次數，即可獲得對應獎勵。其中累計的尋訪次數，將繼承至後續的「祖泉的新流」重構尋訪中。<br><br><strong>· 加急招募</strong><br>累計尋訪次數達到30/60/90次時，將分別額外獲得10次加急招募（即分別額外獲得1次免費十連），該規則在所有「祖泉的新流」重構尋訪中僅生效1次。未使用的加急招募，將保留到後續的「祖泉的新流」重構尋訪中。<br><br><strong>· 信物贈禮</strong><br>在所有「祖泉的新流」重構尋訪中，每累計尋訪240次，可額外獲得【湯湯的信物】×1。該計數將繼承到後續的「祖泉的新流」重構尋訪中。<br><br><strong>▼//「細枝申領」重構申領#1說明</strong></p><img src=\"https://web-static.hg-cdn.com/upload/image/20261027/b06d4520a457725c133798082430e193.png\" alt=\"\" data-width=\"1650\" data-height=\"300\"><p><strong>■ 申領說明</strong><br>· 「細枝申領」重構申領中，機率提升的6星武器為【落草（手銃）】。<br>· 在本申領中，如果連續3次申領均沒有獲得6星武器，則第4次申領必定獲得6星武器。該保底計數僅在「細枝申領」重構申領#1中生效，不會繼承到其他申領（含後續的「細枝申領」重構申領）中。<br>· 在本申領中，如果前7次申領均沒有獲得機率提升的6星武器，則第8次申領必定獲得機率提升的6星武器。該規則在所有「細枝申領」重構申領中僅生效1次。該保底計數將繼承到後續的「細枝申領」重構申領中。<br><strong><br>■ 申領獎勵</strong><br>累計達到指定重構申領次數，即可交替獲得【補充武庫箱·細枝】或【落草（手銃）】。累計的重構申領次數，將繼承到後續的「細枝申領」重構申領中。<br><br>※ 更多詳細說明，請前往遊戲內查看。</p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "8940",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 3,
+          "displayType": "rich_text",
+          "startAt": 1793160000,
+          "focus": 0,
+          "title": "危機籌備",
+          "header": "「危機籌備」限時活動說明",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20261027/caa5ba21de3e3a08108b04b3cd99623d.jpg\" data-width=\"1650\" data-height=\"300\"><p><strong>▼//活動時間</strong><br>2026/10/29 04:00 ~ 2026/11/05 04:00（伺服器時間）<br><br><strong>▼//活動獎勵</strong><br>活動期間，每日完成指定任務，可獲得【緊急理智加強劑】×4、【理智消耗許可】×8、【武陵精鍛助劑】×20、【冷卻脂】×100。<br><br><strong>▼//參與條件</strong><br>完成主線任務「第一章 - 進度II - 開拓前路」<br><br><strong>▼//活動說明</strong><br>· 本活動為「危機合約 浸藍測試作戰」開啟前的特別限時補給活動。<br>· 活動期間，每日將固定開放3個理智補給任務，完成任務即可獲得獎勵。<br>· 每日的理智補給任務將於次日04:00（伺服器時間）更新，請管理員及時領取獎勵。<br><br><br>※ Asia伺服器時區：UTC+8<br>※ Americas / Europe伺服器時區：UTC-5<br>※ 更多活動詳細說明，請前往遊戲內【活動中心】查看。<br></p>",
             "linkType": 1
           }
         },
@@ -506,25 +600,6 @@
           }
         },
         {
-          "cid": "9852",
-          "type": 0,
-          "tab": "news",
-          "orderType": 1,
-          "orderWeight": 4,
-          "displayType": "picture",
-          "startAt": 1792062000,
-          "focus": 0,
-          "extraData": {},
-          "title": "新版本討論",
-          "header": "",
-          "jumpButton": null,
-          "data": {
-            "url": "https://web-static.hg-cdn.com/upload/image/20261014/33b96ecca69c2532f000402e4ce933c2.png",
-            "link": "https://static.skport.com/u-link/download.html?schema=skport%3A%2F%2Fdetail%3Fid%3D2109843354918036879&redirectUrl=https%3A%2F%2Fwww.skport.com%2Farticle%3Fid%3D2109843354918036879%26hg_media%3Dgame%26hg_link_campaign%3Dannouncement%26hg_link_name%3DSanctuaryofInk",
-            "linkType": 1
-          }
-        },
-        {
           "cid": "7271",
           "type": 0,
           "tab": "news",
@@ -649,6 +724,23 @@
           }
         },
         {
+          "cid": "6425",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 5,
+          "displayType": "rich_text",
+          "startAt": 1793160000,
+          "focus": 0,
+          "title": "百趣演武",
+          "header": "「百趣演武」活動說明",
+          "jumpButton": null,
+          "data": {
+            "html": "<p></p><img src=\"https://web-static.hg-cdn.com/upload/image/20261026/23718be79a6f304df9d17f08c0db9fee.png\" alt=\"\"><p><strong>▼//活動時間</strong><br>2026/10/29 12:00 ~ 2026/11/19 04:00（伺服器時間）<br>· 活動階段1開放時間：2026/10/29 12:00（伺服器時間）<br>· 活動階段2開放時間：2026/11/11 04:00（伺服器時間）</p><p><br></p><p><strong>▼//活動獎勵</strong><br>活動期間挑戰「百趣演武」，獲得演武積分，達到演武歷程中的全部階段，即可獲得【嵌晶玉】×1200、【存續的痕跡】等活動獎勵。</p><p><br></p><p><strong>▼//參與條件</strong><br>權限等階≥30級</p><p><br></p><p><strong>▼//活動說明</strong><br>· 抽取資料銘牌，擊敗多輪敵人即可完成演算，獲得獎勵點和演算積分，並在「演武歷程」和「演武事錄」中獲得獎勵。<br>· 抽出的資料銘牌達成組合，能提供組合增益倍率，也會加大挑戰難度。<br>· 活動期間，達成指定條件即可獲得本活動專屬蝕刻章。</p><p><br></p><p>※Asia伺服器時區：UTC+8<br>※Americas / Europe伺服器時區：UTC-5<br>※ 更多活動詳細說明，請前往遊戲內【活動中心】查看。</p>",
+            "linkType": 1
+          }
+        },
+        {
           "cid": "1369",
           "type": 0,
           "tab": "events",
@@ -691,6 +783,7 @@
           "displayType": "rich_text",
           "startAt": 1792018800,
           "focus": 0,
+          "extraData": {},
           "title": "煙火生緣",
           "header": "「煙火生緣」趣味活動",
           "jumpButton": null,
