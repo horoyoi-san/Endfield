@@ -18,7 +18,7 @@
       "subChannel": "#DEFAULT",
       "lang": "en-us",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:en-us",
-      "version": "1e3356149c4fc07cfa2cac23866fcf71",
+      "version": "e5f124fcc7b66f25d1a8f96ac9b9e5b4",
       "onlineList": [
         {
           "cid": "8949",
@@ -87,6 +87,12 @@
           "needPopup": false
         },
         {
+          "cid": "9856",
+          "version": 1794420808,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
           "cid": "1367",
           "version": 1794210605,
           "needRedDot": true,
@@ -147,12 +153,6 @@
           "needPopup": false
         },
         {
-          "cid": "2191",
-          "version": 1793274477,
-          "needRedDot": true,
-          "needPopup": false
-        },
-        {
           "cid": "9850",
           "version": 1792388814,
           "needRedDot": true,
@@ -167,6 +167,12 @@
         {
           "cid": "0788",
           "version": 1790763677,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "9857",
+          "version": 1794383180,
           "needRedDot": true,
           "needPopup": false
         },
@@ -214,7 +220,7 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1794420952,
+      "updatedAt": 1794495600,
       "list": [
         {
           "cid": "8949",
@@ -412,6 +418,23 @@
           }
         },
         {
+          "cid": "9856",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 3,
+          "displayType": "rich_text",
+          "startAt": 1794456000,
+          "focus": 0,
+          "title": "Contingency Contract\\nContent Update",
+          "header": "Contingency Contract Content Update",
+          "jumpButton": null,
+          "data": {
+            "html": "<p></p><img src=\"https://web-static.hg-cdn.com/upload/image/20261112/d7c1fb136798ffe2a89ad40fa0e5dd0b.png\" alt=\"\"><p><strong>▼// Update Time</strong><br>Nov. 12, 2026 at 12:00 (server time)</p><p><br></p><p><strong>▼// Content Updates</strong><br>The following Test Criteria will be added and auto-unlocked:<br>· [Edit: Control Shield]<br>· [Ambient: Time Limit III]<br>· [Ambient: Echombo]<br>· [Edit: Dueling Circle]<br>· [Edit: Encasement I]<br>· [Edit: Encasement II]<br>· [Edit: Team Mangler III]<br>If a Criteria Set is still locked, its newly added Test Criteria cannot be selected. Achieve higher Total Test Criteria records to unlock the Criteria Set.</p><p><br></p><p><strong>▼// Participation Criteria</strong><br>· Complete the main mission [Chapter I Process II: Paving the Way]<br>· Authority Level ≥ 30</p><p><br></p><p><strong>▼// Event Details</strong><br>· This update adds Phase 2 content to the [Contingency Contract: Indigo Experimental Operation] limited-time challenge event. All basic rules, reward exchange, [Sanctuary Rating], and other mechanics remain unchanged from Phase 1. Freely combine Test Criteria to achieve higher Total Test Criteria records!<br>· New cycle missions will be added every 3 days (updated at 04:00 server time) during the event. There are 7 cycle missions in total, and all challenges and missions will remain available until the event ends.</p><p><br></p><p><strong>▼// Important Notes</strong><br>· All Contract Missions and combat challenges will close when the event ends.<br>· After the event ends, [Secret Sanctuary] will remain open for reward exchange until Dec. 2, 2026 at 04:00 (server time). Once [Secret Sanctuary] closes, all unused [Vitrified Indigo] will be cleared.</p><p><br></p><p>※ Asia Server Time Zone: UTC+8<br>※ Americas / Europe Server Time Zone: UTC-5<br>※ For more event details, check the in-game [Event Center].</p>",
+            "linkType": 1
+          }
+        },
+        {
           "cid": "1367",
           "type": 0,
           "tab": "events",
@@ -586,24 +609,6 @@
           }
         },
         {
-          "cid": "2191",
-          "type": 0,
-          "tab": "news",
-          "orderType": 1,
-          "orderWeight": 4,
-          "displayType": "picture",
-          "startAt": 1793358000,
-          "focus": 0,
-          "title": "Go Crazy",
-          "header": "",
-          "jumpButton": null,
-          "data": {
-            "url": "https://web-static.hg-cdn.com/upload/image/20261029/8b35584f212f3a2a178309141fc38b9c.jpg",
-            "link": "https://static.skport.com/u-link/download.html?schema=skport%3A%2F%2Fdetail%3Fid%3D2114560288127925917&redirectUrl=https%3A%2F%2Fwww.skport.com%2Farticle%3Fid%3D2114560288127925917",
-            "linkType": 1
-          }
-        },
-        {
           "cid": "9850",
           "type": 0,
           "tab": "news",
@@ -655,6 +660,23 @@
           "data": {
             "url": "https://web-static.hg-cdn.com/upload/image/20260930/c59770c616ba9f97c4a8822d496ca8b8.png",
             "link": "https://endfield.gryphline.com/special/discord-binding",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "9857",
+          "type": 0,
+          "tab": "updates",
+          "orderType": 1,
+          "orderWeight": 5,
+          "displayType": "rich_text",
+          "startAt": 1794452400,
+          "focus": 0,
+          "title": "Version Experience Survey",
+          "header": "[Sanctuary of Ink] Version Experience Survey",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20261111/20f1655d421bee689b661dea05810a3f.png\" data-width=\"1650\" data-height=\"300\"><p>Dear Endministrator, <br>To better collect your thoughts and feedback on Arknights: Endfield, we would like to send you a survey. We invite you to complete the survey based on your gaming experience and share your valuable insights with us. After you successfully submit the survey, we will send you [Oroberyl]×300 as a survey completion reward via in-game mail. <br><br><strong>▼// Survey Eligibility Requirement </strong><br>Unlock the [Mail] feature <br><br><strong>▼// Survey Distribution Time </strong><br>Nov. 13, 2026 at 12:00 (UTC+8)<br><br><strong>▼// How to Access the Survey </strong><br>Once the survey is sent out, you can find the [Sanctuary of Ink] Version Experience Survey in your [Mail]. Click [Go to Survey] to fill it out and share your valuable feedback. <br>※ Survey responses cannot be edited after submission. Please complete it carefully. <br><br>To ensure your feedback reflects your latest gaming experience, the survey mail will expire after a set period. Completing the survey takes about 3–5 minutes. Thank you for your time and patience. <br><br>Every valuable suggestion you share will help us enhance the game. Your feedback will play an important role in shaping a better Arknights: Endfield experience for all Endministrators. <br><br>Thank you again for your continued interest and support for Arknights: Endfield, Endministrator!<br></p>",
             "linkType": 1
           }
         },

@@ -18,7 +18,7 @@
       "subChannel": "#DEFAULT",
       "lang": "de-de",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:de-de",
-      "version": "1e3356149c4fc07cfa2cac23866fcf71",
+      "version": "e5f124fcc7b66f25d1a8f96ac9b9e5b4",
       "onlineList": [
         {
           "cid": "8949",
@@ -87,6 +87,12 @@
           "needPopup": false
         },
         {
+          "cid": "9856",
+          "version": 1794420808,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
           "cid": "1367",
           "version": 1794210605,
           "needRedDot": true,
@@ -147,12 +153,6 @@
           "needPopup": false
         },
         {
-          "cid": "2191",
-          "version": 1793274477,
-          "needRedDot": true,
-          "needPopup": false
-        },
-        {
           "cid": "9850",
           "version": 1792388814,
           "needRedDot": true,
@@ -167,6 +167,12 @@
         {
           "cid": "0788",
           "version": 1790763677,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "9857",
+          "version": 1794383180,
           "needRedDot": true,
           "needPopup": false
         },
@@ -214,7 +220,7 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1794420952,
+      "updatedAt": 1794495600,
       "list": [
         {
           "cid": "8949",
@@ -412,6 +418,23 @@
           }
         },
         {
+          "cid": "9856",
+          "type": 0,
+          "tab": "events",
+          "orderType": 1,
+          "orderWeight": 3,
+          "displayType": "rich_text",
+          "startAt": 1794456000,
+          "focus": 0,
+          "title": "Krisenschutzvertrag\\nInhaltsupdate",
+          "header": "Krisenschutzvertrag – Inhaltsupdate",
+          "jumpButton": null,
+          "data": {
+            "html": "<p></p><img src=\"https://web-static.hg-cdn.com/upload/image/20261112/e5b52c19c0c004b5e1edb7e40e6d1976.png\" alt=\"\"><p><strong>▼// Update-Zeitpunkt</strong><br>12. Nov. 2026 um 12:00 Uhr (Serverzeit)</p><p><br></p><p><strong>▼// Inhaltsupdates</strong><br>Die folgenden Testkriterien werden hinzugefügt und automatisch freigeschaltet:<br>· [Bearbeitung: Unkontrollierbar]<br>· [Umgebung: Zeitlimit III]<br>· [Umgebung: Echombo]<br>· [Bearbeitung: Duellantenring]<br>· [Bearbeitung: Gehäuse I]<br>· [Bearbeitung: Gehäuse II]<br>· [Bearbeitung: Teamvernichter III]<br>Solange ein Kriterienset gesperrt ist, können die neu hinzugefügten Testkriterien nicht ausgewählt werden. Erreiche höhere Gesamttestkriterien, um das Kriterienset freizuschalten.</p><p><br></p><p><strong>▼// Teilnahmekriterien</strong><br>· Abschluss der Hauptmission [Kapitel I, Prozess II: Den Weg freimachen]<br>· Autoritätslevel ≥ 30</p><p><br></p><p><strong>▼// Eventdetails</strong><br>· Dieses Update erweitert das zeitlich begrenzte Herausforderungsevent [Krisenschutzvertrag: Versuchseinsatz Indigo] um Inhalte der Phase 2. Alle Grundregeln, der Belohnungstausch, die [Heiligtum-Bewertung] sowie andere Spielmechaniken bleiben gegenüber Phase 1 unverändert. Kombiniere die Testkriterien nach Belieben, um höhere Rekorde bei den Gesamttestkriterien zu erzielen!<br>· Während des Events werden alle 3 Tage (Aktualisierung um 04:00 Uhr Serverzeit) neue Zyklusmissionen hinzugefügt. Es gibt insgesamt 7 Zyklusmissionen, wobei alle Herausforderungen und Missionen bis zum Ende des Events verfügbar bleiben.</p><p><br></p><p><strong>▼// Wichtige Hinweise</strong><br>· Alle Vertragsmissionen und Kampfherausforderungen werden mit Ende des Events geschlossen.<br>· Nach Ende des Events bleibt [Geheimes Heiligtum] bis zum 2. Dez. 2026 um 04:00 Uhr (Serverzeit) für das Einlösen von Belohnungen geöffnet. Sobald [Geheimes Heiligtum] geschlossen wird, werden alle ungenutzten [Kristallisierten Indigos] gelöscht.</p><p><br></p><p>※ Zeitzone des Asia-Servers: UTC+8<br>※ Zeitzone des Americas / Europe-Servers: UTC-5<br>※ Weitere Eventdetails findest du im [Eventcenter] im Spiel.</p>",
+            "linkType": 1
+          }
+        },
+        {
           "cid": "1367",
           "type": 0,
           "tab": "events",
@@ -586,24 +609,6 @@
           }
         },
         {
-          "cid": "2191",
-          "type": 0,
-          "tab": "news",
-          "orderType": 1,
-          "orderWeight": 4,
-          "displayType": "picture",
-          "startAt": 1793358000,
-          "focus": 0,
-          "title": "Bedien dich",
-          "header": "",
-          "jumpButton": null,
-          "data": {
-            "url": "https://web-static.hg-cdn.com/upload/image/20261029/16ee1ac5dc2c72b2eaee298efbebbcf8.jpg",
-            "link": "https://static.skport.com/u-link/download.html?schema=skport%3A%2F%2Fdetail%3Fid%3D2114560288127925917&redirectUrl=https%3A%2F%2Fwww.skport.com%2Farticle%3Fid%3D2114560288127925917",
-            "linkType": 1
-          }
-        },
-        {
           "cid": "9850",
           "type": 0,
           "tab": "news",
@@ -655,6 +660,23 @@
           "data": {
             "url": "https://web-static.hg-cdn.com/upload/image/20260930/4cc876b229d28ed7db5382836ff0eeab.png",
             "link": "https://endfield.gryphline.com/special/discord-binding",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "9857",
+          "type": 0,
+          "tab": "updates",
+          "orderType": 1,
+          "orderWeight": 5,
+          "displayType": "rich_text",
+          "startAt": 1794452400,
+          "focus": 0,
+          "title": "Umfrage zur Erfahrung mit der Version",
+          "header": "Umfrage zur Erfahrung mit der Version",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20261111/f372a99cc5f75b1e67734128779d0be7.jpg\" data-width=\"1650\" data-height=\"300\"><p>Geschätzter Endministrator, <br>um deine Eindrücke und dein Feedback zu Arknights: Endfield einzuholen, möchten wir dich zur Teilnahme an einer Umfrage einladen. Bitte schließe die Umfrage deinem Spielerlebnis entsprechend ab und teile deine Gedanken zum Spiel mit uns. Nach dem Abschluss der Umfrage senden wir dir [Oro-Beryll]×300 als Abschlussbelohnung per Nachricht im Spiel. <br><br><strong>▼//Teilnahmeberechtigung für die Umfrage: </strong><br>Schalte die [Mail]-Funktion frei. <br><br><strong>▼//Zeitpunkt der Umfrage-Zustellung: </strong><br>13. November 2026 um 12:00 Uhr (UTC+8)<br><br><strong>▼//So gelangst du zur Umfrage</strong> <br>Sobald die Zustellung erfolgt ist, findest du die Umfrage zur Erfahrung mit der Version [Das Heiligtum aus Tusche] in deiner [Mail]. Klicke auf [Zur Umfrage], um sie auszufüllen und Feedback zu geben. <br>※ Nach dem Absenden der Umfrage kannst du sie nicht nachträglich bearbeiten. Bitte fülle sie sorgfältig aus. <br><br>Damit dein Feedback auch auf dem neuesten Stand ist, verfällt die Umfrage-Mail nach bestimmter Zeit. Die Umfrage dauert ungefähr 3–5 Minuten. Danke für deine Zeit und Geduld. <br><br>Deine Vorschläge helfen uns dabei, das Spiel weiter zu verbessern. Dein Feedback spielt eine wichtige Rolle, um Arknights: Endfield zu einem besseren Erlebnis für alle Endministratoren zu machen. <br><br>Danke noch mal für dein anhaltendes Interesse und deine Unterstützung von Arknights: Endfield, Endministrator!<br></p>",
             "linkType": 1
           }
         },
