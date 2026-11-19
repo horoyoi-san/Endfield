@@ -14,22 +14,25 @@
         "tabName": "Pemberitahuan",
         "announcements": [
           {
+            "base_id": "69",
+            "content": "Terima Kasih Spesial | Hadiah untuk Endministrator Kami",
+            "jump_url": "https://endfield.gryphline.com/news/5205",
+            "start_ts": "1795060800000",
+            "id": "1578",
+            "need_token": false,
+            "pin": 1
+          },
+          {
+            "base_id": "65",
             "content": "Headhunt Khusus [Hangatnya Perapian Mengundang Laut Gemintang]",
             "jump_url": "https://endfield.gryphline.com/news/7012",
             "start_ts": "1793786400000",
             "id": "1519",
             "need_token": false,
-            "pin": 1
-          },
-          {
-            "content": "Headhunt RE-Faktor #1 [Mata Air Leluhur Kembali Mengalir] dan Edisi RE-Faktor #1 [Edisi Tunas Muda] Tersedia",
-            "jump_url": "https://endfield.gryphline.com/news/6179",
-            "start_ts": "1793181600000",
-            "id": "1447",
-            "need_token": false,
             "pin": 0
           },
           {
+            "base_id": "66",
             "content": "Detail OBW [Edisi Kilau Rembulan]",
             "jump_url": "https://endfield.gryphline.com/news/6178",
             "start_ts": "1793788200000",
@@ -38,6 +41,7 @@
             "pin": 0
           },
           {
+            "base_id": "63",
             "content": "[Suaka Tinta] Catatan Pembaruan Versi",
             "jump_url": "https://endfield.gryphline.com/news/9560",
             "start_ts": "1792026000000",
@@ -46,14 +50,7 @@
             "pin": 0
           },
           {
-            "content": "Detail Rilis Halaman Panduan Versi Baru [Suaka Tinta]",
-            "jump_url": "https://endfield.gryphline.com/news/5207",
-            "start_ts": "1791288000000",
-            "id": "1489",
-            "need_token": false,
-            "pin": 0
-          },
-          {
+            "base_id": "59",
             "content": "Pemberitahuan Terkait Masalah Game Akibat Pembaruan Driver NVIDIA",
             "jump_url": "https://endfield.gryphline.com/news/3844",
             "start_ts": "1773590400000",
@@ -62,6 +59,7 @@
             "pin": 0
           },
           {
+            "base_id": "61",
             "content": "Steam Client Account Linking Guide",
             "jump_url": "https://endfield.gryphline.com/news/5206",
             "start_ts": "1792166400000",
@@ -70,6 +68,7 @@
             "pin": 0
           },
           {
+            "base_id": "57",
             "content": "Panduan Alat Game untuk Arknights: Endfield",
             "jump_url": "https://endfield.gryphline.com/news/0755",
             "start_ts": "1769050800000",
@@ -78,6 +77,7 @@
             "pin": 0
           },
           {
+            "base_id": "56",
             "content": "Pernyataan Bermain Adil Arknights: Endfield",
             "jump_url": "https://endfield.gryphline.com/news/8900",
             "start_ts": "1768892400000",
@@ -86,6 +86,7 @@
             "pin": 0
           },
           {
+            "base_id": "58",
             "content": "Peringatan Risiko Keamanan Saat Menggunakan Alat Tidak Resmi",
             "jump_url": "https://endfield.gryphline.com/news/7026",
             "start_ts": "1773277200000",
@@ -94,42 +95,37 @@
             "pin": 0
           }
         ],
-        "tab_id": "81"
+        "tab_id": "150"
       },
       {
         "tabName": "Event",
         "announcements": [
           {
+            "base_id": "68",
             "content": "Operasi Eksperimen Indigo Dimulai!",
             "jump_url": "https://www.skport.com/article?id=2117825657603494629&hg_media=launcher&hg_link_campaign=banner&hg_link_name=ContingencyContract",
             "start_ts": "1794049200000",
             "id": "1561",
             "need_token": false,
             "pin": 0
-          },
-          {
-            "content": "Waktu Argent Flow di Pegunungan",
-            "jump_url": "https://www.skport.com/article?id=2117139260286766095&hg_media=launcher&hg_link_campaign=banner&hg_link_name=Argent",
-            "start_ts": "1793962800000",
-            "id": "1547",
-            "need_token": false,
-            "pin": 0
           }
         ],
-        "tab_id": "82"
+        "tab_id": "149"
       },
       {
         "tabName": "Berita",
         "announcements": [
           {
+            "base_id": "62",
             "content": "Kom Dev Versi [Suaka Tinta] Arknights: Endfield",
             "jump_url": "https://endfield.gryphline.com/news/7014",
-            "start_ts": "1791631800000",
+            "start_ts": "1791340200000",
             "id": "1461",
             "need_token": false,
             "pin": 0
           },
           {
+            "base_id": "60",
             "content": "Penautan Akun WhatsApp",
             "jump_url": "https://endfield.gryphline.com/special/whatsapp-bind",
             "start_ts": "1792036800000",
@@ -138,7 +134,7 @@
             "pin": 0
           }
         ],
-        "tab_id": "83"
+        "tab_id": "148"
       }
     ]
   }
