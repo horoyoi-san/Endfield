@@ -18,7 +18,7 @@
       "subChannel": "#DEFAULT",
       "lang": "id-id",
       "key": "0:Windows:3:#DEFAULT:#DEFAULT:id-id",
-      "version": "da39e4e5fd0df277ce9c74992ba9791a",
+      "version": "edb0fc8883b6d0e20e4734dcc912e509",
       "onlineList": [
         {
           "cid": "7272",
@@ -135,8 +135,14 @@
           "needPopup": false
         },
         {
-          "cid": "5514",
-          "version": 1794566743,
+          "cid": "9845",
+          "version": 1795184114,
+          "needRedDot": true,
+          "needPopup": false
+        },
+        {
+          "cid": "3020",
+          "version": 1795184312,
           "needRedDot": true,
           "needPopup": false
         },
@@ -214,7 +220,7 @@
         }
       ],
       "popupVersion": 0,
-      "updatedAt": 1795262537,
+      "updatedAt": 1795359600,
       "list": [
         {
           "cid": "7272",
@@ -548,20 +554,37 @@
           }
         },
         {
-          "cid": "5514",
+          "cid": "9845",
+          "type": 0,
+          "tab": "news",
+          "orderType": 1,
+          "orderWeight": 4,
+          "displayType": "rich_text",
+          "startAt": 1795323600,
+          "focus": 0,
+          "title": "Pembaruan Alat Game!",
+          "header": "Fitur-fitur cerdas terbaru ini dalam Pilihan Tim dan Panduan Build",
+          "jumpButton": null,
+          "data": {
+            "html": "<img src=\"https://web-static.hg-cdn.com/upload/image/20261120/ca681b42fa5f6c269da873039732fb0d.png\" data-width=\"1650\" data-height=\"300\"><p>Kepada Endministrator,</p><p>Pembaruan Alat Game Arknights: Endfield: Fitur [Pilihan Tim Cerdas] dan [Panduan Build Cerdas] baru kini tersedia! Berdasarkan operator Anda dan berbagai persyaratan stage, fitur-fitur cerdas ini menyediakan rekomendasi tim dengan personalisasi dan saran build yang disesuaikan untuk membantu Anda memperkuat tim Anda dengan lebih efektif.</p><p></p><p><strong>▼// Detail Fitur [Pilihan Tim Cerdas]</strong></p><p>· Pilihan Tim dengan Personalisasi</p><p>Setelah Anda memilih mode gameplay dan stage, Pilihan Tim Cerdas akan menganalisis berbagai operator yang Anda miliki, status progresi mereka, dan data tim dari tantangan stage untuk menghasilkan komposisi tim yang disesuaikan dengan kebutuhan Anda.</p><p></p><p>· Detail Build Tim</p><p>Detail Build Tim mencakup informasi tentang progres build tim dan prioritas progresi untuk membantu Anda merencanakan progresi operator Anda dengan lebih efektif.</p><p>Buka Detail Progresi Operator untuk melihat informasi tentang progresi operator, progresi senjata, dan progresi gear, yang diurutkan berdasarkan prioritas. Bandingkan progres Anda saat ini di tiap area dengan tujuan yang direkomendasikan untuk menentukan prioritas progresi Anda dengan jelas.</p><p></p><p><strong>▼// Detail Fitur [Panduan Build Cerdas]</strong></p><p>Dalam [Panduan Build Cerdas], Anda bisa memilih seorang operator target untuk melihat status progresinya saat ini dan tujuan progresi yang direkomendasikan. Rekomendasi progresi juga diurutkan berdasarkan prioritas dan mencakup semua aspek dari progres operator.</p><p></p><p>Memuat Arknights: Endfield, buka [Sinkronisator Protokol], kemudian tekan tombol Alat Game. Lalu, klik [Pilihan Tim Cerdas] atau [Panduan Build Cerdas] untuk mengakses fitur tersebut.</p><p></p><p>※ [Pilihan Tim Cerdas] dan [Panduan Build Cerdas] berdasarkan pada data tim dari tantangan stage dan data pemain terkini hasil agregasi, yang diperbarui dalam waktu nyata sesuai perubahan konten versi, dan hasilnya hanya untuk dijadikan sebagai referensi.</p><p>Jika Anda memiliki saran atau masukan tentang fitur-fitur ini, klik tombol [Masukan] di bagian bawah layar pilihan cerdas untuk menyampaikan pendapat Anda kepada kami.</p>",
+            "linkType": 1
+          }
+        },
+        {
+          "cid": "3020",
           "type": 0,
           "tab": "news",
           "orderType": 1,
           "orderWeight": 4,
           "displayType": "picture",
-          "startAt": 1794567600,
+          "startAt": 1795320000,
           "focus": 0,
-          "title": "Tantangan Trivia",
+          "title": "Event Diskusi Pratinjau",
           "header": "",
           "jumpButton": null,
           "data": {
-            "url": "https://web-static.hg-cdn.com/upload/image/20261113/1484919d0e4e5bfe2872038edba00a11.png",
-            "link": "https://static.skport.com/u-link/download.html?schema=skport%3A%2F%2Fweb%3Furl%3Dhttps%253A%252F%252Fact.skport.com%252Fendfield%252Ftrivia-challenge%253Fheader%253D0%2526hg_media%253Dgame%2526hg_link_campaign%253Dannouncement%2526hg_link_name%253Dchallenge",
+            "url": "https://web-static.hg-cdn.com/upload/image/20261120/b5f178b268f39f822f35b9e3165ca644.jpg",
+            "link": "https://static.skport.com/u-link/download.html?schema=skport%3A%2F%2Fdetail%3Fid%3D2123736467450142104&redirectUrl=https%3A%2F%2Fwww.skport.com%2Farticle%3Fid%3D2123736467450142104%26hg_media%3Dgame%26hg_link_campaign%3Dannouncement%26hg_link_name%3DVersionPreview",
             "linkType": 1
           }
         },
