@@ -325,7 +325,49 @@
     "patch": null,
     "state": 0,
     "launcher_action": 0,
-    "pre_patch": null,
+    "pre_patch": {
+      "package_size": "7302838585",
+      "total_size": "15726283922",
+      "patches": [
+        {
+          "url": "https://beyond.hg-cdn.com/YDUTE5gscDZ229CW/1.7/update/6/801/Windows/1.7.2_3a4817ba9f0cd530/patches/m5T6i7X6In/v2/tYt2DtckfkBiJyHh_1_7_2_1_6_4.zip.001",
+          "md5": "0942c1309a29f66aa041bb2fc0dbc0ab",
+          "package_size": "1073741824"
+        },
+        {
+          "url": "https://beyond.hg-cdn.com/YDUTE5gscDZ229CW/1.7/update/6/801/Windows/1.7.2_3a4817ba9f0cd530/patches/m5T6i7X6In/v2/tYt2DtckfkBiJyHh_1_7_2_1_6_4.zip.002",
+          "md5": "7ee3de06ff6a55c4b56ffb094086c07b",
+          "package_size": "1073741824"
+        },
+        {
+          "url": "https://beyond.hg-cdn.com/YDUTE5gscDZ229CW/1.7/update/6/801/Windows/1.7.2_3a4817ba9f0cd530/patches/m5T6i7X6In/v2/tYt2DtckfkBiJyHh_1_7_2_1_6_4.zip.003",
+          "md5": "01b9e5b9dfa5c33ae339a397d149b252",
+          "package_size": "1073741824"
+        },
+        {
+          "url": "https://beyond.hg-cdn.com/YDUTE5gscDZ229CW/1.7/update/6/801/Windows/1.7.2_3a4817ba9f0cd530/patches/m5T6i7X6In/v2/tYt2DtckfkBiJyHh_1_7_2_1_6_4.zip.004",
+          "md5": "df2403f0dddff9d3e8d8a80c0033f6e9",
+          "package_size": "1073741824"
+        },
+        {
+          "url": "https://beyond.hg-cdn.com/YDUTE5gscDZ229CW/1.7/update/6/801/Windows/1.7.2_3a4817ba9f0cd530/patches/m5T6i7X6In/v2/tYt2DtckfkBiJyHh_1_7_2_1_6_4.zip.005",
+          "md5": "6258b72e163e3b1a636efe72e1f6e9db",
+          "package_size": "1073741824"
+        },
+        {
+          "url": "https://beyond.hg-cdn.com/YDUTE5gscDZ229CW/1.7/update/6/801/Windows/1.7.2_3a4817ba9f0cd530/patches/m5T6i7X6In/v2/tYt2DtckfkBiJyHh_1_7_2_1_6_4.zip.006",
+          "md5": "2c7d184166ec6cb33c97024afabf7e0f",
+          "package_size": "1073741824"
+        },
+        {
+          "url": "https://beyond.hg-cdn.com/YDUTE5gscDZ229CW/1.7/update/6/801/Windows/1.7.2_3a4817ba9f0cd530/patches/m5T6i7X6In/v2/tYt2DtckfkBiJyHh_1_7_2_1_6_4.zip.007",
+          "md5": "fb14ce3e9a606de1bae4d79065d25289",
+          "package_size": "860387641"
+        }
+      ],
+      "version": "1.7.2",
+      "client_version": "1.7.2"
+    },
     "client_version": "1.6.4",
     "package_splitting": -1,
     "local_version_tip": 0
